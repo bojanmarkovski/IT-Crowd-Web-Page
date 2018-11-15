@@ -436,8 +436,6 @@
 				// $(this).addClass("fa-check").css({"font-size" : "15px"});
 			// 	$(this).text("")
 			// }
-
-			
 			for (var i = 7; i >= number; i--) {
 				
 				var modul = $(".fas.modul-" + i);
@@ -457,7 +455,13 @@
 					modul.parent(".horizontal-line").parent(".center-box").siblings(".footer-box").css("visibility", "hidden");
 					modul.removeClass("fa-check");
 					modul.text(i).css({"font-size": "21px"});
-				} else if (modul.hasClass("clicked")){
+				}
+	
+			}
+
+			for (var i = 0; i <= number; i++) {
+				var modul = $(".fas.modul-" + i);
+				if (modul.hasClass("clicked")) {
 					modul.removeClass("clicked");
 					modul.parent(".horizontal-line").removeClass("bg-gray");
 					modul.parent(".horizontal-line").children(".starting-point").removeClass("bg-gray");
@@ -473,8 +477,8 @@
 					modul.addClass("fa-check").css({"font-size" : "15px"});
 					modul.parent(".horizontal-line").find(".fa-check").removeClass("bg-gray");
 				}
-				
-				}
+			}
+
 				// if (number == 3) {
 				// 	$(this).parents(".modul-box-container").find(".second").css("visibility", "visible");
 				// 	modul.parents(".modul-box").children(".footer-box").css({"visibility" : "visible", "opacity" : "0"});
