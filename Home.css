@@ -206,6 +206,42 @@ body,
   opacity: 0;
 }
 
+
+
+/*HOW WE WORK*/
+.how-we-work-bg{
+  background-image: url("it.jpg");
+  width: 100%;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  padding: 0px;
+}
+.how-we-work-overlay{
+  width: 100%;
+  background-color: rgba(0,0,0,0.7);
+  height: 30vh;
+  z-index: 1;
+}
+.how-we-work-bg h1{
+  font-size: 60px;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 10%;
+  padding-right: 10%;
+  border-bottom: 4px solid #C0392B;
+  padding: 15px 50px;
+  margin: 0;
+}
+
+
 /*FOOTER*/
 .footer{
   background-color: #222222;
@@ -266,7 +302,10 @@ body,
   flex: 1;
   display: flex;
   align-items: flex-end;
-  margin-bottom: -10px;
+  margin-bottom: -55px;
+}
+.modul .center-box .horizontal-line i{
+  cursor: pointer;
 }
 .header-box div{
   height: 130px;
@@ -287,9 +326,11 @@ body,
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 13px;
+  /*padding: 13px;*/
   color: white;
-  z-index: 1;
+  z-index: 1;display: flex;
+   justify-content: center;
+   align-items: center;
 }
 .footer-box{
   flex: 1;
@@ -372,38 +413,40 @@ body,
 /*COLORS FOR MODUL*/
 
 /*TURQUOISE*/
-.modul1{
+.modul-1{
   background-color: #56ccc8;
 }
 
 /*GREEN*/
-.modul2{
+.modul-2{
   background-color: #C2C200;
 }
 
 /*ORANGE*/
-.modul3{
+.modul-3{
   background-color: #DD8F5A;
 }
 /*CORAL*/
-.modul4{
+.modul-4{
   background-color: #EA6060;
 }
 
 /*LIGHTBLUE*/
-.modul5{
+.modul-5{
   background-color: #88BAEA;
 }
 
 /*LIGHTBROWN*/
-.modul6{
+.modul-6{
   background-color: #DDB06C;
 }
 
 /*DARKBROWN*/
-.modul7{
+.modul-7{
   background-color: #775555;
+  /*font-size: 21px;*/
 }
+
 /*BUTTON TO TOP*/
 
 .top-button i{
@@ -465,4 +508,10 @@ address{
     padding-top: 20px;
     padding-bottom: 20px;
   }
+}
+
+/*Jquery Classes*/
+
+.bg-gray{
+  background-color: gray;
 }
