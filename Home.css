@@ -312,6 +312,14 @@ body,
   height: 130px;
   /*text-align: center;*/
 }
+.modul-box .even-model{
+  position: relative;
+}
+.modul-box .even-model div{
+  position: absolute;
+  width: 18vh;
+  left: 11.5vh;
+}
 .center-box{
   flex: 1;
   width: 100%;
@@ -480,6 +488,22 @@ body,
 }
 address{
   padding-top: 20px;
+}
+@media screen and (max-width: 2200px) {
+  .modul-box .even-model div{
+    left: 10.3vh;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .modul-box .even-model div{
+    left: 9.3vh;
+  }
+}
+@media screen and (max-width: 1380px) {
+  .modul-box .even-model div{
+    left: 8.5vh;
+    width: 15vh;
+  }
 }
 
 @media screen and (max-width: 1199px) {

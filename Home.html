@@ -179,7 +179,7 @@
 		<div class="row">
 			<div class="col-md-12 text-center how-we-work-bg">
 				<div class="how-we-work-overlay">
-					<h1>How We Work</h1>
+					<h1>How we work</h1>
 				</div>
 			</div>
 		</div>
@@ -216,7 +216,14 @@
 
 					<div class="modul-box">
 
-						<div class="header-box"></div>
+						<div class="header-box even-model">
+							<div>
+								<h4>Look & Feel</h4>
+								<small>
+									The design team focuses on the best user experience while keeping in line with your brand guidelines.
+								</small>
+							</div>
+						</div>
 
 						<div class="center-box">
 							<div class="horizontal-line modul-2">
@@ -235,14 +242,7 @@
 					<!-- 3 MODUL -->
 
 					<div class="modul-box">
-						<div class="header-box second">
-							<div>
-								<h4>Look & Feel</h4>
-								<small>
-									The design team focuses on the best user experience while keeping in line with your brand guidelines.
-								</small>
-							</div>
-						</div>
+						<div class="header-box even-text-2"></div>
 
 						<div class="center-box">
 							<div class="horizontal-line modul-3">
@@ -265,7 +265,14 @@
 
 					<div class="modul-box">
 
-						<div class="header-box"></div>
+						<div class="header-box even-model">
+							<div>
+								<h4>Q & A</h4>
+								<small>
+									We combine automatic with manual testing and at the end, capacity and stress tests for smooth performance.
+								</small>
+							</div>
+						</div>
 
 						<div class="center-box">
 							<div class="horizontal-line modul-4">
@@ -284,14 +291,7 @@
 					<!-- 5 MODUL -->
 
 					<div class="modul-box">
-						<div class="header-box fourth">
-							<div>
-								<h4>Q & A</h4>
-								<small>
-									We combine automatic with manual testing and at the end, capacity and stress tests for smooth performance.
-								</small>
-							</div>
-						</div>
+						<div class="header-box"></div>
 
 						<div class="center-box">
 							<div class="horizontal-line modul-5">
@@ -314,7 +314,14 @@
 
 					<div class="modul-box">
 
-						<div class="header-box"></div>
+						<div class="header-box even-model">
+							<div>
+								<h4>SLA</h4>
+								<small>
+									The created solution is monitored 24/7 and critical issues are replied within 30 mins.
+								</small>
+							</div>
+						</div>
 
 						<div class="center-box">
 							<div class="horizontal-line modul-6">
@@ -333,14 +340,7 @@
 					<!-- 7 MODUL -->
 
 					<div class="modul-box">
-						<div class="header-box sixth">
-							<div>
-								<h4>SLA</h4>
-								<small>
-									The created solution is monitored 24/7 and critical issues are replied within 30 mins.
-								</small>
-							</div>
-						</div>
+						<div class="header-box"></div>
 
 						<div class="center-box">
 							<div class="horizontal-line modul-7">
@@ -427,76 +427,74 @@
 		$(document).on('click', ".modul i", function() {
 
 			var number = this.className.split("modul-")[1].charAt();
-			// console.log(number);
-
-			// if ($(this).hasClass("fa-check")) {
-			// 	$(this).text(number).css({"font-size": "21px"});
-			// 	$(this).removeClass("fa-check")
-			// } else if ($(this).not(".fa-check")) {
-				// $(this).addClass("fa-check").css({"font-size" : "15px"});
-			// 	$(this).text("")
-			// }
-			for (var i = 7; i >= number; i--) {
+			
+			for (var i = 7; i > number; i--) {
 				
 				var modul = $(".fas.modul-" + i);
-
+					
 				if (!modul.hasClass("clicked")) {
 					modul.addClass("clicked");
 					modul.parent(".horizontal-line").addClass("bg-gray");
 					modul.parent(".horizontal-line").children(".starting-point").addClass("bg-gray");
 					modul.parent(".horizontal-line").children(".finish-point").addClass("bg-gray");
 					modul.parent(".horizontal-line").find(".fa-check").addClass("bg-gray");
-					modul.parent(".horizontal-line").find(".vertical-line-down").css("visibility", "hidden");
-					modul.parent(".horizontal-line").find(".vertical-line-up").css("visibility", "hidden");
-					modul.parent(".horizontal-line").find(".right-line").css("visibility", "hidden");
-					modul.parent(".horizontal-line").find(".point-down").css("visibility", "hidden");
-					modul.parent(".horizontal-line").find(".point-up").css("visibility", "hidden");
-					modul.parent(".horizontal-line").parent(".center-box").siblings(".header-box").css("visibility", "hidden")
-					modul.parent(".horizontal-line").parent(".center-box").siblings(".footer-box").css("visibility", "hidden");
+					modul.parent(".horizontal-line").find(".vertical-line-down").css("opacity", "0");
+					modul.parent(".horizontal-line").find(".vertical-line-up").css("opacity", "0");
+					modul.parent(".horizontal-line").find(".right-line").css("opacity", "0");
+					modul.parent(".horizontal-line").find(".point-down").css("opacity", "0");
+					modul.parent(".horizontal-line").find(".point-up").css("opacity", "0");
+					modul.parent(".horizontal-line").parent(".center-box").siblings(".header-box").css("opacity", "0");
+					modul.parent(".horizontal-line").parent(".center-box").siblings(".footer-box").css("opacity", "0");
 					modul.removeClass("fa-check");
 					modul.text(i).css({"font-size": "21px"});
+					$(this).removeClass("active");
+
 				}
-	
 			}
 
 			for (var i = 0; i <= number; i++) {
+
 				var modul = $(".fas.modul-" + i);
+
 				if (modul.hasClass("clicked")) {
+
 					modul.removeClass("clicked");
 					modul.parent(".horizontal-line").removeClass("bg-gray");
 					modul.parent(".horizontal-line").children(".starting-point").removeClass("bg-gray");
 					modul.parent(".horizontal-line").children(".finish-point").removeClass("bg-gray");
-					modul.parent(".horizontal-line").find(".vertical-line-down").css("visibility", "visible");
-					modul.parent(".horizontal-line").find(".vertical-line-up").css("visibility", "visible");
-					modul.parent(".horizontal-line").find(".right-line").css("visibility", "visible");
-					modul.parent(".horizontal-line").find(".point-down").css("visibility", "visible");
-					modul.parent(".horizontal-line").find(".point-up").css("visibility", "visible");
-					modul.parent(".horizontal-line").parent(".center-box").siblings(".header-box").css("visibility", "visible")
-					modul.parent(".horizontal-line").parent(".center-box").siblings(".footer-box").css("visibility", "visible");
+					modul.parent(".horizontal-line").find(".vertical-line-down").css("opacity", "1");
+					modul.parent(".horizontal-line").find(".vertical-line-up").css("opacity", "1");
+					modul.parent(".horizontal-line").find(".right-line").css("opacity", "1");
+					modul.parent(".horizontal-line").find(".point-down").css("opacity", "1");
+					modul.parent(".horizontal-line").find(".point-up").css("opacity", "1");
+					modul.parent(".horizontal-line").parent(".center-box").siblings(".header-box").css("opacity", "1");
+					modul.parent(".horizontal-line").parent(".center-box").siblings(".footer-box").css("opacity", "1");
 					modul.text("")
 					modul.addClass("fa-check").css({"font-size" : "15px"});
 					modul.parent(".horizontal-line").find(".fa-check").removeClass("bg-gray");
+					$(this).addClass("active");
 				}
+					
 			}
+			// TOGGLE CLASS
+			
+			if ((number == 1) || (number == 2) || (number == 3) || (number == 4) || (number == 5) || (number == 6) || (number == 7)) {
+				if ($(this).hasClass("active") && !modul.hasClass("clicked")) {
+					$(this).removeClass("active");
+					modul.removeClass("clicked");
+					modul.parents(".modul-box").children(".footer-box").css({"opacity" : "1"});
+					modul.parents(".modul-box").children(".header-box").css({"opacity" : "1"});
+					console.log("ima");
+				}
+				 else if(!$(this).hasClass("active") && !modul.hasClass("clicked")){
+					$(this).addClass("active");
+					modul.addClass("active");
+					modul.parents(".modul-box").children(".footer-box").css({"opacity" : "0"});
+					modul.parents(".modul-box").children(".header-box").css({"opacity" : "0"});
+					console.log('nema');
+				}
 
-				// if (number == 3) {
-				// 	$(this).parents(".modul-box-container").find(".second").css("visibility", "visible");
-				// 	modul.parents(".modul-box").children(".footer-box").css({"visibility" : "visible", "opacity" : "0"});
-				// 	if ($(this).hasClass("yes")) {
-				// 		modul.parents(".modul-box").children(".footer-box").css({"visibility" : "visible", "opacity" : "1"});
-				// 		$(this).removeClass("yes")	
-				// 	}
-				// 	if(!$(this).hasClass("yes")){
-				// 		$(this).addClass("yes")
-				// 	}
-				// }
-				// if (number == 5) {
-				// 	$(this).parents(".modul-box-container").find(".fourth").css("visibility", "visible");
-				// }
-				// if (number == 7) {
-				// 	$(this).parents(".modul-box-container").find(".sixth").css("visibility", "visible");
-				// }
-			});
-	</script>
-</body>
+			}
+		});
+	</script></body>
 </html>
