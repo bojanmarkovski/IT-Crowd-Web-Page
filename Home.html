@@ -435,12 +435,12 @@
 					
 				if (!modul.hasClass("clicked")) {
 					modul.addClass("clicked");
-					modul.parent(".horizontal-line").addClass("bg-gray");
-					modul.parent(".horizontal-line").children(".finish-point").addClass("bg-gray");
-					modul.parent(".horizontal-line").find(".fa-check").addClass("bg-gray");
-					modul.parent(".horizontal-line").find(".vertical-line-down").css("opacity", "0");
-					modul.parent(".horizontal-line").find(".vertical-line-up").css("opacity", "0");
-					modul.parent(".horizontal-line").find(".right-line").css("opacity", "0");
+					modul.parent(".horizontal-line").addClass("bg-gray").css({"transition" : "0.4s"});
+					modul.parent(".horizontal-line").children(".finish-point").addClass("bg-gray").css({"transition" : "0.4s"});
+					modul.parent(".horizontal-line").find(".fa-check").addClass("bg-gray").css({"transition" : "0.4s"});
+					modul.parent(".horizontal-line").find(".vertical-line-down").animate({width: "hide"},500);
+					modul.parent(".horizontal-line").find(".vertical-line-up").animate({width: "hide"},300);
+					modul.parent(".horizontal-line").find(".right-line").animate({width: "hide"},600);
 					modul.parent(".horizontal-line").find(".point-down").css("opacity", "0");
 					modul.parent(".horizontal-line").find(".point-up").css("opacity", "0");
 					modul.parent(".horizontal-line").parent(".center-box").siblings(".header-box").css("opacity", "0");
@@ -459,12 +459,12 @@
 					modul.parent(".horizontal-line").removeClass("bg-gray");
 					modul.parent(".horizontal-line").children(".starting-point").removeClass("bg-gray");
 					modul.parent(".horizontal-line").children(".finish-point").removeClass("bg-gray");
-					modul.parent(".horizontal-line").find(".vertical-line-down").css("opacity", "1");
-					modul.parent(".horizontal-line").find(".vertical-line-up").css("opacity", "1");
-					modul.parent(".horizontal-line").find(".right-line").css("opacity", "1");
+					modul.parent(".horizontal-line").find(".vertical-line-down").animate({width: "show"},500);
+					modul.parent(".horizontal-line").find(".vertical-line-up").animate({width: "show"},300);
+					modul.parent(".horizontal-line").find(".right-line").animate({height: "show"},600);
 					modul.parent(".horizontal-line").find(".point-down").css("opacity", "1");
 					modul.parent(".horizontal-line").find(".point-up").css("opacity", "1");
-					modul.parent(".horizontal-line").parent(".center-box").siblings(".header-box").css("opacity", "1");
+					modul.parent(".horizontal-line").parent(".center-box").siblings(".header-box").css({"opacity": "1", "transition" : "0.4s"});
 					modul.parent(".horizontal-line").parent(".center-box").siblings(".footer-box").css("opacity", "1");
 					modul.text("")
 					modul.addClass("fa-check").css({"font-size" : "15px"});
@@ -480,7 +480,7 @@
 					modul.parent(".horizontal-line").find(".right-line").css("opacity", "1");
 					modul.parent(".horizontal-line").find(".point-down").css("opacity", "1");
 					modul.parent(".horizontal-line").find(".point-up").css("opacity", "1");
-					modul.parent(".horizontal-line").parent(".center-box").siblings(".header-box").css("opacity", "1");
+					modul.parent(".horizontal-line").parent(".center-box").siblings(".header-box").css({"opacity": "1", "transition" : "0.4s"});
 					modul.parent(".horizontal-line").parent(".center-box").siblings(".footer-box").css("opacity", "1");
 					modul.text("")
 					modul.addClass("fa-check").css({"font-size" : "15px"});
