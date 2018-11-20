@@ -427,14 +427,15 @@
 		$(document).on('click', ".modul i", function() {
 			var number = this.className.split("modul-")[1].charAt();
 			
+			var flag = 0;
 			for (var i = 7; i > number; i--) {
 				
 				var modul = $(".fas.modul-" + i);
+
 					
 				if (!modul.hasClass("clicked")) {
 					modul.addClass("clicked");
 					modul.parent(".horizontal-line").addClass("bg-gray");
-					modul.parent(".horizontal-line").children(".starting-point").addClass("bg-gray");
 					modul.parent(".horizontal-line").children(".finish-point").addClass("bg-gray");
 					modul.parent(".horizontal-line").find(".fa-check").addClass("bg-gray");
 					modul.parent(".horizontal-line").find(".vertical-line-down").css("opacity", "0");
@@ -447,12 +448,12 @@
 					modul.removeClass("fa-check");
 					modul.text(i).css({"font-size": "21px"});
 					$(this).removeClass("active");
-					console.log(i);
+					flag = 1;
 				}
 			}
-
 			for (var i = 0; i <= number; i++) {
 				var modul = $(".fas.modul-" + i);
+				
 				if (modul.hasClass("clicked")) {
 					modul.removeClass("clicked");
 					modul.parent(".horizontal-line").removeClass("bg-gray");
@@ -469,9 +470,25 @@
 					modul.addClass("fa-check").css({"font-size" : "15px"});
 					modul.parent(".horizontal-line").find(".fa-check").removeClass("bg-gray");
 					$(this).addClass("active");
-					console.log(i);
+				}
+				else if (!modul.hasClass("clicked")) {
+					modul.parent(".horizontal-line").removeClass("bg-gray");
+					modul.parent(".horizontal-line").children(".starting-point").removeClass("bg-gray");
+					modul.parent(".horizontal-line").children(".finish-point").removeClass("bg-gray");
+					modul.parent(".horizontal-line").find(".vertical-line-down").css("opacity", "1");
+					modul.parent(".horizontal-line").find(".vertical-line-up").css("opacity", "1");
+					modul.parent(".horizontal-line").find(".right-line").css("opacity", "1");
+					modul.parent(".horizontal-line").find(".point-down").css("opacity", "1");
+					modul.parent(".horizontal-line").find(".point-up").css("opacity", "1");
+					modul.parent(".horizontal-line").parent(".center-box").siblings(".header-box").css("opacity", "1");
+					modul.parent(".horizontal-line").parent(".center-box").siblings(".footer-box").css("opacity", "1");
+					modul.text("")
+					modul.addClass("fa-check").css({"font-size" : "15px"});
+					modul.parent(".horizontal-line").find(".fa-check").removeClass("bg-gray");
+					modul.text("");
 				}
 			}
+
 
 			// TOGGLE CLASS
 			
@@ -487,9 +504,8 @@
 					modul.parent(".horizontal-line").find(".fa-check").removeClass("bg-gray");
 					modul.parent(".horizontal-line").children(".start-point").removeClass("bg-gray");
 					modul.parent(".horizontal-line").children(".finish-point").removeClass("bg-gray");
-					modul.text("")
 					modul.addClass("fa-check").css({"font-size" : "15px"});
-					console.log("ima");
+					modul.text("");
 				} else if(!$(this).hasClass("active") && !modul.hasClass("clicked")){
 					$(this).addClass("active");
 					modul.addClass("active");
@@ -503,10 +519,21 @@
 					modul.parent(".horizontal-line").children(".finish-point").addClass("bg-gray");
 					modul.removeClass("fa-check");
 					modul.text(i).css({"font-size": "21px"});
-					console.log('nema');
+					flag = 1;
 				}
+			}
+			if (flag == 1) {
+				$(".fas.modul-" + number).text(number).css({"font-size": "21px"});
+				modul.text(number);
+					modul.parent(".horizontal-line").children(".starting-point").addClass("bg-gray");
+
+				flag = 0;
+			} else if (flag == 0){
+				modul.text("");
+				modul.parent(".horizontal-line").find(".fa-check").removeClass("bg-gray");
 			}
 		});
 
 	</script></body>
+
 </html>
