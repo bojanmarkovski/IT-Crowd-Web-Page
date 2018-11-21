@@ -370,22 +370,20 @@ body,
   transform: translateY(-50%);
 }
 .vertical-line-down{
-  width: 80px;
-  height: 2px;
+  width: 2px;
+  height: 80px;
   position: absolute;
   right: 0;
-  top: 40px;
-  transform: translateX(-50%) rotate(90deg);
   left: 50%;
-  top: 40px;
+  transform: translateX(-50%);
 }
 .point-down{
   width: 8px;
   height: 8px;
   position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
+  bottom: 0%;
+  right: 50%;
+  transform: translateX(50%);
 }
 .vertical-line-up{
   width: 120px;
@@ -539,4 +537,9 @@ address{
 
 .bg-gray{
   background-color: #C5CDD1;
+  transition: 0.4s;
 }
+/*.show-line{
+  width: 300px;
+  transition: 3s;
+}*/
