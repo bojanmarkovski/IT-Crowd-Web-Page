@@ -2,8 +2,8 @@
   clear: both;
 }
 .header ul li a{
-	padding-top: 20px;
-	padding-bottom: 16px;
+	padding-top: 22px;
+  padding-bottom: 13px;
 }
 .header .logo{
 	padding: 0;
@@ -229,10 +229,6 @@ body,
   font-family: Segoe Script, sans-serif;
   color: #C0392B;
 }
-.hideme{
-  opacity: 0;
-}
-
 
 
 /*HOW WE WORK*/
@@ -507,12 +503,9 @@ body,
   background-color: #C0392B;
   cursor: pointer; #222222;
 }
-/*.hidee{
+.hideme{
   opacity: 0;
 }
-.show{
-  opacity: 1;
-}*/
 
 /*MAP*/
 
@@ -536,8 +529,21 @@ address{
 }
 @media screen and (max-width: 1380px) {
   .modul-box .even-model div{
-    left: 8.5vh;
-    width: 15vh;
+    left: 12vh;
+    width: 22vh;
+  }
+}
+/*DODADENO*/
+@media screen and (max-width: 1321px) {
+  .modul-box .even-model div{
+    left: 13.5vh;
+    width: 25vh;
+  }
+}
+@media screen and (max-width: 1321px) {
+  .modul-box .even-model div{
+    left: 13.5vh;
+    width: 25vh;
   }
 }
 

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AboutUs</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<link rel="stylesheet" type="text/css" href="AboutUs.css"></head>
+<body>
+	<div class="nav navbar-inverse header" id="home">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+					<div class="navbar-brand logo">
+						<a href="Home.html">
+							<img src="logo.png" alt="" class="img-responsive"></a>
+					</div>
+					<button class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="mynavbar">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="Home.html" class="">Home</a>
+							</li>
+							<li class="active">
+								<a href="#">About Us</a>
+							</li>
+							<li>
+								<a href="#">Our Services</a>
+							</li>
+							<li>
+								<a href="#">Career</a>
+							</li>
+							<li>
+								<a href="#">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row wrap-about-us">
+
+			<!-- LEFT SIDE -->
+
+			<div class="col-md-3">
+				<div class="left-side">
+					<ul>
+						<li class="our-team active-right-side">
+							Our Team <i class="fas fa-chevron-right pull-right"></i>
+						</li>
+						<li class="offices">
+							Offices <i class="fas fa-chevron-right pull-right"></i>
+						</li>
+						<li class="partners">
+							Partners
+							<i class="fas fa-chevron-right pull-right"></i>
+						</li>
+						<li class="our-business">
+							Our Business
+							<i class="fas fa-chevron-right pull-right"></i>
+						</li>
+						<li class="our-skills">
+							Our Skills
+							<i class="fas fa-chevron-right pull-right"></i>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- RIGHT SIDE -->
+
+			<div class="col-md-9 right-side">
+				
+				<div class="row" id="our-team">
+					<div class="col-md-12">
+						<h1>Our Team</h1>
+					</div>
+				</div>
+
+				<div class="row display-none" id="offices">
+					<div class="col-md-12">
+						<h1>Offices</h1>
+					</div>
+				</div>
+
+				<div class="row display-none" id="partners">
+					<div class="col-md-12">
+						<h1>Partners</h1>
+					</div>
+				</div>
+
+				<div class="row display-none" id="our-business">
+					<div class="col-md-12">
+						<h1>Our Business</h1>
+					</div>
+				</div>
+
+				<div class="row display-none" id="our-skills">
+					<div class="col-md-12">
+						<h1>Our Skills</h1>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- FOOTER -->
+
+		<div class="row footer">
+			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+				<div class="row border-bottom">
+					<div class="col-lg-4 col-md-4 col-sm-12">
+						<img class="img-responsive" src="logo.png">
+						<p>
+							<i class="fas fa-map-marker-alt"></i>
+							<span>Ljubljanska 6, City Tower floor 1, 1000 Skopje</span>
+						</p>
+						<p>
+							<i class="fas fa-phone"></i>
+							<span>+389 70 / 123 - 456</span>
+						</p>
+						<p>
+							<i class="far fa-envelope"></i>
+							<span>contact@itcrowd.me</span>
+						</p>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12"></div>
+					<div class="col-lg-4 col-md-4 col-sm-12 text-center" id="map">
+						<section id="cd-google-map">
+							<div id="google-container"></div>
+							<div id="cd-zoom-in"></div>
+							<div id="cd-zoom-out"></div>
+						</section>
+					</div>
+				</div>
+				<div class="row copyright">
+					<div class="col-lg-10 col-md-8 col-sm-8">
+						<small>ITCROWD &copy Copyright 2018. All rights reserved.</small>
+					</div>
+					<div class="col-lg-2 col-md-4 col-sm-4 tablet-float-right">
+						<a href="https://www.linkedin.com/company/itcrowd" target="_blank">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+						<a href="" target="_blank">
+							<i class="fab fa-google-plus-g"></i>
+						</a>
+						<a href="https://www.facebook.com/itcrowd.me" target="_blank">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAlZ-7-U81-rPTpCIKAY5IGBCiUl2tfLek'></script>
+
+	<script src="main.js"></script>
+
+	<script>
+		
+		$(document).ready(function(){
+
+			$(".left-side ul").on('click', "li", function() {
+				
+				var activeSection = $(this).attr("class").split(" ")[0];
+
+				$("#our-team").addClass("display-none");
+				$("#offices").addClass("display-none");
+				$("#partners").addClass("display-none");
+				$("#our-business").addClass("display-none");
+				$("#our-skills").addClass("display-none");
+
+				$("#our-team").removeClass("display-block");
+				$("#offices").removeClass("display-block");
+				$("#partners").removeClass("display-block");
+				$("#our-business").removeClass("display-block");
+				$("#our-skills").removeClass("display-block");
+
+				$("#" + activeSection).addClass("display-block");
+
+				$(".our-team").removeClass("active-right-side");
+				$(".offices").removeClass("active-right-side");
+				$(".partners").removeClass("active-right-side");
+				$(".our-business").removeClass("active-right-side");
+				$(".our-skills").removeClass("active-right-side");
+
+				$(this).addClass("active-right-side");
+				
+			})
+
+		});
+		
+	</script>
+
+</body>
+</html>

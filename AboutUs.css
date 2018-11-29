@@ -1,0 +1,206 @@
+.clear{
+  clear: both;
+}
+.header ul li a{
+	padding-top: 22px;
+	padding-bottom: 13px;
+}
+.header .logo{
+	padding: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 143px;
+	height: 61px;
+}
+.header img{
+	width: 100%;
+	height: 100%;
+}
+.header img:hover{
+	cursor: pointer;
+}
+.header ul li a{
+	border-bottom: 5px solid transparent;
+	transition: 0.3s;
+	letter-spacing: 0.6px;
+	font-weight: bold;
+	font-size: 16px;
+	font-family: Segoe Script, sans-serif;
+}
+.header ul li a:hover{
+	border-bottom: 5px solid #C0392B;
+}
+.header ul .active a{
+	background-color: #C0392B !important;
+}
+
+/*FOOTER*/
+
+.footer{
+  background-color: #222222;
+  padding-top: 70px;
+  /*padding-bottom: 70px;*/
+  color: lightgray;
+}
+.footer img{
+  width: 143px;
+  height: 51px;
+  margin-bottom: 20px;
+}
+.footer p{
+  padding-top: 15px;
+}
+.footer i{
+  color: #C0392B;
+  margin-right: 10px;
+}
+.footer .border-bottom{
+  border-bottom: 2px solid #C0392B;
+  padding-bottom: 15px;
+}
+.footer .copyright{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer .copyright a{
+  text-decoration: none;
+  margin-right: 10px;
+}
+.footer .copyright i{
+  font-size: 24px;
+  color: white;
+  transition: 0.4s;
+  float: right;
+}
+.footer .copyright i:hover{
+  color: #C0392B;
+  transform: scale(1.2);
+}
+
+
+/*HOW WE WORK*/
+.how-we-work-bg{
+  background-image: url("it.jpg");
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  padding: 0px;
+}
+.how-we-work-overlay{
+  width: 100%;
+  background-color: rgba(0,0,0,0.7);
+  height: 200px;
+  z-index: 1;
+}
+.how-we-work-bg .how-we-work-overlay h1{
+  font-size: 40px;
+  letter-spacing: 1px;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 10%;
+  padding-right: 10%;
+  border-bottom: 2px solid #C0392B;
+  padding: 19px 50px;
+  margin: 0;
+}
+.how-we-work-bg .how-we-work-overlay h1 span{
+	font-weight: 100;
+	font-size: 40px;
+	color: #C0392B;
+}
+.border-bottom-h1{
+  width: 20vh;
+  height: 5px;
+  background-color: #C0392B;
+  position: absolute;
+  top: 71%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*BUTTON TO TOP*/
+
+.top-button i{
+  color: white;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  background-color: #222222;
+  padding: 10px;
+  border-radius: 7px;
+  z-index: 999;
+}
+.top-button:hover i{
+  background-color: #C0392B;
+  cursor: pointer; #222222;
+}
+.hideme{
+  opacity: 0;
+}
+
+
+/*LEFT SIDE*/
+
+.left-side{
+	padding: 0;
+}
+.left-side ul{
+	padding-left: 0;
+	margin: 0;
+	height: 100%;
+	position: fixed;
+	width: 19%;
+	padding-top:40px;
+	padding-left: 40px;
+	border-radius: 10px;
+}
+.left-side ul li{
+	list-style: none;
+	font-size: 15px;
+	cursor: pointer;
+	color: lightgray;
+	border-left: 20px solid #222222;
+	letter-spacing: 1px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 15px;
+	background-color: #222222;
+	transition: 0.4s;
+}
+.left-side ul li:hover{
+	background-color: #C0392B;
+	border-left: 20px solid #C0392B;
+}
+.left-side ul li i{
+	padding-top: 3px;
+}
+.wrap-about-us .left-side ul .active-right-side{
+	border-left: 20px solid #C0392B;
+	padding-left: 10px;
+}
+.left-side ul *li{
+	background-color: green;
+}
+
+
+/*RIGHT SIDE*/
+
+.right-side{
+	height: 80vh;
+}
+.display-none{
+	display: none;
+	transition: 0.4s;
+}
+.display-block{
+	display: block;
+	transition: 0.4s;
+}
