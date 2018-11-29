@@ -3,8 +3,9 @@
 	var arrowLeft = document.getElementById("arrow-left");
 	var arrowRight = document.getElementById("arrow-right");
 	var body = document.getElementsByTagName("body")[0];
-	var sliderImages = document.getElementsByClassName("slide");
+	var sliderImages = document.getElementsByClassName("slidee");
 	var current = 0;
+	var navigationImages = document.getElementsByClassName("navigation");
 
 // Functions
 
@@ -12,31 +13,35 @@ function reset(){
 	for(var i = 0; i < sliderImages.length; i++) {
 		sliderImages[i].style.display = "none";
 	}
+	for(var i = 0; i < navigationImages.length; i++) {
+		navigationImages[i].classList.remove("active-navigation");
+	}
 }
 
 function startSlide() {
 	reset();
-	sliderImages[0].style.display = "block"
+	sliderImages[0].style.display = "block";
+	navigationImages[0].classList.add("active-navigation");
 }
 
 function overlapLeft() {
 	if (current == 0) {
 		current = sliderImages.length; //3
-		console.log(current);
+		current = navigationImages.length;
 	}
 }
 
 function overlapRight() {
-	if (current == sliderImages.length - 1) {
+	if ((current == sliderImages.length - 1) && (current == navigationImages.length - 1)) {
 		current = -1;
 	}
 }
-
 
 function slideLeft() {
 	reset();
 	overlapLeft();
 	sliderImages[current - 1].style.display = "block";
+	navigationImages[current - 1].classList.add("active-navigation"); 
 	current--;
 }
 
@@ -44,24 +49,25 @@ function slideRight() {
 	reset();
 	overlapRight();
 	sliderImages[current + 1].style.display = "block";
+	navigationImages[current + 1].classList.add("active-navigation");
 	current++;
 }
 
-//event listeners
+// event listeners
 
 // click:
-		//slideLeft & slideRight
+// 		slideLeft & slideRight
 // keydown:
-		//slideLeft & slideRight
+// 		slideLeft & slideRight
 
 
 arrowLeft.addEventListener("click", function() {
-	slideLeft()
-})
+	slideLeft();
+});
 
 arrowRight.addEventListener("click", function() {
 	slideRight()
-})
+});
 
 body.addEventListener("keydown", function(event){
 	if(event.keyCode == 37) {
@@ -81,6 +87,38 @@ body.addEventListener("keydown", function(event){
 
 startSlide();
 
+$(".navigations-images").on('click', 'div', function() {
+
+	var activeNavigation = $(this)[0].className.split("navigation-")[1];
+
+	var activeImageSliderId = null;
+	for (var i = 0; i <= 5; i++) {
+
+		var activeImageSlider = $(".slide" + i);
+
+		if ($(".navigation-" + i).hasClass("active-navigation")) {
+			$(".navigation").removeClass("active-navigation");
+	
+			activeImageSliderId = i;
+		}
+	}
+	$(this).addClass("active-navigation")
+
+	if (activeImageSliderId < activeNavigation) {
+		while(activeImageSliderId < activeNavigation) {
+
+			slideRight();
+			activeNavigation--;
+		}
+	}
+	else if (activeImageSliderId > activeNavigation) {
+		while(activeImageSliderId > activeNavigation) {
+
+			slideLeft();
+			activeNavigation++;
+		}
+	}
+});
 
 $(document).ready(function($){
 
@@ -101,7 +139,7 @@ $(document).ready(function($){
 
  	$(window).scroll( function(){
     
-        /* Check the location of each desired element */
+        /* Check the location of each desitransparent element */
         $('.hideme').each( function(i){
             
             var bottom_of_object = $(this).position().top + $(this).outerHeight();
@@ -166,4 +204,119 @@ $(document).ready(function($){
 
 
 
+});
+
+// MODUL
+$(document).ready(function(){
+	$(document).on('click', ".modul i", function() {
+		var number = this.className.split("modul-")[1].charAt();
+		
+		var flag = 0;
+		for (var i = 7; i > number; i--) {
+			
+			var modul = $(".fas.modul-" + i);
+
+				
+			if (!modul.hasClass("clicked")) {
+				modul.addClass("clicked");
+				modul.parent(".horizontal-line").addClass("bg-gray").css({"transition" : "0.4s"});
+				modul.parent(".horizontal-line").children(".finish-point").addClass("bg-gray").css({"transition" : "0.4s"});
+				modul.parent(".horizontal-line").find(".fa-check").addClass("bg-gray").css({"transition" : "0.4s"});
+				modul.parent(".horizontal-line").find(".vertical-line-down").animate({height: "hide"},300);
+				modul.parent(".horizontal-line").find(".vertical-line-up").animate({width: "hide"});
+				modul.parent(".horizontal-line").find(".right-line").animate({height: "hide"},400);
+				modul.parent(".horizontal-line").find(".point-down").css("opacity", "0");
+				modul.parent(".horizontal-line").find(".point-up").css("opacity", "0");
+				modul.parent(".horizontal-line").parent(".center-box").siblings(".header-box").css({"opacity" : "0", "transition" : "1s"});
+				modul.parent(".horizontal-line").parent(".center-box").siblings(".footer-box").css({"opacity" : "0", "transition" : "1s"});
+				modul.removeClass("fa-check");
+				modul.text(i).css({"font-size": "21px"});
+				$(this).removeClass("active");
+				flag = 1;
+			}
+		}
+		for (var i = 0; i <= number; i++) {
+			var modul = $(".fas.modul-" + i);
+			
+			if (modul.hasClass("clicked")) {
+				modul.removeClass("clicked");
+				modul.parent(".horizontal-line").removeClass("bg-gray");
+				modul.parent(".horizontal-line").children(".starting-point").removeClass("bg-gray");
+				modul.parent(".horizontal-line").children(".finish-point").removeClass("bg-gray");
+				modul.parent(".horizontal-line").find(".vertical-line-down").animate({height: "show"},300);
+				modul.parent(".horizontal-line").find(".vertical-line-up").animate({width: "show"},200);
+				modul.parent(".horizontal-line").find(".right-line").animate({height: "show"},400);
+				modul.parent(".horizontal-line").find(".point-down").css("opacity", "1");
+				modul.parent(".horizontal-line").find(".point-up").css("opacity", "1");
+				modul.parent(".horizontal-line").parent(".center-box").siblings(".header-box").css({"opacity": "1", "transition" : "1s"});
+				modul.parent(".horizontal-line").parent(".center-box").siblings(".footer-box").css({"opacity": "1", "transition" : "1s"});
+				modul.text("")
+				modul.addClass("fa-check").css({"font-size" : "15px"});
+				modul.parent(".horizontal-line").find(".fa-check").removeClass("bg-gray");
+				$(this).addClass("active");
+			}
+			else if (!modul.hasClass("clicked")) {
+				modul.parent(".horizontal-line").removeClass("bg-gray");
+				modul.parent(".horizontal-line").children(".starting-point").removeClass("bg-gray");
+				modul.parent(".horizontal-line").children(".finish-point").removeClass("bg-gray");
+				modul.parent(".horizontal-line").find(".vertical-line-down").animate({height: "show"},300);
+				modul.parent(".horizontal-line").find(".vertical-line-up").animate({width: "show"},200);
+				modul.parent(".horizontal-line").find(".right-line").animate({height: "show"},300);
+				modul.parent(".horizontal-line").find(".point-down").css("opacity", "1");
+				modul.parent(".horizontal-line").find(".point-up").css("opacity", "1");
+				modul.parent(".horizontal-line").parent(".center-box").siblings(".header-box").css({"opacity": "1", "transition" : "0.4s"});
+				modul.parent(".horizontal-line").parent(".center-box").siblings(".footer-box").css({"opacity": "1", "transition" : "1s"});
+				modul.text("")
+				modul.addClass("fa-check").css({"font-size" : "15px"});
+				modul.parent(".horizontal-line").find(".fa-check").removeClass("bg-gray");
+				modul.text("");
+			}
+		}
+
+
+		// TOGGLE CLASS
+		
+		if ((number == 1) || (number == 2) || (number == 3) || (number == 4) || (number == 5) || (number == 6) || (number == 7)) {
+			if ($(this).hasClass("active") && !modul.hasClass("clicked")) {
+				$(this).removeClass("active");
+				modul.removeClass("clicked");
+				modul.parents(".modul-box").children(".footer-box").css({"opacity": "1", "transition" : "1s"});
+				modul.parents(".modul-box").children(".header-box").css({"opacity": "1", "transition" : "1s"});
+				modul.parents(".modul-box").find(".vertical-line-down").animate({height: "show"},300);
+				modul.parents(".modul-box").find(".vertical-line-up").css({"opacity" : "1"});
+				modul.parent(".horizontal-line").removeClass("bg-gray");
+				modul.parent(".horizontal-line").find(".fa-check").removeClass("bg-gray");
+				modul.parent(".horizontal-line").children(".start-point").removeClass("bg-gray");
+				modul.parent(".horizontal-line").children(".finish-point").removeClass("bg-gray");
+				modul.parent(".horizontal-line").find(".right-line").animate({height: "show"},300);
+				modul.addClass("fa-check").css({"font-size" : "15px"});
+				modul.text("");
+			} else if(!$(this).hasClass("active") && !modul.hasClass("clicked")){
+				$(this).addClass("active");
+				modul.addClass("active");
+				modul.parents(".modul-box").children(".footer-box").css({"opacity": "0", "transition" : "1s"});
+				modul.parents(".modul-box").children(".header-box").css({"opacity": "0", "transition" : "1s"});
+				modul.parents(".modul-box").find(".vertical-line-down").animate({height: "hide"},400);
+				modul.parents(".modul-box").find(".vertical-line-up").animate({width: "hide"});
+				modul.parent(".horizontal-line").addClass("bg-gray");
+				modul.parent(".horizontal-line").find(".fa-check").addClass("bg-gray");
+				modul.parent(".horizontal-line").children(".start-point").addClass("bg-gray");
+				modul.parent(".horizontal-line").children(".finish-point").addClass("bg-gray");
+				modul.parent(".horizontal-line").find(".right-line").animate({height: "hide"},400);
+				modul.removeClass("fa-check");
+				modul.text(i).css({"font-size": "21px"});
+				flag = 1;
+			}
+		}
+		if (flag == 1) {
+			$(".fas.modul-" + number).text(number).css({"font-size": "21px"});
+			modul.text(number);
+				modul.parent(".horizontal-line").children(".starting-point").addClass("bg-gray");
+
+			flag = 0;
+		} else if (flag == 0){
+			modul.text("");
+			modul.parent(".horizontal-line").find(".fa-check").removeClass("bg-gray");
+		}
+	});
 });
