@@ -30,9 +30,6 @@
 .header ul li a:hover{
 	border-bottom: 5px solid #C0392B;
 }
-.header ul .active a{
-	background-color: #C0392B !important;
-}
 
 /*FOOTER*/
 
@@ -161,6 +158,7 @@
 	padding-top:40px;
 	padding-left: 40px;
 	border-radius: 10px;
+  z-index: 1;
 }
 .left-side ul li{
 	list-style: none;
@@ -194,7 +192,6 @@
 /*RIGHT SIDE*/
 
 .right-side{
-	height: 80vh;
 }
 .display-none{
 	display: none;
@@ -203,4 +200,67 @@
 .display-block{
 	display: block;
 	transition: 0.4s;
+}
+.right-side h1{
+  border-bottom: 2px solid #C0392B;
+  padding:13px;
+  padding-left: 25px;
+}
+.panel-heading{
+  cursor: pointer;
+}
+#accordion .right{
+  width: 2px;
+  height: 11px;
+  background-color: black;
+  transform: rotate(40deg);
+  margin-right: 4px;
+  margin-top: 3px;
+  transition: 0.4s;
+}
+#accordion .left{
+  width: 2px;
+  height: 11px;
+  background-color: black;
+  transform: rotate(320deg);
+  margin-right: 4px;
+  margin-top: 3px;
+  transition: 0.4s;
+}
+/*#accordion:hover .right{
+  transform: rotate(140deg);
+}
+#accordion:hover .left{
+   transform: rotate(220deg);
+}*/
+.active-panel-body-right{
+  transform: rotate(140deg)!important;
+}
+.active-panel-body-left{
+  transform: rotate(220deg)!important;
+}
+.background-panel-title{
+  background-color: #C0392B !important;
+  color: white !important;
+}
+
+/*PROGRESS BAR*/
+.progress{
+  height: 40px;
+}
+.background-progress-bar{
+  background-image: linear-gradient(to right, #222222 , #C0392B);
+  font-size: 18px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: Titillium Web, sans-serif;
+  border-radius: 5px;
+}
+.progress .background-progress-bar p:nth-child(1) {
+    color:  lightgray;
+}
+.progress .background-progress-bar p:nth-child(2) {
+    padding-right: 10px;
+    color:  lightgray;
 }
