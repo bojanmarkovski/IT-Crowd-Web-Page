@@ -103,7 +103,7 @@
 
 				<!-- OUR TEAM -->
 
-				<div class="row" id="our-team">
+				<div class="row page-section" id="our-team">
 					<div class="col-md-12">
 						<h1>
 							Our
@@ -252,19 +252,20 @@
 						</div>
 					</div>
 				</div>
-				<div class="row" id="offices">
+
+				<div class="row page-section" id="offices">
 					<div class="col-md-12">
 						<h1>Offices</h1>
 					</div>
 				</div>
 
-				<div class="row" id="partners">
+				<div class="row page-section" id="partners">
 					<div class="col-md-12">
 						<h1>Partners</h1>
 					</div>
 				</div>
 
-				<div class="row" id="our-business">
+				<div class="row page-section" id="our-business">
 					<div class="col-md-12">
 						<h1>
 							Our
@@ -273,7 +274,7 @@
 					</div>
 				</div>
 
-				<div class="row" id="our-skills">
+				<div class="row page-section" id="our-skills">
 					<div class="col-md-12">
 						<h1>Our Skills</h1>
 
@@ -483,26 +484,49 @@
 				}
 			});
 
+			// LEFT ACTIVE SIDEBAR
+			$(".left-side ul").on('click', "li", function() {
+				
+				$(".our-team").removeClass("active-right-side");
+				$(".offices").removeClass("active-right-side");
+				$(".partners").removeClass("active-right-side");
+				$(".our-business").removeClass("active-right-side");
+				$(".our-skills").removeClass("active-right-side");
+
+				$(this).addClass("active-right-side");
+			});
 
 			$(".our-skills").on('click', function() {
 
-				var progressBarLength = ($(".progress-bar").length);
-
-				$(".progress-bar").each(function(e) {
+				$(".progress-bar").each(function() {
 					var percent = $(this).data("percent");
 					
 					$(this).animate({
 						width: percent,
-					}, 600, function() {
+					}, 300, function(e) {
 						$(".progress-percent").animate({
 							opacity: "1",
 						}, 1000);
-						
-						e.preventDefault();
+
+						// e.preventDefault();
 					});
 				});
 
 			})
+
+			$(window).scroll(function() {
+
+				var scrollDistance = $(window).scrollTop();
+			
+				// Assign active class to nav links while scolling
+				$('.page-section').each(function(i) {
+					if ($(this).position().top <= scrollDistance) {
+						$('.left-side a li').removeClass('active-right-side');
+						$('.left-side a li').eq(i).addClass('active-right-side');
+					}
+				});
+			}).scroll();
+
 		});
 		
 	</script></body>
