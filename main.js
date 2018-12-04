@@ -93,96 +93,94 @@
 
 // // SECOND SLIDE
 
-// // Variables
+// Variables
 
-// 	var arrowLeft = document.getElementById("arrow-left");
-// 	var arrowRight = document.getElementById("arrow-right");
-// 	var body = document.getElementsByTagName("body")[0];
-// 	var sliderImages = document.getElementsByClassName("slidee");
-// 	var current = 0;
-// 	var navigationImages = document.getElementsByClassName("navigation");
+	var arrowLeft = document.getElementById("arrow-left");
+	var arrowRight = document.getElementById("arrow-right");
+	var body = document.getElementsByTagName("body")[0];
+	var sliderImages = document.getElementsByClassName("slidee");
+	var current = 0;
+	var navigationImages = document.getElementsByClassName("navigation");
 
-// 	console.log(sliderImages);
+// Functions
 
-// // Functions
+function reset(){
+	for(var i = 0; i < sliderImages.length; i++) {
+		sliderImages[i].style.display = "none";
+	}
+	for(var i = 0; i < navigationImages.length; i++) {
+		navigationImages[i].classList.remove("active-navigation");
+	}
+}
 
-// function reset(){
-// 	for(var i = 0; i < sliderImages.length; i++) {
-// 		sliderImages[i].style.display = "none";
-// 	}
-// 	for(var i = 0; i < navigationImages.length; i++) {
-// 		navigationImages[i].classList.remove("active-navigation");
-// 	}
-// }
+function startSlide() {
+	reset();
+	sliderImages[0].style.display = "block";
+	navigationImages[0].classList.add("active-navigation");
+}
 
-// function startSlide() {
-// 	reset();
-// 	sliderImages[0].style.display = "block";
-// 	navigationImages[0].classList.add("active-navigation");
-// }
+function overlapLeft() {
+	if (current == 0) {
+		current = sliderImages.length; //3
+		current = navigationImages.length;
+	}
+}
 
-// function overlapLeft() {
-// 	if (current == 0) {
-// 		current = sliderImages.length; //3
-// 		current = navigationImages.length;
-// 	}
-// }
+function overlapRight() {
+	if ((current == sliderImages.length - 1) && (current == navigationImages.length - 1)) {
+		current = -1;
+	}
+}
 
-// function overlapRight() {
-// 	if ((current == sliderImages.length - 1) && (current == navigationImages.length - 1)) {
-// 		current = -1;
-// 	}
-// }
+function slideLeft() {
+	reset();
+	overlapLeft();
+	sliderImages[current - 1].style.display = "block";
+	navigationImages[current - 1].classList.add("active-navigation"); 
+	current--;
+}
 
-// function slideLeft() {
-// 	reset();
-// 	overlapLeft();
-// 	sliderImages[current - 1].style.display = "block";
-// 	navigationImages[current - 1].classList.add("active-navigation"); 
-// 	current--;
-// }
+function slideRight() {
+	reset();
+	overlapRight();
+	sliderImages[current + 1].style.display = "block";
+	navigationImages[current + 1].classList.add("active-navigation");
+	current++;
+}
 
-// function slideRight() {
-// 	reset();
-// 	overlapRight();
-// 	sliderImages[current + 1].style.display = "block";
-// 	navigationImages[current + 1].classList.add("active-navigation");
-// 	current++;
-// }
+// event listeners
 
-// // event listeners
-
-// // click:
-// // 		slideLeft & slideRight
-// // keydown:
-// // 		slideLeft & slideRight
+// click:
+// 		slideLeft & slideRight
+// keydown:
+// 		slideLeft & slideRight
 
 
-// arrowLeft.addEventListener("click", function() {
-// 	slideLeft();
-// });
+arrowLeft.addEventListener("click", function() {
+	slideLeft();
+});
 
-// arrowRight.addEventListener("click", function() {
-// 	slideRight();
-// });
+arrowRight.addEventListener("click", function() {
+	slideRight();
+});
 
-// body.addEventListener("keydown", function(event){
-// 	if(event.keyCode == 37) {
-// 		slideLeft();
-// 	}
-// 	else if (event.keyCode == 39) {
-// 		slideRight();
-// 	}
-// 	else if (event.keyCode == 40) {
-// 		slideLeft();
-// 	}
-// 	else if (event.keyCode == 38) {
-// 		slideRight();
-// 	}
+body.addEventListener("keydown", function(event){
+	if(event.keyCode == 37) {
+		slideLeft();
+	}
+	else if (event.keyCode == 39) {
+		slideRight();
+	}
+	else if (event.keyCode == 40) {
+		slideLeft();
+	}
+	else if (event.keyCode == 38) {
+		slideRight();
+	}
 
-// });
+});
 
-// startSlide();
+startSlide();
 
 // MODUL
 $(document).ready(function(){

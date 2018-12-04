@@ -30,6 +30,9 @@
 .header ul li a:hover{
 	border-bottom: 5px solid #C0392B;
 }
+.header ul .active a{
+  background-color: #C0392B !important;
+}
 
 /*FOOTER*/
 
@@ -75,7 +78,6 @@
 }
 
 
-/*HOW WE WORK*/
 .how-we-work-bg{
   background-image: url("it.jpg");
   width: 100%;
@@ -184,15 +186,12 @@
 	border-left: 20px solid #C0392B;
 	padding-left: 10px;
 }
-.left-side ul *li{
-	background-color: green;
-}
+
+
+
 
 
 /*RIGHT SIDE*/
-
-.right-side{
-}
 .display-none{
 	display: none;
 	transition: 0.4s;
@@ -206,6 +205,85 @@
   padding:13px;
   padding-left: 25px;
 }
+.right-side i{
+  transition: 0.4s;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 10px;
+  color: white !important;
+  margin: 5px 3px 0 3px;
+}
+.right-side i:hover{
+  transform: scale(1.2);
+  border: 2px solid #C0392B;
+}
+
+
+/*OUR TEAM*/
+#our-team div img{
+  width: 100%;
+}
+#our-team .col-md-3{
+  padding: 15px;
+}
+#our-team .person{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+#our-team .overlay{
+  height: 250px;
+  width: 100%;
+  z-index: 1;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 50%;
+  padding-top: 20px;
+}
+#our-team .overlay div{
+  opacity: 0;
+}
+#our-team .overlay:hover div{
+  opacity: 1;
+  color: white;
+}
+#our-team .overlay:hover{
+  background-color: rgba(2,2,2,0.7);
+}
+#our-team div .color-h4{
+  color: #C0392B;
+  letter-spacing: 1px;
+}
+#our-team .person1{
+  background-image: url(images/person1.jpg);
+}
+#our-team .person2{
+  background-image: url(images/person8.jpg);
+}
+#our-team .person3{
+  background-image: url(images/person3.jpg);
+}
+#our-team .person4{
+  background-image: url(images/person4.jpg);
+}
+#our-team .person5{
+  background-image: url(images/person2.jpg);
+}
+#our-team .person6{
+  background-image: url(images/person6.jpg);
+}
+#our-team .person7{
+  background-image: url(images/person7.jpg);
+}
+#our-team .person8{
+  background-image: url(images/person8.jpg);
+}
+/*OUR SKILLS*/
 .panel-heading{
   cursor: pointer;
 }
@@ -227,12 +305,6 @@
   margin-top: 3px;
   transition: 0.4s;
 }
-/*#accordion:hover .right{
-  transform: rotate(140deg);
-}
-#accordion:hover .left{
-   transform: rotate(220deg);
-}*/
 .active-panel-body-right{
   transform: rotate(140deg)!important;
 }
@@ -264,3 +336,28 @@
     padding-right: 10px;
     color:  lightgray;
 }
+.progress-percent{
+  opacity: 0;
+}
+
+
+
+
+@media screen and (max-width: 991px) {
+  .header ul li  a{
+    font-size: 10px;
+  }
+  .footer .border-bottom{
+    text-align: center;
+  }
+  .footer img{
+    margin: 0 auto;
+  }
+  .footer #map{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+/*.person2{
+  height: 3000px;
+}*/
