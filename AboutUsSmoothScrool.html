@@ -11,7 +11,7 @@
 	<!-- Latest compiled and minified JavaScript -->
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="AboutUs.css">
+	<link rel="stylesheet" type="text/css" href="AboutUsSmoothScrool.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"></head>
 <body>
@@ -31,19 +31,19 @@
 					<div class="collapse navbar-collapse" id="mynavbar">
 						<ul class="nav navbar-nav navbar-right">
 							<li>
-								<a href="Home.html" class="">Home</a>
+								<a href="#" class="">Home</a>
 							</li>
 							<li class="active">
-								<a href="AboutUs.html">About Us</a>
+								<a href="#">About Us</a>
 							</li>
 							<li>
-								<a href="OurServices.html">Our Services</a>
+								<a href="#">Our Services</a>
 							</li>
 							<li>
-								<a href="Career.html">Career</a>
+								<a href="#">Career</a>
 							</li>
 							<li>
-								<a href="Contact.html">Contact</a>
+								<a href="#">Contact</a>
 							</li>
 						</ul>
 					</div>
@@ -60,24 +60,40 @@
 			<div class="col-md-3">
 				<div class="left-side">
 					<ul>
-						<li class="our-team active-right-side">
-							Our Team <i class="fas fa-chevron-right pull-right"></i>
-						</li>
-						<li class="offices">
-							Offices <i class="fas fa-chevron-right pull-right"></i>
-						</li>
-						<li class="partners">
-							Partners
-							<i class="fas fa-chevron-right pull-right"></i>
-						</li>
-						<li class="our-business">
-							Our Business
-							<i class="fas fa-chevron-right pull-right"></i>
-						</li>
-						<li class="our-skills">
-							Our Skills
-							<i class="fas fa-chevron-right pull-right"></i>
-						</li>
+
+						<a href="#our-team" class="smooth-scroll">
+							<li class="our-team active-right-side">
+								Our Team <i class="fas fa-chevron-right pull-right"></i>
+							</li>
+						</a>
+
+						<a href="#offices" class="smooth-scroll">
+							<li class="offices">
+								Offices <i class="fas fa-chevron-right pull-right"></i>
+							</li>
+						</a>
+						
+						<a href="#partners" class="smooth-scroll">
+							<li class="partners">
+								Partners
+								<i class="fas fa-chevron-right pull-right"></i>
+							</li>
+						</a>
+						
+						<a href="#our-business" class="smooth-scroll">
+							<li class="our-business">
+								Our Business
+								<i class="fas fa-chevron-right pull-right"></i>
+							</li>
+						</a>
+						
+						<a href="#our-skills" class="smooth-scroll">
+							<li class="our-skills">
+								Our Skills
+								<i class="fas fa-chevron-right pull-right"></i>
+							</li>
+						</a>
+
 					</ul>
 				</div>
 			</div>
@@ -236,19 +252,19 @@
 						</div>
 					</div>
 				</div>
-				<div class="row display-none" id="offices">
+				<div class="row" id="offices">
 					<div class="col-md-12">
 						<h1>Offices</h1>
 					</div>
 				</div>
 
-				<div class="row display-none" id="partners">
+				<div class="row" id="partners">
 					<div class="col-md-12">
 						<h1>Partners</h1>
 					</div>
 				</div>
 
-				<div class="row display-none" id="our-business">
+				<div class="row" id="our-business">
 					<div class="col-md-12">
 						<h1>
 							Our
@@ -257,7 +273,7 @@
 					</div>
 				</div>
 
-				<div class="row display-none" id="our-skills">
+				<div class="row" id="our-skills">
 					<div class="col-md-12">
 						<h1>Our Skills</h1>
 
@@ -434,41 +450,21 @@
 			$("#our-team .7").slideDown(810);
 			$("#our-team .8").slideDown(860);
 
-			for (var i = 1; i <= 8; i++) {
-				console.log($("#our-team .person" + i)[0]);
-			}
+			// for (var i = 1; i <= 8; i++) {
+			// 	console.log($("#our-team .person" + i)[0]);
+			// }
 
 
 			// LEFT ACTIVE SIDEBAR
-			$(".left-side ul").on('click', "li", function() {
-				
-				var activeSection = $(this).attr("class").split(" ")[0];
-				
-				$("#our-team").addClass("display-none");
-				$("#offices").addClass("display-none");
-				$("#partners").addClass("display-none");
-				$("#our-business").addClass("display-none");
-				$("#our-skills").addClass("display-none");
 
-				$("#our-team").removeClass("display-block");
-				$("#offices").removeClass("display-block");
-				$("#partners").removeClass("display-block");
-				$("#our-business").removeClass("display-block");
-				$("#our-skills").removeClass("display-block");
-
-				$("#" + activeSection).removeClass("display-none");
-				$("#" + activeSection).addClass("display-block");
-
-				$(".our-team").removeClass("active-right-side");
-				$(".offices").removeClass("active-right-side");
-				$(".partners").removeClass("active-right-side");
-				$(".our-business").removeClass("active-right-side");
-				$(".our-skills").removeClass("active-right-side");
-
-				$(this).addClass("active-right-side");
-
+			$('.smooth-scroll').click(function(e){
+			  	e.preventDefault();
+				var target = $($(this).attr('href'));
+				if(target.length){
+				    var scrollTo = target.offset().top;
+				    $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
+				}
 			});
-
 
 			$("#accordion").on('click', '.panel-default', function() {
 				var collapseIn = $(this).find(".panel-collapse");
@@ -486,11 +482,13 @@
 					$(this).find(".panel-heading").addClass("background-panel-title");
 				}
 			});
+
+
 			$(".our-skills").on('click', function() {
 
 				var progressBarLength = ($(".progress-bar").length);
 
-				$(".progress-bar").each(function() {
+				$(".progress-bar").each(function(e) {
 					var percent = $(this).data("percent");
 					
 					$(this).animate({
@@ -499,12 +497,13 @@
 						$(".progress-percent").animate({
 							opacity: "1",
 						}, 1000);
+						
+						e.preventDefault();
 					});
 				});
 
 			})
 		});
 		
-	</script>
-</body>
+	</script></body>
 </html>

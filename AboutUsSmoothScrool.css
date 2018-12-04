@@ -1,6 +1,7 @@
 .clear{
   clear: both;
 }
+
 .header ul li a{
 	padding-top: 22px;
 	padding-bottom: 13px;
@@ -367,4 +368,20 @@
 }
 .row .text-center{
   height: 280px;
+}
+
+
+#offices{
+  height: 500px;
+}
+
+#partners{
+  height: 500px;
+}
+
+#our-business{
+  height: 500px;
+}
+a{
+  text-decoration: none !important;
 }
