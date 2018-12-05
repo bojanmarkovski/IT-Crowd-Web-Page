@@ -451,11 +451,6 @@
 			$("#our-team .7").slideDown(810);
 			$("#our-team .8").slideDown(860);
 
-			// for (var i = 1; i <= 8; i++) {
-			// 	console.log($("#our-team .person" + i)[0]);
-			// }
-
-
 			// LEFT ACTIVE SIDEBAR
 
 			$('.smooth-scroll').click(function(e){
@@ -467,22 +462,20 @@
 				}
 			});
 
-			$("#accordion").on('click', '.panel-default', function() {
-				var collapseIn = $(this).find(".panel-collapse");
-				var activeCollapse = $(this).attr("class").split(" ")[1];
+			$(window).scroll(function() {
 
-				if (collapseIn.hasClass("in")) {
-					$(this).find(".right").removeClass("active-panel-body-right");
-					$(this).find(".left").removeClass("active-panel-body-left");
-					$(this).find(".panel-heading").removeClass("background-panel-title");
-				} else if (!collapseIn.hasClass("in")){
-					$("." + activeCollapse).find(".pull-right").removeClass("active-panel-body-right active-panel-body-left");
-					$("." + activeCollapse).find(".panel-heading").removeClass("background-panel-title");
-					$(this).find(".right").addClass("active-panel-body-right");
-					$(this).find(".left").addClass("active-panel-body-left");
-					$(this).find(".panel-heading").addClass("background-panel-title");
-				}
-			});
+				var scrollDistance = $(window).scrollTop();
+			
+				// Assign active class to nav links while scolling
+				$('.page-section').each(function(i) {
+					if ($(this).position().top <= scrollDistance) {
+						$('.left-side a li').removeClass('active-right-side');
+						$('.left-side a li').eq(i).addClass('active-right-side');
+
+					}
+
+				});
+			}).scroll();
 
 			// LEFT ACTIVE SIDEBAR
 			$(".left-side ul").on('click', "li", function() {
@@ -499,6 +492,7 @@
 			$(".our-skills").on('click', function() {
 
 				$(".progress-bar").each(function() {
+
 					var percent = $(this).data("percent");
 					
 					$(this).animate({
@@ -507,25 +501,30 @@
 						$(".progress-percent").animate({
 							opacity: "1",
 						}, 1000);
-
 						// e.preventDefault();
 					});
 				});
 
 			})
 
-			$(window).scroll(function() {
+			$("#accordion").on('click', '.panel-heading', function() {
 
-				var scrollDistance = $(window).scrollTop();
-			
-				// Assign active class to nav links while scolling
-				$('.page-section').each(function(i) {
-					if ($(this).position().top <= scrollDistance) {
-						$('.left-side a li').removeClass('active-right-side');
-						$('.left-side a li').eq(i).addClass('active-right-side');
-					}
-				});
-			}).scroll();
+				var collapseIn = $(this).parents(".panel-default").find(".panel-collapse");
+				var activeCollapse = $(this).parents(".panel-default").attr("class").split(" ")[1];
+				var panelDefault = $(this).parents(".panel-default");
+				
+				if (collapseIn.hasClass("in")) {
+					panelDefault.find(".right").removeClass("active-panel-body-right");
+					panelDefault.find(".left").removeClass("active-panel-body-left");
+					panelDefault.find(".panel-heading").removeClass("background-panel-title");
+				} else if (!collapseIn.hasClass("in")){
+					$("." + activeCollapse).find(".pull-right").removeClass("active-panel-body-right active-panel-body-left");
+					$("." + activeCollapse).find(".panel-heading").removeClass("background-panel-title");
+					panelDefault.find(".right").addClass("active-panel-body-right");
+					panelDefault.find(".left").addClass("active-panel-body-left");
+					panelDefault.find(".panel-heading").addClass("background-panel-title");
+				}
+			});
 
 		});
 		
