@@ -57,8 +57,8 @@
 
 			<!-- LEFT SIDE -->
 
-			<div class="col-md-3">
-				<div class="left-side">
+			<div class="col-md-3 sticky left-side">
+
 					<ul>
 
 						<a href="#our-team" class="smooth-scroll">
@@ -95,7 +95,7 @@
 						</a>
 
 					</ul>
-				</div>
+
 			</div>
 			<!-- RIGHT SIDE -->
 
@@ -249,6 +249,8 @@
 								</div>
 							</div>
 
+							<!-- FINISH WITH PERSONS -->
+						
 						</div>
 					</div>
 				</div>
@@ -465,7 +467,7 @@
 			$(window).scroll(function() {
 
 				var scrollDistance = $(window).scrollTop();
-			
+
 				// Assign active class to nav links while scolling
 				$('.page-section').each(function(i) {
 					if ($(this).position().top <= scrollDistance) {
@@ -473,6 +475,7 @@
 						$('.left-side a li').eq(i).addClass('active-right-side');
 
 					}
+					// console.log(this);
 
 				});
 			}).scroll();
@@ -494,7 +497,7 @@
 				$(".progress-bar").each(function() {
 
 					var percent = $(this).data("percent");
-					
+
 					$(this).animate({
 						width: percent,
 					}, 300, function(e) {
@@ -528,5 +531,6 @@
 
 		});
 		
-	</script></body>
+	</script>
+</body>
 </html>
