@@ -22,7 +22,7 @@
 			  /** Occurs when image is being slid.
 			  */
 			function slide(event) {
-			    event.preventDefault();
+			    // event.preventDefault();
 			    if (event.originalEvent.touches)
 			      	event = event.originalEvent.touches[0];
 			    	// Distance of slide.
@@ -228,20 +228,20 @@ $(".indicators").on('click', 'div', function(event) {
 				}
 			});
 
+
 	// BUTTON TO TOP
 
 	$( '.top-button' ).on( 'click', function(e){
 
-	  var href = $(this).attr( 'href' );
-	  $( 'html, body' ).animate({
+	  	var href = $(this).attr( 'href' );
+	  	$( 'html, body' ).animate({
 			scrollTop: $( ".header" ).offset().top
-	  }, 500 );
-	  e.preventDefault();
+	  	}, 500 );
+	  	e.preventDefault();
 	});
 
 
 	// fadein
-
 
  	$(window).scroll( function(){
     

@@ -33,10 +33,49 @@
 .header ul .active a{
 	background-color: #C0392B !important;
 }
-.dada{
-	height: 4000px;
-}
 
+/*FOOTER*/
+
+.footer{
+  background-color: #222222;
+  padding-top: 70px;
+  /*padding-bottom: 70px;*/
+  color: lightgray;
+}
+.footer img{
+  width: 143px;
+  height: 51px;
+  margin-bottom: 20px;
+}
+.footer p{
+  padding-top: 15px;
+}
+.footer i{
+  color: #C0392B;
+  margin-right: 10px;
+}
+.footer .border-bottom{
+  border-bottom: 2px solid #C0392B;
+  padding-bottom: 15px;
+}
+.footer .copyright{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer .copyright a{
+  text-decoration: none;
+  margin-right: 10px;
+}
+.footer .copyright i{
+  font-size: 24px;
+  color: white;
+  transition: 0.4s;
+  float: right;
+}
+.footer .copyright i:hover{
+  color: #C0392B;
+  transform: scale(1.2);
+}
 
 @media screen and (max-width: 991px) {
   .header ul li  a{
@@ -52,4 +91,144 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
+}
+
+.our-services{
+	padding:70px 0px;
+}
+.our-services .our-services-box{
+	padding: 30px 0px;
+}
+.left-side-services .image-box i{
+	position: absolute;
+	font-size: 25px;
+	right: 15%;
+	border-radius: 50%;
+	background-color: #C0392B;
+	color: #E7E8EC;
+	padding: 15px 20px;
+}
+.right-side-services .image-box i{
+	position: absolute;
+	font-size: 25px;
+	left: 10%;
+	border-radius: 50%;
+	background-color: #C0392B;
+	color: #E7E8EC;
+	padding: 15px 20px;
+}
+.our-services .our-services-box .image-box img{
+	width: 90%;
+	height: 200px;
+	border-radius: 50%;
+}
+.our-services .our-services-box button{
+	background-color: #C0392B;
+	padding: 10px 15px;
+	color: #E7E8EC;
+	transition: 0.3s;
+}
+
+.our-services .our-services-box button:hover{
+	color: white;
+}
+.our-services .our-services-box p{
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+.text-right{
+	text-align: right;
+}
+
+
+/*BUTTON SERVICES*/
+a.animated-button.victoria-one {
+	border: 2px solid #C0392B;
+}
+a.animated-button.victoria-three:hover:after {
+	opacity: 1;
+}
+a.animated-button.thar-three {
+	color: #C0392B;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 2px solid #C0392B;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+a.animated-button.thar-three:hover {
+	color: white !important;
+	background-color: transparent;
+	text-shadow: nthree;
+}
+a.animated-button.thar-three:hover:before {
+	left: 0%;
+	right: auto;
+	width: 100%;
+}
+a.animated-button.thar-three:before {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background: #C0392B;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+
+/*TITLE IN BOX*/
+
+.title-text div{
+  font-size: 16px;
+}
+.title-text span{
+  display:inline-block;
+  color:black;
+  transform-origin: 50% 70%;
+}
+
+.title-text span:nth-child(1){
+  animation: flipper 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) both, fadeIn both;
+}
+.title-text span:nth-child(2){
+  animation: flipper 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) .1s both, fadeIn 1s both;
+}
+.title-text span:nth-child(3){
+  animation: flipper 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) .15s both, fadeIn 1s both;
+}
+.title-text span:nth-child(4){
+  animation: flipper 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) .2s both, fadeIn 1s both;
+}
+.title-text span:nth-child(5){
+  animation: flipper 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) .25s both, fadeIn 1s both;
+}
+.title-text span:nth-child(6){
+  animation: flipper 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) .3s both, fadeIn 1s both;
+}
+.title-text span:nth-child(7){
+  animation: flipper 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) .35s both, fadeIn 1s both;
+}
+.title-text span:nth-child(8){
+  animation: flipper 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) .4s both, fadeIn 1s both;
+}
+.title-text span:nth-child(9){
+  animation: flipper 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) .45s both, fadeIn 1s both;
+}
+
+@keyframes flipper{
+  from{transform: rotateX(90deg);}
+  to{transform: rotateX(0deg);}
+}
+
+@keyframes fadeIn{
+  from{opacity:0};
+  to{opacity:1};
+}
+.title-text .color-red{
+	color: #C0392B;
 }
