@@ -308,6 +308,8 @@ $(".indicators").on('click', 'div', function(event) {
 	 	icon: $marker_url,
 	});
 
+	
+
 	$(".navigations-images").on('click', 'div', function() {
 
 	var activeNavigation = $(this)[0].className.split("navigation-")[1];

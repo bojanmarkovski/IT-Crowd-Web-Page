@@ -392,26 +392,19 @@ a{
     padding: 30px 50px;
 }
 
-
-/* width */
-::-webkit-scrollbar {
+/*SCROLL*/
+/*::-webkit-scrollbar {
     width: 10px;
 }
-
-/* Track */
 ::-webkit-scrollbar-track {
     background: #222222;
 }
- 
-/* Handle */
 ::-webkit-scrollbar-thumb {
     background: #C0392B; 
 }
-
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background-color: #C0392B;
-}
+}*/
 
 
 

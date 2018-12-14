@@ -517,6 +517,8 @@ body,
 address{
   padding-top: 20px;
 }
+
+
 @media screen and (max-width: 2200px) {
   .modul-box .even-model div{
     left: 10.3vh;
@@ -552,6 +554,9 @@ address{
     width: 21%;
     margin-right: -144px;
   }
+  #slider .slidee p{
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -574,6 +579,12 @@ address{
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  #slider .slidee h2{
+    font-size: 18px;
+  }
+  #slider .slidee p{
+    font-size: 11px;
+  }
 }
 
 /*Jquery Classes*/
@@ -582,10 +593,6 @@ address{
   background-color: #C5CDD1;
   transition: 0.4s;
 }
-/*.show-line{
-  width: 300px;
-  transition: 3s;
-}*/
 
 
 
@@ -593,60 +600,60 @@ address{
 body {
       /*background-color: transparent;*/
       /*overflow: hidden;*/
-    }
-    #slides {
-        width: 100%;
-        height: 100%;
-        white-space: nowrap;
-        font-size: 0;
-        transform: translateX(0);
-    }
-    .slide {
-        width: 100%;
-        height: 80vh;
-        display: inline-block;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: #cccccc;
-    }
-    .animate {
-        transition: all .5s ease-out;
-    }
-    .slide:nth-child(1) {
-      background-image: url(https://images.pexels.com/photos/296115/pexels-photo-296115.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-    }
-    .slide:nth-child(2) {
-      background-image: url(https://images.pexels.com/photos/296121/pexels-photo-296121.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-    }
-    .slide:nth-child(3) {
-      background-image: url(https://images.pexels.com/photos/296116/pexels-photo-296116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-    }
-    .main-slider{
-      position: relative;
-    }
-    .indicators{
-      width: 100px;
-      height: auto;
-      background-color: transparent;
-      position: absolute;
-      bottom: 4%;
-      right: 50%;
-      transform: translateX(50%);
-      display: flex;
-      justify-content: space-between;
-    }
-    .main-slider .indicators div {
-      width: 28px;
-      height: 10px;
-      border-radius: 5px;
-      border: 2px solid #C0392B;
-      cursor: pointer;
-      transition: 0.4s;
-    }
-    .main-slider .indicators div:hover{
-      transform: scale(1.2);
-    }
-    .active-slider{
-      background-color: #C0392B;
-    }
+}
+#slides {
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  font-size: 0;
+  transform: translateX(0);
+}
+.slide {
+  width: 100%;
+  height: 80vh;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #cccccc;
+}
+.animate {
+  transition: all .5s ease-out;
+}
+.slide:nth-child(1) {
+  background-image: url(https://images.pexels.com/photos/296115/pexels-photo-296115.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+}
+.slide:nth-child(2) {
+  background-image: url(https://images.pexels.com/photos/296121/pexels-photo-296121.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+}
+  .slide:nth-child(3) {
+background-image: url(https://images.pexels.com/photos/296116/pexels-photo-296116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+}
+.main-slider{
+  position: relative;
+}
+.indicators{
+  width: 100px;
+  height: auto;
+  background-color: transparent;
+  position: absolute;
+  bottom: 4%;
+  right: 50%;
+  transform: translateX(50%);
+  display: flex;
+  justify-content: space-between;
+}
+.main-slider .indicators div {
+  width: 28px;
+  height: 10px;
+  border-radius: 5px;
+  border: 2px solid #C0392B;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.main-slider .indicators div:hover{
+  transform: scale(1.2);
+}
+.active-slider{
+  background-color: #C0392B;
+}
