@@ -99,6 +99,83 @@ a{
   /*opacity: 0;*/
 }
 
+.career{
+  padding top: 70px !important;
+}
+.career h2{
+  border-bottom: 2px solid #C0392B;
+  padding-bottom: 13px;
+}
+/*CAREER LEFT*/
+.career .career-left .pd-box{
+  padding: 10px;
+}
+.career .career-left .career-box{
+  padding: 30px 35px;
+  -webkit-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.42);
+  -moz-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.42);
+  box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.42);
+  transition: 0.3s;
+}
+.career .career-left .career-box:hover{
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 14px -1px rgba(192,57,43,1);
+  -moz-box-shadow: 0px 0px 14px -1px rgba(192,57,43,1);
+  box-shadow: 0px 0px 14px -1px rgba(192,57,43,1);
+}
+.career .career-left .career-box h3{
+  color: black;
+  transition: 0.3s;
+}
+.career .career-left .career-box:hover h3{
+  color: #C0392B;
+}
+.shadow-paragraph{
+  overflow: hidden;
+  max-height: 80px;
+}
+.career .career-left .career-box p{
+  line-height: 20px;
+}
+.career .career-left .career-box h3{
+  font-weight: bold;
+}
+
+.career .career-left .career-box:after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    height: 100px;
+    left: 10px;
+    right: 10px;
+    background: -webkit-linear-gradient(rgba(255,255,255,0) 0%, #fff 60%);
+    background: -moz-linear-gradient(rgba(255,255,255,0) 0%, #fff 60%);
+    background: -o-linear-gradient(rgba(255,255,255,0) 0%, #fff 60%);
+    background: -ms-linear-gradient(rgba(255,255,255,0) 0%, #fff 60%);
+    background: linear-gradient(rgba(255,255,255,0) 0%, #fff 60%);
+    display: block;
+    z-index: 1;
+}
+
+/*CAREER RIGHT*/
+.career-right label{
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+.career .career-right button{
+  background-color: #222222;
+  color: white;
+  transition: 0.2s;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.career .career-right button:hover{
+  background-color: #C0392B;
+  color: white;
+}
+
+
+
 @media screen and (max-width: 991px) {
   .header ul li  a{
     font-size: 10px;
