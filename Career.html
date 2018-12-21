@@ -47,14 +47,13 @@
 			</div>
 		</div>
 	</div>
-
+<div class="col-lg-10 col-lg-offset-1">
 	<div class="top-button hideme"> <i class="fas fa-angle-up fa-2x"></i>
 	</div>
 		
 		<div class="clear"></div>
 
 		<!-- HOW WE WORK -->
-
 		<div class="row">
 			<div class="col-md-12 text-center how-we-work-bg">
 				<div class="how-we-work-overlay">
@@ -116,7 +115,87 @@
 
 	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAlZ-7-U81-rPTpCIKAY5IGBCiUl2tfLek'></script>
 
-	<script src="main.js"></script>
+	<script>
+
+		$( '.top-button' ).on( 'click', function(e){
+
+			  	var href = $(this).attr( 'href' );
+			  	$( 'html, body' ).animate({
+					scrollTop: $( ".header" ).offset().top
+			  	}, 500 );
+			  	e.preventDefault();
+			});
+
+		$(document).ready(function(){
+			if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
+			window.onmousewheel = document.onmousewheel = wheel;
+
+			function wheel(event) {
+		    	var delta = 0;
+		  		// console.log(event.wheelDelta);
+			    if (event.wheelDelta) delta = event.wheelDelta / 100;
+			    else if (event.detail) delta = -event.detail / 3;
+
+			    handle(delta);
+			    if (event.preventDefault) event.preventDefault();
+			    event.returnValue = false;
+			}
+
+			var goUp = true;
+			var end = null;
+			var interval = null;
+			var animeMove;
+
+			function handle(delta) {
+				var animationInterval = 20; //lower is faster
+	  			var scrollSpeed = 10; //lower is faster
+
+				if (end == null) {
+	  				end = $(window).scrollTop();
+	  			}
+	  			end -= 50 * delta;
+	  			goUp = delta > 0;
+
+	  			if (interval == null) {
+	    			interval = setInterval(function () {
+	      			var scrollTop = $(window).scrollTop();
+	      			var step = Math.round((end - scrollTop) / scrollSpeed);
+	      			if (scrollTop <= 0 || 
+	          			scrollTop >= $(window).prop("scrollHeight") - $(window).height() ||
+	          			goUp && step > -1 || 
+	          			!goUp && step < 1 ) {
+	        			clearInterval(interval);
+				        interval = null;
+				        end = null;
+				        // animeMove = 0;
+	      			}
+			    	$(window).scrollTop(scrollTop + step );
+			    	$('div').each(function(){
+			        	var el = $(this),
+			            offsetTop = el.offset().top;
+			        	animeMove = el.data('move');
+			        	animate(el, offsetTop, scrollTop, animeMove);
+			    	});
+			      	animate();
+			    	}, animationInterval);
+	  			}
+			}
+
+			function animate(el, offsetTop, scrollTop, animeMove) {
+			  	if(offsetTop <= scrollTop) {
+				    if(goUp) {
+				    	++animeMove;
+				    }
+				    else {
+				    	--animeMove;
+				    }
+				    el.css({
+				    	'transform': 'translate(0, -' + (animeMove) + 'px)'
+				    });
+			  	}
+			}
+		});
+	</script>
 </body>
 
 </html>

@@ -77,6 +77,27 @@
   transform: scale(1.2);
 }
 
+/*BUTTON TO TOP*/
+
+.top-button i{
+  color: white;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  background-color: #222222;
+  padding: 10px;
+  border-radius: 7px;
+  z-index: 999;
+}
+.top-button:hover i{
+  background-color: #C0392B;
+  cursor: pointer; #222222;
+}
+.hideme{
+  opacity: 0;
+}
+
+
 @media screen and (max-width: 991px) {
   .header ul li  a{
     font-size: 10px;

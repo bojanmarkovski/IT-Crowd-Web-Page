@@ -91,7 +91,7 @@
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-12 box-development second hideme">
 						<div>
-							<i class="fas fa-laptop-code"></i>
+							<i class="fas fa-laptop"></i>
 							<h3>SOFTWARE DEVELOPMENT</h3>
 							<p>
 								<strong>ITCrowd</strong>
@@ -447,8 +447,39 @@
 
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwxfea8ecYMmGKMO39JF1ko5bhF4UocpM"></script>
 
+	<!-- SMOOTH SCROLL ON SCROLL-WHEEL -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
 
 	<script src="main.js"></script>
+
+	<script>
+		$(function(){
+	
+				var $window = $(window);		//Window object
+				
+				var scrollTime = 0.5;			//Scroll time
+				var scrollDistance = 200;		//Distance. Use smaller value for shorter scroll and greater value for longer scroll
+					
+				$window.on("mousewheel DOMMouseScroll", function(event){
+					
+					event.preventDefault();	
+													
+					var delta = event.originalEvent.wheelDelta/90 || -event.originalEvent.detail/3;
+					var scrollTop = $window.scrollTop();
+					var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+						
+					TweenMax.to($window, scrollTime, {
+						scrollTo : { y: finalScroll, autoKill:true },
+							ease: Power1.easeOut,	//For more easing functions see https://api.greensock.com/js/com/greensock/easing/package-detail.html
+							autoKill: true,
+							overwrite: 5							
+						});
+								
+				});
+				
+			});
+	</script>
 </body>
 
 </html>

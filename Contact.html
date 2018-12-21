@@ -67,7 +67,7 @@
 							<input type="email" name="name" placeholder="Email Address" class="form-control margin-bottom-contact" required>
 							<textarea name="comment" placeholder="Message" class="form-control margin-bottom-contact" rows="5"></textarea>
 							<div class="row">
-								<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
 									<button type="submit" class="btn btn-block btn-success">Submit</button>
 								</form>
@@ -131,6 +131,10 @@
 
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwxfea8ecYMmGKMO39JF1ko5bhF4UocpM"></script>
 
+	<!-- SMOOTH SCROLL ON SCROLL-WHEEL -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+	
 	<script>
 		function mapInit() {
   
@@ -155,6 +159,32 @@
 		};
 
 		google.maps.event.addDomListener(window, 'load', mapInit);
+
+		$(function(){
+	
+				var $window = $(window);		//Window object
+				
+				var scrollTime = 0.5;			//Scroll time
+				var scrollDistance = 200;		//Distance. Use smaller value for shorter scroll and greater value for longer scroll
+					
+				$window.on("mousewheel DOMMouseScroll", function(event){
+					
+					event.preventDefault();	
+													
+					var delta = event.originalEvent.wheelDelta/90 || -event.originalEvent.detail/3;
+					var scrollTop = $window.scrollTop();
+					var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+						
+					TweenMax.to($window, scrollTime, {
+						scrollTo : { y: finalScroll, autoKill:true },
+							ease: Power1.easeOut,	//For more easing functions see https://api.greensock.com/js/com/greensock/easing/package-detail.html
+							autoKill: true,
+							overwrite: 5							
+						});
+								
+				});
+				
+			});
 	</script>
 </body>
 </html>

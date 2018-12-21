@@ -42,7 +42,6 @@ a{
 .footer{
   background-color: #222222;
   padding-top: 70px;
-  /*padding-bottom: 70px;*/
   color: lightgray;
 }
 .footer img{
@@ -97,7 +96,7 @@ a{
   cursor: pointer; #222222;
 }
 .hideme{
-  opacity: 0;
+  /*opacity: 0;*/
 }
 
 @media screen and (max-width: 991px) {

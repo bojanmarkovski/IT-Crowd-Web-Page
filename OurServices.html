@@ -52,7 +52,8 @@
 		</div>
 	</div>
 	<div class="container-fluid">
-
+<div class="top-button"> <i class="fas fa-angle-up fa-2x"></i>
+		</div>
 		<div class="row our-services">
 			<div class="col-md-8 col-md-offset-2">
 
@@ -121,7 +122,7 @@
 					<div class="col-md-4">
 						<div class="image-box">
 							<i class="fas fa-mobile-alt"></i>
-							<img src="images/services1.jpeg" class="img-responsive" alt=""></div>
+							<img src="https://as2.ftcdn.net/jpg/00/96/90/75/500_F_96907596_g3OEzV9Es9jKmqeJYMwbusKbMkIsoa3L.jpg" class="img-responsive" alt=""></div>
 					</div>
 					<div class="col-md-8">
 						<div class="title-text">
@@ -176,11 +177,15 @@
 					<div class="col-md-4">
 						<div class="image-box">
 							<i class="fas fa-database"></i>
-							<img src="images/services1.jpeg" class="img-responsive" alt=""></div>
+							<img src="https://images.pexels.com/photos/1068523/pexels-photo-1068523.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-responsive" alt="">
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
+		
+
 		<!-- FOOTER -->
 
 		<div class="row footer">
@@ -229,5 +234,46 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- SMOOTH SCROLL ON SCROLL-WHEEL -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+
+	<script>
+
+		$( '.top-button' ).on( 'click', function(e){
+		  	var href = $(this).attr( 'href' );
+		  	$( 'html, body' ).animate({
+				scrollTop: $( ".header" ).offset().top
+		  	}, 500 );
+		  	e.preventDefault();
+		});
+
+		$(function(){
+	
+				var $window = $(window);		//Window object
+				
+				var scrollTime = 0.5;			//Scroll time
+				var scrollDistance = 200;		//Distance. Use smaller value for shorter scroll and greater value for longer scroll
+					
+				$window.on("mousewheel DOMMouseScroll", function(event){
+					
+					event.preventDefault();	
+													
+					var delta = event.originalEvent.wheelDelta/90 || -event.originalEvent.detail/3;
+					var scrollTop = $window.scrollTop();
+					var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+						
+					TweenMax.to($window, scrollTime, {
+						scrollTo : { y: finalScroll, autoKill:true },
+							ease: Power1.easeOut,	//For more easing functions see https://api.greensock.com/js/com/greensock/easing/package-detail.html
+							autoKill: true,
+							overwrite: 5							
+						});
+								
+				});
+				
+			});
+	</script>
 </body>
 </html>

@@ -97,6 +97,7 @@
 				</ul>
 
 			</div>
+
 			<!-- RIGHT SIDE -->
 
 			<div class="col-md-8 right-side">
@@ -402,188 +403,6 @@
 
 			</div>
 		</div>
-		<!-- MODUL BOX -->
-		<div class="row display-none-tablet">
-			<div class="col-lg-10 col-lg-offset-1 modul">
-				<div class="modul-box-container">
-
-					<!-- 1 MODUL -->
-
-					<div class="modul-box">
-
-						<div class="header-box"></div>
-
-						<div class="center-box">
-							<div class="horizontal-line modul-1">
-								<div class="starting-point modul-1"></div>
-								<i class="fas fa-check modul-1 fa-1x"></i>
-								<div class="vertical-line-down modul-1">
-									<div class="point-down modul-1"></div>
-								</div>
-							</div>
-						</div>
-
-						<div class="footer-box">
-							<h4>Kick-off</h4>
-							<small>
-								Our business analysts create a detailed Customer Requirements Specification that defines the features and functionalities.
-							</small>
-						</div>
-					</div>
-
-					<!-- 2 MODUL -->
-
-					<div class="modul-box">
-
-						<div class="header-box even-model">
-							<div>
-								<h4>Look & Feel</h4>
-								<small>
-									The design team focuses on the best user experience while keeping in line with your brand guidelines.
-								</small>
-							</div>
-						</div>
-
-						<div class="center-box">
-							<div class="horizontal-line modul-2">
-								<i class="fas fa-check modul-2"></i>
-								<div class="vertical-line-up modul-2">
-									<div class="right-line">
-										<div class="point-up modul-2"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="footer-box"></div>
-					</div>
-
-					<!-- 3 MODUL -->
-
-					<div class="modul-box">
-						<div class="header-box even-text-2"></div>
-
-						<div class="center-box">
-							<div class="horizontal-line modul-3">
-								<i class="fas fa-check modul-3"></i>
-								<div class="vertical-line-down modul-3">
-									<div class="point-down modul-3"></div>
-								</div>
-							</div>
-						</div>
-
-						<div class="footer-box">
-							<h4>Implementation</h4>
-							<small>
-								Our business analysts create a detailed Customer Requirements Specification that defines the features and functionalities.
-							</small>
-						</div>
-					</div>
-
-					<!-- 4 MODUL -->
-
-					<div class="modul-box">
-
-						<div class="header-box even-model">
-							<div>
-								<h4>Q & A</h4>
-								<small>
-									We combine automatic with manual testing and at the end, capacity and stress tests for smooth performance.
-								</small>
-							</div>
-						</div>
-
-						<div class="center-box">
-							<div class="horizontal-line modul-4">
-								<i class="fas fa-check modul-4"></i>
-								<div class="vertical-line-up modul-4">
-									<div class="right-line modul-4">
-										<div class="point-up modul-4"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="footer-box"></div>
-					</div>
-
-					<!-- 5 MODUL -->
-
-					<div class="modul-box">
-						<div class="header-box"></div>
-
-						<div class="center-box">
-							<div class="horizontal-line modul-5">
-								<i class="fas fa-check modul-5"></i>
-								<div class="vertical-line-down modul-5">
-									<div class="point-down modul-5"></div>
-								</div>
-							</div>
-						</div>
-
-						<div class="footer-box">
-							<h4>Lift Off</h4>
-							<small>
-								The complete installation process is carried out by us, bringing your solution to life.
-							</small>
-						</div>
-					</div>
-
-					<!-- 6 MODUL -->
-
-					<div class="modul-box">
-
-						<div class="header-box even-model">
-							<div>
-								<h4>SLA</h4>
-								<small>
-									The created solution is monitored 24/7 and critical issues are replied within 30 mins.
-								</small>
-							</div>
-						</div>
-
-						<div class="center-box">
-							<div class="horizontal-line modul-6">
-								<i class="fas fa-check modul-6"></i>
-								<div class="vertical-line-up modul-6">
-									<div class="right-line modul-6">
-										<div class="point-up modul-6"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="footer-box"></div>
-					</div>
-
-					<!-- 7 MODUL -->
-
-					<div class="modul-box">
-						<div class="header-box"></div>
-
-						<div class="center-box">
-							<div class="horizontal-line modul-7">
-								<div class="finish-point modul-7"></div>
-
-								<i class="fas fa-check modul-7"></i>
-								<div class="vertical-line-down modul-7">
-									<div class="point-down modul-7"></div>
-								</div>
-							</div>
-						</div>
-
-						<div class="footer-box">
-							<h4>WHAT IS NEXT?</h4>
-							<small>
-								Technology consulting services for ways to improve the solution and increase customer satisfaction.
-							</small>
-						</div>
-					</div>
-
-				</div>
-
-			</div>
-		</div>
 
 		<div class="top-button"> <i class="fas fa-angle-up fa-2x"></i>
 		</div>
@@ -637,6 +456,9 @@
 		</div>
 	</div>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+	
 	<script>
 		$(document).ready(function(){
 
@@ -742,120 +564,32 @@
 			});
 
 
-			// MODUL BOX
-
-			$(document).on('click', ".modul i", function() {
-				var number = this.className.split("modul-")[1].charAt();
+		
+			$(function(){
+	
+				var $window = $(window);		//Window object
 				
-				var flag = 0;
-				for (var i = 7; i > number; i--) {
+				var scrollTime = 0.5;			//Scroll time
+				var scrollDistance = 200;		//Distance. Use smaller value for shorter scroll and greater value for longer scroll
 					
-					var modul = $(".fas.modul-" + i);
-
+				$window.on("mousewheel DOMMouseScroll", function(event){
+					
+					event.preventDefault();	
+													
+					var delta = event.originalEvent.wheelDelta/90 || -event.originalEvent.detail/3;
+					var scrollTop = $window.scrollTop();
+					var finalScroll = scrollTop - parseInt(delta*scrollDistance);
 						
-					if (!modul.hasClass("clicked")) {
-						modul.addClass("clicked");
-						modul.parent(".horizontal-line").addClass("bg-gray").css({"transition" : "0.4s"});
-						modul.parent(".horizontal-line").children(".finish-point").addClass("bg-gray").css({"transition" : "0.4s"});
-						modul.parent(".horizontal-line").find(".fa-check").addClass("bg-gray").css({"transition" : "0.4s"});
-						modul.parent(".horizontal-line").find(".vertical-line-down").animate({height: "hide"},300);
-						modul.parent(".horizontal-line").find(".vertical-line-up").animate({width: "hide"});
-						modul.parent(".horizontal-line").find(".right-line").animate({height: "hide"},400);
-						modul.parent(".horizontal-line").find(".point-down").css("opacity", "0");
-						modul.parent(".horizontal-line").find(".point-up").css("opacity", "0");
-						modul.parent(".horizontal-line").parent(".center-box").siblings(".header-box").css({"opacity" : "0", "transition" : "1s"});
-						modul.parent(".horizontal-line").parent(".center-box").siblings(".footer-box").css({"opacity" : "0", "transition" : "1s"});
-						modul.removeClass("fa-check");
-						modul.text(i).css({"font-size": "21px"});
-						$(this).removeClass("active");
-						flag = 1;
-					}
-				}
-				for (var i = 0; i <= number; i++) {
-					var modul = $(".fas.modul-" + i);
-					
-					if (modul.hasClass("clicked")) {
-						modul.removeClass("clicked");
-						modul.parent(".horizontal-line").removeClass("bg-gray");
-						modul.parent(".horizontal-line").children(".starting-point").removeClass("bg-gray");
-						modul.parent(".horizontal-line").children(".finish-point").removeClass("bg-gray");
-						modul.parent(".horizontal-line").find(".vertical-line-down").animate({height: "show"},300);
-						modul.parent(".horizontal-line").find(".vertical-line-up").animate({width: "show"},200);
-						modul.parent(".horizontal-line").find(".right-line").animate({height: "show"},400);
-						modul.parent(".horizontal-line").find(".point-down").css("opacity", "1");
-						modul.parent(".horizontal-line").find(".point-up").css("opacity", "1");
-						modul.parent(".horizontal-line").parent(".center-box").siblings(".header-box").css({"opacity": "1", "transition" : "1s"});
-						modul.parent(".horizontal-line").parent(".center-box").siblings(".footer-box").css({"opacity": "1", "transition" : "1s"});
-						modul.text("")
-						modul.addClass("fa-check").css({"font-size" : "15px"});
-						modul.parent(".horizontal-line").find(".fa-check").removeClass("bg-gray");
-						$(this).addClass("active");
-					}
-					else if (!modul.hasClass("clicked")) {
-						modul.parent(".horizontal-line").removeClass("bg-gray");
-						modul.parent(".horizontal-line").children(".starting-point").removeClass("bg-gray");
-						modul.parent(".horizontal-line").children(".finish-point").removeClass("bg-gray");
-						modul.parent(".horizontal-line").find(".vertical-line-down").animate({height: "show"},300);
-						modul.parent(".horizontal-line").find(".vertical-line-up").animate({width: "show"},200);
-						modul.parent(".horizontal-line").find(".right-line").animate({height: "show"},300);
-						modul.parent(".horizontal-line").find(".point-down").css("opacity", "1");
-						modul.parent(".horizontal-line").find(".point-up").css("opacity", "1");
-						modul.parent(".horizontal-line").parent(".center-box").siblings(".header-box").css({"opacity": "1", "transition" : "0.4s"});
-						modul.parent(".horizontal-line").parent(".center-box").siblings(".footer-box").css({"opacity": "1", "transition" : "1s"});
-						modul.text("")
-						modul.addClass("fa-check").css({"font-size" : "15px"});
-						modul.parent(".horizontal-line").find(".fa-check").removeClass("bg-gray");
-						modul.text("");
-					}
-				}
-
-
-				// TOGGLE CLASS
+					TweenMax.to($window, scrollTime, {
+						scrollTo : { y: finalScroll, autoKill:true },
+							ease: Power1.easeOut,	//For more easing functions see https://api.greensock.com/js/com/greensock/easing/package-detail.html
+							autoKill: true,
+							overwrite: 5							
+						});
+								
+				});
 				
-				if ((number == 1) || (number == 2) || (number == 3) || (number == 4) || (number == 5) || (number == 6) || (number == 7)) {
-					if ($(this).hasClass("active") && !modul.hasClass("clicked")) {
-						$(this).removeClass("active");
-						modul.removeClass("clicked");
-						modul.parents(".modul-box").children(".footer-box").css({"opacity": "1", "transition" : "1s"});
-						modul.parents(".modul-box").children(".header-box").css({"opacity": "1", "transition" : "1s"});
-						modul.parents(".modul-box").find(".vertical-line-down").animate({height: "show"},300);
-						modul.parents(".modul-box").find(".vertical-line-up").css({"opacity" : "1"});
-						modul.parent(".horizontal-line").removeClass("bg-gray");
-						modul.parent(".horizontal-line").find(".fa-check").removeClass("bg-gray");
-						modul.parent(".horizontal-line").children(".start-point").removeClass("bg-gray");
-						modul.parent(".horizontal-line").children(".finish-point").removeClass("bg-gray");
-						modul.parent(".horizontal-line").find(".right-line").animate({height: "show"},300);
-						modul.addClass("fa-check").css({"font-size" : "15px"});
-						modul.text("");
-					} else if(!$(this).hasClass("active") && !modul.hasClass("clicked")){
-						$(this).addClass("active");
-						modul.addClass("active");
-						modul.parents(".modul-box").children(".footer-box").css({"opacity": "0", "transition" : "1s"});
-						modul.parents(".modul-box").children(".header-box").css({"opacity": "0", "transition" : "1s"});
-						modul.parents(".modul-box").find(".vertical-line-down").animate({height: "hide"},400);
-						modul.parents(".modul-box").find(".vertical-line-up").animate({width: "hide"});
-						modul.parent(".horizontal-line").addClass("bg-gray");
-						modul.parent(".horizontal-line").find(".fa-check").addClass("bg-gray");
-						modul.parent(".horizontal-line").children(".start-point").addClass("bg-gray");
-						modul.parent(".horizontal-line").children(".finish-point").addClass("bg-gray");
-						modul.parent(".horizontal-line").find(".right-line").animate({height: "hide"},400);
-						modul.removeClass("fa-check");
-						modul.text(i).css({"font-size": "21px"});
-						flag = 1;
-					}
-				}
-				if (flag == 1) {
-					$(".fas.modul-" + number).text(number).css({"font-size": "21px"});
-					modul.text(number);
-						modul.parent(".horizontal-line").children(".starting-point").addClass("bg-gray");
-
-					flag = 0;
-				} else if (flag == 0){
-					modul.text("");
-					modul.parent(".horizontal-line").find(".fa-check").removeClass("bg-gray");
-				}
 			});
-
 		});
 		
 	</script>
