@@ -100,11 +100,22 @@ a{
 }
 
 .career{
-  padding top: 70px !important;
+  padding top: 70px;
+}
+.pd-70px{
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+.pd-top-70px{
+  padding-top: 50px;
 }
 .career h2{
   border-bottom: 2px solid #C0392B;
-  padding-bottom: 13px;
+  padding-bottom: 18px;
+}
+.paragraph-career{
+  line-height: 30px;
+  letter-spacing: 1px;
 }
 /*CAREER LEFT*/
 .career .career-left .pd-box{
