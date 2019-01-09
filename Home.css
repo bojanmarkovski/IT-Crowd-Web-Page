@@ -37,9 +37,13 @@
 .header ul .active a{
 	background-color: #C0392B !important;
 }
+#mynavbar{
+  width: 100%;
+  text-align: center !important;
+}
+
 
 /*CAROUSEL*/
-
 body,
 #slider,
 .wrap,
@@ -182,9 +186,7 @@ body,
   padding-bottom: 20px;*/
 }
 .development .box-development div{
-  transition: 0.4s;
   padding: 25px 20px;
-
 }
 .development div h3{
   padding-top: 10px;
@@ -511,9 +513,9 @@ body,
   background-color: #C0392B;
   cursor: pointer; #222222;
 }
-.hideme{
+/*.hideme{
   opacity: 0;
-}
+}*/
 
 address{
   padding-top: 20px;
@@ -586,8 +588,20 @@ address{
   #slider .slidee p{
     font-size: 11px;
   }
+  .development .box-development div{
+    padding: 10px 50px;
+  }
 }
-
+@media screen and (max-width: 991px) {
+  .development .box-development div{
+    padding: 10px 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clear{
+    clear: none;
+  }
+}
 /*Jquery Classes*/
 
 .bg-gray{

@@ -231,14 +231,14 @@ $(".indicators").on('click', 'div', function(event) {
 
 	// BUTTON TO TOP
 
-	// $( '.top-button' ).on( 'click', function(e){
+	$( '.top-button' ).on( 'click', function(e){
 
-	//   	var href = $(this).attr( 'href' );
-	//   	$( 'html, body' ).animate({
-	// 		scrollTop: $( ".header" ).offset().top
-	//   	}, 500 );
-	//   	e.preventDefault();
-	// });
+	  	var href = $(this).attr( 'href' );
+	  	$( 'html, body' ).animate({
+			scrollTop: $( ".header" ).offset().top
+	  	}, 500 );
+	  	e.preventDefault();
+	});
 
 
 	// fadein
@@ -383,6 +383,39 @@ $(".indicators").on('click', 'div', function(event) {
 		} else if (flag == 0){
 			modul.text("");
 			modul.parent(".horizontal-line").find(".fa-check").removeClass("bg-gray");
+		}
+	});
+
+	$(".navigations-images").on('click', 'div', function() {
+
+		var activeNavigation = $(this)[0].className.split("navigation-")[1];
+
+		var activeImageSliderId = null;
+		for (var i = 0; i <= 5; i++) {
+
+			var activeImageSlider = $(".slide" + i);
+
+			if ($(".navigation-" + i).hasClass("active-navigation")) {
+				$(".navigation").removeClass("active-navigation");
+
+				activeImageSliderId = i;
+			}
+		}
+		$(this).addClass("active-navigation")
+
+		if (activeImageSliderId < activeNavigation) {
+			while(activeImageSliderId < activeNavigation) {
+
+				slideRight();
+				activeNavigation--;
+			}
+		}
+		else if (activeImageSliderId > activeNavigation) {
+			while(activeImageSliderId > activeNavigation) {
+
+				slideLeft();
+				activeNavigation++;
+			}
 		}
 	});
 });
