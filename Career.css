@@ -169,10 +169,6 @@ a{
 }
 
 /*CAREER RIGHT*/
-.career-right label{
-  padding-top: 20px;
-  padding-bottom: 5px;
-}
 .career .career-right button{
   background-color: #222222;
   color: white;
@@ -201,4 +197,78 @@ a{
     padding-top: 20px;
     padding-bottom: 20px;
   }
+}
+
+
+.input-holder {
+  position: relative;
+}
+.input {
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: 1px solid lightgray;
+  width: 100%;
+  outline: none;
+}
+.input:not(:placeholder-shown).input:not(:focus) {
+  border: 1px solid lightgray;
+}
+.input:not(:placeholder-shown).input:not(:focus) + .placeholder {
+  transform: scale(0.75) translateY(-26px) translateX(-5px);
+  color: grey;
+}
+.input:not(:placeholder-shown).input:not(:focus).input:not(:valid) {
+  border: 1px solid lightgray;
+}
+.input:not(:placeholder-shown).input:not(:focus).input:not(:valid) + .placeholder {
+  transform: scale(0.75) translateY(-26px) translateX(-5px);
+  color: lightgray;
+}
+.input:not(:placeholder-shown).input:not(:focus).input:not(:valid) + .placeholder + .error {
+  visibility: visible;
+}
+.input:focus {
+  border-color: #C0392B;
+}
+.input:focus + .placeholder {
+  transform: scale(0.75) translateY(-26px) translateX(-5px);
+  color: #C0392B;
+}
+.placeholder {
+  position: absolute;
+  top: 14%;
+  left: 8px;
+  padding: 0 8px;
+  background-color: white;
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1), opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: grey;
+  font-size: 14px;
+  pointer-events: none;
+}
+.error {
+  visibility: hidden;
+  color: #C0392B;
+  padding: 5px 0;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.holder textarea{
+  resize: none;
+}
+.holder .placeholder-textarea{
+  top: 5%;
+}
+.dropdown.input-holder .placeholder{
+  display: none;
+}
+
+.dropdown.input-holder:focus .placeholder{
+  display: block !important;
 }

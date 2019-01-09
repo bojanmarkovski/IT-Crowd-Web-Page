@@ -231,14 +231,14 @@ $(".indicators").on('click', 'div', function(event) {
 
 	// BUTTON TO TOP
 
-	$( '.top-button' ).on( 'click', function(e){
+	// $( '.top-button' ).on( 'click', function(e){
 
-	  	var href = $(this).attr( 'href' );
-	  	$( 'html, body' ).animate({
-			scrollTop: $( ".header" ).offset().top
-	  	}, 500 );
-	  	e.preventDefault();
-	});
+	//   	var href = $(this).attr( 'href' );
+	//   	$( 'html, body' ).animate({
+	// 		scrollTop: $( ".header" ).offset().top
+	//   	}, 500 );
+	//   	e.preventDefault();
+	// });
 
 
 	// fadein
@@ -273,75 +273,6 @@ $(".indicators").on('click', 'div', function(event) {
     	})
     })
 
-
-
-
-	// MAP
-
-	var $latitude = 42.006068,
-		$longitude = 21.392550,
-		$map_zoom = 14;
-
-	var is_internetExplorer11= navigator.userAgent.toLowerCase().indexOf('trident') > -1;
-	var $marker_url = ( is_internetExplorer11 ) ? 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.png' : 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location_1.svg';
-		
-	var	$main_color = '#C0392B;',
-		$saturation= -20,
-		$brightness= 5;
-
-	var map_options = {
-      	center: new google.maps.LatLng($latitude, $longitude),
-      	zoom: $map_zoom,
-      	panControl: false,
-      	zoomControl: true,
-      	mapTypeControl: false,
-      	streetViewControl: false,
-      	mapTypeId: google.maps.MapTypeId.ROADMAP,
-      	scrollwheel: true,
-    }
-
-	var map = new google.maps.Map(document.getElementById('google-container'), map_options);		
-	var marker = new google.maps.Marker({
-	  	position: new google.maps.LatLng($latitude, $longitude),
-	    map: map,
-	    visible: true,
-	 	icon: $marker_url,
-	});
-
-	
-
-	$(".navigations-images").on('click', 'div', function() {
-
-	var activeNavigation = $(this)[0].className.split("navigation-")[1];
-
-	var activeImageSliderId = null;
-	for (var i = 0; i <= 5; i++) {
-
-		var activeImageSlider = $(".slide" + i);
-
-		if ($(".navigation-" + i).hasClass("active-navigation")) {
-			$(".navigation").removeClass("active-navigation");
-	
-			activeImageSliderId = i;
-		}
-	}
-	$(this).addClass("active-navigation")
-
-	if (activeImageSliderId < activeNavigation) {
-		while(activeImageSliderId < activeNavigation) {
-
-			slideRight();
-			activeNavigation--;
-		}
-	}
-	else if (activeImageSliderId > activeNavigation) {
-		while(activeImageSliderId > activeNavigation) {
-
-			slideLeft();
-			activeNavigation++;
-		}
-	}
-});
 
 	$(document).on('click', ".modul i", function() {
 		var number = this.className.split("modul-")[1].charAt();
