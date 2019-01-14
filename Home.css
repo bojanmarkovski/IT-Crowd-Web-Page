@@ -589,11 +589,6 @@ address{
     font-size: 11px;
   }
   .development .box-development div{
-    padding: 10px 50px;
-  }
-}
-@media screen and (max-width: 991px) {
-  .development .box-development div{
     padding: 10px 20px;
   }
 }
