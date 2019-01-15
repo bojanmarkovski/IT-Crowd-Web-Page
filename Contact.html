@@ -19,15 +19,18 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
-					<div class="navbar-brand logo">
-						<a href="Home.html">
-							<img src="logo.png" alt="" class="img-responsive"></a>
-					</div>
-					<button class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+					<button class="navbar-toggle pull-left" data-toggle="collapse" data-target="#mynavbar">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
+					<div class="navbar-brand logo">
+						<a href="Home.html">
+							<img src="logo.png" alt="" class="img-responsive"></a>
+					</div>
+					<div class="clear">
+						
+					</div>
 					<div class="collapse navbar-collapse" id="mynavbar">
 						<ul class="nav navbar-nav navbar-right">
 							<li>
@@ -52,28 +55,61 @@
 		</div>
 	</div>
 
-	<div class="top-button hideme"> <i class="fas fa-angle-up fa-2x"></i>
-	</div>
 	<div class="container-fluid">
 
 		<div class="row contact">
 			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
 				<div class="row">
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-						<h4>For more information fill in the form</h4>
-						<form action="?" method="POST">
-
-							<input type="text" name="name" placeholder="Name" class="form-control margin-bottom-contact">
-							<input type="email" name="name" placeholder="Email Address" class="form-control margin-bottom-contact" required>
-							<textarea name="comment" placeholder="Message" class="form-control margin-bottom-contact" rows="5"></textarea>
-							<div class="row">
-								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-									<button type="submit" class="btn btn-block btn-success">Submit</button>
-								</div>
+					<!-- RIGHT SIDE JOB APLY FORM -->
+					<div class="col-lg-4 col-md-4 career-right">
+						<div class="row">
+							<div class="col-lg-12 col-md-12">
+								<h3>Contact us</h3>
 							</div>
-						</form>
-
+						</div>
+						<!-- FORM GROUP -->
+						<div class="row">
+							<div class="col-lg-12 ">
+								<form>
+									<div class="form-group">
+										<!-- NAME INPUT -->
+										<div class="holder">
+											<div class="input-holder">
+												<input class="input" type="text" placeholder=" " required>
+												<div class="placeholder">Your name *</div>
+												<div class="error">Please enter a valid Name</div>
+											</div>
+										</div>
+										<!-- E-MAIL INPUT -->
+										<div class="holder">
+											<div class="input-holder">
+												<input class="input" type="email" placeholder=" " required>
+												<div class="placeholder">Your e-mail *</div>
+												<div class="error">Please enter a valid email</div>
+											</div>
+										</div>
+										<!-- TEXT AREA -->
+										<div class="holder">
+											<div class="input-holder">
+												<textarea class="input" placeholder=" " rows="7" required></textarea>
+												<div class="placeholder placeholder-textarea">Your Message</div>
+												<div class="error">Please enter a valid message</div>
+											</div>
+										</div>
+										<button type="submit" class="btn btn-block">
+											<small>SEND E-MAIL</small>
+										</button>
+									</div>
+									<!-- <div class="form-check">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input">
+											I have read and accept ITCrowd'
+											<a href="#" class="text-danger">Privacy Policy - Terms & Conditions</a>
+										</label>
+									</div> -->
+								</form>
+							</div>
+						</div>
 					</div>
 					<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-center" id="map">
 						<div id="map1" class="map"></div>
@@ -89,33 +125,39 @@
 			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
 				<div class="row border-bottom">
 					<div class="col-lg-4 col-md-4 col-sm-12">
-						<img class="img-responsive" src="logo.png">
-						<p> <i class="fas fa-map-marker-alt"></i>
-							<span>Ljubljanska 6, City Tower floor 1, 1000 Skopje</span>
-						</p>
+						<a href="home.html">
+							<img class="img-responsive" src="logo.png">
+						</a>
 						<p>
-							<i class="fas fa-phone"></i>
-							<span>+389 70 / 123 - 456</span>
+							<i class="fas fa-map-marker-alt"></i>
+							<span>Ljubljanska 6, City Tower floor 1, 1000 Skopje</span>
 						</p>
 						<p>
 							<i class="far fa-envelope"></i>
 							<span>contact@itcrowd.me</span>
 						</p>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12"></div>
-					<div class="col-lg-4 col-md-4 col-sm-12 text-center" id="map">
-						<section id="cd-google-map">
-							<div id="google-container"></div>
-							<div id="cd-zoom-in"></div>
-							<div id="cd-zoom-out"></div>
-						</section>
+					<div class="col-lg-4 col-md-4 col-sm-12 text-center">
+						<ul>
+							<a href="home.html">
+								<li>Home</li>
+							</a>
+							<a href="AboutUsSmoothScrool.html">
+								<li>About Us</li>
+							</a>
+							<a href="OurServices.html">
+								<li>Our Services</li>
+							</a>
+							<a href="Career.html">
+								<li>Career</li>	
+							</a>
+							<a href="Contact.html">
+								<li>Contact</li>	
+							</a>
+						</ul>
 					</div>
-				</div>
-				<div class="row copyright">
-					<div class="col-lg-10 col-md-8 col-sm-8">
-						<small>ITCROWD &copy Copyright 2018. All rights reserved.</small>
-					</div>
-					<div class="col-lg-2 col-md-4 col-sm-4 tablet-float-right">
+					<div class="col-lg-4 col-md-4 col-sm-12 copyright text-center">
+						
 						<a href="https://www.linkedin.com/company/itcrowd" target="_blank">
 							<i class="fab fa-linkedin-in"></i>
 						</a>
@@ -125,6 +167,14 @@
 						<a href="https://www.facebook.com/itcrowd.me" target="_blank">
 							<i class="fab fa-facebook-f"></i>
 						</a>
+						<a href="https://www.xing.com/" target="_blank">
+							<i class="fab fa-xing"></i>
+						</a>
+					</div>
+				</div>
+				<div class="row text-center">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<small>ITCROWD &copy Copyright 2018. All rights reserved.</small>
 					</div>
 				</div>
 			</div>

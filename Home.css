@@ -2,8 +2,10 @@
   clear: both;
 }
 .header{
-  /*position: fixed;*/
-  /*z-index: 1;*/
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
 }
 .header ul li a{
 	padding-top: 22px;
@@ -328,6 +330,8 @@ body,
   color: lightgray;
 }
 
+
+
 /*MODUL*/
 .modul-box-container{
   height: 600px;
@@ -596,9 +600,16 @@ address{
   .clear{
     clear: none;
   }
+  /*.slider-tablet{
+    display: none;
+  }*/
+}
+@media screen and (max-width: 767px) {
+  /*.slider-none-tablet{
+    display: none;
+  }*/
 }
 /*Jquery Classes*/
-
 .bg-gray{
   background-color: #C5CDD1;
   transition: 0.4s;

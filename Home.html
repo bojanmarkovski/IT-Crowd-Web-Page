@@ -12,7 +12,9 @@
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="Home.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/></head>
 <body>
 	<div class="nav navbar-inverse header" id="home">
 		<div class="container-fluid">
@@ -126,7 +128,7 @@
 
 		<!-- SLIDER -->
 
-		<div class="row">
+		<div class="row slider-none-tablet">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 wrap">
 				<div class="navigations-images">
 					<div class="navigation navigation-1 active-navigation"></div>
@@ -138,7 +140,7 @@
 				<div id="slider">
 					<div class="row slidee slide1">
 						<div class=" slide-content">
-							<div class="box-picture left col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<div class="box-picture left col-lg-6 col-md-6 col-sm-6 col-xs-12">
 								<div class="inner-box-picture-right">
 									<h2>Lorem Ipsum 1</h2>
 									<p>
@@ -196,7 +198,7 @@
 				<div id="arrow-right" class="arrow"></div>
 			</div>
 		</div>
-
+		
 		<div class="row display-none-tablet">
 			<div class="col-lg-10 col-lg-offset-1 modul">
 				<div class="modul-box-container">
@@ -462,6 +464,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
 
 	<script src="main.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
 
 	<script>
 		$(function(){
@@ -489,6 +492,12 @@
 				});
 				
 			});
+
+		$(document).ready(function(){
+			$('.slajder').slick({
+				// setting-name: setting-value
+		  	});
+		});
 	</script>
 </body>
 
