@@ -490,8 +490,8 @@
 			  	e.preventDefault();
 				var target = $($(this).attr('href'));
 				if(target.length){
-				    var scrollTo = target.offset().top;
-				    $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
+				    var scrollTo = target.offset().top - 51;
+				    $('body, html').animate({scrollTop: scrollTo + 'px'}, 800);
 				}
 			});
 
@@ -515,21 +515,23 @@
 			var flag = true;
 			$(window).on('scroll', function() {
 
-		  		if($(window).scrollTop() >= $('#our-skills').offset().top && flag) {
-		    	$('#our-skills').addClass('in-view');
-		    		$(".progress-bar").each(function() {
-						var percent = $(this).data("percent");
-						$(this).animate({
-							width: percent,
-						}, 300, function() {
-							$(".progress-percent").animate({
-								opacity: "1",
-							}, 1000);
+				var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
+
+		  		if($(window).scrollTop() >= $('#our-skills').offset().top - 100 && flag) {
+			    	$('#our-skills').addClass('in-view');
+			    		$(".progress-bar").each(function() {
+							var percent = $(this).data("percent");
+							$(this).animate({
+								width: percent,
+							}, 300, function() {
+								$(".progress-percent").animate({
+									opacity: "1",
+								}, 1000);
+							});
 						});
-					});
 
 					flag = false;
-			  	}
+				}
 
 			}).scroll();
 

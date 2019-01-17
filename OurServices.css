@@ -228,6 +228,18 @@ a.animated-button.thar-three:before {
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
+.our-services button{
+  background-color: #222222;
+  color: white;
+  transition: 0.2s;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.our-services button:hover{
+  background-color: #C0392B;
+  color: white;
+}
+
 
 /*TITLE IN BOX*/
 
