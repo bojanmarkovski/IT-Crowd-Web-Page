@@ -15,8 +15,7 @@ a{
   width: 100%;
 }
 .header ul li a{
-  padding-top: 22px;
-  padding-bottom: 13px;
+  padding-top: 21px;
 }
 .header .logo{
   padding: 0;
@@ -59,17 +58,12 @@ a{
   background-color: #222222;
   padding-top: 15px;
   padding-bottom: 15px;
-  /*padding-bottom: 70px;*/
   color: lightgray;
-  height: 120vh;
 }
 .footer img{
   width: 143px;
   height: 51px;
   margin-bottom: 20px;
-}
-.footer p{
-  /*padding-top: 10px;*/
 }
 .footer i{
   color: #C0392B;
@@ -337,7 +331,7 @@ a{
 
 @media screen and (max-width: 991px) {
   .header ul li  a{
-    font-size: 10px;
+    font-size: 13px;
   }
   .footer img{
     margin: 0 auto;
@@ -418,10 +412,13 @@ a{
 
 @media screen and (max-width: 991px) {
   .header ul li  a{
-    font-size: 10px;
+    font-size: 13px;
   }
   .footer img{
     margin: 0 auto;
+  }
+  .sticky{
+    display: none;
   }
 }
 

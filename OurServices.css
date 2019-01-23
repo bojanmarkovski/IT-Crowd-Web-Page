@@ -12,8 +12,7 @@
   width: 100%;
 }
 .header ul li a{
-  padding-top: 22px;
-  padding-bottom: 13px;
+  padding-top: 21px;
 }
 .header .logo{
   padding: 0;
@@ -132,7 +131,7 @@
 
 @media screen and (max-width: 991px) {
   .header ul li  a{
-    font-size: 10px;
+    font-size: 13px;
   }
   .footer .border-bottom{
     text-align: center;

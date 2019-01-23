@@ -6,10 +6,16 @@
 	<title>Career</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<!-- Latest compiled and minified JavaScript -->
-	<link rel="stylesheet" type="text/css" href="Career.css"></head>
+	<link rel="stylesheet" type="text/css" href="Career.css">
+
+
+	
+</head>
 <body>
 	<div class="nav navbar-inverse header" id="home">
 		<div class="container-fluid">
@@ -419,6 +425,16 @@
 			boxShadow.removeClass("clicked-cart");
 			
 			
+		});
+
+		// CLOSE AN OPEN COLLAPSED NAVBAR WHEN CLICKING OUTSIDE
+		$(document).click(function (event) {
+			var clickover = $(event.target);
+			var $navbar = $(".navbar-collapse");	          
+		    var _opened = $navbar.hasClass("in");
+		    if (_opened === true && !clickover.hasClass("navbar-toggle")) {      
+				$navbar.collapse('hide');
+			}
 		});
 
 	</script>

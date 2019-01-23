@@ -60,7 +60,7 @@
 
 			<!-- LEFT SIDE -->
 
-			<div class="col-md-3 sticky left-side">
+			<div class="col-md-3 col-sm-3 sticky left-side">
 
 				<ul>
 
@@ -103,12 +103,12 @@
 
 			<!-- RIGHT SIDE -->
 
-			<div class="col-md-8 right-side">
+			<div class="col-md-8 col-sm-8 col-xs-12 right-side">
 
 				<!-- OUR TEAM -->
 
 				<div class="row page-section" id="our-team">
-					<div class="col-md-12">
+					<div class="col-md-12 col-xs-12">
 						<h2>
 							Our
 							<span>Team</span>
@@ -117,7 +117,7 @@
 
 							<!-- PERSON 1 -->
 
-							<div class="col-md-3 1">
+							<div class="col-md-3 col-xs-12 1">
 								<div class="person person1">
 									<div class="overlay">
 										<div>
@@ -138,7 +138,7 @@
 
 							<!-- PERSON 2 -->
 
-							<div class="col-md-3 2">
+							<div class="col-md-3 col-sm-12 col-xs-12 col-xs-12 2">
 								<div class="person person2 ">
 									<div class="overlay">
 										<div>
@@ -154,7 +154,7 @@
 
 							<!-- PERSON 3 -->
 
-							<div class="col-md-3 3">
+							<div class="col-md-3 col-sm-12 col-xs-12 3">
 								<div class="person person3 ">
 									<div class="overlay">
 										<div>
@@ -170,7 +170,7 @@
 
 							<!-- PERSON 4 -->
 
-							<div class="col-md-3 4">
+							<div class="col-md-3 col-sm-12 col-xs-12 4">
 								<div class="person person4 ">
 									<div class="overlay">
 										<div>
@@ -188,7 +188,7 @@
 
 							<!-- PERSON 5 -->
 
-							<div class="col-md-3 5">
+							<div class="col-md-3 col-sm-12 col-xs-12 5">
 								<div class="person person5">
 									<div class="overlay">
 										<div>
@@ -204,7 +204,7 @@
 
 							<!-- PERSON 6 -->
 
-							<div class="col-md-3 6">
+							<div class="col-md-3 col-sm-12 col-xs-12 6">
 								<div class="person person6">
 									<div class="overlay">
 										<div>
@@ -220,7 +220,7 @@
 
 							<!-- PERSON 7 -->
 
-							<div class="col-md-3 7">
+							<div class="col-md-3 col-sm-12 col-xs-12 7">
 								<div class="person person7">
 									<div class="overlay">
 										<div>
@@ -236,7 +236,7 @@
 
 							<!-- PERSON 8 -->
 
-							<div class="col-md-3 8">
+							<div class="col-md-3 col-sm-12 col-xs-12 8">
 								<div class="person person8">
 									<div class="overlay">
 										<div>
@@ -604,6 +604,16 @@
 				});
 				
 			});
+		});
+
+		// CLOSE AN OPEN COLLAPSED NAVBAR WHEN CLICKING OUTSIDE
+		$(document).click(function (event) {
+			var clickover = $(event.target);
+			var $navbar = $(".navbar-collapse");	          
+		    var _opened = $navbar.hasClass("in");
+		    if (_opened === true && !clickover.hasClass("navbar-toggle")) {      
+				$navbar.collapse('hide');
+			}
 		});
 		
 	</script>

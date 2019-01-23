@@ -82,12 +82,13 @@
 				<div class="row text-center">
 					<div class="col-lg-4 col-md-4 col-sm-12 box-development first hideme">
 						<div> <i class="fab fa-react"></i>
-							<h4>TECHNOLOGY CONSULTING</h3>
+							<h4>TECHNOLOGY CONSULTING</h4>
 							<p>
 								The diverse background of our team members offers expertise in most used technologies as well as niche technologies such as <strong>Oracle</strong>
 								and <strong>Salesforce.</strong>
 								The technology consulting services are our strong point.
 							</p>
+
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-12 box-development second hideme">
@@ -486,6 +487,28 @@
 				// setting-name: setting-value
 		  	});
 		});
+
+		$(document).mouseup(function (e){
+			var liMobile = $(".navigationvbar-toggle.pull-left"); // YOUR CONTAINER SELECTOR
+
+			if (!liMobile.is(e.target) // if the target of the click isn't the container...
+				&& liMobile.has(e.target).length === 0) // ... nor a descendant of the container
+			{
+			// $(".navbar-collapse.collapse").removeClass("in");
+			}
+		});
+		
+		// CLOSE AN OPEN COLLAPSED NAVBAR WHEN CLICKING OUTSIDE
+		$(document).click(function (event) {
+			var clickover = $(event.target);
+			var $navbar = $(".navbar-collapse");	          
+		    var _opened = $navbar.hasClass("in");
+		    if (_opened === true && !clickover.hasClass("navbar-toggle")) {      
+				$navbar.collapse('hide');
+			}
+		});
+
+		
 	</script>
 </body>
 
