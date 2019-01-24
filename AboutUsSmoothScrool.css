@@ -237,6 +237,12 @@ a{
   opacity: 1;
   color: white;
 }
+#our-team .col-md-2{
+  transition: 0.3s;
+}
+#our-team .col-md-2:hover{
+  z-index: 999; 
+}
 #our-team .overlay:hover{
   background-color: rgba(2,2,2,0.7);
 }
@@ -556,3 +562,188 @@ a{
   transform-origin: 0 0;
   transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
+
+
+
+/*CARDS OUR TEAM*/
+
+.popular-articles a{
+  text-decoration: none;
+  color: white;
+}
+.popular-articles {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 0 0 5rem 0;
+    padding: 2rem 0;
+}
+
+.mini-card-grid {
+    scrollbar-color: #201c29;
+    scrollbar-width: 10px;
+    scrollbar-gutter: always;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    padding: 3rem;
+}
+
+.mini-card {
+    min-width: 300px;
+    min-height: 350px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: #17141d;
+    -webkit-box-shadow: -1rem 0 3rem #000;
+    box-shadow: -1rem 0 3rem #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-transition: .2s;
+    transition: .2s;
+    margin: 0;
+}
+
+.mini-card:not(:first-child) {
+    margin-left: -130px;
+}
+/*.mini-card:not(:first-child):hover {
+    margin-left: 0px;
+}*/
+.mini-article-card-header {
+    margin-bottom: auto;
+}
+.mini-article-subhead {
+  font-size: 14px;
+  margin: 0 0 1rem 0;
+}
+time {
+    color: #7a7a8c;
+}
+.mini-card h2 {
+    font-size: 20px;
+    margin: .25rem 0 auto 0;
+}
+.mini-article-byline {
+    margin: 3rem 0 0 0;
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.mini-article-byline .author-avatar, .mini-article-byline .author-name-area {
+    grid-area: auto;
+}
+.author-avatar {
+    grid-area: avatar;
+    -ms-flex-item-align: start;
+    align-self: start;
+    position: relative;
+}
+.mini-article-meta .author-name {
+    display: block;
+    height: 80px;
+    width: 80px;
+    position: relative;
+}
+.mini-article-meta .author-avatar .half-circle {
+    width: 60px;
+    height: 48px;
+}
+.author-avatar .half-circle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 56px;
+    fill: none;
+    stroke: url(#orange-to-pink);
+    stroke-width: 8;
+    stroke-linecap: round;
+    pointer-events: none;
+}
+article-byline .author-name-area {
+    grid-area: auto;
+}
+.author-name-prefix, .comments-prefix, .created-prefix, .updated-prefix {
+    color: #7a7a8c;
+}
+.mini-article-meta .author-name {
+    display: block;
+    height: 80px;
+    width: 80px;
+    position: relative;
+}
+
+.author-avatar img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 12px 10px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+img {
+    max-width: 100%;
+    height: auto!important;
+}
+.author-avatar .half-circle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 56px;
+    fill: none;
+    stroke: url(https://css-tricks.com/wp-content/themes/CSS-Tricks-17/style.css?v=8.3#orange-to-pink);
+    stroke-width: 8;
+    stroke-linecap: round;
+    pointer-events: none;
+}
+.mini-article-meta .author-avatar img {
+    width: 40px !important;
+    height: 40px;
+}
+.module>:last-child>:last-child {
+    margin-bottom: 0;
+}
+.tags a {
+    color: #7a7a8c;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    white-space: nowrap;
+    border: 3px solid #28242f;
+    border-radius: 2rem;
+    padding: .2rem .85rem .25rem .85rem;
+}
+
+.mini-card:focus-within, 
+.mini-card:hover {
+    -webkit-transform: translate(0,-1rem);
+    transform: translate(0,-1rem);
+}
+.mini-card:focus-within~.mini-card, 
+.mini-card:hover~.mini-card {
+    -webkit-transform: translateX(130px);
+    transform: translateX(130px);
+}
+.module {
+    clear: both;
+    margin: 0 0 1rem 0;
+    position: relative;
+  }
+:root body.header-not-at-top {
+    --nav-height: 60px;
+}
+
