@@ -2,6 +2,9 @@
   font-family: Segoe Script;
   src: url(fonts/segoesc.ttf);
 }
+body{
+  font-family: Verdana;
+}
 .clear{
   clear: both;
 }
@@ -183,6 +186,7 @@ a{
 .career .career-left{
   height: 100vh;
   overflow-y: auto;
+  padding-top: 0;
 }
 .career-left {
     scrollbar-color: #201c29;
@@ -208,7 +212,18 @@ a{
     transition: .2s;
     margin: 0;
     position: absolute;
-
+    animation: animateElement linear .3s;
+    animation-iteration-count: 1;
+}
+@keyframes animateElement{
+  0% {
+    opacity:0;
+    transform:  translate(0px,10px);
+  }
+  100% {
+    opacity:1;
+    transform:  translate(0px,0px);
+  }
 }
 .career .career-left .career-box:not(:first-child) {
     margin-top: 300px;
