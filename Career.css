@@ -212,7 +212,7 @@ a{
     transition: .2s;
     margin: 0;
     position: absolute;
-    animation: animateElement linear .3s;
+    animation: animateElement linear .5s;
     animation-iteration-count: 1;
 }
 @keyframes animateElement{

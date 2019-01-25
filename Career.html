@@ -416,8 +416,8 @@
 				boxShadow.removeClass("shadow-paragraph");
 			}
 			else {
-				boxShadow.addClass("shadow-paragraph");
-				// boxShadow.slideUp(1000);
+				boxShadow.toggleClass("shadow-paragraph");
+				// $(this).find(".shadow-paragraph").slideUp(1000);
 			}
 
 			for (var i = 0; i < $(".career-box").length; i++) {
@@ -430,16 +430,16 @@
 
 			boxShadow.removeClass("clicked-cart");
 
-			console.log($(this).parents(".career-left").append($(this)));
+			$(this).parents(".career-left").append($(this));
 
 
-			    $('html, body').animate({
-			      scrollTop: $(".row.pd-70px").offset().top
-			    }, 1000)
+		    $('html, body').animate({
+		      	scrollTop: $(".row.pd-70px").offset().top
+		    }, 1000)
 
-			    $('.career-left').animate({
-			      	scrollTop: $(this).offset().top
-			    }, 900)
+		    $('.career-left').animate({
+		      	scrollTop: $(this).offset().top
+		    }, 900)
 
 
 		});
