@@ -569,7 +569,7 @@ a{
 
 .popular-articles a{
   text-decoration: none;
-  color: white;
+  color: black ;
 }
 .popular-articles {
     -webkit-box-sizing: content-box;
@@ -590,18 +590,19 @@ a{
     display: -ms-flexbox;
     display: flex;
     overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;    
     padding: 3rem;
 }
-
 .mini-card {
     min-width: 300px;
     min-height: 350px;
     padding: 1.5rem;
     border-radius: 16px;
-    background: #17141d;
-    -webkit-box-shadow: -1rem 0 3rem #000;
-    box-shadow: -1rem 0 3rem #000;
+    background: white;
+    -webkit-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.42);
+    -moz-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.42);
+    box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.42);
+    transition: 0.3s;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -612,8 +613,11 @@ a{
     -webkit-transition: .2s;
     transition: .2s;
     margin: 0;
-}
 
+}
+.mini-card:hover{
+  cursor: pointer;
+}
 .mini-card:not(:first-child) {
     margin-left: -130px;
 }
@@ -656,6 +660,7 @@ time {
     height: 80px;
     width: 80px;
     position: relative;
+    color: black;
 }
 .mini-article-meta .author-avatar .half-circle {
     width: 60px;
@@ -679,12 +684,6 @@ article-byline .author-name-area {
 .author-name-prefix, .comments-prefix, .created-prefix, .updated-prefix {
     color: #7a7a8c;
 }
-.mini-article-meta .author-name {
-    display: block;
-    height: 80px;
-    width: 80px;
-    position: relative;
-}
 
 .author-avatar img {
     border-radius: 50%;
@@ -696,7 +695,7 @@ article-byline .author-name-area {
 }
 img {
     max-width: 100%;
-    height: auto!important;
+    height: auto !important;
 }
 .author-avatar .half-circle {
     position: absolute;
@@ -747,3 +746,23 @@ img {
     --nav-height: 60px;
 }
 
+.mini-card-grid::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.mini-card-grid::-webkit-scrollbar:horizontal {
+    height: 11px;
+}
+
+.mini-card-grid::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.mini-card-grid::-webkit-scrollbar-track { 
+    background-color: #f4f4f4;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    border-radius: 8px; 
+} 

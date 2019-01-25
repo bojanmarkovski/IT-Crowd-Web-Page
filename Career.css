@@ -148,21 +148,18 @@ a{
   letter-spacing: 1px;
 }
 /*CAREER LEFT*/
+
 .career .career-left .pd-box{
-  padding: 10px;
+  margin: 130px 0px;
+}
+.career .career-left .pd-box:not(:first-child) {
+    margin-top: 20px;
 }
 .career .career-left .career-box{
-  padding: 30px 35px;
-  -webkit-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.42);
-  -moz-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.42);
-  box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.42);
   transition: 0.3s;
 }
 .career .career-left .career-box:hover{
   cursor: pointer;
-  -webkit-box-shadow: 0px 0px 14px -1px rgba(192,57,43,1);
-  -moz-box-shadow: 0px 0px 14px -1px rgba(192,57,43,1);
-  box-shadow: 0px 0px 14px -1px rgba(192,57,43,1);
 }
 .career .career-left .career-box h3{
   color: black;
@@ -181,24 +178,85 @@ a{
 .career .career-left .career-box h3{
   font-weight: bold;
 }
+/*CAREER LEFT CARDS*/
 
-.career .career-left .career-box:after {
-    content: '';
+.career .career-left{
+  height: 100vh;
+  overflow-y: auto;
+}
+.career-left {
+    scrollbar-color: #201c29;
+    scrollbar-width: 10px;
+    scrollbar-gutter: always;
+    /*display: -webkit-box;
+    display: -ms-flexbox;*/
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;    
+    padding: 2rem;
+}
+.career-box {
+    width: 90%;
+    min-height: 200px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: white;
+    -webkit-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.42);
+    -moz-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.42);
+    box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.42);
+    transition: 0.3s;
+    -webkit-transition: .2s;
+    transition: .2s;
+    margin: 0;
     position: absolute;
-    bottom: 0px;
-    height: 100px;
-    left: 10px;
-    right: 10px;
-    background: -webkit-linear-gradient(rgba(255,255,255,0) 0%, #fff 60%);
-    background: -moz-linear-gradient(rgba(255,255,255,0) 0%, #fff 60%);
-    background: -o-linear-gradient(rgba(255,255,255,0) 0%, #fff 60%);
-    background: -ms-linear-gradient(rgba(255,255,255,0) 0%, #fff 60%);
-    background: linear-gradient(rgba(255,255,255,0) 0%, #fff 60%);
-    display: block;
-    z-index: 1;
+
+}
+.career .career-left .career-box:not(:first-child) {
+    margin-top: 300px;
+}
+.career-box:focus-within~.career-box, 
+.career-box:hover~.career-box {
+    -webkit-transform: translateY(55px);
+    transform: translateY(55px);
+}
+.career-box:focus-within, 
+.career-box:hover {
+    -webkit-transform: translate(1rem,-2rem);
+    transform: translate(1rem,-2rem);
 }
 
+.career-box:focus-within ~ .career-box, 
+.row.pd-box:hover ~ .row.pd-box .career-box {
+    -webkit-transform: translateY(55px);
+    transform: translateY(55px);
+}
+
+/*SCROLL CARDS*/
+.career .career-left::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.career .career-left::-webkit-scrollbar:vertical {
+    width: 11px;
+}
+
+.career .career-left::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.career .career-left::-webkit-scrollbar-track { 
+    background-color: #f4f4f4;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    border-radius: 8px; 
+} 
+
+
 /*CAREER RIGHT*/
+.career .career-right{
+  /*max-height: 100vh;*/
+}
 .career .career-right button{
   background-color: #222222;
   color: white;
