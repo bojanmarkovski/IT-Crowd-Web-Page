@@ -14,8 +14,8 @@
 	<link rel="stylesheet" type="text/css" href="AboutUsSmoothScrool.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-	<!-- <link rel="stylesheet" type="text/css" href="https://css-tricks.com/wp-content/themes/CSS-Tricks-17/style.css?v=8.3">
- --></head>
+	<!-- <link rel="stylesheet" type="text/css" href="https://css-tricks.com/wp-content/themes/CSS-Tricks-17/style.css?v=8.3">-->
+</head>
 <body>
 	<div class="nav navbar-inverse header" id="home">
 		<div class="container-fluid">
@@ -28,7 +28,8 @@
 					</button>
 					<div class="navbar-brand logo">
 						<a href="Home.html">
-							<img src="logo.png" alt="" class="img-responsive"></a>
+							<!-- <img src="logo.png" alt="" class="img-responsive first-logo"> -->
+              <img src="logo.png" alt="" class=" second-logo"></a>
 					</div>
 					<div class="clear">
 						
@@ -1321,12 +1322,32 @@
 			      
 			    if (_document.readyState == 'complete') {
 			        reset();
-			    } else {
-			        _window[addEventListener]('load', reset, 0);
+
+          } else {
+              _window[addEventListener]('load', reset, 0);
+              $(".first-logo").slideDown();
 			    }
 
 			    exports.reset = reset;
 			}));
+
+      $(document).on("scroll", function(){
+        if
+          ($(document).scrollTop() > 15){
+          $(".header").addClass("shrink");
+
+        }
+        else
+        {
+          $(".header").removeClass("shrink");
+        }
+        // console.log($(this).find(".header"))
+        // if (($(this).find(".header")).hasClass("shrink")) {
+        //   $(this).find(".header").find(".first-logo").slideUp();
+        // } else {
+        //   $(this).find(".header").find(".second-logo").slideDown();
+        // }
+      });
 				
 	</script>
 </body>

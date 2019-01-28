@@ -42,14 +42,15 @@ a{
   border-bottom: 5px solid #C0392B;
 }
 .header ul .active a{
-  background-color: #C0392B !important;
+  background-color: transparent !important;
+  color: #C0392B !important;
 }
 #mynavbar{
   width: 100%;
   text-align: center !important;
 }
 .wrap-about-us{
-  margin-top: 58px;
+  margin-top: 110px;
 }
 
 /*FOOTER*/
@@ -377,7 +378,7 @@ a{
     position: sticky;
     top: 58px;
     padding: 0px 0px;
-    z-index: 999;
+    z-index: 999999;
     background-color: white;
     display: none;
 }
@@ -766,3 +767,22 @@ img {
     border-top: 1px solid lightgray;
     border-radius: 8px; 
 } 
+
+
+.header{
+  width: 100%;
+  padding: 30px 0;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out; 
+  z-index: 9999;
+  top: 0;
+  position: fixed;
+}
+
+.shrink{
+  padding: 0px;
+}
+.second-logo{
+  /*display: none;*/
+}

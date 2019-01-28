@@ -6,8 +6,8 @@
   clear: both;
 }
 .header{
-  position: fixed;
-  top: 0;
+  /*position: fixed;*/
+  /*top: 0;*/
   z-index: 11;
   width: 100%;
 }
@@ -647,4 +647,24 @@ background-image: url(https://images.pexels.com/photos/296116/pexels-photo-29611
 }
 .active-slider{
   background-color: #C0392B;
+}
+
+
+/*NAVBAR*/
+
+/*body {
+    padding-top: 40px;
+}*/
+
+.nav-down {
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+}
+
+.nav-up {
+  top: -65px;
+  position: fixed;
+  transition: top 0.2s ease-in-out;
 }
