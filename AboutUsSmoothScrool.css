@@ -444,12 +444,14 @@ a{
     display: block;
   }
   .right-side h2{
-    display: none;
+    /*display: none;*/
+    padding-top: 0;
+    margin-top: 0;
   }
-  .page-section{
+  /*.page-section{
     border-top: 2px solid #C0392B;
     padding-top: 10px;
-  }
+  }*/
 }
 @media screen and (min-width: 768px) {
   .clear{
@@ -785,4 +787,28 @@ img {
 }
 .second-logo{
   /*display: none;*/
+}
+
+
+.nav-down {
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+}
+
+.nav-up {
+  top: -65px;
+  position: fixed;
+  transition: top 0.2s ease-in-out;
+}
+
+.second-nav-down{
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+}
+.second-nav-up {
+  top: -58px;
+  position: fixed;
+  transition: top 0.2s ease-in-out;
 }
