@@ -598,10 +598,13 @@
 
 			if (boxShadow.hasClass("shadow-paragraph")) {
 				boxShadow.removeClass("shadow-paragraph");
+				console.log(boxShadow)
 			}
 			else {
-				boxShadow.toggleClass("shadow-paragraph");
+				// boxShadow.slideUp("shadow-paragraph");
+				// boxShadow.addClass("shadow-paragraph");
 				// $(this).find(".shadow-paragraph").slideUp(1000);
+				console.log(boxShadow)
 			}
 
 			for (var i = 0; i < $(".career-box").length; i++) {
@@ -646,6 +649,7 @@
 		// 		overflow: 'hidden'
 		// 	});
 		// 	$modal.show();
+
 	</script>
 </body>
 </html>

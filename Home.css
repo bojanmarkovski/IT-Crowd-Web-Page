@@ -226,7 +226,10 @@ body,
 .development div p strong{
   color: #C0392B;
 }
-
+.icon-home{
+  width: 80px;
+  margin: 0 auto;
+}
 
 /*FOOTER*/
 .footer{

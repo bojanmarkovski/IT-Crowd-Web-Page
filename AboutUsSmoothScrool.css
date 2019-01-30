@@ -345,6 +345,9 @@ a{
   .header .logo{
     height: auto;
   }
+  .header{
+    padding: 0 !important;
+  }
 }
 /*.person2{
   height: 3000px;
@@ -810,5 +813,4 @@ img {
 .second-nav-up {
   top: -58px;
   position: fixed;
-  transition: top 0.2s ease-in-out;
 }
