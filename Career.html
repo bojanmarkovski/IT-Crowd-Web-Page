@@ -593,18 +593,16 @@
 			// }
 		});
 
-		$(".career-left").on('click', '.row', function() {
+		$(".career-left").on('click', '.row.pd-box', function() {
 			let boxShadow = $(this).find(".career-box").children("div").addClass('clicked-cart');
 
 			if (boxShadow.hasClass("shadow-paragraph")) {
 				boxShadow.removeClass("shadow-paragraph");
-				console.log(boxShadow)
 			}
 			else {
-				// boxShadow.slideUp("shadow-paragraph");
 				// boxShadow.addClass("shadow-paragraph");
+				// boxShadow.slideUp("shadow-paragraph");
 				// $(this).find(".shadow-paragraph").slideUp(1000);
-				console.log(boxShadow)
 			}
 
 			for (var i = 0; i < $(".career-box").length; i++) {

@@ -381,7 +381,7 @@ a{
     position: sticky;
     top: 58px;
     padding: 0px 0px;
-    z-index: 999999;
+    z-index: 9;
     background-color: white;
     display: none;
 }
