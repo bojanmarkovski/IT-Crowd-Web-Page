@@ -2,9 +2,6 @@
   font-family: Segoe Script;
   src: url(fonts/segoesc.ttf);
 }
-body{
-  font-family: Verdana;
-}
 .clear{
   clear: both;
 }
@@ -46,7 +43,8 @@ a{
   border-bottom: 5px solid #C0392B;
 }
 .header ul .active a{
-  background-color: #C0392B !important;
+  background-color: transparent !important;
+  color: #C0392B !important;
 }
 #mynavbar{
   width: 100%;
@@ -54,6 +52,20 @@ a{
 }
 .career{
   padding-top: 61px;
+}
+
+.header{
+  width: 100%;
+  padding: 15px 0;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out; 
+  z-index: 9999;
+  top: 0;
+  position: fixed;
+}
+.shrink{
+  padding: 0px;
 }
 
 /*FOOTER*/
@@ -174,7 +186,7 @@ a{
 .shadow-paragraph{
   overflow: hidden;
   max-height: 80px;
-  top: 0.2s ease-in-out;
+  top: 1s ease-in-out;
 }
 .career .career-left .career-box p{
   line-height: 20px;
@@ -296,6 +308,44 @@ a{
   }
   .footer img{
     margin: 0 auto;
+  }
+  .header .logo{
+    height: auto;
+  }
+  .header{
+    padding: 0 !important;
+  }
+  .career-box {
+    position: relative;
+    width: 100%;
+    min-height: unset;
+  }
+  .career .career-left{
+    overflow-y: hidden;
+    height: auto;
+  }
+  .career .career-left .pd-box {
+     margin: 0;
+  }
+  .career-box:focus-within~.career-box, 
+  .career-box:hover~.career-box {
+      -webkit-transform: unset;
+      transform: unset;
+  }
+  .career-box:focus-within, 
+  .career-box:hover {
+      -webkit-transform: unset;
+      transform: unset;
+  }
+
+  .career-box:focus-within ~ .career-box, 
+  .row.pd-box:hover ~ .row.pd-box .career-box {
+    -webkit-transform: unset;
+    transform: unset;
+  }
+  .dada{
+    max-height: auto;
+    transition: 3s;
   }
 }
 
@@ -419,3 +469,25 @@ ul li{
     border-top: 1px solid lightgray;
     border-radius: 8px; 
 } 
+
+.nav-down {
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+}
+
+.nav-up {
+  top: -65px;
+  position: fixed;
+  transition: top 0.2s ease-in-out;
+}
+
+.second-nav-down{
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+}
+.second-nav-up {
+  top: -58px;
+  position: fixed;
+}
