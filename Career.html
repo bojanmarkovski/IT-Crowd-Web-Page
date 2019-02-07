@@ -11,7 +11,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<!-- Latest compiled and minified JavaScript -->
-	<link rel="stylesheet" type="text/css" href="customCSS.css">
+	<link rel="stylesheet" type="text/css" href="Career.css">
 
 
 	
@@ -39,7 +39,7 @@
 								<a href="Home.html" class="">Home</a>
 							</li>
 							<li>
-								<a href="AboutUs.html">About Us</a>
+								<a href="AboutUsSmoothScrool.html">About Us</a>
 							</li>
 							<li>
 								<a href="OurServices.html">Our Services</a>
@@ -482,7 +482,7 @@
 							<a href="home.html">
 								<li>Home</li>
 							</a>
-							<a href="AboutUs.html">
+							<a href="AboutUsSmoothScrool.html">
 								<li>About Us</li>
 							</a>
 							<a href="OurServices.html">
@@ -708,7 +708,7 @@
             if(Math.abs(lastScrollTop - st) <= delta)
                 return;
             
-            // If they scrolled down and are past the navbar, add class .doup.
+            // If they scrolled down and are past the navbar, add class .nav-up.
             // This is necessary so you never see what is "behind" the navbar.
             if (st > lastScrollTop && st > navbarHeight){
                 // Scroll Down
