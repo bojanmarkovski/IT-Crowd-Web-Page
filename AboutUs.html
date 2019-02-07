@@ -11,39 +11,43 @@
 	<!-- Latest compiled and minified JavaScript -->
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="AboutUs.css">
+	<link rel="stylesheet" type="text/css" href="customCSS.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"></head>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<!-- <link rel="stylesheet" type="text/css" href="https://css-tricks.com/wp-content/themes/CSS-Tricks-17/style.css?v=8.3">--></head>
 <body>
 	<div class="nav navbar-inverse header" id="home">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
-					<div class="navbar-brand logo">
-						<a href="#">
-							<img src="logo.png" alt="" class="img-responsive"></a>
-					</div>
-					<button class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+					<button class="navbar-toggle pull-left" data-toggle="collapse" data-target="#mynavbar">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
+					<div class="navbar-brand logo">
+						<a href="Home.html">
+							<!-- <img src="logo.png" alt="" class="img-responsive first-logo">
+							-->
+							<img src="logo.png" alt="" class=" second-logo"></a>
+					</div>
+					<div class="clear"></div>
 					<div class="collapse navbar-collapse" id="mynavbar">
 						<ul class="nav navbar-nav navbar-right">
 							<li>
-								<a href="#" class="">Home</a>
+								<a href="Home.html" class="">Home</a>
 							</li>
 							<li class="active">
 								<a href="AboutUs.html">About Us</a>
 							</li>
 							<li>
-								<a href="#">Our Services</a>
+								<a href="OurServices.html">Our Services</a>
 							</li>
 							<li>
-								<a href="#">Career</a>
+								<a href="Career.html">Career</a>
 							</li>
 							<li>
-								<a href="#">Contact</a>
+								<a href="Contact.html">Contact</a>
 							</li>
 						</ul>
 					</div>
@@ -52,214 +56,605 @@
 		</div>
 	</div>
 
+	<div class="sticky-tablet second-nav-down">
+
+		<div class="pn-ProductNav_Wrapper">
+			<nav id="pnProductNav" class="pn-ProductNav">
+				<div id="pnProductNavContents" class="pn-ProductNav_Contents">
+					<a href="#our-team" class="pn-ProductNav_Link smooth-scroll-mobile" aria-selected="true">Our Team</a>
+					<a href="#offices" class="pn-ProductNav_Link smooth-scroll-mobile">Offices</a>
+					<a href="#partners" class="pn-ProductNav_Link smooth-scroll-mobile">Partners</a>
+					<a href="#our-business" class="pn-ProductNav_Link smooth-scroll-mobile">Our Business</a>
+					<a href="#our-skills" class="pn-ProductNav_Link smooth-scroll-mobile">Our Skills</a>
+
+					<span id="pnIndicator" class="pn-ProductNav_Indicator"></span>
+				</div>
+			</nav>
+			<button id="pnAdvancerLeft" class="pn-Advancer pn-Advancer_Left" type="button">
+				<svg class="pn-Advancer_Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024">
+					<path d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z"/>
+				</svg>
+			</button>
+			<button id="pnAdvancerRight" class="pn-Advancer pn-Advancer_Right" type="button">
+				<svg class="pn-Advancer_Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024">
+					<path d="M105.56 985.817L553.53 512 105.56 38.183l-85.857 81.173 409.6 433.23v-81.172l-409.6 433.23 85.856 81.174z"/>
+				</svg>
+			</button>
+		</div>
+	</div>
+
 	<div class="container-fluid">
 		<div class="row wrap-about-us">
 
 			<!-- LEFT SIDE -->
 
-			<div class="col-md-3">
-				<div class="left-side">
-					<ul>
+			<div class="col-md-3 col-sm-3 sticky left-side">
+
+				<ul>
+
+					<a href="#our-team" class="smooth-scroll">
 						<li class="our-team active-right-side">
 							Our Team <i class="fas fa-chevron-right pull-right"></i>
 						</li>
+					</a>
+
+					<a href="#offices" class="smooth-scroll">
 						<li class="offices">
 							Offices <i class="fas fa-chevron-right pull-right"></i>
 						</li>
+					</a>
+
+					<a href="#partners" class="smooth-scroll">
 						<li class="partners">
 							Partners
 							<i class="fas fa-chevron-right pull-right"></i>
 						</li>
+					</a>
+
+					<a href="#our-business" class="smooth-scroll">
 						<li class="our-business">
 							Our Business
 							<i class="fas fa-chevron-right pull-right"></i>
 						</li>
+					</a>
+
+					<a href="#our-skills" class="smooth-scroll">
 						<li class="our-skills">
 							Our Skills
 							<i class="fas fa-chevron-right pull-right"></i>
 						</li>
-					</ul>
-				</div>
+					</a>
+
+				</ul>
+
 			</div>
+
 			<!-- RIGHT SIDE -->
 
-			<div class="col-md-8 right-side">
+			<div class="col-md-8 col-sm-12 col-xs-12 right-side">
 
 				<!-- OUR TEAM -->
 
-				<div class="row" id="our-team">
-					<div class="col-md-12">
-						<h1>
+				<div class="row page-section" id="our-team">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<h2>
 							Our
 							<span>Team</span>
-						</h1>
-						<div class="row text-center">
+						</h2>
 
-							<!-- PERSON 1 -->
+						<div class="popular-articles">
+							<div class="mini-card-grid">
+								<article class="mini-card module module-article article" id="mini-post-280085">
 
-							<div class="col-md-3 1">
-								<div class="person person1">
-									<div class="overlay">
-										<div>
-											<h3>Kriss Green</h3>
-											<h4 class="color-h4">Chief Officer</h4>
+									<header class="mini-article-card-header">
 
-											<a href="https://www.linkedin.com/company/itcrowd" target="_blank">
-												<i class="fab fa-linkedin-in"></i>
-											</a>
-											<a href="https://www.facebook.com/" target="_blank">
-												<i class="fab fa-facebook-f"></i>
-											</a>
-											<a href="https://www.instagram.com/?hl=en" target="_blank">
-												<i class="fab fa-instagram"></i>
-											</a>
+										<div class="mini-article-card-title">
+
+											<div class="mini-article-subhead">
+												Article
+												<time datetime="2019-01-21">Jan 21, 2019</time>
+											</div>
+
+											<h2 class="">
+												<a href="https://css-tricks.com/the-great-divide/" class="article-card-header read-article">The Great Divide</a>
+											</h2>
 
 										</div>
-									</div>
-								</div>
-							</div>
 
-							<!-- PERSON 2 -->
+									</header>
 
-							<div class="col-md-3 2">
-								<div class="person person2 ">
-									<div class="overlay">
-										<div>
-											<h3>Michelle Lim</h3>
-											<h4 class="color-h4">Marketing Officer</h4>
-											<a href="https://www.linkedin.com/company/itcrowd" target="_blank">
-												<i class="fab fa-linkedin-in color-h4"></i>
-											</a>
+									<div class="mini-article-meta">
+
+										<div class="mini-article-byline">
+											<div class="author-avatar">
+												<a class="author-name" href="https://css-tricks.com/author/chriscoyier/">
+													<img alt="" src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&amp;d=retro&amp;r=pg" srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&amp;d=retro&amp;r=pg 2x" class="avatar avatar-80 photo" height="80" width="80"></a>
+												<svg class="half-circle" width="80px" height="80px">
+													<use xlink:href="#half-circle"></use>
+												</svg>
+											</div>
+											<div class="author-name-area">
+												<div class="author-name-prefix">Author</div>
+												<a class="author-name" href="https://css-tricks.com/author/chriscoyier/">Chris Coyier</a>
+											</div>
 										</div>
-									</div>
-								</div>
-							</div>
 
-							<!-- PERSON 3 -->
-
-							<div class="col-md-3 3">
-								<div class="person person3 ">
-									<div class="overlay">
-										<div>
-											<h3>Peter Jones</h3>
-											<h4 class="color-h4">Execute Officer</h4>
-											<a href="https://www.linkedin.com/company/itcrowd" target="_blank">
-												<i class="fab fa-linkedin-in color-h4"></i>
-											</a>
+										<div class="tags">
+											<a href="https://css-tricks.com/tag/front-end-developer/" rel="tag">front-end developer</a>
 										</div>
+
 									</div>
-								</div>
-							</div>
 
-							<!-- PERSON 4 -->
+								</article>
 
-							<div class="col-md-3 4">
-								<div class="person person4 ">
-									<div class="overlay">
-										<div>
-											<h3>Kriss Green</h3>
-											<h4 class="color-h4">Chief Officer</h4>
-											<a href="https://www.linkedin.com/company/itcrowd" target="_blank">
-												<i class="fab fa-linkedin-in color-h4"></i>
-											</a>
+								<article class="mini-card module module-article article" id="mini-post-280621">
+
+									<header class="mini-article-card-header">
+
+										<div class="mini-article-card-title">
+
+											<div class="mini-article-subhead">
+												Article
+												<time datetime="2019-01-09">Jan 9, 2019</time>
+											</div>
+
+											<h2 class="">
+												<a href="https://css-tricks.com/new-es2018-features-every-javascript-developer-should-know/" class="article-card-header read-article">New ES2018 Features Every JavaScript Developer Should Know</a>
+											</h2>
+
 										</div>
+
+									</header>
+
+									<div class="mini-article-meta">
+
+										<div class="mini-article-byline">
+											<div class="author-avatar">
+												<a class="author-name" href="https://css-tricks.com/author/faraz-kelhini/">
+													<img alt="" src="https://secure.gravatar.com/avatar/25e546a6e2e1903d2554412d24aa57ee?s=80&amp;d=retro&amp;r=pg" srcset="https://secure.gravatar.com/avatar/25e546a6e2e1903d2554412d24aa57ee?s=160&amp;d=retro&amp;r=pg 2x" class="avatar avatar-80 photo" height="80" width="80"></a>
+												<svg class="half-circle" width="80px" height="80px">
+													<use xlink:href="#half-circle"></use>
+												</svg>
+											</div>
+											<div class="author-name-area">
+												<div class="author-name-prefix">Author</div>
+												<a class="author-name" href="https://css-tricks.com/author/faraz-kelhini/">Faraz Kelhini</a>
+											</div>
+										</div>
+
+										<div class="tags">
+											<a href="https://css-tricks.com/tag/es2018/" rel="tag">es2018</a>
+										</div>
+
 									</div>
-								</div>
+
+								</article>
+
+								<article class="mini-card module module-article article" id="mini-post-280848">
+
+									<header class="mini-article-card-header">
+
+										<div class="mini-article-card-title">
+
+											<div class="mini-article-subhead">
+												Article
+												<time datetime="2019-01-04">Jan 4, 2019</time>
+											</div>
+
+											<h2 class="">
+												<a href="https://css-tricks.com/2018-staff-favorites/" class="article-card-header read-article">2018 Staff Favorites</a>
+											</h2>
+
+										</div>
+
+									</header>
+
+									<div class="mini-article-meta">
+
+										<div class="mini-article-byline">
+											<div class="author-avatar">
+												<a class="author-name" href="https://css-tricks.com/author/geoffgraham/">
+													<img alt="" src="https://secure.gravatar.com/avatar/ac0d6274a6cea04669e66a20ec0ea204?s=80&amp;d=retro&amp;r=pg" srcset="https://secure.gravatar.com/avatar/ac0d6274a6cea04669e66a20ec0ea204?s=160&amp;d=retro&amp;r=pg 2x" class="avatar avatar-80 photo" height="80" width="80"></a>
+												<svg class="half-circle" width="80px" height="80px">
+													<use xlink:href="#half-circle"></use>
+												</svg>
+											</div>
+											<div class="author-name-area">
+												<div class="author-name-prefix">Author</div>
+												<a class="author-name" href="https://css-tricks.com/author/geoffgraham/">Geoff Graham</a>
+											</div>
+										</div>
+
+										<div class="tags">
+											<a href="https://css-tricks.com/tag/favorites/" rel="tag">favorites</a>
+										</div>
+
+									</div>
+
+								</article>
+
+								<article class="mini-card module module-article " id="mini-post-280720">
+
+									<header class="mini-article-card-header">
+
+										<div class="mini-article-card-title">
+
+											<div class="mini-article-subhead">
+												Article
+												<time datetime="2019-01-09">Jan 9, 2019</time>
+											</div>
+
+											<h2 class="">
+												<a href="https://css-tricks.com/video-screencasts/168-css-in-js/" class="article-card-header read-article">#168: CSS-in-JS</a>
+											</h2>
+
+										</div>
+
+									</header>
+
+									<div class="mini-article-meta">
+
+										<div class="mini-article-byline">
+											<div class="author-avatar">
+												<a class="author-name" href="https://css-tricks.com/author/chriscoyier/">
+													<img alt="" src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&amp;d=retro&amp;r=pg" srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&amp;d=retro&amp;r=pg 2x" class="avatar avatar-80 photo" height="80" width="80"></a>
+												<svg class="half-circle" width="80px" height="80px">
+													<use xlink:href="#half-circle"></use>
+												</svg>
+											</div>
+											<div class="author-name-area">
+												<div class="author-name-prefix">Author</div>
+												<a class="author-name" href="https://css-tricks.com/author/chriscoyier/">Chris Coyier</a>
+											</div>
+										</div>
+
+										<div class="tags">
+											<a href="https://css-tricks.com/tag/css-in-js/" rel="tag">css-in-js</a>
+											<a href="https://css-tricks.com/tag/emotion/" rel="tag">emotion</a>
+											<a href="https://css-tricks.com/tag/glamerous/" rel="tag">glamerous</a>
+											<a href="https://css-tricks.com/tag/styled-components/" rel="tag">styled components</a>
+										</div>
+
+									</div>
+
+								</article>
+
+								<article class="mini-card module module-article article" id="mini-post-280768">
+
+									<header class="mini-article-card-header">
+
+										<div class="mini-article-card-title">
+
+											<div class="mini-article-subhead">
+												Article
+												<time datetime="2019-01-08">Jan 8, 2019</time>
+											</div>
+
+											<h2 class="">
+												<a href="https://css-tricks.com/sass-techniques-from-the-trenches/" class="article-card-header read-article">Sass Techniques from the Trenches</a>
+											</h2>
+
+										</div>
+
+									</header>
+
+									<div class="mini-article-meta">
+
+										<div class="mini-article-byline">
+											<div class="author-avatar">
+												<a class="author-name" href="https://css-tricks.com/author/buddyreno/">
+													<img alt="" src="https://secure.gravatar.com/avatar/96da1c844a23fdf9499690fce95cad16?s=80&amp;d=retro&amp;r=pg" srcset="https://secure.gravatar.com/avatar/96da1c844a23fdf9499690fce95cad16?s=160&amp;d=retro&amp;r=pg 2x" class="avatar avatar-80 photo" height="80" width="80"></a>
+												<svg class="half-circle" width="80px" height="80px">
+													<use xlink:href="#half-circle"></use>
+												</svg>
+											</div>
+											<div class="author-name-area">
+												<div class="author-name-prefix">Author</div>
+												<a class="author-name" href="https://css-tricks.com/author/buddyreno/">Buddy Reno</a>
+											</div>
+										</div>
+
+										<div class="tags">
+											<a href="https://css-tricks.com/tag/sass/" rel="tag">Sass</a>
+										</div>
+
+									</div>
+
+								</article>
+
+								<article class="mini-card module module-article article" id="mini-post-280293">
+
+									<header class="mini-article-card-header">
+
+										<div class="mini-article-card-title">
+
+											<div class="mini-article-subhead">
+												Article
+												<time datetime="2019-01-17">Jan 17, 2019</time>
+											</div>
+
+											<h2 class="">
+												<a href="https://css-tricks.com/2019-css-wishlist/" class="article-card-header read-article">2019 CSS Wishlist</a>
+											</h2>
+
+										</div>
+
+									</header>
+
+									<div class="mini-article-meta">
+
+										<div class="mini-article-byline">
+											<div class="author-avatar">
+												<a class="author-name" href="https://css-tricks.com/author/chriscoyier/">
+													<img alt="" src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&amp;d=retro&amp;r=pg" srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&amp;d=retro&amp;r=pg 2x" class="avatar avatar-80 photo" height="80" width="80"></a>
+												<svg class="half-circle" width="80px" height="80px">
+													<use xlink:href="#half-circle"></use>
+												</svg>
+											</div>
+											<div class="author-name-area">
+												<div class="author-name-prefix">Author</div>
+												<a class="author-name" href="https://css-tricks.com/author/chriscoyier/">Chris Coyier</a>
+											</div>
+										</div>
+
+									</div>
+
+								</article>
+
+								<article class="mini-card module module-article article" id="mini-post-280754">
+
+									<header class="mini-article-card-header">
+
+										<div class="mini-article-card-title">
+
+											<div class="mini-article-subhead">
+												Article
+												<time datetime="2019-01-07">Jan 7, 2019</time>
+											</div>
+
+											<h2 class="">
+												<a href="https://css-tricks.com/reader-mode-the-button-to-beat/" class="article-card-header read-article">Reader Mode: The Button to Beat</a>
+											</h2>
+
+										</div>
+
+									</header>
+
+									<div class="mini-article-meta">
+
+										<div class="mini-article-byline">
+											<div class="author-avatar">
+												<a class="author-name" href="https://css-tricks.com/author/ericwbailey/">
+													<img alt="" src="https://secure.gravatar.com/avatar/188a9d4deb76ac6e69c7f65358897476?s=80&amp;d=retro&amp;r=pg" srcset="https://secure.gravatar.com/avatar/188a9d4deb76ac6e69c7f65358897476?s=160&amp;d=retro&amp;r=pg 2x" class="avatar avatar-80 photo" height="80" width="80"></a>
+												<svg class="half-circle" width="80px" height="80px">
+													<use xlink:href="#half-circle"></use>
+												</svg>
+											</div>
+											<div class="author-name-area">
+												<div class="author-name-prefix">Author</div>
+												<a class="author-name" href="https://css-tricks.com/author/ericwbailey/">Eric Bailey</a>
+											</div>
+										</div>
+
+										<div class="tags">
+											<a href="https://css-tricks.com/tag/accessibility/" rel="tag">accessibility</a>
+										</div>
+
+									</div>
+
+								</article>
+
+								<article class="mini-card module module-article article" id="mini-post-280200">
+
+									<header class="mini-article-card-header">
+
+										<div class="mini-article-card-title">
+
+											<div class="mini-article-subhead">
+												Article
+												<time datetime="2019-01-03">Jan 3, 2019</time>
+											</div>
+
+											<h2 class="">
+												<a href="https://css-tricks.com/multi-line-inline-gradient/" class="article-card-header read-article">Multi-Line Inline Gradient</a>
+											</h2>
+
+										</div>
+
+									</header>
+
+									<div class="mini-article-meta">
+
+										<div class="mini-article-byline">
+											<div class="author-avatar">
+												<a class="author-name" href="https://css-tricks.com/author/chriscoyier/">
+													<img alt="" src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&amp;d=retro&amp;r=pg" srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&amp;d=retro&amp;r=pg 2x" class="avatar avatar-80 photo" height="80" width="80"></a>
+												<svg class="half-circle" width="80px" height="80px">
+													<use xlink:href="#half-circle"></use>
+												</svg>
+											</div>
+											<div class="author-name-area">
+												<div class="author-name-prefix">Author</div>
+												<a class="author-name" href="https://css-tricks.com/author/chriscoyier/">Chris Coyier</a>
+											</div>
+										</div>
+
+										<div class="tags">
+											<a href="https://css-tricks.com/tag/box-decoration-break/" rel="tag">box-decoration-break</a>
+											<a href="https://css-tricks.com/tag/gradients/" rel="tag">gradients</a>
+											<a href="https://css-tricks.com/tag/mix-blend-mode/" rel="tag">mix-blend-mode</a>
+										</div>
+
+									</div>
+
+								</article>
+
+								<article class="mini-card module module-article article" id="mini-post-281419">
+
+									<header class="mini-article-card-header">
+
+										<div class="mini-article-card-title">
+
+											<div class="mini-article-subhead">
+												Article
+												<time datetime="2019-01-18">Jan 18, 2019</time>
+											</div>
+
+											<h2 class="">
+												<a href="https://css-tricks.com/star-apps-a-new-generation-of-front-end-tooling-for-development-workflows/" class="article-card-header read-article">
+													STAR Apps: A New Generation of Front-End Tooling for Development Workflows
+												</a>
+											</h2>
+
+										</div>
+
+									</header>
+
+									<div class="mini-article-meta">
+
+										<div class="mini-article-byline">
+											<div class="author-avatar">
+												<a class="author-name" href="https://css-tricks.com/author/swyx/">
+													<img alt="" class="avatar avatar-80 photo avatar-default" height="80" src="https://css-tricks.com/wp-content/uploads/2019/01/39973926-0f34b514-56f3-11e8-9c4e-59547fedb719-80x80.jpg" width="80"></a>
+												<svg class="half-circle" width="80px" height="80px">
+													<use xlink:href="#half-circle"></use>
+												</svg>
+											</div>
+											<div class="author-name-area">
+												<div class="author-name-prefix">Author</div>
+												<a class="author-name" href="https://css-tricks.com/author/swyx/">Shawn Wang</a>
+											</div>
+										</div>
+
+										<div class="tags">
+											<a href="https://css-tricks.com/tag/design-tooling/" rel="tag">design tooling</a>
+											<a href="https://css-tricks.com/tag/javascript-framework/" rel="tag">javascript framework</a>
+											<a href="https://css-tricks.com/tag/trend/" rel="tag">trend</a>
+										</div>
+
+									</div>
+
+								</article>
+
+								<article class="mini-card module module-article article" id="mini-post-279638">
+
+									<header class="mini-article-card-header">
+
+										<div class="mini-article-card-title">
+
+											<div class="mini-article-subhead">
+												Article
+												<time datetime="2018-12-20">Dec 20, 2018</time>
+											</div>
+
+											<h2 class="">
+												<a href="https://css-tricks.com/regarding-css-global-scope/" class="article-card-header read-article">Regarding CSS’s Global Scope</a>
+											</h2>
+
+										</div>
+
+									</header>
+
+									<div class="mini-article-meta">
+
+										<div class="mini-article-byline">
+											<div class="author-avatar">
+												<a class="author-name" href="https://css-tricks.com/author/chriscoyier/">
+													<img alt="" src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&amp;d=retro&amp;r=pg" srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&amp;d=retro&amp;r=pg 2x" class="avatar avatar-80 photo" height="80" width="80"></a>
+												<svg class="half-circle" width="80px" height="80px">
+													<use xlink:href="#half-circle"></use>
+												</svg>
+											</div>
+											<div class="author-name-area">
+												<div class="author-name-prefix">Author</div>
+												<a class="author-name" href="https://css-tricks.com/author/chriscoyier/">Chris Coyier</a>
+											</div>
+										</div>
+
+										<div class="tags">
+											<a href="https://css-tricks.com/tag/css-in-js/" rel="tag">css-in-js</a>
+											<a href="https://css-tricks.com/tag/global-scope/" rel="tag">global scope</a>
+										</div>
+
+									</div>
+
+								</article>
+
+								<article class="mini-card module module-article article" id="mini-post-279771">
+
+									<header class="mini-article-card-header">
+
+										<div class="mini-article-card-title">
+
+											<div class="mini-article-subhead">
+												Article
+												<time datetime="2019-01-11">Jan 11, 2019</time>
+											</div>
+
+											<h2 class="">
+												<a href="https://css-tricks.com/re-pleasing-color-palettes/" class="article-card-header read-article">Re: Pleasing Color Palettes</a>
+											</h2>
+
+										</div>
+
+									</header>
+
+									<div class="mini-article-meta">
+
+										<div class="mini-article-byline">
+											<div class="author-avatar">
+												<a class="author-name" href="https://css-tricks.com/author/chriscoyier/">
+													<img alt="" src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&amp;d=retro&amp;r=pg" srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&amp;d=retro&amp;r=pg 2x" class="avatar avatar-80 photo" height="80" width="80"></a>
+												<svg class="half-circle" width="80px" height="80px">
+													<use xlink:href="#orange-to-pink"></use>
+												</svg>
+											</div>
+											<div class="author-name-area">
+												<div class="author-name-prefix">Author</div>
+												<a class="author-name" href="https://css-tricks.com/author/chriscoyier/">Chris Coyier</a>
+											</div>
+										</div>
+
+										<div class="tags">
+											<a href="https://css-tricks.com/tag/accessibility-color/" rel="tag">accessibility color</a>
+											<a href="https://css-tricks.com/tag/color/" rel="tag">color</a>
+											<a href="https://css-tricks.com/tag/generative-color/" rel="tag">generative color</a>
+										</div>
+
+									</div>
+
+								</article>
 							</div>
+
 						</div>
-						<div class="row text-center">
 
-							<!-- PERSON 5 -->
-
-							<div class="col-md-3 5">
-								<div class="person person5">
-									<div class="overlay">
-										<div>
-											<h3>Kriss Green</h3>
-											<h4 class="color-h4">Chief Officer</h4>
-											<a href="https://www.linkedin.com/company/itcrowd" target="_blank">
-												<i class="fab fa-linkedin-in color-h4"></i>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- PERSON 6 -->
-
-							<div class="col-md-3 6">
-								<div class="person person6">
-									<div class="overlay">
-										<div>
-											<h3>Kriss Green</h3>
-											<h4 class="color-h4">Chief Officer</h4>
-											<a href="https://www.linkedin.com/company/itcrowd" target="_blank">
-												<i class="fab fa-linkedin-in color-h4"></i>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- PERSON 7 -->
-
-							<div class="col-md-3 7">
-								<div class="person person7">
-									<div class="overlay">
-										<div>
-											<h3>Kriss Green</h3>
-											<h4 class="color-h4">Chief Officer</h4>
-											<a href="https://www.linkedin.com/company/itcrowd" target="_blank">
-												<i class="fab fa-linkedin-in color-h4"></i>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- PERSON 8 -->
-
-							<div class="col-md-3 8">
-								<div class="person person8">
-									<div class="overlay">
-										<div>
-											<h3>Kriss Green</h3>
-											<h4 class="color-h4">Chief Officer</h4>
-											<a href="https://www.linkedin.com/company/itcrowd" target="_blank">
-												<i class="fab fa-linkedin-in color-h4"></i>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-				<div class="row display-none" id="offices">
-					<div class="col-md-12">
-						<h1>Offices</h1>
 					</div>
 				</div>
 
-				<div class="row display-none" id="partners">
+				<div class="row page-section" id="offices">
 					<div class="col-md-12">
-						<h1>Partners</h1>
+						<h2>Offices</h2>
 					</div>
 				</div>
 
-				<div class="row display-none" id="our-business">
+				<div class="row page-section" id="partners">
 					<div class="col-md-12">
-						<h1>
+						<h2>Partners</h2>
+					</div>
+				</div>
+
+				<div class="row page-section" id="our-business">
+					<div class="col-md-12">
+						<h2>
 							Our
 							<span>Business</span>
-						</h1>
+						</h2>
 					</div>
 				</div>
 
-				<div class="row display-none" id="our-skills">
+				<div class="row page-section" id="our-skills">
 					<div class="col-md-12">
-						<h1>Our Skills</h1>
+						<h2>Our Skills</h2>
 
 						<!-- ACCORDION -->
 						<div class="panel-group" id="accordion">
@@ -372,93 +767,142 @@
 
 		</div>
 
+		<div class="top-button">
+			<i class="fas fa-angle-up fa-2x"></i>
+		</div>
+
 		<!-- FOOTER -->
 
 		<div class="row footer">
 			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
 				<div class="row border-bottom">
 					<div class="col-lg-4 col-md-4 col-sm-12">
-						<img class="img-responsive" src="logo.png">
+						<a href="home.html">
+							<img class="img-responsive" src="logo.png"></a>
 						<p>
 							<i class="fas fa-map-marker-alt"></i>
 							<span>Ljubljanska 6, City Tower floor 1, 1000 Skopje</span>
-						</p>
-						<p>
-							<i class="fas fa-phone"></i>
-							<span>+389 70 / 123 - 456</span>
 						</p>
 						<p>
 							<i class="far fa-envelope"></i>
 							<span>contact@itcrowd.me</span>
 						</p>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12"></div>
-					<div class="col-lg-4 col-md-4 col-sm-12 text-center" id="map">
-						<section id="cd-google-map">
-							<div id="google-container"></div>
-							<div id="cd-zoom-in"></div>
-							<div id="cd-zoom-out"></div>
-						</section>
+					<div class="col-lg-4 col-md-4 col-sm-12 text-center">
+						<ul>
+							<a href="home.html">
+								<li>Home</li>
+							</a>
+							<a href="AboutUs.html">
+								<li>About Us</li>
+							</a>
+							<a href="OurServices.html">
+								<li>Our Services</li>
+							</a>
+							<a href="Career.html">
+								<li>Career</li>
+							</a>
+							<a href="Contact.html">
+								<li>Contact</li>
+							</a>
+						</ul>
 					</div>
-				</div>
-				<div class="row copyright">
-					<div class="col-lg-10 col-md-8 col-sm-8">
-						<small>ITCROWD &copy Copyright 2018. All rights reserved.</small>
-					</div>
-					<div class="col-lg-2 col-md-4 col-sm-4 tablet-float-right">
+					<div class="col-lg-4 col-md-4 col-sm-12 copyright text-center">
+
 						<a href="https://www.linkedin.com/company/itcrowd" target="_blank">
 							<i class="fab fa-linkedin-in"></i>
-						</a>
-						<a href="" target="_blank">
-							<i class="fab fa-google-plus-g"></i>
 						</a>
 						<a href="https://www.facebook.com/itcrowd.me" target="_blank">
 							<i class="fab fa-facebook-f"></i>
 						</a>
+						<a href="https://www.xing.com/" target="_blank">
+							<i class="fab fa-xing"></i>
+						</a>
+					</div>
+				</div>
+				<div class="row text-center">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<small>ITCROWD &copy Copyright 2018. All rights reserved.</small>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+
 	<script>
 		$(document).ready(function(){
 
-			// $("#our-team .col-md-3").slideDown(500);
-			$("#our-team .1").slideDown(500);
-			$("#our-team .2").slideDown(560);
-			$("#our-team .3").slideDown(610);
-			$("#our-team .4").slideDown(660);
-			$("#our-team .5").slideDown(710);
-			$("#our-team .6").slideDown(760);
-			$("#our-team .7").slideDown(810);
-			$("#our-team .8").slideDown(860);
+			// LEFT ACTIVE SIDEBAR DESKTOP
+			$('.smooth-scroll').click(function(e){
+			  	e.preventDefault();
+				var target = $($(this).attr('href'));
+				if(target.length){
+				    var scrollTo = target.offset().top - 51;
+				    $('body, html').animate({scrollTop: scrollTo + 'px'}, 800);
+				}
+			});
 
-			for (var i = 1; i <= 8; i++) {
-				console.log($("#our-team .person" + i)[0]);
-			}
+			$(window).scroll(function() {
 
+				var scrollDistance = $(window).scrollTop();
+
+				// Assign active class to nav links while scolling
+				$('.page-section').each(function(i) {
+					if ($(this).position().top <= scrollDistance) {
+						$('.left-side a li').removeClass('active-right-side');
+						$('.left-side a li').eq(i).addClass('active-right-side');
+					}
+				});
+
+				// Assign active class to nav links while scolling
+				$('.page-section').each(function(i) {
+					if ($(this).position().top <= scrollDistance && scrollDistance > 0) {
+						$('.pn-ProductNav_Link.smooth-scroll-mobile').attr('aria-selected', 'false');
+						$('.pn-ProductNav_Link.smooth-scroll-mobile').eq(i).attr('aria-selected', 'true');
+						moveIndicator(pnProductNav.querySelector("[aria-selected=\"true\"]"), colours[0]);
+					}
+				});
+			}).scroll();
+
+			// MOBILE NAVBAR
+			$('.smooth-scroll-mobile').click(function(e){
+			  	e.preventDefault();
+				var target = $($(this).attr('href'));
+				if(target.length){
+				    var scrollTo = target.offset().top - 102;
+				    $('body, html').animate({scrollTop: scrollTo + 'px'}, 800);
+				}
+			});
+
+			var flag = true;
+			$(window).on('scroll', function() {
+
+				var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
+
+		  		if($(window).scrollTop() >= $('#our-skills').offset().top - 100 && flag) {
+			    	$('#our-skills').addClass('in-view');
+			    		$(".progress-bar").each(function() {
+							var percent = $(this).data("percent");
+							$(this).animate({
+								width: percent,
+							}, 300, function() {
+								$(".progress-percent").animate({
+									opacity: "1",
+								}, 1000);
+							});
+						});
+
+					flag = false;
+				}
+
+			}).scroll();
 
 			// LEFT ACTIVE SIDEBAR
 			$(".left-side ul").on('click', "li", function() {
 				
-				var activeSection = $(this).attr("class").split(" ")[0];
-				
-				$("#our-team").addClass("display-none");
-				$("#offices").addClass("display-none");
-				$("#partners").addClass("display-none");
-				$("#our-business").addClass("display-none");
-				$("#our-skills").addClass("display-none");
-
-				$("#our-team").removeClass("display-block");
-				$("#offices").removeClass("display-block");
-				$("#partners").removeClass("display-block");
-				$("#our-business").removeClass("display-block");
-				$("#our-skills").removeClass("display-block");
-
-				$("#" + activeSection).removeClass("display-none");
-				$("#" + activeSection).addClass("display-block");
-
 				$(".our-team").removeClass("active-right-side");
 				$(".offices").removeClass("active-right-side");
 				$(".partners").removeClass("active-right-side");
@@ -466,46 +910,407 @@
 				$(".our-skills").removeClass("active-right-side");
 
 				$(this).addClass("active-right-side");
-
 			});
 
+			
+			$("#accordion").on('click', '.panel-heading', function() {
 
-			$("#accordion").on('click', '.panel-default', function() {
-				var collapseIn = $(this).find(".panel-collapse");
-				var activeCollapse = $(this).attr("class").split(" ")[1];
-
+				var collapseIn = $(this).parents(".panel-default").find(".panel-collapse");
+				var activeCollapse = $(this).parents(".panel-default").attr("class").split(" ")[1];
+				var panelDefault = $(this).parents(".panel-default");
+				
 				if (collapseIn.hasClass("in")) {
-					$(this).find(".right").removeClass("active-panel-body-right");
-					$(this).find(".left").removeClass("active-panel-body-left");
-					$(this).find(".panel-heading").removeClass("background-panel-title");
+					panelDefault.find(".right").removeClass("active-panel-body-right");
+					panelDefault.find(".left").removeClass("active-panel-body-left");
+					panelDefault.find(".panel-heading").removeClass("background-panel-title");
 				} else if (!collapseIn.hasClass("in")){
 					$("." + activeCollapse).find(".pull-right").removeClass("active-panel-body-right active-panel-body-left");
 					$("." + activeCollapse).find(".panel-heading").removeClass("background-panel-title");
-					$(this).find(".right").addClass("active-panel-body-right");
-					$(this).find(".left").addClass("active-panel-body-left");
-					$(this).find(".panel-heading").addClass("background-panel-title");
+					panelDefault.find(".right").addClass("active-panel-body-right");
+					panelDefault.find(".left").addClass("active-panel-body-left");
+					panelDefault.find(".panel-heading").addClass("background-panel-title");
 				}
 			});
 			
-			$(".our-skills").on('click', function() {
 
-				var progressBarLength = ($(".progress-bar").length);
+			$( '.top-button' ).on( 'click', function(e){
 
-				$(".progress-bar").each(function() {
-					var percent = $(this).data("percent");
-					
-					$(this).animate({
-						width: percent,
-					}, 600, function() {
-						$(".progress-percent").animate({
-							opacity: "1",
-						}, 1000);
-					});
-				});
+			  	var href = $(this).attr( 'href' );
+			  	$( 'html, body' ).animate({
+					scrollTop: $( ".header" ).offset().top
+			  	}, 500 );
+			  	e.preventDefault();
+			});
 
-			})
-		});
+
 		
-	</script>
-</body>
+			$(function(){
+	
+				var $window = $(window);		//Window object
+				
+				var scrollTime = 0.5;			//Scroll time
+				var scrollDistance = 200;		//Distance. Use smaller value for shorter scroll and greater value for longer scroll
+					
+				$window.on("mousewheel DOMMouseScroll", function(event){
+					
+					event.preventDefault();	
+													
+					var delta = event.originalEvent.wheelDelta/90 || -event.originalEvent.detail/3;
+					var scrollTop = $window.scrollTop();
+					var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+						
+					TweenMax.to($window, scrollTime, {
+						scrollTo : { y: finalScroll, autoKill:true },
+							ease: Power1.easeOut,	//For more easing functions see https://api.greensock.com/js/com/greensock/easing/package-detail.html
+							autoKill: true,
+							overwrite: 5							
+						});
+								
+					});
+					
+				});
+			});
+
+			// CLOSE AN OPEN COLLAPSED NAVBAR WHEN CLICKING OUTSIDE
+			$(document).click(function (event) {
+				var clickover = $(event.target);
+				var $navbar = $(".navbar-collapse");	          
+			    var _opened = $navbar.hasClass("in");
+			    if (_opened === true && !clickover.hasClass("navbar-toggle")) {      
+					$navbar.collapse('hide');
+				}
+			});
+
+
+			var SETTINGS = {
+			    navBarTravelling: false,
+			    navBarTravelDirection: "",
+			    navBarTravelDistance: 150
+			}
+
+			var colours = {
+			    0: "#C0392B",
+			    1: "C0392B",
+			    2: "C0392B",
+			    3: "C0392B",
+			    4: "C0392B",
+			    5: "C0392B",
+			    6: "C0392B",
+			}
+
+			document.documentElement.classList.remove("no-js");
+			document.documentElement.classList.add("js");
+
+			// Out advancer buttons
+			var pnAdvancerLeft = document.getElementById("pnAdvancerLeft");
+			var pnAdvancerRight = document.getElementById("pnAdvancerRight");
+			// the indicator
+			var pnIndicator = document.getElementById("pnIndicator");
+
+			var pnProductNav = document.getElementById("pnProductNav");
+			var pnProductNavContents = document.getElementById("pnProductNavContents");
+
+			pnProductNav.setAttribute("data-overflowing", determineOverflow(pnProductNavContents, pnProductNav));
+
+			// Set the indicator
+			moveIndicator(pnProductNav.querySelector("[aria-selected=\"true\"]"), colours[0]);
+
+			// Handle the scroll of the horizontal container
+			var last_known_scroll_position = 0;
+			var ticking = false;
+
+			function doSomething(scroll_pos) {
+			    pnProductNav.setAttribute("data-overflowing", determineOverflow(pnProductNavContents, pnProductNav));
+			}
+
+			pnProductNav.addEventListener("scroll", function() {
+			    last_known_scroll_position = window.scrollY;
+			    if (!ticking) {
+			        window.requestAnimationFrame(function() {
+			            doSomething(last_known_scroll_position);
+			            ticking = false;
+			        });
+			    }
+			    ticking = true;
+			});
+
+
+			pnAdvancerLeft.addEventListener("click", function() {
+			    // If in the middle of a move return
+			    if (SETTINGS.navBarTravelling === true) {
+			        return;
+			    }
+			    // If we have content overflowing both sides or on the left
+			    if (determineOverflow(pnProductNavContents, pnProductNav) === "left" || determineOverflow(pnProductNavContents, pnProductNav) === "both") {
+			        // Find how far this panel has been scrolled
+			        var availableScrollLeft = pnProductNav.scrollLeft;
+			        // If the space available is less than two lots of our desired distance, just move the whole amount
+			        // otherwise, move by the amount in the settings
+			        if (availableScrollLeft < SETTINGS.navBarTravelDistance * 2) {
+			            pnProductNavContents.style.transform = "translateX(" + availableScrollLeft + "px)";
+			        } else {
+			            pnProductNavContents.style.transform = "translateX(" + SETTINGS.navBarTravelDistance + "px)";
+			        }
+			        // We do want a transition (this is set in CSS) when moving so remove the class that would prevent that
+			        pnProductNavContents.classList.remove("pn-ProductNav_Contents-no-transition");
+			        // Update our settings
+			        SETTINGS.navBarTravelDirection = "left";
+			        SETTINGS.navBarTravelling = true;
+			    }
+			    // Now update the attribute in the DOM
+			    pnProductNav.setAttribute("data-overflowing", determineOverflow(pnProductNavContents, pnProductNav));
+			});
+
+			pnAdvancerRight.addEventListener("click", function() {
+			    // If in the middle of a move return
+			    if (SETTINGS.navBarTravelling === true) {
+			        return;
+			    }
+			    // If we have content overflowing both sides or on the right
+			    if (determineOverflow(pnProductNavContents, pnProductNav) === "right" || determineOverflow(pnProductNavContents, pnProductNav) === "both") {
+			        // Get the right edge of the container and content
+			        var navBarRightEdge = pnProductNavContents.getBoundingClientRect().right;
+			        var navBarScrollerRightEdge = pnProductNav.getBoundingClientRect().right;
+			        // Now we know how much space we have available to scroll
+			        var availableScrollRight = Math.floor(navBarRightEdge - navBarScrollerRightEdge);
+			        // If the space available is less than two lots of our desired distance, just move the whole amount
+			        // otherwise, move by the amount in the settings
+			        if (availableScrollRight < SETTINGS.navBarTravelDistance * 2) {
+			            pnProductNavContents.style.transform = "translateX(-" + availableScrollRight + "px)";
+			        } else {
+			            pnProductNavContents.style.transform = "translateX(-" + SETTINGS.navBarTravelDistance + "px)";
+			        }
+			        // We do want a transition (this is set in CSS) when moving so remove the class that would prevent that
+			        pnProductNavContents.classList.remove("pn-ProductNav_Contents-no-transition");
+			        // Update our settings
+			        SETTINGS.navBarTravelDirection = "right";
+			        SETTINGS.navBarTravelling = true;
+			    }
+			    // Now update the attribute in the DOM
+			    pnProductNav.setAttribute("data-overflowing", determineOverflow(pnProductNavContents, pnProductNav));
+			});
+
+			pnProductNavContents.addEventListener(
+			    "transitionend",
+			    function() {
+			        // get the value of the transform, apply that to the current scroll position (so get the scroll pos first) and then remove the transform
+			        var styleOfTransform = window.getComputedStyle(pnProductNavContents, null);
+			        var tr = styleOfTransform.getPropertyValue("-webkit-transform") || styleOfTransform.getPropertyValue("transform");
+			        // If there is no transition we want to default to 0 and not null
+			        var amount = Math.abs(parseInt(tr.split(",")[4]) || 0);
+			        pnProductNavContents.style.transform = "none";
+			        pnProductNavContents.classList.add("pn-ProductNav_Contents-no-transition");
+			        // Now lets set the scroll position
+			        if (SETTINGS.navBarTravelDirection === "left") {
+			            pnProductNav.scrollLeft = pnProductNav.scrollLeft - amount;
+			        } else {
+			            pnProductNav.scrollLeft = pnProductNav.scrollLeft + amount;
+			        }
+			        SETTINGS.navBarTravelling = false;
+			    },
+			    false
+			);
+
+			// Handle setting the currently active link
+			pnProductNavContents.addEventListener("click", function(e) {
+			    var links = [].slice.call(document.querySelectorAll(".pn-ProductNav_Link"));
+			    links.forEach(function(item) {
+			        item.setAttribute("aria-selected", "false");
+			    })
+			    e.target.setAttribute("aria-selected", "true");
+			    // Pass the clicked item and it's colour to the move indicator function
+			    moveIndicator(e.target, colours[links.indexOf(e.target)]);
+			});
+
+			// var count = 0;
+			function moveIndicator(item, color) {
+			    var textPosition = item.getBoundingClientRect();
+			    var container = pnProductNavContents.getBoundingClientRect().left;
+			    var distance = textPosition.left - container;
+			     var scroll = pnProductNavContents.scrollLeft;
+			    pnIndicator.style.transform = "translateX(" + (distance + scroll) + "px) scaleX(" + textPosition.width * 0.01 + ")";
+			    // count = count += 100;
+			    // pnIndicator.style.transform = "translateX(" + count + "px)";
+			    
+			    if (color) {
+			        pnIndicator.style.backgroundColor = color;
+			    }
+			}
+
+			function determineOverflow(content, container) {
+			    var containerMetrics = container.getBoundingClientRect();
+			    var containerMetricsRight = Math.floor(containerMetrics.right);
+			    var containerMetricsLeft = Math.floor(containerMetrics.left);
+			    var contentMetrics = content.getBoundingClientRect();
+			    var contentMetricsRight = Math.floor(contentMetrics.right);
+			    var contentMetricsLeft = Math.floor(contentMetrics.left);
+			     if (containerMetricsLeft > contentMetricsLeft && containerMetricsRight < contentMetricsRight) {
+			        return "both";
+			    } else if (contentMetricsLeft < containerMetricsLeft) {
+			        return "left";
+			    } else if (contentMetricsRight > containerMetricsRight) {
+			        return "right";
+			    } else {
+			        return "none";
+			    }
+			}
+
+			/**
+			 * @fileoverview dragscroll - scroll area by dragging
+			 * @version 0.0.8
+			 * 
+			 * @license MIT, see https://github.com/asvd/dragscroll
+			 * @copyright 2015 asvd <heliosframework@gmail.com> 
+			 */
+
+
+			(function (root, factory) {
+			    if (typeof define === 'function' && define.amd) {
+			        define(['exports'], factory);
+			    } else if (typeof exports !== 'undefined') {
+			        factory(exports);
+			    } else {
+			        factory((root.dragscroll = {}));
+			    }
+			}(this, function (exports) {
+			    var _window = window;
+			    var _document = document;
+			    var mousemove = 'mousemove';
+			    var mouseup = 'mouseup';
+			    var mousedown = 'mousedown';
+			    var EventListener = 'EventListener';
+			    var addEventListener = 'add'+EventListener;
+			    var removeEventListener = 'remove'+EventListener;
+			    var newScrollX, newScrollY;
+
+			    var dragged = [];
+			    var reset = function(i, el) {
+			        for (i = 0; i < dragged.length;) {
+			            el = dragged[i++];
+			            el = el.container || el;
+			            el[removeEventListener](mousedown, el.md, 0);
+			            _window[removeEventListener](mouseup, el.mu, 0);
+			            _window[removeEventListener](mousemove, el.mm, 0);
+			        }
+
+			        // cloning into array since HTMLCollection is updated dynamically
+			        dragged = [].slice.call(_document.getElementsByClassName('dragscroll'));
+			        for (i = 0; i < dragged.length;) {
+			            (function(el, lastClientX, lastClientY, pushed, scroller, cont){
+			                (cont = el.container || el)[addEventListener](
+			                    mousedown,
+			                    cont.md = function(e) {
+			                        if (!el.hasAttribute('nochilddrag') ||
+			                            _document.elementFromPoint(
+			                                e.pageX, e.pageY
+			                            ) == cont
+			                        ) {
+			                            pushed = 1;
+			                            lastClientX = e.clientX;
+			                            lastClientY = e.clientY;
+
+			                            e.preventDefault();
+			                        }
+			                    }, 0
+			                );
+
+			                _window[addEventListener](
+			                    mouseup, cont.mu = function() {pushed = 0;}, 0
+			                );
+
+			                _window[addEventListener](
+			                    mousemove,
+			                    cont.mm = function(e) {
+			                        if (pushed) {
+			                            (scroller = el.scroller||el).scrollLeft -=
+			                                newScrollX = (- lastClientX + (lastClientX=e.clientX));
+			                            scroller.scrollTop -=
+			                                newScrollY = (- lastClientY + (lastClientY=e.clientY));
+			                            if (el == _document.body) {
+			                                (scroller = _document.documentElement).scrollLeft -= newScrollX;
+			                                scroller.scrollTop -= newScrollY;
+			                            }
+			                        }
+			                    }, 0
+			                );
+			             })(dragged[i++]);
+			        }
+			    }
+
+			      
+			    if (_document.readyState == 'complete') {
+			        reset();
+
+          } else {
+              _window[addEventListener]('load', reset, 0);
+              $(".first-logo").slideDown();
+			    }
+
+			    exports.reset = reset;
+			}));
+
+      if($( window ).width() > 991){
+
+        $(document).on("scroll", function(){
+          if
+            ($(document).scrollTop() > 15){
+            $(".header").addClass("shrink");
+
+          }
+          else
+          {
+            $(".header").removeClass("shrink");
+          }
+          // console.log($(this).find(".header"))
+          // if (($(this).find(".header")).hasClass("shrink")) {
+          //   $(this).find(".header").find(".first-logo").slideUp();
+          // } else {
+          //   $(this).find(".header").find(".second-logo").slideDown();
+          // }
+        })
+      }
+      else{
+        // Hide Header on on scroll down
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('.header').outerHeight();
+
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
+
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            
+            // Make sure they scroll more than delta
+            if(Math.abs(lastScrollTop - st) <= delta)
+                return;
+            
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight){
+                // Scroll Down
+                $('.header').removeClass('nav-down').addClass('nav-up');
+                $(".sticky-tablet").removeClass('second-nav-down').addClass("second-nav-up")
+            } else {
+                // Scroll Up
+                if(st + $(window).height() < $(document).height()) {
+                    $('.header').removeClass('nav-up').addClass('nav-down');
+                	$(".sticky-tablet").removeClass('second-nav-up').addClass("second-nav-down")
+                }
+            }
+            
+            lastScrollTop = st;
+        }
+      }
+				
+	</script></body>
 </html>

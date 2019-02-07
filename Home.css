@@ -712,7 +712,7 @@ background-image: url(https://images.pexels.com/photos/296116/pexels-photo-29611
   color: #7A9E97; 
 }
 .second-title{
-  animation: fade-in 2.8s linear forwards;
+  animation: fade-in 3.0s linear forwards;
 }
 
 .chart-skills.second li:nth-child(1) {
@@ -895,7 +895,7 @@ background-image: url(https://images.pexels.com/photos/296116/pexels-photo-29611
   color: #4F6367;
 }
 .third-title{
-  animation: fade-in 4s linear forwards;
+  animation: fade-in 4.2s linear forwards;
 }
 
 .chart-skills.third li:nth-child(1) {
@@ -1083,7 +1083,7 @@ background-image: url(https://images.pexels.com/photos/296116/pexels-photo-29611
   color: #EEF5DB;
 }
 .fourth-title{
-  animation: fade-in 5.2s linear forwards;
+  animation: fade-in 5.5s linear forwards;
 }
 
 .chart-skills.fourth li:nth-child(1) {
@@ -1268,7 +1268,7 @@ background-image: url(https://images.pexels.com/photos/296116/pexels-photo-29611
   color: #FE5F55;
 }
 .fifth-title{
-  animation: fade-in 6.4s linear forwards;
+  animation: fade-in 6.8s linear forwards;
 }
 
 .chart-skills.fifth li:nth-child(1) {
@@ -1463,7 +1463,7 @@ background-image: url(https://images.pexels.com/photos/296116/pexels-photo-29611
   color: brown;
 }
 .sixth-title{
-  animation: fade-in 7.6s linear forwards;
+  animation: fade-in 8.1s linear forwards;
 }
 
 .chart-skills.sixth li:nth-child(2) {
