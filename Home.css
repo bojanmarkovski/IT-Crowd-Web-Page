@@ -288,244 +288,15 @@ body,
   color: lightgray;
 }
 
-
-
-/*MODUL*/
-.modul-box-container{
-  height: 480px;
-  padding-bottom: 50px;
-}
-.modul .modul-box{
-  width: 14.28%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-  float: left;
-}
-.header-box{
-  flex: 1;
-  display: flex;
-  align-items: flex-end;
-  margin-bottom: -55px;
-}
-.modul .center-box .horizontal-line i{
-  cursor: pointer;
-}
-.header-box div{
-  height: 130px;
-  /*text-align: center;*/
-}
-.modul-box .even-model{
-  position: relative;
-}
-.modul-box .even-model div{
-  position: absolute;
-  width: 18vh;
-  left: 11.5vh;
-}
-.center-box{
-  flex: 1;
-  width: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-.center-box i{
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.footer-box{
-  flex: 1;
-  height: 130px;
-}
-
-.horizontal-line{
-  width: 100%;
-  height: 2px;
-  background-color: black;
-  position: relative;
-}
-.starting-point{
-  width: 8px;
-  height: 8px;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.finish-point{
-  width: 8px;
-  height: 8px;
-  position: absolute;
-  right: 0%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.vertical-line-down{
-  width: 2px;
-  height: 80px;
-  position: absolute;
-  right: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.point-down{
-  width: 8px;
-  height: 8px;
-  position: absolute;
-  bottom: 0%;
-  right: 50%;
-  transform: translateX(50%);
-}
-.vertical-line-up{
-  width: 120px;
-  height: 2px;
-  position: absolute;
-  left: 50%;
-  bottom: 60px;
-  transform: translateX(-50%) rotate(90deg);
-}
-.point-up{
-  width: 8px;
-  height: 8px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.right-line{
-  width: 2px;
-  height: 40px;
-  background-color: #C2C200;
-  position: absolute;
-  bottom: 100%;
-}
-.modul h4{
-  font-weight: bold;
-  color: #616161;
-}
-.modul small{
-  font-size: 14px;
-  color: #787878;
-}
-
-/*COLORS FOR MODUL*/
-
-/*TURQUOISE*/
-.modul-1{
-  background-color: #56ccc8;
-}
-
-/*GREEN*/
-.modul-2{
-  background-color: #C2C200;
-}
-
-/*ORANGE*/
-.modul-3{
-  background-color: #DD8F5A;
-}
-/*CORAL*/
-.modul-4{
-  background-color: #EA6060;
-}
-
-/*LIGHTBLUE*/
-.modul-5{
-  background-color: #88BAEA;
-}
-
-/*LIGHTBROWN*/
-.modul-6{
-  background-color: #DDB06C;
-}
-
-/*DARKBROWN*/
-.modul-7{
-  background-color: #775555;
-  /*font-size: 21px;*/
-}
-
-/*BUTTON TO TOP*/
-
-.top-button i{
-  color: white;
-  position: fixed;
-  right: 40px;
-  bottom: 40px;
-  background-color: #222222;
-  padding: 10px;
-  border-radius: 7px;
-  z-index: 999;
-}
-.top-button:hover i{
-  background-color: #C0392B;
-  cursor: pointer; #222222;
-}
-
 address{
   padding-top: 20px;
 }
-
-
-@media screen and (max-width: 2200px) {
-  .modul-box .even-model div{
-    left: 10.3vh;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .modul-box .even-model div{
-    left: 9.3vh;
-  }
-}
-@media screen and (max-width: 1380px) {
-  .modul-box .even-model div{
-    left: 12vh;
-    width: 22vh;
-  }
-}
-/*DODADENO*/
-@media screen and (max-width: 1321px) {
-  .modul-box .even-model div{
-    left: 13.5vh;
-    width: 25vh;
-  }
-}
-@media screen and (max-width: 1321px) {
-  .modul-box .even-model div{
-    left: 13.5vh;
-    width: 25vh;
-  }
-}
-
 @media screen and (max-width: 1199px) {
-  .text-bottom-modul div{
-    width: 21%;
-    margin-right: -144px;
-  }
   #slider .slidee p{
     font-size: 12px;
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .display-none-tablet{
-    display: none;
-  }
-}
 
 @media screen and (max-width: 991px) {
   .header ul li  a{
@@ -581,11 +352,6 @@ address{
   .left-img-bg{
     /*display: none;*/
   }
-}
-/*Jquery Classes*/
-.bg-gray{
-  background-color: #C5CDD1;
-  transition: 0.4s;
 }
 
 
@@ -671,3 +437,1214 @@ background-image: url(https://images.pexels.com/photos/296116/pexels-photo-29611
   position: fixed;
   transition: top 0.2s ease-in-out;
 }
+
+
+
+/*==================================================================*/
+/*==================================================================*/
+/*WORK PROCESS*/
+
+.work-process{
+  position: relative;
+}
+
+/* RESET STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.chart-skills.first {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.chart-skills.first *,
+.chart-skills.first::before {
+  box-sizing: border-box;
+}
+
+
+/* CHART-SKILLS.first STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.chart-skills.first {
+  position: absolute;
+  width: 220px;
+  height: 110px;
+  overflow: hidden;
+  top: 85px;
+}
+
+.chart-skills.first::before,
+.chart-skills.first::after {
+  position: absolute;
+}
+
+.chart-skills.first::before {
+  content: '';
+  width: inherit;
+  height: inherit;
+  border: 30px solid rgba(211, 211, 211, .3);
+  border-bottom: none;
+  border-top-left-radius: 175px;
+  border-top-right-radius: 175px;
+}
+
+.chart-skills.first::after {
+  content: "";
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+}
+
+.chart-skills.first li {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border: 30px solid;
+  border-top: none;
+  border-bottom-left-radius: 175px;
+  border-bottom-right-radius: 175px;
+  transform-origin: 50% 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  animation-fill-mode: forwards;
+  animation-duration: .3s;
+  animation-timing-function: linear;
+}
+.first-title h3{
+  color: #B8D8D8;
+}
+.first-title{
+  animation: fade-in 1.5s linear forwards;
+}
+
+.chart-skills.first li:nth-child(1) {
+  z-index: 4;
+  border-color: #B8D8D8;
+  animation-name: rotate-one;
+  animation-delay: .4s;
+}
+
+.chart-skills.first li:nth-child(2) {
+  z-index: 3;
+  border-color: #B8D8D8;
+  animation-name: rotate-two;
+  animation-delay: .7s;
+}
+
+.chart-skills.first li:nth-child(3) {
+  z-index: 2;
+  border-color: #B8D8D8;
+  animation-name: rotate-three;
+  animation-delay: 1s;
+}
+
+.chart-skills.first li:nth-child(4) {
+  z-index: 1;
+  border-color: #B8D8D8;
+  animation-name: rotate-four;
+  animation-delay: 1.3s;
+}
+
+.chart-skills.first span {
+  position: absolute;
+  font-size: .85rem;
+  backface-visibility: hidden;
+  animation: fade-in .4s linear forwards;
+}
+
+.chart-skills.first li:nth-child(1) span {
+  top: 5px;
+  left: 10px;
+  transform: rotate(0deg);
+}
+
+.chart-skills.first li:nth-child(2) span {
+  top: 20px;
+  left: 10px;
+  transform: rotate(-79.2deg);
+  animation-delay: .4s;
+}
+
+.chart-skills.first li:nth-child(3) span {
+  top: 18px;
+  left: 10px;
+  transform: rotate(-140.4deg);
+  animation-delay: .8s;
+}
+
+.chart-skills.first li:nth-child(4) span {
+  top: 10px;
+  left: 10px;
+  transform: rotate(-180deg);
+  animation-delay: 1.2s;
+}
+
+
+/* ANIMATIONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@keyframes rotate-one {
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes rotate-two {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes rotate-three {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+
+@keyframes rotate-four {
+  0% {
+    transform: rotate(135deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes fade-in {
+  0%,
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+/*=============================================================*/
+
+/*SECOND*/
+.chart-skills.second {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  transform: rotate(180deg);
+  margin-right: -52px;
+}
+
+.chart-skills.second *,
+.chart-skills.second::before {
+  box-sizing: border-box;
+}
+
+
+/* CHART-SKILLS.second STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.chart-skills.second {
+  position: absolute;
+  width: 220px;
+  height: 110px;
+  top: 195px;
+  overflow: hidden;
+}
+
+.chart-skills.second::before,
+.chart-skills.second::after {
+  position: absolute;
+}
+
+.chart-skills.second::before {
+  content: '';
+  width: inherit;
+  height: inherit;
+  border: 30px solid rgba(211, 211, 211, .3);
+  border-bottom: none;
+  border-top-left-radius: 175px;
+  border-top-right-radius: 175px;
+}
+
+.chart-skills.second::after {
+  content: '';
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: cadetblue;
+}
+.chart-skills.second li {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border: 30px solid;
+  border-top: none;
+  border-bottom-left-radius: 175px;
+  border-bottom-right-radius: 175px;
+  transform-origin: 50% 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  animation-fill-mode: forwards;
+  animation-duration: .3s;
+  animation-timing-function: linear;
+}
+.second-title h3{
+  color: #7A9E97; 
+}
+.second-title{
+  animation: fade-in 2.8s linear forwards;
+}
+
+.chart-skills.second li:nth-child(1) {
+  z-index: 4;
+  border-color: #7A9E97;
+  animation-name: rotate-one-second;
+  animation-delay: 1.6s;
+}
+
+.chart-skills.second li:nth-child(2) {
+  z-index: 3;
+  border-color: #7A9E97;
+  animation-name: rotate-two-second;
+  animation-delay: 1.9s;
+}
+
+.chart-skills.second li:nth-child(3) {
+  z-index: 2;
+  border-color: #7A9E97;
+  animation-name: rotate-three-second;
+  animation-delay: 2.2s;
+}
+
+.chart-skills.second li:nth-child(4) {
+  z-index: 1;
+  border-color: #7A9E97;
+  animation-name: rotate-four-second;
+  animation-delay: 2.5s;
+}
+
+.chart-skills.second span {
+  position: absolute;
+  font-size: .85rem;
+  backface-visibility: hidden;
+  animation: fade-in .4s linear forwards;
+}
+
+.chart-skills.second li:nth-child(1) span {
+  top: 5px;
+  left: 10px;
+  transform: rotate(-21.6deg);
+}
+
+.chart-skills.second li:nth-child(2) span {
+  top: 20px;
+  left: 10px;
+  transform: rotate(-79.2deg);
+  animation-delay: .4s;
+}
+
+.chart-skills.second li:nth-child(3) span {
+  top: 18px;
+  left: 10px;
+  transform: rotate(-140.4deg);
+  animation-delay: .8s;
+}
+
+.chart-skills.second li:nth-child(4) span {
+  top: 10px;
+  left: 10px;
+  transform: rotate(-180deg);
+  animation-delay: 1.2s;
+}
+
+
+/* ANIMATIONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@keyframes rotate-one-second {
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes rotate-two-second {
+  0% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+
+@keyframes rotate-three-second {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(-135deg);
+  }
+}
+
+@keyframes rotate-four-second {
+  0% {
+    transform: rotate(-135deg);
+  }
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+
+@keyframes fade-in {
+  0%,
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/*=============================================================*/
+
+/*THIRD*/
+
+.chart-skills.third *,
+.chart-skills.third::before {
+  box-sizing: border-box;
+}
+
+
+/* CHART-SKILLS STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.chart-skills.third {
+  position: absolute;
+  width: 220px;
+  height: 110px;
+  top: 85px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.chart-skills.third::before,
+.chart-skills.third::after {
+  position: absolute;
+}
+
+.chart-skills.third::before {
+  content: '';
+  width: inherit;
+  height: inherit;
+  border: 30px solid rgba(211, 211, 211, .3);
+  border-bottom: none;
+  border-top-left-radius: 175px;
+  border-top-right-radius: 175px;
+}
+
+.chart-skills.third::after {
+  content: '';
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: cadetblue;
+}
+
+.chart-skills.third li {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border: 30px solid;
+  border-top: none;
+  border-bottom-left-radius: 175px;
+  border-bottom-right-radius: 175px;
+  transform-origin: 50% 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  animation-fill-mode: forwards;
+  animation-duration: .3s;
+  animation-timing-function: linear;
+}
+.third-title h3{
+  color: #4F6367;
+}
+.third-title{
+  animation: fade-in 4s linear forwards;
+}
+
+.chart-skills.third li:nth-child(1) {
+  z-index: 4;
+  border-color: #4F6367;
+  animation-name: rotate-one;
+  animation-delay: 2.8s;
+}
+
+.chart-skills.third li:nth-child(2) {
+  z-index: 3;
+  border-color: #4F6367;
+  animation-name: rotate-two;
+  animation-delay: 3.1s;
+}
+
+.chart-skills.third li:nth-child(3) {
+  z-index: 2;
+  border-color: #4F6367;
+  animation-name: rotate-three;
+  animation-delay: 3.4s;
+}
+
+.chart-skills.third li:nth-child(4) {
+  z-index: 1;
+  border-color: #4F6367;
+  animation-name: rotate-four;
+  animation-delay: 3.7s;
+}
+
+.chart-skills.third span {
+  position: absolute;
+  font-size: .85rem;
+  backface-visibility: hidden;
+  animation: fade-in .4s linear forwards;
+}
+
+.chart-skills.third li:nth-child(1) span {
+  top: 5px;
+  left: 10px;
+  transform: rotate(-21.6deg);
+}
+
+.chart-skills.third li:nth-child(2) span {
+  top: 20px;
+  left: 10px;
+  transform: rotate(-79.2deg);
+  animation-delay: .4s;
+}
+
+.chart-skills.third li:nth-child(3) span {
+  top: 18px;
+  left: 10px;
+  transform: rotate(-140.4deg);
+  animation-delay: .8s;
+}
+
+.chart-skills.third li:nth-child(4) span {
+  top: 10px;
+  left: 10px;
+  transform: rotate(-180deg);
+  animation-delay: 1.2s;
+}
+
+
+/* ANIMATIONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@keyframes rotate-one {
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes rotate-two {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes rotate-three {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+
+@keyframes rotate-four {
+  0% {
+    transform: rotate(135deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes fade-in {
+  0%,
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+/*=============================================================*/
+
+/*FOURTH*/
+.chart-skills.fourth {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  transform: rotate(180deg);
+  margin-right: -52px;
+}
+
+.chart-skills.fourth *,
+.chart-skills.fourth::before {
+  box-sizing: border-box;
+}
+
+
+/* CHART-SKILLS.second STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.chart-skills.fourth {
+  position: absolute;
+  width: 220px;
+  height: 110px;
+  top: 195px;
+  overflow: hidden;
+}
+
+.chart-skills.fourth::before,
+.chart-skills.fourth::after {
+  position: absolute;
+}
+
+.chart-skills.fourth::before {
+  content: '';
+  width: inherit;
+  height: inherit;
+  border: 30px solid rgba(211, 211, 211, .3);
+  border-bottom: none;
+  border-top-left-radius: 175px;
+  border-top-right-radius: 175px;
+}
+
+.chart-skills.fourth::after {
+  content: '';
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: cadetblue;
+}
+
+.chart-skills.fourth li {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border: 30px solid;
+  border-top: none;
+  border-bottom-left-radius: 175px;
+  border-bottom-right-radius: 175px;
+  transform-origin: 50% 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  animation-fill-mode: forwards;
+  animation-duration: .3s;
+  animation-timing-function: linear;
+}
+.fourth-title h3{
+  color: #EEF5DB;
+}
+.fourth-title{
+  animation: fade-in 5.2s linear forwards;
+}
+
+.chart-skills.fourth li:nth-child(1) {
+  z-index: 4;
+  border-color: #EEF5DB;
+  animation-name: rotate-one-second;
+  animation-delay: 4s;
+}
+
+.chart-skills.fourth li:nth-child(2) {
+  z-index: 3;
+  border-color: #EEF5DB;
+  animation-name: rotate-two-second;
+  animation-delay: 4.3s;
+}
+
+.chart-skills.fourth li:nth-child(3) {
+  z-index: 2;
+  border-color: #EEF5DB;
+  animation-name: rotate-three-second;
+  animation-delay: 4.6s;
+}
+
+.chart-skills.fourth li:nth-child(4) {
+  z-index: 1;
+  border-color: #EEF5DB;
+  animation-name: rotate-four-second;
+  animation-delay: 4.9s;
+}
+
+.chart-skills.fourth span {
+  position: absolute;
+  font-size: .85rem;
+  backface-visibility: hidden;
+  animation: fade-in .4s linear forwards;
+}
+
+.chart-skills.fourth li:nth-child(1) span {
+  top: 5px;
+  left: 10px;
+  transform: rotate(-21.6deg);
+}
+
+.chart-skills.fourth li:nth-child(2) span {
+  top: 20px;
+  left: 10px;
+  transform: rotate(-79.2deg);
+  animation-delay: .4s;
+}
+
+.chart-skills.fourth li:nth-child(3) span {
+  top: 18px;
+  left: 10px;
+  transform: rotate(-140.4deg);
+  animation-delay: .8s;
+}
+
+.chart-skills.fourth li:nth-child(4) span {
+  top: 10px;
+  left: 10px;
+  transform: rotate(-180deg);
+  animation-delay: 1.2s;
+}
+
+
+/* ANIMATIONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@keyframes rotate-one-second {
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes rotate-two-second {
+  0% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+
+@keyframes rotate-three-second {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(-135deg);
+  }
+}
+
+@keyframes rotate-four-second {
+  0% {
+    transform: rotate(-135deg);
+  }
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+
+@keyframes fade-in {
+  0%,
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+/*=============================================================*/
+
+/*FIVTH*/
+
+.chart-skills.fifth *,
+.chart-skills.fifth::before {
+  box-sizing: border-box;
+}
+
+
+/* CHART-SKILLS STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.chart-skills.fifth {
+  position: absolute;
+  width: 220px;
+  height: 110px;
+  top: 85px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.chart-skills.fifth::before,
+.chart-skills.fifth::after {
+  position: absolute;
+}
+
+.chart-skills.fifth::before {
+  content: '';
+  width: inherit;
+  height: inherit;
+  border: 30px solid rgba(211, 211, 211, .3);
+  border-bottom: none;
+  border-top-left-radius: 175px;
+  border-top-right-radius: 175px;
+}
+
+.chart-skills.fifth::after {
+  content: '';
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: cadetblue;
+}
+
+.chart-skills.fifth li {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border: 30px solid;
+  border-top: none;
+  border-bottom-left-radius: 175px;
+  border-bottom-right-radius: 175px;
+  transform-origin: 50% 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  animation-fill-mode: forwards;
+  animation-duration: .3s;
+  animation-timing-function: linear;
+}
+.fifth-title h3{
+  color: #FE5F55;
+}
+.fifth-title{
+  animation: fade-in 6.4s linear forwards;
+}
+
+.chart-skills.fifth li:nth-child(1) {
+  z-index: 4;
+  border-color: #FE5F55;
+  animation-name: rotate-one;
+  animation-delay: 5.2s;
+}
+
+.chart-skills.fifth li:nth-child(2) {
+  z-index: 3;
+  border-color: #FE5F55;
+  animation-name: rotate-two;
+  animation-delay: 5.5s;
+}
+
+.chart-skills.fifth li:nth-child(3) {
+  z-index: 2;
+  border-color: #FE5F55;
+  animation-name: rotate-three;
+  animation-delay: 5.8s;
+}
+
+.chart-skills.fifth li:nth-child(4) {
+  z-index: 1;
+  border-color: #FE5F55;
+  animation-name: rotate-four;
+  animation-delay: 6.1s;
+}
+
+.chart-skills.fifth span {
+  position: absolute;
+  font-size: .85rem;
+  backface-visibility: hidden;
+  animation: fade-in .4s linear forwards;
+}
+
+.chart-skills.fifth li:nth-child(1) span {
+  top: 5px;
+  left: 10px;
+  transform: rotate(-21.6deg);
+}
+
+.chart-skills.fifth li:nth-child(2) span {
+  top: 20px;
+  left: 10px;
+  transform: rotate(-79.2deg);
+  animation-delay: .4s;
+}
+
+.chart-skills.fifth li:nth-child(3) span {
+  top: 18px;
+  left: 10px;
+  transform: rotate(-140.4deg);
+  animation-delay: .8s;
+}
+
+.chart-skills.fifth li:nth-child(4) span {
+  top: 10px;
+  left: 10px;
+  transform: rotate(-180deg);
+  animation-delay: 1.2s;
+}
+
+
+/* ANIMATIONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@keyframes rotate-one {
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes rotate-two {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes rotate-three {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+
+@keyframes rotate-four {
+  0% {
+    transform: rotate(135deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes fade-in {
+  0%,
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+/*=============================================================*/
+
+/*FOURTH*/
+.chart-skills.sixth {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  transform: rotate(180deg);
+  margin-right: -52px;
+}
+
+.chart-skills.sixth *,
+.chart-skills.sixth::before {
+  box-sizing: border-box;
+}
+
+
+/* CHART-SKILLS.second STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.chart-skills.sixth {
+  position: absolute;
+  width: 220px;
+  height: 110px;
+  top: 195px;
+  overflow: hidden;
+}
+
+.chart-skills.sixth::before,
+.chart-skills.sixth::after {
+  position: absolute;
+}
+
+.chart-skills.sixth::before {
+  content: '';
+  width: inherit;
+  height: inherit;
+  border: 30px solid rgba(211, 211, 211, .3);
+  border-bottom: none;
+  border-top-left-radius: 175px;
+  border-top-right-radius: 175px;
+}
+
+.chart-skills.sixth::after {
+  content: '';
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: cadetblue;
+}
+
+.chart-skills.sixth li {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border: 30px solid;
+  border-top: none;
+  border-bottom-left-radius: 175px;
+  border-bottom-right-radius: 175px;
+  transform-origin: 50% 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  animation-fill-mode: forwards;
+  animation-duration: .3s;
+  animation-timing-function: linear;
+}
+
+.chart-skills.sixth li:nth-child(1) {
+  z-index: 4;
+  border-color: brown;
+  animation-name: rotate-one-second;
+  animation-delay: 6.4s;
+}
+.sixth-title h3{
+  color: brown;
+}
+.sixth-title{
+  animation: fade-in 7.6s linear forwards;
+}
+
+.chart-skills.sixth li:nth-child(2) {
+  z-index: 3;
+  border-color: brown;
+  animation-name: rotate-two-second;
+  animation-delay: 6.7s;
+}
+
+.chart-skills.sixth li:nth-child(3) {
+  z-index: 2;
+  border-color: brown;
+  animation-name: rotate-three-second;
+  animation-delay: 7s;
+}
+
+.chart-skills.sixth li:nth-child(4) {
+  z-index: 1;
+  border-color: brown;
+  animation-name: rotate-four-second;
+  animation-delay: 7.3s;
+}
+
+.chart-skills.sixth span {
+  position: absolute;
+  font-size: .85rem;
+  backface-visibility: hidden;
+  animation: fade-in .4s linear forwards;
+}
+
+.chart-skills.sixth li:nth-child(1) span {
+  top: 5px;
+  left: 10px;
+  transform: rotate(-21.6deg);
+}
+
+.chart-skills.sixth li:nth-child(2) span {
+  top: 20px;
+  left: 10px;
+  transform: rotate(-79.2deg);
+  animation-delay: .4s;
+}
+
+.chart-skills.sixth li:nth-child(3) span {
+  top: 18px;
+  left: 10px;
+  transform: rotate(-140.4deg);
+  animation-delay: .8s;
+}
+
+.chart-skills.sixth li:nth-child(4) span {
+  top: 10px;
+  left: 10px;
+  transform: rotate(-180deg);
+  animation-delay: 1.2s;
+}
+
+
+/* ANIMATIONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@keyframes rotate-one-second {
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes rotate-two-second {
+  0% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+
+@keyframes rotate-three-second {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(-135deg);
+  }
+}
+
+@keyframes rotate-four-second {
+  0% {
+    transform: rotate(-135deg);
+  }
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+
+@keyframes fade-in {
+  0%,
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+  
+  ul h3{
+    text-align: center;
+  }
+
+  ul p{
+    position: absolute;
+    left: 50%;
+    transform: rotate(-180deg);
+    transform: translate(-50%);
+  }
+
+  .progress-container{
+    width: 220px;
+      display: inline-block;
+      position: absolute;
+      height: 405px;
+  }
+  .progress-container.even .progress-title{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+  .progress-container .container{
+      width: 100%;
+      height: 110px;
+      padding: 0;
+  }
+  .icon-progress{
+    background-image: url(images/icon1.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      font-weight: bold;
+      z-index: 9999;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+  }
+
+  .progress-container:nth-child(2){
+    left: 190px;
+  }
+  .progress-container:nth-child(3){
+    left: 380px;
+  }
+  .progress-container:nth-child(4){
+    left: 570px;
+  }
+  .progress-container:nth-child(5){
+    left: 760px;
+  }
+  .progress-container:nth-child(6){
+    left: 950px;
+  }
+  .progress-title{
+    text-align: center;
+    height: 110px;
+  }
+  .work-process-row-container{
+    height: 405px;
+    position: relative;
+  }
+  .work-process-row-container .col-lg-12.col-md-12.col-sm-12{
+    padding: 0;
+    /*position: absolute;*/
+    /*left: 2.5%;*/
+    /*transform: translateX(-50%);*/
+  }
+  .work-process-row-container .col-lg-12.col-md-12.col-sm-12 small{
+    color: rgba(34,34,34,0.7);
+  }
+  .work-process-row-container .col-lg-12.col-md-12.col-sm-12 h2{
+    color: inherit;
+  }
