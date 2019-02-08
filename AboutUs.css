@@ -50,7 +50,7 @@ a{
   text-align: center !important;
 }
 .wrap-about-us{
-  margin-top: 70px;
+  margin-top: 80px;
 }
 
 /*FOOTER*/
@@ -187,8 +187,8 @@ a{
 }
 .right-side h2{
   border-bottom: 2px solid #C0392B;
-  padding:13px;
-  padding-left: 25px;
+  padding-bottom: 10px;
+  padding-top: 0;
 }
 .right-side i{
   transition: 0.3s;
@@ -601,8 +601,8 @@ a{
 }
 .mini-card {
     min-width: 300px;
-    min-height: 350px;
-    padding: 1.5rem;
+    min-height: 330px;
+    padding: 15px;
     border-radius: 16px;
     background: white;
     -webkit-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.42);
@@ -808,10 +808,9 @@ img {
 }
 
 .second-nav-down{
-  transition: top 0.2s ease-in-out;
+  transition: top .2s ease-in-out;
   width: 100%;
 }
 .second-nav-up {
-  top: -58px;
-  position: fixed;
+  top: 0px;
 }

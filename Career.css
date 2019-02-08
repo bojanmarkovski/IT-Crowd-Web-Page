@@ -51,7 +51,7 @@ a{
   text-align: center !important;
 }
 .career{
-  padding-top: 61px;
+  padding-top: 80px;
 }
 
 .header{
@@ -367,6 +367,9 @@ a{
   .dada{
     max-height: auto;
     transition: 3s;
+  }
+  .career{
+    padding-top: 50px;
   }
 }
 

@@ -94,6 +94,7 @@ a{
 .row.contact{
   padding-top: 80px;
 }
+
 /*FOOTER*/
 .footer{
   position: absolute;
@@ -301,5 +302,9 @@ address{
 @media screen and (max-width: 991px) {
   .header{
     padding: 0;
+  }
+  .footer{
+    position: relative;
+    width: auto;
   }
 }

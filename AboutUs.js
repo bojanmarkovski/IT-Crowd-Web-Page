@@ -37,7 +37,13 @@ $(document).ready(function(){
 			  	e.preventDefault();
 				var target = $($(this).attr('href'));
 				if(target.length){
-				    var scrollTo = target.offset().top - 102;
+
+					var topOffset = 34;
+					if ($(".navbar-inverse").hasClass("nav-down")) {
+						console.log("DAda")
+						topOffset = 97;
+					}
+				    var scrollTo = target.offset().top - topOffset;
 				    $('body, html').animate({scrollTop: scrollTo + 'px'}, 800);
 				}
 			});
@@ -425,13 +431,7 @@ $(document).ready(function(){
           else
           {
             $(".header").removeClass("shrink");
-          }
-          // console.log($(this).find(".header"))
-          // if (($(this).find(".header")).hasClass("shrink")) {
-          //   $(this).find(".header").find(".first-logo").slideUp();
-          // } else {
-          //   $(this).find(".header").find(".second-logo").slideDown();
-          // }
+		  }
         })
       }
       else{
@@ -458,18 +458,17 @@ $(document).ready(function(){
             // Make sure they scroll more than delta
             if(Math.abs(lastScrollTop - st) <= delta)
                 return;
-            
             // If they scrolled down and are past the navbar, add class .nav-up.
             // This is necessary so you never see what is "behind" the navbar.
             if (st > lastScrollTop && st > navbarHeight){
                 // Scroll Down
                 $('.header').removeClass('nav-down').addClass('nav-up');
-                $(".sticky-tablet").removeClass('second-nav-down').addClass("second-nav-up")
+                $(".sticky-tablet").removeClass('second-nav-down').addClass("second-nav-up");
             } else {
                 // Scroll Up
                 if(st + $(window).height() < $(document).height()) {
                     $('.header').removeClass('nav-up').addClass('nav-down');
-                	$(".sticky-tablet").removeClass('second-nav-up').addClass("second-nav-down")
+                	$(".sticky-tablet").removeClass('second-nav-up').addClass("second-nav-down");
                 }
             }
             
