@@ -5,46 +5,91 @@
 .clear{
   clear: both;
 }
+a{
+  text-decoration: none !important;
+}
 .header{
-  /*position: fixed;*/
-  /*top: 0;*/
+  position: fixed;
+  top: 0;
   z-index: 11;
   width: 100%;
 }
 .header ul li a{
-	padding-top: 21px;
+  padding-top: 21px;
 }
 .header .logo{
-	padding: 0;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 143px;
-	height: 61px;
+  padding: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 143px;
+  height: 61px;
 }
 .header img{
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .header img:hover{
-	cursor: pointer;
+  cursor: pointer;
 }
 .header ul li a{
-	border-bottom: 5px solid transparent;
-	transition: 0.3s;
-	letter-spacing: 0.6px;
-	font-weight: bold;
-	font-size: 16px;
-	font-family: Segoe Script, sans-serif;
+  border-bottom: 5px solid transparent;
+  transition: 0.3s;
+  letter-spacing: 0.6px;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: Segoe Script, sans-serif;
 }
 .header ul li a:hover{
-	border-bottom: 5px solid #C0392B;
+  border-bottom: 5px solid #C0392B;
+}
+.header ul li a:hover{
+  border-bottom: 5px solid #C0392B;
 }
 .header ul .active a{
-	background-color: #C0392B !important;
+  background-color: transparent !important;
+  color: #C0392B !important;
 }
 #mynavbar{
   width: 100%;
   text-align: center !important;
+}
+.career{
+  padding-top: 61px;
+}
+
+.header{
+  width: 100%;
+  padding: 15px 0;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out; 
+  z-index: 9999;
+  top: 0;
+  position: fixed;
+}
+.shrink{
+  padding: 0px;
+}
+.nav-down {
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+}
+
+.nav-up {
+  top: -65px;
+  position: fixed;
+  transition: top 0.2s ease-in-out;
+}
+
+.second-nav-down{
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+}
+.second-nav-up {
+  top: -58px;
+  position: fixed;
 }
 
 
@@ -416,26 +461,6 @@ background-image: url(https://images.pexels.com/photos/296116/pexels-photo-29611
 }
 .active-slider{
   background-color: #C0392B;
-}
-
-
-/*NAVBAR*/
-
-/*body {
-    padding-top: 40px;
-}*/
-
-.nav-down {
-    position: fixed;
-    top: 0;
-    transition: top 0.2s ease-in-out;
-    width: 100%;
-}
-
-.nav-up {
-  top: -65px;
-  position: fixed;
-  transition: top 0.2s ease-in-out;
 }
 
 
@@ -1607,7 +1632,6 @@ background-image: url(https://images.pexels.com/photos/296116/pexels-photo-29611
       transform: translate(-50%, -50%);
       font-size: 20px;
       font-weight: bold;
-      z-index: 9999;
       width: 50px;
       height: 50px;
       position: absolute;
@@ -1648,3 +1672,9 @@ background-image: url(https://images.pexels.com/photos/296116/pexels-photo-29611
   .work-process-row-container .col-lg-12.col-md-12.col-sm-12 h2{
     color: inherit;
   }
+
+@media screen and (max-width: 991px) {
+  .header {
+    padding: 0px;
+  }
+}

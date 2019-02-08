@@ -37,7 +37,7 @@
 								<a href="Home.html" class="">Home</a>
 							</li>
 							<li>
-								<a href="AboutUsSmoothScrool.html">About Us</a>
+								<a href="AboutUs.html">About Us</a>
 							</li>
 							<li>
 								<a href="OurServices.html">Our Services</a>
@@ -370,7 +370,7 @@
 							<a href="home.html">
 								<li>Home</li>
 							</a>
-							<a href="AboutUsSmoothScrool.html">
+							<a href="AboutUs.html">
 								<li>About Us</li>
 							</a>
 							<a href="OurServices.html">
@@ -416,8 +416,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
 
 	<script src="main.js"></script>
-	<script type="text/javascript" src="slick/slick.min.js"></script>
-
+	<script src="Home.js"></script>
 	<script>
 		$(function(){
 	
@@ -446,9 +445,6 @@
 			});
 
 		$(document).ready(function(){
-			$('.slajder').slick({
-				// setting-name: setting-value
-		  	});
 
 		  	var screenWidth = $( window ).width();
 		  	var rightSpace = screenWidth - 1170;
@@ -482,47 +478,6 @@
 				$navbar.collapse('hide');
 			}
 		});
-
-
-		// Hide Header on on scroll down
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('.header').outerHeight();
-
-$(window).scroll(function(event){
-    didScroll = true;
-});
-
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
-
-function hasScrolled() {
-    var st = $(this).scrollTop();
-    
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-    
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('.header').removeClass('nav-down').addClass('nav-up');
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('.header').removeClass('nav-up').addClass('nav-down');
-        }
-    }
-    
-    lastScrollTop = st;
-}
-
 
 		
 	</script></body>

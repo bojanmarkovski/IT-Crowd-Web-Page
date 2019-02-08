@@ -35,7 +35,7 @@
 								<a href="Home.html" class="">Home</a>
 							</li>
 							<li>
-								<a href="AboutUsSmoothScrool.html">About Us</a>
+								<a href="AboutUs.html">About Us</a>
 							</li>
 							<li class="active">
 								<a href="OurServices.html">Our Services</a>
@@ -197,7 +197,7 @@
 							<a href="home.html">
 								<li>Home</li>
 							</a>
-							<a href="AboutUsSmoothScrool.html">
+							<a href="AboutUs.html">
 								<li>About Us</li>
 							</a>
 							<a href="OurServices.html">
@@ -240,51 +240,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
 
-	<script>
-
-		$( '.top-button' ).on( 'click', function(e){
-		  	var href = $(this).attr( 'href' );
-		  	$( 'html, body' ).animate({
-				scrollTop: $( ".header" ).offset().top
-		  	}, 500 );
-		  	e.preventDefault();
-		});
-
-		$(function(){
-	
-			var $window = $(window);		//Window object
-			
-			var scrollTime = 0.5;			//Scroll time
-			var scrollDistance = 200;		//Distance. Use smaller value for shorter scroll and greater value for longer scroll
-				
-			$window.on("mousewheel DOMMouseScroll", function(event){
-				
-				event.preventDefault();	
-												
-				var delta = event.originalEvent.wheelDelta/90 || -event.originalEvent.detail/3;
-				var scrollTop = $window.scrollTop();
-				var finalScroll = scrollTop - parseInt(delta*scrollDistance);
-					
-				TweenMax.to($window, scrollTime, {
-					scrollTo : { y: finalScroll, autoKill:true },
-						ease: Power1.easeOut,	//For more easing functions see https://api.greensock.com/js/com/greensock/easing/package-detail.html
-						autoKill: true,
-						overwrite: 5							
-					});
-							
-			});
-				
-		});
-
-		// CLOSE AN OPEN COLLAPSED NAVBAR WHEN CLICKING OUTSIDE
-		$(document).click(function (event) {
-			var clickover = $(event.target);
-			var $navbar = $(".navbar-collapse");	          
-		    var _opened = $navbar.hasClass("in");
-		    if (_opened === true && !clickover.hasClass("navbar-toggle")) {      
-				$navbar.collapse('hide');
-			}
-		});
-	</script>
+	<script src="OurServices.js"></script>
 </body>
 </html>

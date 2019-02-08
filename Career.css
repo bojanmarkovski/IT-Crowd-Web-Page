@@ -67,6 +67,27 @@ a{
 .shrink{
   padding: 0px;
 }
+.nav-down {
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+}
+
+.nav-up {
+  top: -65px;
+  position: fixed;
+  transition: top 0.2s ease-in-out;
+}
+
+.second-nav-down{
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+}
+.second-nav-up {
+  top: -58px;
+  position: fixed;
+}
 
 /*FOOTER*/
 .footer{
@@ -165,7 +186,7 @@ a{
 /*CAREER LEFT*/
 
 .career .career-left .pd-box{
-  margin: 130px 0px;
+  margin: 90px 0px;
 }
 .career .career-left .pd-box:not(:first-child) {
     margin-top: 20px;
@@ -243,8 +264,8 @@ a{
 }
 .career-box:focus-within~.career-box, 
 .career-box:hover~.career-box {
-    -webkit-transform: translateY(55px);
-    transform: translateY(55px);
+    -webkit-transform: translateY(95px);
+    transform: translateY(95px);
 }
 .career-box:focus-within, 
 .career-box:hover {
@@ -254,8 +275,8 @@ a{
 
 .career-box:focus-within ~ .career-box, 
 .row.pd-box:hover ~ .row.pd-box .career-box {
-    -webkit-transform: translateY(55px);
-    transform: translateY(55px);
+    -webkit-transform: translateY(95px);
+    transform: translateY(95px);
 }
 
 /*SCROLL CARDS*/
@@ -470,24 +491,3 @@ ul li{
     border-radius: 8px; 
 } 
 
-.nav-down {
-    position: fixed;
-    top: 0;
-    transition: top 0.2s ease-in-out;
-    width: 100%;
-}
-
-.nav-up {
-  top: -65px;
-  position: fixed;
-  transition: top 0.2s ease-in-out;
-}
-
-.second-nav-down{
-  transition: top 0.2s ease-in-out;
-  width: 100%;
-}
-.second-nav-up {
-  top: -58px;
-  position: fixed;
-}

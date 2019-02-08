@@ -11,7 +11,7 @@ a{
 .header{
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 11;
   width: 100%;
 }
 .header ul li a{
@@ -42,18 +42,58 @@ a{
 .header ul li a:hover{
   border-bottom: 5px solid #C0392B;
 }
+.header ul li a:hover{
+  border-bottom: 5px solid #C0392B;
+}
 .header ul .active a{
-  background-color: #C0392B !important;
+  background-color: transparent !important;
+  color: #C0392B !important;
 }
 #mynavbar{
   width: 100%;
   text-align: center !important;
 }
-
-.contact{
+.career{
   padding-top: 61px;
 }
 
+.header{
+  width: 100%;
+  padding: 15px 0;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out; 
+  z-index: 9999;
+  top: 0;
+  position: fixed;
+}
+.shrink{
+  padding: 0px;
+}
+.nav-down {
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+}
+
+.nav-up {
+  top: -65px;
+  position: fixed;
+  transition: top 0.2s ease-in-out;
+}
+
+.second-nav-down{
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+}
+.second-nav-up {
+  top: -58px;
+  position: fixed;
+}
+.row.contact{
+  padding-top: 80px;
+}
 /*FOOTER*/
 .footer{
   position: absolute;
@@ -255,5 +295,11 @@ address{
 @media screen and (min-width: 768px) {
   .clear{
     clear: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .header{
+    padding: 0;
   }
 }
