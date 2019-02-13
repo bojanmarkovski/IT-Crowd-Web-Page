@@ -1,0 +1,31 @@
+@keyframes one-animated {
+    0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%
+    box-shadow:15px 15px 50px rgba(0, 0, 0, 0.2); }
+    25% { border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; }
+    50% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%
+    box-shadow:-10px -5px 50px rgba(0, 0, 0, 0.2); }
+    75% { border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%; }
+}
+@keyframes two-animated {
+    0% { border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%
+    box-shadow:15px 15px 50px rgba(0, 0, 0, 0.2); }
+    25% { border-radius: 40% 80% 30% 90% / 72% 65% 35% 28%; }
+    50% { border-radius: 65% 35% 45% 55% / 22% 48% 52% 78%
+    box-shadow:-10px -5px 50px rgba(0, 0, 0, 0.2); }
+    75% { border-radius: 24% 76% 10% 90% / 44% 68% 32% 56%; }
+}
+@keyframes three-animated {
+    0% { border-radius: 12% 88% 40% 40% / 20% 15% 85% 80%
+    box-shadow:15px 15px 50px rgba(0, 0, 0, 0.2); }
+    25% { border-radius: 72% 28% 30% 90% / 15% 46% 54% 85%; }
+    50% { border-radius: 12% 88% 40% 40% / 20% 15% 85% 80%
+    box-shadow:-10px -5px 50px rgba(0, 0, 0, 0.2); }
+    75% { border-radius: 18% 82% 10% 90% / 24% 68% 32% 76%; }
+}
+
+.iq-fancy-boxnew{ padding: 40px 15px 25px 15px; overflow: hidden; position: relative; background: #fff;  }
+.iq-fancy-boxnew .iq-icon { border-radius: 90px; display: inline-block; height: 86px; width: 86px; line-height: 86px; text-align: center; color: #fff; background: #4ac4f3; -webkit-transition: all 0.5s ease-out 0s; -moz-transition: all 0.5s ease-out 0s; -ms-transition: all 0.5s ease-out 0s; -o-transition: all 0.5s ease-out 0s; transition: all 0.5s ease-out 0s; }
+.iq-fancy-boxnew .iq-icon i { font-size: 46px; }
+.iq-fancy-boxnew .fancy-content h5 { z-index: 9; position: relative; }
+.iq-works-imgs{width: 100%;}
+.iq-fancy-boxnew.text-center .icon-bg { text-align: center; display flex; align-content: center; align-items: center; justify-content: center; width: 86px; height: 86px; margin: auto; position: relative; background-color: #4ac4f3; background-image: linear-gradient(-45deg, #4ac4f3 0%, #4ac4f3 100%); border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2); animation: one-animated 10s infinite; overflow: hidden; }

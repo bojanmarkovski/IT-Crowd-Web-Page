@@ -228,19 +228,6 @@ $(".indicators").on('click', 'div', function(event) {
         }
       });
 
-
-  // BUTTON TO TOP
-
-  $( '.top-button' ).on( 'click', function(e){
-
-      var href = $(this).attr( 'href' );
-      $( 'html, body' ).animate({
-      scrollTop: $( ".header" ).offset().top
-      }, 500 );
-      e.preventDefault();
-  });
-
-
   // fadein
 
   $(window).scroll( function(){
@@ -322,12 +309,6 @@ if($( window ).width() > 991){
     {
       $(".header").removeClass("shrink");
     }
-    // console.log($(this).find(".header"))
-    // if (($(this).find(".header")).hasClass("shrink")) {
-    //   $(this).find(".header").find(".first-logo").slideUp();
-    // } else {
-    //   $(this).find(".header").find(".second-logo").slideDown();
-    // }
   })
 }
 else{

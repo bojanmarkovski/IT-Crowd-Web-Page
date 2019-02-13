@@ -1,10 +1,7 @@
-@font-face {
-  font-family: Segoe Script;
-  src: url(fonts/segoesc.ttf);
-}
 .clear{
   clear: both;
 }
+
 a{
   text-decoration: none !important;
 }
@@ -37,7 +34,6 @@ a{
   letter-spacing: 0.6px;
   font-weight: bold;
   font-size: 16px;
-  font-family: Segoe Script, sans-serif;
 }
 .header ul li a:hover{
   border-bottom: 5px solid #C0392B;
@@ -59,7 +55,7 @@ a{
 
 .header{
   width: 100%;
-  padding: 15px 0;
+  padding: 5px 0;
   transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out; 
@@ -229,52 +225,7 @@ body,
   border-color: transparent gray transparent transparent;
 }
 
-/*DEVELOPMENT*/
-.development{
-  /*height: 40vh;*/
-/*  padding-top: 20px;
-  padding-bottom: 20px;*/
-}
-.development .box-development div{
-  padding: 25px 20px;
-}
-.development div h3{
-  padding-top: 10px;
-  color: rgba(34,34,34,0.94);
-  font-family: Arial;
-  font-weight: bold;
-  height: 80px;
-  line-height: 35px;
-  transition: 0.4s;
-}
-.development div p{
-  line-height: 20px;
-  letter-spacing: 0.9px;
-  color: rgba(34,34,34,0.7);
-}
-.development div i{
-  border-radius: 50%;
-  border: 2px solid rgba(34,34,34,0.94);
-  width: 45px;
-  height: 45px;
-  font-size: 20px;
-  color: #C0392B;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  transition: 0.4s;
-}
-.development .box-development h4{
-  padding-top: 10px;
-}
-.development div p strong{
-  color: #C0392B;
-}
-.icon-home{
-  width: 80px;
-  margin: 0 auto;
-}
+
 
 /*FOOTER*/
 .footer{
@@ -1677,4 +1628,703 @@ background-image: url(https://images.pexels.com/photos/296116/pexels-photo-29611
   .header {
     padding: 0px;
   }
+}
+
+
+
+
+
+/*OUR TECHNOLOGIES*/
+.our-skills-process{
+    background-image: linear-gradient(to right, #2B0C93 , #FFE49A);
+    height: 840px !important;
+}
+.company-icons{
+    visibility: hidden;
+}
+@-webkit-keyframes floating {
+    from {
+    -webkit-transform: translateY(8px) rotate3d(0, 0, 1, 3deg);
+    transform: translateY(8px) rotate3d(0, 0, 1, 3deg);
+    }
+    to {
+        -webkit-transform: translateY(-8px) rotate3d(0, 0, 1, 0deg);
+        transform: translateY(-8px) rotate3d(0, 0, 1, 0deg);
+    }
+    }@keyframes floating {
+        from {
+        -webkit-transform: translateY(8px) rotate3d(0, 0, 1, 3deg);
+        transform: translateY(8px) rotate3d(0, 0, 1, 3deg);
+    }
+    to {
+        -webkit-transform: translateY(-8px) rotate3d(0, 0, 1, 0deg);
+        transform: translateY(-8px) rotate3d(0, 0, 1, 0deg);
+    }
+    }@-webkit-keyframes timerCountdown {
+        0% {
+        width: 0;
+    }
+    100% {
+        width: 100%}
+    }@keyframes timerCountdown {
+        0% {
+        width: 0;
+    }
+    100% {
+        width: 100%}
+    }@-webkit-keyframes timerReset {
+        0% {
+        width: 100%}
+    100% {
+        width: 0;
+    }
+    }@keyframes timerReset {
+        0% {
+        width: 100%}
+    100% {
+        width: 0;
+    }
+}
+[data-page=index] .feature-title {
+    color: #47495a;
+    font-size: 19px;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.21;
+    text-align: left;
+}
+[data-page=index] section.testimonies {
+    height: 840px;
+    overflow: hidden;
+    position: relative;
+}
+[data-page=index] section.testimonies .container {
+    height: 100%
+}
+[data-page=index] section.testimonies .container .carousel-quotes {
+    display: inline-block;
+    height: 100%;
+    overflow: hidden;
+    margin-left: 40px;
+    position: relative;
+    width: 569px;
+}
+[data-page=index] section.testimonies .container .carousel-quotes-fade-out-mask {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+[data-page=index] section.testimonies .container .carousel-quotes-fade-out-mask .container {
+    height: 100%
+}
+[data-page=index] section.testimonies .container .company-icons {
+    display: inline-block;
+    height: 100%;
+    position: relative;
+    vertical-align: top;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: floating;
+    animation-name: floating;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    box-shadow: 0 10px 40px 0 rgba(23, 28, 33, .13), 0 31px 13px 0 rgba(23, 28, 33, .05);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    opacity: 1;
+    -webkit-transition: margin 1s cubic-bezier(.2, .6, .3, 1), opacity 2s ease;
+    transition: margin 1s cubic-bezier(.2, .6, .3, 1), opacity 2s ease;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container .company-icon-ring-4-logo {
+    background-image: url(../images/company-icon-spritesheet.png);
+    background-position: -1px -1px;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container .company-icon-ring-3-logo {
+    background-image: url(../images/company-icon-spritesheet.png);
+    background-position: -103px -1px;
+    background-repeat: no-repeat;
+    height: 112px;
+    width: 112px;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container .company-icon-ring-2-logo {
+    background-image: url(../images/company-icon-spritesheet.png);
+    background-position: -1px -115px;
+    background-repeat: no-repeat;
+    height: 21px;
+    width: 100px;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container .company-icon-ring-1-logo {
+    background-image: url(../images/company-icon-spritesheet.png);
+    background-position: -103px -115px;
+    background-repeat: no-repeat;
+    height: 29px;
+    width: 125px;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container .company-icon-ring-6-logo {
+    background-image: url(../images/company-icon-spritesheet.png);
+    background-position: -217px -1px;
+    background-repeat: no-repeat;
+    height: 105px;
+    width: 140px;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container .company-icon-ring-8-logo {
+    background-image: url(../images/company-icon-spritesheet.png);
+    background-position: -230px -108px;
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 93px;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container .company-icon-ring-9-logo {
+    background-image: url(../images/company-icon-spritesheet.png);
+    background-position: -230px -135px;
+    background-repeat: no-repeat;
+    height: 21px;
+    width: 100px;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container .company-icon-ring-7-logo {
+    background-image: url(../images/company-icon-spritesheet.png);
+    background-position: -1px -158px;
+    background-repeat: no-repeat;
+    height: 31px;
+    width: 100px;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-1 {
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    height: 144px;
+    margin-left: 76px;
+    margin-top: -25px;
+    position: absolute;
+    width: 144px;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-1 .company-icon {
+    background-image: url(../images/company-icon-spritesheet.png);
+    background-position: -103px -115px;
+    background-repeat: no-repeat;
+    height: 29px;
+    width: 125px;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-2 {
+    -webkit-animation-delay: -1.8s;
+    animation-delay: -1.8s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    height: 147px;
+    margin-left: 417px;
+    margin-top: 38px;
+    position: absolute;
+    -webkit-transition-delay: .1s;
+    transition-delay: .1s;
+    width: 147px;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-2 .company-icon {
+    background-image: url(../images/company-icon-spritesheet.png);
+    background-position: -1px -115px;
+    background-repeat: no-repeat;
+    height: 21px;
+    width: 100px;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-3 {
+    -webkit-animation-delay: -2.2s;
+    animation-delay: -2.2s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    height: 104px;
+    margin-left: 211px;
+    margin-top: 189px;
+    position: absolute;
+    -webkit-transition-delay: .2s;
+    transition-delay: .2s;
+    width: 104px;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-3 .company-icon {
+    background-image: url(../images/company-icon-spritesheet.png);
+    background-position: -103px -1px;
+    background-repeat: no-repeat;
+    height: 112px;
+    width: 112px;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-4 {
+    -webkit-animation-delay: -3.4s;
+    animation-delay: -3.4s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    height: 136px;
+    margin-left: 15px;
+    margin-top: 294px;
+    position: absolute;
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s;
+    width: 136px;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-4 .company-icon {
+    background-image: url(../images/company-icon-spritesheet.png);
+    background-position: -1px -1px;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-5 {
+    -webkit-animation-delay: -2.4s;
+    animation-delay: -2.4s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    background-size: 100px;
+    height: 122px;
+    margin-left: 524px;
+    margin-top: 308px;
+    position: absolute;
+    -webkit-transition-delay: .4s;
+    transition-delay: .4s;
+    width: 122px;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-6 {
+    -webkit-animation-delay: -.3s;
+    animation-delay: -.3s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    height: 144px;
+    margin-left: 302px;
+    margin-top: 357px;
+    position: absolute;
+    -webkit-transition-delay: .5s;
+    transition-delay: .5s;
+    width: 144px;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-6 .company-icon {
+    background-image: url(../images/company-icon-spritesheet.png);
+    background-position: -217px -1px;
+    background-repeat: no-repeat;
+    height: 105px;
+    width: 140px;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-7 {
+    -webkit-animation-delay: -2.9s;
+    animation-delay: -2.9s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    height: 122px;
+    margin-left: 108px;
+    margin-top: 539px;
+    position: absolute;
+    -webkit-transition-delay: .6s;
+    transition-delay: .6s;
+    width: 122px;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-7 .company-icon {
+    background-image: url(../images/company-icon-spritesheet.png);
+    background-position: -1px -158px;
+    background-repeat: no-repeat;
+    height: 31px;
+    width: 100px;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-8 {
+    -webkit-animation-delay: -.9s;
+    animation-delay: -.9s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    height: 122px;
+    margin-left: 515px;
+    margin-top: 538px;
+    position: absolute;
+    -webkit-transition-delay: .7s;
+    transition-delay: .7s;
+    width: 122px;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-8 .company-icon {
+    background-image: url(../images/company-icon-spritesheet.png);
+    background-position: -230px -108px;
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 93px;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-9 {
+    -webkit-animation-delay: -3.9s;
+    animation-delay: -3.9s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    height: 136px;
+    margin-left: 300px;
+    margin-top: 627px;
+    position: absolute;
+    -webkit-transition-delay: .8s;
+    transition-delay: .8s;
+    width: 136px;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-9 .company-icon {
+    background-image: url(../images/company-icon-spritesheet.png);
+    background-position: -230px -135px;
+    background-repeat: no-repeat;
+    height: 21px;
+    width: 100px;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container.hidden {
+    opacity: 0;
+    margin-left: 300px;
+    margin-top: 420px;
+}
+
+
+
+
+
+
+[data-page=index] section.explore .container .resources-section-container .resources-panel-container .resources-carousel-panel-container .resources-carousel-panel .resource-detail-container.news .resource-info .news.resource-title.no-logo {
+    padding-left: 0!important;
+}
+[data-page=index] section.testimonies .container .carousel-quotes .slick-list .carousel-row .carousel-row-content .customer-info .customer-icon-container .customer-icon {
+    background-color: #fff;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container {
+    overflow: hidden;
+}
+[data-page=index] section.testimonies .container .company-icons .company-icon-container .company-icon.image {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+body {
+    min-width: 320px!important;
+}
+
+#wrapper {
+    overflow: hidden;
+}
+@media (max-width:359px) {
+    body {
+        min-width: 320px;
+    }
+    @-ms-viewport {
+        width: 320px;
+    }
+    @-o-viewport {
+        width: 320px;
+    }
+    @viewport {
+        width: 320px;
+    }
+    }@media (max-width:319px) {
+        body {
+        min-width: 0;
+    }
+}
+@media (max-width:1279px) {
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+}
+@media (max-width:767px) {
+    #purchase .step .logo-footer, .contact-form .footer .logo-footer {
+        margin: 0 auto 70px;
+    }
+    .contact-form .row .field {
+        margin-bottom: 20px;
+    }
+    #purchase .step .logo-footer .logos, .contact-form .footer .logo-footer .logos {
+        width: 100%;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    #purchase .step .logo-footer .logo, .contact-form .footer .logo-footer .logo {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #purchase .step .logo-footer .logos.salesforce, .contact-form .footer .logo-footer .logo.salesforce {
+        margin-top: 11px;
+    }
+    #purchase .step .logo-footer .logos.ring-9, .contact-form .footer .logo-footer .logo.ring-9 {
+        margin-top: 15px;
+    }
+    #purchase .step .logo-footer .logos.amazon, .contact-form .footer .logo-footer .logo.amazon {
+        margin-top: 13px;
+    }
+    #purchase .step .logo-footer .logos.expedia, #purchase .step .logo-footer .logos.intuit, #purchase .step .logo-footer .logos.kik, .contact-form .footer .logo-footer .logo.expedia, .contact-form .footer .logo-footer .logo.intuit, .contact-form .footer .logo-footer .logo.kik {
+        margin-top: 6px;
+    }
+    #purchase .logo {
+        margin: 10px auto!important;
+    }
+}
+
+
+@media (max-width:1279px) {
+    .page-content[data-page=index] section.testimonies .container .company-icons {
+        min-height: 720px;
+        margin-left: 0;
+        margin-top: 59px;
+        width: 100%}
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container {
+        padding: 10px;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-1 {
+        width: 136px;
+        height: 136px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-2 {
+        width: 146px;
+        height: 146px;
+        margin-top: 68px;
+        margin-left: calc(100% - 146px);
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-3 {
+        width: 100px;
+        height: 100px;
+        margin-left: 41.79%;
+        margin-top: 44px;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-4 {
+        width: 128px;
+        height: 128px;
+        margin-left: 17.02%;
+        margin-top: 180px;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-5 {
+        width: 118px;
+        height: 118px;
+        margin-left: 34.22%;
+        margin-top: 380px;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-5 .company-icon {
+        width: 85%!important;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-6 {
+        width: 136px;
+        height: 136px;
+        margin-left: 57.8%;
+        margin-top: 220px;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-7 {
+        width: 114px;
+        height: 114px;
+        margin-left: 0;
+        margin-top: 390px;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-8 {
+        width: 114px;
+        height: 114px;
+        margin-left: 54%;
+        margin-top: 540px;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-9 {
+        width: 142px;
+        height: 142px;
+        margin-left: calc(100% - 142px);
+        margin-top: 408px;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-9 .company-icon {
+        width: 96px!important;
+        height: 46px!important;
+    }
+}
+@media (max-width:767px) {
+    .page-content[data-page=index] section.testimonies .container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons {
+        min-height: 708px;
+        margin-left: 0;
+        margin-top: 40px;
+        width: 100%}
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-1 {
+        width: 110px;
+        height: 110px;
+        margin-left: 10px;
+        margin-top: 60px;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-2 {
+        width: 110px;
+        height: 110px;
+        margin-top: 20px;
+        margin-left: calc(100% - 138px);
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-3 {
+        width: 80px;
+        height: 80px;
+        margin-left: calc(51.69% - 80px);
+        margin-top: 138px;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-4 {
+        width: 102px;
+        height: 102px;
+        margin-left: calc(38% - 102px);
+        margin-top: 275px;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-5 .company-icon {
+        width: 85%!important;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-6 {
+        width: 108px;
+        height: 108px;
+        margin-left: calc(85% - 108px);
+        margin-top: 218px;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-7 {
+        width: 92px;
+        height: 92px;
+        margin-left: 0;
+        margin-top: 426px;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-8 {
+        width: 92px;
+        height: 92px;
+        margin-left: calc(44% - 92px);
+        margin-top: 550px;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-9 {
+        width: 100px;
+        height: 100px;
+        margin-left: calc(100% - 115px);
+        margin-top: 520px;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-9 .company-icon {
+        width: 96px!important;
+        height: 46px!important;
+    }
+    .testimonies{
+        height: 730px !important;
+    }
+}
+@media (max-width:479px) {
+    .page-content[data-page=index] section.testimonies .container .company-icons {
+        min-height: 708px;
+        margin-left: 0;
+        margin-top: 40px;
+        width: 100%
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-1 {
+        margin-top: 0;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-2 {
+        margin-top: 60px;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-4 {
+        width: 102px;
+        height: 102px;
+        margin-left: 14px;
+        margin-top: 258px;
+    }
+}
+@media (max-width:374px) {
+    .page-content[data-page=index] section.testimonies .container {
+      padding-left: 15px!important;
+      padding-right: 15px!important;
+    }
+}
+
+
+
+
+
+
+@keyframes one-animated {
+    0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%
+    box-shadow:15px 15px 50px rgba(0, 0, 0, 0.2); }
+    25% { border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; }
+    50% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%
+    box-shadow:-10px -5px 50px rgba(0, 0, 0, 0.2); }
+    75% { border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%; }
+}
+@keyframes two-animated {
+    0% { border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%
+    box-shadow:15px 15px 50px rgba(0, 0, 0, 0.2); }
+    25% { border-radius: 40% 80% 30% 90% / 72% 65% 35% 28%; }
+    50% { border-radius: 65% 35% 45% 55% / 22% 48% 52% 78%
+    box-shadow:-10px -5px 50px rgba(0, 0, 0, 0.2); }
+    75% { border-radius: 24% 76% 10% 90% / 44% 68% 32% 56%; }
+}
+@keyframes three-animated {
+    0% { border-radius: 12% 88% 40% 40% / 20% 15% 85% 80%
+    box-shadow:15px 15px 50px rgba(0, 0, 0, 0.2); }
+    25% { border-radius: 72% 28% 30% 90% / 15% 46% 54% 85%; }
+    50% { border-radius: 12% 88% 40% 40% / 20% 15% 85% 80%
+    box-shadow:-10px -5px 50px rgba(0, 0, 0, 0.2); }
+    75% { border-radius: 18% 82% 10% 90% / 24% 68% 32% 76%; }
+}
+
+.iq-fancy-boxnew{ 
+  padding: 40px 15px 25px 15px; 
+  overflow: hidden; 
+  position: relative; 
+  background: transparent;  
+}
+.iq-fancy-boxnew .iq-icon { 
+  border-radius: 90px; 
+  display: inline-block; 
+  height: 86px; 
+  width: 86px; 
+  line-height: 86px; 
+  text-align: center; 
+  color: #fff; 
+  background: #4ac4f3; 
+  -webkit-transition: all 0.5s ease-out 0s; 
+  -moz-transition: all 0.5s ease-out 0s; 
+  -ms-transition: all 0.5s ease-out 0s; 
+  -o-transition: all 0.5s ease-out 0s; 
+  transition: all 0.5s ease-out 0s; 
+}
+.iq-fancy-boxnew .iq-icon i { 
+  font-size: 46px; 
+}
+.iq-fancy-boxnew .fancy-content h5 { 
+  z-index: 9; 
+  position: relative; }
+.iq-works-imgs{
+  width: 100%;
+}
+.iq-fancy-boxnew.text-center .icon-bg { 
+  text-align: center; 
+  display flex; 
+  align-content: center; 
+  align-items: center; 
+  justify-content: center;
+  width: 86px; 
+  height: 86px; 
+  margin: auto; 
+  position: relative; 
+  background-color: #C0392B; 
+  background-image: linear-gradient(-45deg, #C0392B 0%, #C0392B 100%); 
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; 
+  box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2); 
+  animation: one-animated 10s infinite; 
+  overflow: hidden; 
+}
+.iq-icon.icon-bg i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
