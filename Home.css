@@ -376,9 +376,9 @@ body {
 .animate {
   transition: all .5s ease-out;
 }
-.slide:nth-child(1) {
+/*.slide:nth-child(1) {
   background-image: url(https://images.pexels.com/photos/296115/pexels-photo-296115.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-}
+}*/
 .slide:nth-child(2) {
   background-image: url(https://images.pexels.com/photos/296121/pexels-photo-296121.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
 }
@@ -2327,4 +2327,130 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1 { font-size: 52px; font-style: normal; line-height: 58px; }
+
+.button { color: #fff; cursor: pointer; padding: 12px 36px; font-weight: 500; font-size: 16px; border: none; position: relative; background: #4ac4f3; font-family: 'Raleway', sans-serif; display: inline-block; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+.button:hover, .button:focus { color: #ffffff; background: #333333; }
+
+/* Buttons white */
+.button.bt-white { color: #333; background: #fff; }
+.button.bt-white:hover, .button.bt-white:focus { color: #ffffff; background: #4ac4f3; }
+
+/* Buttons white 2 */
+.button.bt-black { color: #333; background: #fff; }
+.button.bt-black:hover, .button.bt-black:focus { color: #ffffff; background: #333; }
+.button.bt-blue{color: #fff; background: #4ac4f3;}
+.button.bt-blue:hover{background-color: #333;}
+
+.overview-block-pt { padding: 90px 0 0; }
+.iq-font-white { color: #ffffff; }
+
+/* Background Gradient Blue */
+.iq-over-blue-90:before { content: ""; height: 100%; left: 0; position: absolute; top: 0; width: 100%; z-index: -1; background: rgba(192, 57, 43, 0.8); }
+[class*='iq-over-']:before { z-index: 0; }
+
+/* Section title white */
+.heading-title.white .title { color: #fff; }
+.heading-title.white .title:before { background: #fff; }
+.iq-fadebounce { -webkit-animation-name: fadebounce; -moz-animation-name: fadebounce; -ms-animation-name: fadebounce; -o-animation-name: fadebounce; animation-name: fadebounce; -webkit-animation-duration: 3s; -moz-animation-duration: 3s; -ms-animation-duration: 3s; -o-animation-duration: 3s; animation-duration: 3s; -webkit-animation-iteration-count: infinite; -moz-animation-iteration-count: infinite; -ms-animation-iteration-count: infinite; -o-animation-iteration-count: infinite; animation-iteration-count: infinite; }
+@-moz-keyframes fadebounce {
+  0% { -moz-transform: translateY(0); transform: translateY(0); opacity: 1 }
+  50% { -moz-transform: translateY(20px); transform: translateY(20px); opacity: 1 }
+  100% { -moz-transform: translateY(0); transform: translateY(0); opacity: 1 }
+}
+@-webkit-keyframes fadebounce {
+  0% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1 }
+  50% { -webkit-transform: translateY(20px); transform: translateY(20px); opacity: 1 }
+  100% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1 }
+}
+@-o-keyframes fadebounce {
+  0% { -o-transform: translateY(0); transform: translateY(0); opacity: 1 }
+  50% { -o-transform: translateY(20px); transform: translateY(20px); opacity: 1 }
+  100% { -o-transform: translateY(0); transform: translateY(0); opacity: 1 }
+}
+@-ms-keyframes fadebounce {
+  0% { -ms-transform: translateY(0); transform: translateY(0); opacity: 1 }
+  50% { -ms-transform: translateY(20px); transform: translateY(20px); opacity: 1 }
+  100% { -ms-transform: translateY(0); transform: translateY(0); opacity: 1 }
+}
+@keyframes fadebounce {
+  0% { transform: translateY(0); opacity: 1 }
+  50% { transform: translateY(20px); opacity: 1 }
+  100% { transform: translateY(0); opacity: 1 }
+}
+
+.iq-banner { position: relative; overflow: hidden; }
+.iq-banner .container-fluid { padding: 0 90px; }
+.iq-banner .banner-img { width: 110%; }
+
+.iq-banner .banner-objects .banner-objects-01 { position: absolute; left: -8%; bottom: -20%; opacity: 0.1; }
+.iq-banner .banner-objects .banner-objects-02 { position: absolute; bottom: 50%; margin-bottom: -125px; left: -13%; border: 15px solid rgba(255, 255, 255, 0.2); border-radius: 900px; height: 250px; width: 250px; }
+.iq-banner .banner-objects .banner-objects-03 { position: absolute; top: 0%; right: -15%; border: 30px solid rgba(255, 255, 255, 0.2); border-radius: 900px; height: 400px; width: 400px; }
+
+.iq-banner .banner-text .banner-phone { position: absolute; right: -50px; bottom: 20px; width: 26%; }
+.iq-banner .banner-text .watch-img{position:absolute; width:20%; top:49%; right:85%}
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    z-index: 999;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 94px;
+    background-image: transparent;
+    z-index: 9;
+    bottom: 0px;
+}
+.bgBottom {
+    /*z-index: 5;*/
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 300%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
 }
