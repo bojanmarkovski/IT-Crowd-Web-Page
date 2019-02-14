@@ -2345,29 +2345,21 @@ body {
 
 
 
+.one-time{
+  display: none;
+}
 
+.main-slider{
+  position: relative;
+}
+h1 { font-size: 52px; font-style: normal; line-height: 58px; white-space: normal; }
 
-
-h1 { font-size: 52px; font-style: normal; line-height: 58px; }
-
-.button { color: #fff; cursor: pointer; padding: 12px 36px; font-weight: 500; font-size: 16px; border: none; position: relative; background: #4ac4f3; font-family: 'Raleway', sans-serif; display: inline-block; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
-.button:hover, .button:focus { color: #ffffff; background: #333333; }
-
-/* Buttons white */
-.button.bt-white { color: #333; background: #fff; }
-.button.bt-white:hover, .button.bt-white:focus { color: #ffffff; background: #4ac4f3; }
-
-/* Buttons white 2 */
-.button.bt-black { color: #333; background: #fff; }
-.button.bt-black:hover, .button.bt-black:focus { color: #ffffff; background: #333; }
-.button.bt-blue{color: #fff; background: #4ac4f3;}
-.button.bt-blue:hover{background-color: #333;}
 
 .overview-block-pt { padding: 90px 0 0; }
 .iq-font-white { color: #ffffff; }
 
 /* Background Gradient Blue */
-.iq-over-blue-90:before { content: ""; height: 100%; left: 0; position: absolute; top: 0; width: 100%; z-index: -1; background: rgba(192, 57, 43, 0.8); }
+.iq-over-blue-90:before { content: ""; height: 100%; left: 0; position: absolute; top: 0; width: 100%; z-index: -1; background: rgba(43, 43, 43, 0.9); }
 [class*='iq-over-']:before { z-index: 0; }
 
 /* Section title white */
@@ -2433,10 +2425,7 @@ h1 { font-size: 52px; font-style: normal; line-height: 58px; }
     height: 94px;
     background-image: transparent;
     z-index: 9;
-    bottom: 0px;
-}
-.bgBottom {
-    /*z-index: 5;*/
+    bottom: 30px;
 }
 .wave {
     position: absolute;
@@ -2452,5 +2441,10 @@ h1 { font-size: 52px; font-style: normal; line-height: 58px; }
     background-size: 50% 100px;
 }
 .waveAnimation .waveBottom {
-    animation: move_wave 15s linear infinite;
+    animation: move_wave 23s linear infinite;
 }
+h1{
+  position: relative;
+  width: 100%;
+}
+
