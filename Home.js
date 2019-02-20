@@ -36,13 +36,15 @@ if($( window ).width() > 991){
 
   $(document).on("scroll", function(){
     if
-      ($(document).scrollTop() > 15){
+      ($(document).scrollTop() > 60){
       $(".header").addClass("shrink");
-
+          $(".nav.navbar-inverse.header").css("background", "#222222", "!important");
     }
     else
     {
       $(".header").removeClass("shrink");
+          $(".nav.navbar-inverse.header").css("background", "transparent");
+
     }
   })
 }
@@ -89,44 +91,44 @@ else{
   }
 }
 
-$(function(){
+  $(function(){
   
-        var $window = $(window);    //Window object
+      var $window = $(window);    //Window object
+      
+      var scrollTime = 0.5;     //Scroll time
+      var scrollDistance = 200;   //Distance. Use smaller value for shorter scroll and greater value for longer scroll
         
-        var scrollTime = 0.5;     //Scroll time
-        var scrollDistance = 200;   //Distance. Use smaller value for shorter scroll and greater value for longer scroll
-          
-        $window.on("mousewheel DOMMouseScroll", function(event){
-          
-          event.preventDefault(); 
-                          
-          var delta = event.originalEvent.wheelDelta/90 || -event.originalEvent.detail/3;
-          var scrollTop = $window.scrollTop();
-          var finalScroll = scrollTop - parseInt(delta*scrollDistance);
-            
-          TweenMax.to($window, scrollTime, {
-            scrollTo : { y: finalScroll, autoKill:true },
-              ease: Power1.easeOut, //For more easing functions see https://api.greensock.com/js/com/greensock/easing/package-detail.html
-              autoKill: true,
-              overwrite: 5              
-            });
-                
-        });
+      $window.on("mousewheel DOMMouseScroll", function(event){
         
+        event.preventDefault(); 
+                        
+        var delta = event.originalEvent.wheelDelta/90 || -event.originalEvent.detail/3;
+        var scrollTop = $window.scrollTop();
+        var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+          
+        TweenMax.to($window, scrollTime, {
+          scrollTo : { y: finalScroll, autoKill:true },
+            ease: Power1.easeOut, //For more easing functions see https://api.greensock.com/js/com/greensock/easing/package-detail.html
+            autoKill: true,
+            overwrite: 5              
+          });
+              
       });
+        
+    });
 
     $(document).ready(function(){
 
-        var screenWidth = $( window ).width();
-        var rightSpace = screenWidth - 1170;
+      var screenWidth = $( window ).width();
+      var rightSpace = screenWidth - 1170;
 
-        $(".work-process").css("margin-left", rightSpace / 2)
+      $(".work-process").css("margin-left", rightSpace / 2)
 
       $(window).on('resize', function() {
-          var screenWidth = $( window ).width();
+        var screenWidth = $( window ).width();
         var rightSpace = screenWidth - 1170;
           
-          $(".work-process").css("margin-left", rightSpace / 2)
+        $(".work-process").css("margin-left", rightSpace / 2)
       });
     });
     
@@ -134,8 +136,8 @@ $(function(){
     $(document).click(function (event) {
       var clickover = $(event.target);
       var $navbar = $(".navbar-collapse");            
-        var _opened = $navbar.hasClass("in");
-        if (_opened === true && !clickover.hasClass("navbar-toggle")) {      
+      var _opened = $navbar.hasClass("in");
+      if (_opened === true && !clickover.hasClass("navbar-toggle")) {      
         $navbar.collapse('hide');
       }
     });

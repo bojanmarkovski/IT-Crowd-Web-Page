@@ -65,10 +65,11 @@
 										<h1 class="text-uppercase iq-font-white">We are building <b class="iq-tw-7">software</b> to help</h1>
 										<p class="iq-font-white iq-pt-15 iq-mb-40">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley,</p>
 									</div>
-									<div class="col-lg-6">
-										<img class="banner-img img-fluid watch-img wow slideInDown" src="images/mobile.png" alt="" style="visibility: visible;">
-										<img class="banner-img wow bounceInDown" data-wow-duration="2s" src="images/laptop.png" alt="" style="visibility: visible;">
-										<img class="banner-phone img-fluid center-block wow fadeInUp" src="images/watch.png" alt="" style="visibility: visible;">
+									<div class="col-lg-6 z-index">
+										<img class="banner-img img-fluid watch-img wow slideInUp" src="images/mobile.png" >
+										<img class=" slideInDown" src="images/laptop.png" >
+										<!-- <img class="banner-img wow slideInDown" src="images/laptop.png"> -->
+										<img class="banner-phone img-fluid center-block wow slideInUp" src="images/watch.png" >
 									</div>
 								</div>
 							</div>
@@ -154,6 +155,7 @@
 		</div>
 		
 	</div>
+
 	<!-- DEVELOPMENT -->
 	<div class="container-fluid">
 		<h2 class="text-uppercase text-center">What we do?</h2>
@@ -423,9 +425,6 @@
 						<a href="https://www.linkedin.com/company/itcrowd" target="_blank">
 							<i class="fab fa-linkedin-in"></i>
 						</a>
-						<a href="" target="_blank">
-							<i class="fab fa-google-plus-g"></i>
-						</a>
 						<a href="https://www.facebook.com/itcrowd.me" target="_blank">
 							<i class="fab fa-facebook-f"></i>
 						</a>
@@ -442,6 +441,7 @@
 			</div>
 		</div>
 	</div>
+
 	<!-- SMOOTH SCROLL ON SCROLL-WHEEL -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
@@ -450,6 +450,9 @@
 	<script>
 		$(document).ready(function() {
 		
+			$(".z-index .slideInUp").animate({top: '320px'},1000);
+			$(".z-index .slideInDown").animate({top: '0px'},1000);
+
 			/* Every time the window is scrolled ... */
 			$(window).scroll( function(){
 			
@@ -463,17 +466,30 @@
 						$(".company-icons").css("visibility" , "visible");
 					}
 				});
-			
+
+				$('.work-process-row-container').each( function(i){
+				
+					var bottom_of_object = $(this).position().top - $(this).outerHeight();
+					var bottom_of_window = $(window).scrollTop() + ($(".work-process-row-container").height() - 160);
+					if( bottom_of_window > bottom_of_object ){
+						$(".work-process").css("display" , "block");
+					}
+				});
 			});
 		
 		});
+
+		// MAIN SLIDER
 		$('.one-time').slick({
-		dots: true,
-		infinite: true,
-		speed: 600,
-		slidesToShow: 1,
-		adaptiveHeight: true
+			dots: true,
+			infinite: true,
+			speed: 600,
+			slidesToShow: 1,
+			adaptiveHeight: true,
+			// autoplay: true,
+	  		// autoplaySpeed: 2500,
 		});
-	</script>
+
+  </script>
 </body>
 </html>

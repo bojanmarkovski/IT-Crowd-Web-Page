@@ -10,6 +10,7 @@ a{
   top: 0;
   z-index: 11;
   width: 100%;
+  background: rgba(43, 43, 43, 0);
 }
 .header ul li a{
   padding-top: 21px;
@@ -422,6 +423,7 @@ background-image: url(https://images.pexels.com/photos/296116/pexels-photo-29611
 
 .work-process{
   position: relative;
+  display: none;
 }
 
 /* RESET STYLES
@@ -2401,7 +2403,7 @@ h1 { font-size: 52px; font-style: normal; line-height: 58px; white-space: normal
 .iq-banner .banner-objects .banner-objects-03 { position: absolute; top: 0%; right: -15%; border: 30px solid rgba(255, 255, 255, 0.2); border-radius: 900px; height: 400px; width: 400px; }
 
 .iq-banner .banner-text .banner-phone { position: absolute; right: -50px; bottom: 20px; width: 26%; }
-.iq-banner .banner-text .watch-img{position:absolute; width:20%; top:49%; right:85%}
+.iq-banner .banner-text .watch-img{position:absolute; width:20%; bottom:49%; right:85%}
 
 @keyframes move_wave {
     0% {
@@ -2447,4 +2449,23 @@ h1{
   position: relative;
   width: 100%;
 }
+.z-index{
+  z-index: 1;
+}
 
+
+
+.z-index .slideInUp{
+  top: 500px;
+}
+.z-index .slideInDown{
+  position:absolute; 
+  width:100%; 
+  right:0;
+  top: -800px;
+}
+
+#iq-home,
+.iq-banner{
+  height: 600px !important;
+}
