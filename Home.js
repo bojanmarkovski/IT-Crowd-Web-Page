@@ -83,7 +83,8 @@ else{
           // Scroll Up
           if(st + $(window).height() < $(document).height()) {
               $('.header').removeClass('nav-up').addClass('nav-down');
-          	$(".sticky-tablet").removeClass('second-nav-up').addClass("second-nav-down")
+          	$(".sticky-tablet").removeClass('second-nav-up').addClass("second-nav-down").css("background", "#222222")
+            
           }
       }
       

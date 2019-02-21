@@ -80,7 +80,7 @@ a{
 .nav-up {
   top: -65px;
   position: fixed;
-  transition: top 0.2s ease-in-out;
+  /*transition: top 0.2s ease-in-out;*/
 }
 
 .second-nav-down{
@@ -2470,5 +2470,25 @@ h1{
 }
 #iq-home,
 .iq-banner{
-  height: 600px !important;
+  height: 600px;
+}
+@media screen and (max-width: 991px) {
+  #iq-home,
+  .iq-banner{
+    height: auto;
+  }
+  .waveWrapper.waveAnimation{
+    display: none;
+  }
+  .z-index .slideInDown{
+    position:relative; 
+    width:100%; 
+    right:0;
+  }
+  .z-index .slideInUpMobile{
+    position: relative;
+  }
+}
+.nav-down{
+  background: #222222;
 }
