@@ -66,10 +66,10 @@
 										<p class="iq-font-white iq-pt-15 iq-mb-40">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley,</p>
 									</div>
 									<div class="col-lg-6 z-index">
-										<img class="banner-img img-fluid watch-img wow slideInUp" src="images/mobile.png" >
+										<img class="banner-img img-fluid watch-img wow slideInUpMobile" src="images/mobile.png" >
 										<img class=" slideInDown" src="images/laptop.png" >
 										<!-- <img class="banner-img wow slideInDown" src="images/laptop.png"> -->
-										<img class="banner-phone img-fluid center-block wow slideInUp" src="images/watch.png" >
+										<img class="banner-phone img-fluid center-block wow slideInUpWatch" src="images/watch.png" >
 									</div>
 								</div>
 							</div>
@@ -450,8 +450,18 @@
 	<script>
 		$(document).ready(function() {
 		
-			$(".z-index .slideInUp").animate({top: '320px'},1000);
-			$(".z-index .slideInDown").animate({top: '0px'},1000);
+			$(".z-index .slideInUpMobile").css("z-index", "2").animate({top: '235px'},1200);
+			$(".z-index .slideInUpWatch").animate({top: '310px'},2000);
+			$(".z-index .slideInDown")
+				.animate({
+					top: '0px'
+				},1000)
+				.animate({
+					top: "-30px"
+				})
+				.animate({
+					top: "10px"
+				});
 
 			/* Every time the window is scrolled ... */
 			$(window).scroll( function(){
@@ -472,7 +482,7 @@
 					var bottom_of_object = $(this).position().top - $(this).outerHeight();
 					var bottom_of_window = $(window).scrollTop() + ($(".work-process-row-container").height() - 160);
 					if( bottom_of_window > bottom_of_object ){
-						$(".work-process").css("display" , "block");
+						$(".work-process").css("display" , "block").addClass("newClass");
 					}
 				});
 			});
@@ -486,8 +496,8 @@
 			speed: 600,
 			slidesToShow: 1,
 			adaptiveHeight: true,
-			// autoplay: true,
-	  		// autoplaySpeed: 2500,
+			autoplay: true,
+	  		autoplaySpeed: 8000,
 		});
 
   </script>

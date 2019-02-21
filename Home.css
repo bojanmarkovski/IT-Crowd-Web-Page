@@ -35,6 +35,9 @@ a{
   letter-spacing: 0.6px;
   font-weight: bold;
   font-size: 16px;
+  color: white !important;
+}
+.header ul li{
 }
 .header ul li a:hover{
   border-bottom: 5px solid #C0392B;
@@ -2455,7 +2458,8 @@ h1{
 
 
 
-.z-index .slideInUp{
+.z-index .slideInUpMobile,
+.z-index .slideInUpWatch{
   top: 500px;
 }
 .z-index .slideInDown{
@@ -2464,7 +2468,6 @@ h1{
   right:0;
   top: -800px;
 }
-
 #iq-home,
 .iq-banner{
   height: 600px !important;

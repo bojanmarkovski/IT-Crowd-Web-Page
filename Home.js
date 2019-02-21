@@ -100,6 +100,8 @@ else{
         
       $window.on("mousewheel DOMMouseScroll", function(event){
         
+                
+
         event.preventDefault(); 
                         
         var delta = event.originalEvent.wheelDelta/90 || -event.originalEvent.detail/3;
@@ -112,25 +114,51 @@ else{
             autoKill: true,
             overwrite: 5              
           });
-              
       });
+      
         
     });
 
+if($( window ).width() > 1170){
     $(document).ready(function(){
 
       var screenWidth = $( window ).width();
       var rightSpace = screenWidth - 1170;
+      if (screen.width > 992) {
 
-      $(".work-process").css("margin-left", rightSpace / 2)
-
-      $(window).on('resize', function() {
-        var screenWidth = $( window ).width();
-        var rightSpace = screenWidth - 1170;
-          
         $(".work-process").css("margin-left", rightSpace / 2)
-      });
+
+        $(window).on('resize', function() {
+          var screenWidth = $( window ).width();
+          var rightSpace = screenWidth - 1170;
+
+          $(".work-process").css("margin-left", rightSpace / 2)
+        });
+      }
     });
+  }
+
+if($( window ).width() <= 1170){
+    var flag = true;
+
+      $(window).scroll(function(){
+        if ($(".work-process").hasClass("newClass") && flag){
+          var screenWidth = $( window ).width();
+          var delay = (screenWidth / 220 ) * 1600 - 2000;
+          var animationRight = 1170 - screenWidth;
+          flag = false;
+          setTimeout( function() { 
+            $(".work-process-row-container").stop()
+              .animate({
+                right: animationRight + "px"
+              }, (7600 - delay), function() {
+                $(".work-process-row-container").css({"right" : "0", "overflow-x" : "scroll"});
+              });
+          }, delay);
+          console.log(delay)
+        }
+      });
+    }
     
     // CLOSE AN OPEN COLLAPSED NAVBAR WHEN CLICKING OUTSIDE
     $(document).click(function (event) {
