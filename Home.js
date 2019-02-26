@@ -37,13 +37,13 @@ if($( window ).width() > 991){
   $(document).on("scroll", function(){
     if
       ($(document).scrollTop() > 60){
-      $(".header").addClass("shrink");
-          $(".nav.navbar-inverse.header").css("background", "#222222", "!important");
+        $(".header").addClass("shrink");
+        $(".nav.navbar-inverse.header").css("background", "#222222", "!important");
     }
     else
     {
       $(".header").removeClass("shrink");
-          $(".nav.navbar-inverse.header").css("background", "transparent");
+      $(".nav.navbar-inverse.header").css("background", "transparent");
 
     }
   })
@@ -94,6 +94,7 @@ else{
             $('.header').removeClass('nav-up').addClass('nav-down');
             $(".sticky-tablet").removeClass('second-nav-up').addClass("second-nav-down").css("background-color", "#222222");
             $(".header").css("background", "#222222", "!important");
+
           }
       }
             
