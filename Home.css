@@ -1503,6 +1503,8 @@ address{
 @media screen and (max-width: 991px) {
   .header {
     padding: 0px;
+    /*background-color: transparent;*/
+    transition: 0.3s;
   }
 }
 
