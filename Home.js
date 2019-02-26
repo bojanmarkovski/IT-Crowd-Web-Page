@@ -162,9 +162,16 @@ if($( window ).width() <= 1170){
               .animate({
                 right: animationRight + "px"
               }, (7600 - delay), function() {
-                $(".work-process-row-container").css({"right" : "0", "overflow-x" : "scroll"});
+
+              })
+              .animate({
+                right: 0
+              }, function(){
+                $(".work-process-row-container").css({"overflow-x" : "scroll"})
               });
-          }, delay);
+          }, delay)
+
+
         }
       });
     }

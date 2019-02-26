@@ -162,6 +162,13 @@ address{
   .header ul li  a{
     font-size: 13px;
   }
+  .header {
+    padding: 0px;
+    transition: 0.3s;
+  }
+   .iq-font-white{
+    text-align: center;
+  }
   .footer .border-bottom{
     text-align: center;
   }
@@ -1511,15 +1518,7 @@ address{
     color: inherit;
   }
 
-@media screen and (max-width: 991px) {
-  .header {
-    padding: 0px;
-    transition: 0.3s;
-  }
-  .iq-font-white{
-    text-align: center;
-  }
-}
+
 
 
 
