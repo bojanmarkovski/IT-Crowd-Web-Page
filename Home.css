@@ -229,8 +229,8 @@ address{
 .iq-banner .banner-objects .banner-objects-03 { position: absolute; top: 0%; right: -15%; border: 30px solid rgba(255, 255, 255, 0.1); border-radius: 900px; height: 400px; width: 400px; }
 .iq-banner-03 .banner-img { width: 110%; }
 /* Banner 13*/
-.iq-banner .banner-text .banner-phone { position: absolute; right: -50px; bottom: 70px; width: 26%; }
-.iq-banner .banner-text .watch-img{position:absolute; width:20%; top:40%; right:85%}
+.iq-banner .banner-text .banner-phone { position: absolute; right: -50px; top: 100%; width: 26%; }
+.iq-banner .banner-text .watch-img{position:absolute; width:20%; top:100%; right:85%}
 
 @keyframes move_wave {
     0% {
@@ -291,6 +291,17 @@ address{
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
+}
+@media screen and (max-width: 991px){
+  .waveAnimation .waveBottom {
+    animation: unset;
+    background-size: 41% 90px;
+  }
+}
+@media screen and (max-width: 521px){
+  .waveAnimation .waveBottom {
+    background-size: 49% 45px;
+  }
 }
 
 /*WORK PROGRESS*/
@@ -1503,8 +1514,10 @@ address{
 @media screen and (max-width: 991px) {
   .header {
     padding: 0px;
-    /*background-color: transparent;*/
     transition: 0.3s;
+  }
+  .iq-font-white{
+    text-align: center;
   }
 }
 
@@ -2210,3 +2223,6 @@ body {
   display: none !important;
 }
 
+.slideInDown{
+  display: none;
+}

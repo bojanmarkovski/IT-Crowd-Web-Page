@@ -66,10 +66,10 @@
 										<h1 class="text-uppercase iq-font-white iq-tw-3">We are building <b class="iq-tw-7">software</b> to help</h1>
 										<p class="iq-font-white iq-pt-15 iq-mb-40">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley,</p>
 									</div>
-									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-										<img class="banner-img img-fluid watch-img wow slideInDown" src="images/mobile.png" alt="" style="visibility: visible;">
-										<img class="banner-img wow bounceInDown" data-wow-duration="2s" src="images/laptop.png" alt="" style="visibility: visible;">
-										<img class="banner-phone img-fluid center-block wow fadeInUp" src="images/watch.png" alt="" style="visibility: visible;">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 z-index">
+										<img class="banner-img img-fluid watch-img wow slideInUpMobile" src="images/mobile.png" alt="" style="visibility: visible;">
+										<img class="banner-img wow slideInDown" data-wow-duration="2s" src="images/laptop.png" alt="" style="visibility: visible;">
+										<img class="banner-phone img-fluid center-block wow fadeInUp slideInUpWatch" src="images/watch.png" alt="" style="visibility: visible;">
 									</div>
 								</div>
 							</div>
@@ -200,7 +200,7 @@
 						<h2 class="text-uppercase text-center">What we use?</h2>
 						<div class="row our-skills-process">
 							<div class="col-md-5">
-								<!-- hello world -->
+								<!-- <h2>Hello World</h2> -->
 							</div>
 							<div class="col-md-7">
 								
@@ -446,10 +446,11 @@
 					<script type="text/javascript" src="slick/slick.min.js"></script>
 					<script>
 						$(document).ready(function() {
-							if ($( window ).width() >= 715) {
-								$(".z-index .slideInUpMobile").css("z-index", "2").animate({top: '235px'},1200);
-								// $(".z-index .slideInUpWatch").animate({top: '52%'},2000);
-								$(".z-index .slideInDown")
+							// if ($( window ).width() >= 715) {
+								$(".z-index .slideInUpMobile").css("z-index", "2").animate({top: '40%'},1200);
+								$(".z-index .slideInUpWatch").animate({top: '60%'},2000);
+								$(".z-index .slideInDown").fadeIn(3000)
+
 									.animate({
 										top: '0px'
 									},1000)
@@ -459,11 +460,10 @@
 									.animate({
 										top: "10px"
 									});
-							} else {
-								$(".slideInUpMobile").css("display", "none")
-								$(".slideInUpWatch").css("display", "none")
-								
-							}
+							// } else {
+								// $(".slideInUpMobile").css("display", "none");
+								// $(".slideInUpWatch").css("display", "none");
+							// }
 							/* Every time the window is scrolled ... */
 							$(window).scroll( function(){
 							
@@ -495,8 +495,8 @@
 							speed: 600,
 							slidesToShow: 1,
 							adaptiveHeight: true,
-							autoplay: true,
-							autoplaySpeed: 8000,
+							// autoplay: true,
+							// autoplaySpeed: 8000,
 						});
 					</script>
 				</body>

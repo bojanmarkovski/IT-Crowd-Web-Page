@@ -86,7 +86,7 @@ else{
       } 
       else {
           // Scroll Up
-          if(st < 20){
+          if(st < 2){
             $(".header").removeClass("shrink");
             $(".nav.navbar-inverse.header").css("background", "transparent");
           }
