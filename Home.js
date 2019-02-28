@@ -24,21 +24,18 @@
 
 if($( window ).width() > 991){
 
-  $(document).on("scroll", function(){
-    if
-      ($(document).scrollTop() > 60){
-        $(".header").addClass("shrink");
-        $(".nav.navbar-inverse.header").css("background", "#222222", "!important");
+        $(document).on("scroll", function(){
+            if
+              ($(document).scrollTop() > 15){
+                $(".logo").css({"padding-top" : "0px", "transition" : "0.4s"})
+                $(".header ul li").css({"padding" : "0", "transition" : "0.4s"});
+              }
+          else {
+            $(".logo").css({"padding-top" : "5px" ,"transition" : "0.4s"});
+              $(".header ul li").css({"padding" : "5px 0px", "transition" : "0.4s"});
+      }
+        });
     }
-    else
-    {
-      $(".header").removeClass("shrink");
-      $(".nav.navbar-inverse.header").css("background", "transparent");
-      $(".header ul li a").css("padding-bottom", "18px")
-
-    }
-  })
-}
 else{
   // Hide Header on on scroll down
   var didScroll;
