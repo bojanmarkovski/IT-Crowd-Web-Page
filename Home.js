@@ -20,16 +20,6 @@
     
     });
 
-    // $(window).scroll( function() {
-    //   $("top-button").each(function(e) {
-    //     var button = $(this).position().top + $(this).outerHeight();
-    //     var prozorec = $(window).scrollTop() + $(window).height()
-
-    //     if (button > prozorec) {
-    //       $(this).animate({'opacity':'1'}, 100);
-    //     }
-    //   })
-    // })
 
 
 if($( window ).width() > 991){
@@ -44,6 +34,7 @@ if($( window ).width() > 991){
     {
       $(".header").removeClass("shrink");
       $(".nav.navbar-inverse.header").css("background", "transparent");
+      $(".header ul li a").css("padding-bottom", "18px")
 
     }
   })
@@ -81,20 +72,35 @@ else{
       // This is necessary so you never see what is "behind" the navbar.
       if (st > lastScrollTop && st > navbarHeight){
           // Scroll Down
-          $('.header').removeClass('nav-down').addClass('nav-up');
+          $('.header').removeClass('nav-down').addClass('nav-up').css("top", "-316px");
           $(".sticky-tablet").removeClass('second-nav-down').addClass("second-nav-up");
       } 
       else {
           // Scroll Up
           if(st < 2){
-            $(".header").removeClass("shrink");
-            $(".nav.navbar-inverse.header").css("background", "transparent");
+            $(".header button").on("click", function() {
+              $(".nav.navbar-inverse.header").css("background", "#222222");
+            });
+            if($(".navbar-collapse.collapse").hasClass("in")){
+              $(".header button").on("click", function() {
+                $(".nav.navbar-inverse.header").css("background", "transparent");
+              });
+              $(".header button").on("click", function() {
+                $(".nav.navbar-inverse.header").css("background", "#222222");
+              });
+              $(".header").removeClass("shrink");
+              $(".nav.navbar-inverse.header").css("background", "#222222");
+
+            } else {
+              $(".header").removeClass("shrink");
+              $(".nav.navbar-inverse.header").css("background", "transparent");
+            }
           }
+
           else if(st + $(window).height() < $(document).height()) {
-            $('.header').removeClass('nav-up').addClass('nav-down');
+            $('.header').removeClass('nav-up').addClass('nav-down').css("top", "0px");
             $(".sticky-tablet").removeClass('second-nav-up').addClass("second-nav-down").css("background-color", "#222222");
             $(".header").css("background", "#222222", "!important");
-
           }
       }
             
@@ -128,7 +134,6 @@ else{
       
         
     });
-
 if($( window ).width() > 1170){
     $(document).ready(function(){
 

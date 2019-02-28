@@ -7,39 +7,42 @@ a{
 .header{
   position: fixed;
   top: 0;
-  z-index: 11;
+  z-index: 2;
   width: 100%;
+  padding: 0 !important;
 }
-.header ul li a{
-  padding-top: 21px;
+.navbar-brand{
+  padding: 0 15px;
 }
 .header .logo{
-  padding: 0;
   padding-top: 5px;
-  padding-bottom: 5px;
-  width: 143px;
-  height: 61px;
+  width: 173px;
+  height: 100%;
 }
 .header img{
   width: 100%;
-  height: 100%;
+  height: 60px;
+  padding: 4px 0px;
 }
 .header img:hover{
   cursor: pointer;
 }
 .header ul li a{
-  border-bottom: 5px solid transparent;
   transition: 0.3s;
   letter-spacing: 0.6px;
   font-weight: bold;
   font-size: 16px;
+  color: white !important;
 }
-.header ul li a:hover{
+.header ul li{
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
+  padding: 5px 0;
+}
+.header ul li:hover{
   border-bottom: 5px solid #C0392B;
 }
-.header ul li a:hover{
-  border-bottom: 5px solid #C0392B;
-}
+
 .header ul .active a{
   background-color: transparent !important;
   color: #C0392B !important;
@@ -48,28 +51,17 @@ a{
   width: 100%;
   text-align: center !important;
 }
-.career{
-  padding-top: 61px;
-}
-
-.header{
-  width: 100%;
-  padding: 5px 0;
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out; 
-  z-index: 9999;
-  top: 0;
-  position: fixed;
+.wrap-about-us{
+  margin-top: 80px;
 }
 .shrink{
   padding: 0px;
 }
 .nav-down {
-    position: fixed;
-    top: 0;
-    transition: top 0.2s ease-in-out;
-    width: 100%;
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
 }
 
 .nav-up {
@@ -79,26 +71,34 @@ a{
 }
 
 .second-nav-down{
-  transition: top 0.2s ease-in-out;
+  transition: top .2s ease-in-out;
   width: 100%;
 }
 .second-nav-up {
-  top: -58px;
-  position: fixed;
+  top: 0px;
 }
-.row.contact{
-  padding-top: 80px;
+@media screen and (max-width: 767px) {
+  .header ul li{
+    padding: 0;
+  }
+  .header img {
+    padding: 2px 20px 2px 0px;
+    height: 45px;
+  }
+  .header .logo{
+    padding: 0;
+    padding: 2.5px 7px;
+  }
+  .header #mynavbar ul {
+    display: inline-block;
+  }
 }
 
 /*FOOTER*/
 .footer{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   background-color: #222222;
   padding-top: 15px;
   padding-bottom: 15px;
-  /*padding-bottom: 70px;*/
   color: lightgray;
 }
 .footer img{
@@ -106,12 +106,10 @@ a{
   height: 51px;
   margin-bottom: 20px;
 }
-.footer p{
-  /*padding-top: 10px;*/
-}
 .footer i{
   color: #C0392B;
   margin-right: 10px;
+  margin-left: 10px;
 }
 .footer .border-bottom{
   border-bottom: 2px solid #C0392B;
@@ -154,16 +152,8 @@ a{
   color: lightgray;
 }
 
-
-@media screen and (max-width: 766px) {
-  .header #mynavbar{
-    text-align: center;
-  }
-  .header #mynavbar ul{
-      display: inline-block;
-
-  }
-
+.contact{
+  margin-top: 50px;
 }
 @media screen and (max-width: 991px) {
   .header ul li  a{
@@ -293,6 +283,12 @@ address{
     clear: none;
   }
 }
+body .container-fluid .contact{
+  min-height: calc(100vh - 233px - 50px);
+}
+.footer {
+  height: 233px;
+}
 
 @media screen and (max-width: 991px) {
   .header{
@@ -301,5 +297,7 @@ address{
   .footer{
     position: relative;
     width: auto;
+    height: auto;
+    text-align: center;
   }
 }

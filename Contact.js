@@ -60,24 +60,19 @@ function mapInit() {
 
 		if($( window ).width() > 991){
 
-        $(document).on("scroll", function(){
-          if
-            ($(document).scrollTop() > 15){
-            $(".header").addClass("shrink");
-
-          }
-          else
-          {
-            $(".header").removeClass("shrink");
-          }
-          // console.log($(this).find(".header"))
-          // if (($(this).find(".header")).hasClass("shrink")) {
-          //   $(this).find(".header").find(".first-logo").slideUp();
-          // } else {
-          //   $(this).find(".header").find(".second-logo").slideDown();
-          // }
-        })
-      }
+	        $(document).on("scroll", function(){
+	          if
+	            ($(document).scrollTop() > 15){
+		            $(".logo").css({"padding-top" : "0px", "transition" : "0.4s"})
+		            $(".header ul li").css({"padding" : "0", "transition" : "0.4s"});
+	          }
+	          else
+	          {
+	            $(".logo").css({"padding-top" : "5px" ,"transition" : "0.4s"});
+	            $(".header ul li").css({"padding" : "5px 0px", "transition" : "0.4s"});
+			  }
+	        })
+	      }
       else{
         // Hide Header on on scroll down
         var didScroll;
