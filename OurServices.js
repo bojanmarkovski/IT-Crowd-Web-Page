@@ -32,6 +32,7 @@ $(function(){
 			$navbar.collapse('hide');
 		}
 	});
+		            
 
 	if($( window ).width() > 991){
 

@@ -208,7 +208,7 @@ a{
 /*CAREER LEFT CARDS*/
 
 .career .career-left{
-  height: 100vh;
+  height: 100%;
   overflow-y: auto;
   padding-top: 0;
 }
@@ -518,7 +518,7 @@ body {
   border-radius: 5px 10px 10px 5px;
   font-weight: 300;
   font-size: 15px;
-  border: 1px solid #C0392B;
+  border: 1px solid lightgray;
   padding-left: 10px;
 }
 .file-upload-wrapper:before {

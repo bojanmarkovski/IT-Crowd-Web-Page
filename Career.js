@@ -4,9 +4,9 @@ $(document).ready(function(){
 
 		$(document).on("scroll", function(){
 		    if ($(document).scrollTop() > 15){
-					$(".logo").css({"padding-top" : "0px", "transition" : "0.4s"})
-					$(".header ul li").css({"padding" : "0", "transition" : "0.4s"});
-				}
+				$(".logo").css({"padding-top" : "0px", "transition" : "0.4s"})
+				$(".header ul li").css({"padding" : "0", "transition" : "0.4s"});
+			}
 			else {
 				$(".logo").css({"padding-top" : "5px" ,"transition" : "0.4s"});
 				$(".header ul li").css({"padding" : "5px 0px", "transition" : "0.4s"});
@@ -15,15 +15,17 @@ $(document).ready(function(){
 
 
 		$(".career-left").on('click', '.row.pd-box', function() {
-			let boxShadow = $(this).find(".career-box").children("div").addClass('clicked-cart');
+			let boxShadow = $(this).find(".career-box").children("div");
 
 			if (boxShadow.hasClass("shadow-paragraph")) {
 				boxShadow.removeClass("shadow-paragraph");
+				boxShadow.addClass('clicked-cart');
 			}
 			else {
-				// boxShadow.addClass("shadow-paragraph");
-				// boxShadow.slideUp("shadow-paragraph");
+				// boxShadow.slideUp("clicked-cart");
 				// $(this).find(".shadow-paragraph").slideUp(1000);
+				// boxShadow.addClass("shadow-paragraph");
+
 			}
 
 			for (var i = 0; i < $(".career-box").length; i++) {
@@ -39,7 +41,7 @@ $(document).ready(function(){
 			$(this).parents(".career-left").append($(this));
 
 		    $('html, body').animate({
-		      	scrollTop: $(".row.pd-70px").offset().top + -61
+		      	scrollTop: $(".row.pd-70px").offset().top + -30
 		    }, 1000)
 
 		    $('.career-left').animate({
@@ -92,24 +94,20 @@ $(document).ready(function(){
 		}
 
 		$(".career-left").on('click', '.row.pd-box', function() {
-			let boxShadow = $(this).find(".career-box").children("div").addClass('clicked-cart');
-			
+			let boxShadow = $(this).find(".career-box").children("div");
 			if (boxShadow.hasClass("shadow-paragraph")) {
 				boxShadow.removeClass("shadow-paragraph");
 				boxShadow.slideDown("shadow-paragraph");
-				console.log("Dada")
+				boxShadow.addClass("clicked-cart")
 			}
 			else {
-				boxShadow.slideUp("shadow-paragraph");
-				console.log("nene")
-				// boxShadow.addClass("shadow-paragraph");
+				boxShadow.addClass("shadow-paragraph");
 				// $(this).find(".shadow-paragraph").slideUp(1000);
 			}
 
 			for (var i = 0; i < $(".career-box").length; i++) {
 				if(!$($(".career-box")[i]).children("div").hasClass("clicked-cart")) {
 					$($(".career-box")[i]).children("div").addClass("shadow-paragraph");
-
 				let inputJobApply = $($(this).find("h3")[0]).text();
 				$(this).parents(".career-left").parent(".row.pd-70px").find(".career-right .select").val(inputJobApply);
 				}
@@ -132,7 +130,7 @@ $(document).ready(function(){
 
 
 
-
+	// INPUT UPLOAD FILE
     $("form").on("change", ".file-upload-field", function(){ 
 	    $(this).parent(".file-upload-wrapper").attr("data-text",
 	    	$(this).val().replace(/.*(\/|\\)/, '') );
