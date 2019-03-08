@@ -77,6 +77,13 @@ a{
 .second-nav-up {
   top: 0px;
 }
+.navbar-inverse .navbar-toggle{
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+  background-color: transparent;
+}
 @media screen and (max-width: 767px) {
   .header ul li{
     padding: 0;
@@ -164,10 +171,16 @@ a{
 .container-fluid.career{
   margin-top: 50px;
 }
+.career hr{
+  width: 85px;
+  height: 5px;
+  background-color: #C0392B;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
 .career h2{
-  border-bottom: 2px solid #C0392B;
-  padding-top: 13px;
-  padding-bottom: 18px;
+  font-weight: 700;
+  padding-top: 30px;
 }
 .paragraph-career{
   /*line-height: 30px;*/
@@ -354,6 +367,9 @@ a{
     -webkit-transform: unset;
     transform: unset;
   }
+  .shadow-paragraph{
+    display: none;
+  }
 }
 @media screen and (max-width: 767px){
   .container-fluid.career{
@@ -522,7 +538,7 @@ body {
   padding-left: 10px;
 }
 .file-upload-wrapper:before {
-  content: "Upload";
+  content: "Select a file";
   position: absolute;
   top: 0;
   right: 0;

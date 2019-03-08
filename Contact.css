@@ -77,6 +77,13 @@ a{
 .second-nav-up {
   top: 0px;
 }
+.navbar-inverse .navbar-toggle{
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+  background-color: transparent;
+}
 @media screen and (max-width: 767px) {
   .header ul li{
     padding: 0;
@@ -153,7 +160,10 @@ a{
 }
 
 .contact{
-  margin-top: 50px;
+  /*margin-top: 50px;*/
+  padding-bottom: 30px;
+  padding-top: 30px;
+  /*background-color: #dbd2d2;*/
 }
 @media screen and (max-width: 991px) {
   .header ul li  a{
@@ -245,7 +255,7 @@ input[type=number]::-webkit-outer-spin-button {
   display: block !important;
 }
 .career-right{
-  padding-top: 13px;
+  /*padding-top: 13px;*/
 }
 .career-right button{
   background-color: #222222;
@@ -261,9 +271,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 /*MAP*/
 #map{
-  margin-top: 56px;
-  padding-top: 13px;
-  padding-bottom: 25px;
+  /*margin-top: 48px;*/
+  padding-top: 0px;
 }
 #google-container {
   position: relative;
@@ -275,17 +284,17 @@ address{
 }
 #map1 {
   height: 350px;
-  border-radius: 5px;
 }
+.bg-top-navbar{
+  height: 65px;
+  background-color: #222222;
 
+}
 
 @media screen and (min-width: 768px) {
   .clear{
     clear: none;
   }
-}
-body .container-fluid .contact{
-  min-height: calc(100vh - 233px - 50px);
 }
 .footer {
   height: 233px;
@@ -301,4 +310,21 @@ body .container-fluid .contact{
     height: auto;
     text-align: center;
   }
+}
+
+
+
+.contact-information p{
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+.contact-information img{
+  width: 60%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.contact-information i{
+  color: #C0392B;
+  margin: 10px 15px 10px 5px;
 }

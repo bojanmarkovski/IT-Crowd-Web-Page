@@ -12,14 +12,14 @@
       /* If the object is completely visible in the window, fade it it */
       if( bottom_of_window > bottom_of_object ){
           
-          $(this).animate({'opacity':'1'},700);       
+          $(this).animate({'opacity':'1'},700);
       }
     }); 
   });
 
 
 
-  $(".header").css("background-color", "transparent");
+  $(".header").css("background-color", "rgba(0,0,0,0.6)");
 
   if($( window ).width() > 991){
 
@@ -33,7 +33,7 @@
       else {
         $(".logo").css({"padding-top" : "5px" ,"transition" : "0.4s"});
         $(".header ul li").css({"padding" : "5px 0px", "transition" : "0.4s"});
-        $(".header").css({"background-color" : "transparent", "transition" : "0.4s"});
+        $(".header").css({"background-color" : "rgba(0,0,0,0.6)", "transition" : "0.4s"});
       }
     });
   }
@@ -81,17 +81,19 @@
           });
           if($(".navbar-collapse.collapse").hasClass("in")){
             $(".header button").on("click", function() {
-              $(".nav.navbar-inverse.header").css("background", "transparent");
+              $(".nav.navbar-inverse.header").css("background-color", "rgba(0,0,0,0.6)");
             });
+
             $(".header button").on("click", function() {
               $(".nav.navbar-inverse.header").css("background", "#222222");
             });
+            
             $(".header").removeClass("shrink");
             $(".nav.navbar-inverse.header").css("background", "#222222");
 
           } else {
             $(".header").removeClass("shrink");
-            $(".nav.navbar-inverse.header").css("background", "transparent");
+            $(".nav.navbar-inverse.header").css("background-color", "rgba(0,0,0,0.6)");
           }
         }
 

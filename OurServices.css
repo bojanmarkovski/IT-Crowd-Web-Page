@@ -77,6 +77,13 @@ a{
 .second-nav-up {
   top: 0px;
 }
+.navbar-inverse .navbar-toggle{
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+  background-color: transparent;
+}
 @media screen and (max-width: 767px) {
   .header ul li{
     padding: 0;
@@ -355,7 +362,22 @@ a.animated-button.thar-three:before {
   .header {
     padding: 0px;
   }
-  
+  .right-side-services{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .title-text{
+    text-align: center;
+  }
+  .our-services .our-services-box .image-box img {
+    width: 100%;
+  }
+  .our-services .our-services-box {
+    padding: 10px 0px;
+  }
+  hr{
+    display: inline-block;
+  }
 }
 @media screen and (max-width: 767px) {
   .our-services{
@@ -363,3 +385,34 @@ a.animated-button.thar-three:before {
   }
   
 }
+
+
+hr{
+  height: 3px;
+  background-image: linear-gradient(to left, #C0392B , #222222);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: none;
+}
+.our-services-box p,
+.our-services-box .col-md-4,
+.footer{
+  display: none;
+}
+.our-services-box .custom{
+  width: 181px;
+}
+.our-services-box .mobile{
+  width: 173px;
+}
+.our-services-box .web{
+  width: 144px;
+}
+.our-services-box .digital{
+  width: 149px;
+}
+.col-md-4.col-md-offset-4{
+  display: none;
+}
+
+
