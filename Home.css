@@ -2333,11 +2333,16 @@ body {
     height: auto;
     padding: 30px;
   }
+  .header ul li {
+    padding: 0;
+  }
+  .header .logo {
+    padding-top: 0px;
+  }
 }
 .company-icon-container{
   height: 77.8px;
 }
-
 
 
 

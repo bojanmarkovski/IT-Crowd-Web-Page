@@ -274,6 +274,21 @@ input[type=number]::-webkit-outer-spin-button {
 
 }
 
+.contact-information p{
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+.contact-information img{
+  width: 60%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.contact-information i{
+  color: #C0392B;
+  margin: 10px 15px 10px 5px;
+}
+
 @media screen and (min-width: 768px) {
   .clear{
     clear: none;
@@ -293,27 +308,27 @@ input[type=number]::-webkit-outer-spin-button {
     height: auto;
     text-align: center;
   }
+  .bg-top-navbar {
+    height: 50px;
+    background-color: #222222;
+  }
+  .contact-information{
+    display: none;
+  }
+  .header ul li {
+    padding: 0;
+  }
+  .header .logo {
+    padding-top: 0px;
+  }
 }
+
+
+
+
 
 
 /*MAP*/
-.contact-information p{
-  display: flex;
-  align-items: center;
-  font-size: 15px;
-}
-.contact-information img{
-  width: 60%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.contact-information i{
-  color: #C0392B;
-  margin: 10px 15px 10px 5px;
-}
-
-
-
 #google-container {
   position: relative;
   width: 100%;
@@ -321,7 +336,7 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: #e7eaf0;
 }
 
-#cd-google-map {
+/*#cd-google-map {
   position: relative;
 }
 
@@ -330,7 +345,6 @@ input[type=number]::-webkit-outer-spin-button {
   height: 32px;
   width: 32px;
   cursor: pointer;
-  /*margin-left: 10px;*/
   background-color: rgba(211, 104, 104, 0.9);
   background-repeat: no-repeat;
   background-size: 32px 64px;
@@ -344,3 +358,4 @@ input[type=number]::-webkit-outer-spin-button {
 #cd-zoom-out {
   background-position: 50% -32px;
 }
+*/

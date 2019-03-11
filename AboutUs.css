@@ -163,7 +163,6 @@ hr{
 }
 h2{
   font-weight: 700;
-  padding-top: 30px;
 }
 
 
@@ -182,6 +181,9 @@ h2{
   }
   .wrap-about-us{
     margin-top: 80px;
+  }
+  h2{
+    margin-top: 0;
   }
 }
 
@@ -202,6 +204,12 @@ h2{
   }
   .footer{
     text-align: center;
+  }
+  .header ul li {
+    padding: 0;
+  }
+  .header .logo {
+    padding-top: 0px;
   }
 }
 

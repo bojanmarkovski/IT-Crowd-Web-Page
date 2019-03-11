@@ -580,3 +580,11 @@ body {
   cursor: pointer;
   width: 100%;
 }
+@media screen and (max-width: 991px) {
+  .header ul li {
+    padding: 0;
+  }
+  .header .logo {
+    padding-top: 0px;
+  }
+}
