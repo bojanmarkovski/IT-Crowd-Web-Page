@@ -2347,3 +2347,28 @@ body {
 
 
 
+.chart-skills.second li:nth-child(1) span {
+    top: 26px;
+    left: 123px;
+    transform: rotate(-133deg);
+}
+
+.chart-skills.second li:nth-child(2) span {
+    top: 27px;
+    left: 116px;
+    transform: rotate(-146.2deg);
+    animation-delay: .4s;
+}
+
+.chart-skills.second li:nth-child(4) span {
+    top: 10px;
+    left: 122px;
+     transform: rotate(0deg); 
+    animation-delay: 1.2s;
+}
+.chart-skills.second li:nth-child(3) span {
+    top: 17px;
+    left: 128px;
+    transform: rotate(-108.4deg);
+    animation-delay: .8s;
+}
