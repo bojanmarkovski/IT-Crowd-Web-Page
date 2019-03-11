@@ -268,23 +268,6 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: #C0392B;
   color: white;
 }
-
-/*MAP*/
-#map{
-  /*margin-top: 48px;*/
-  padding-top: 0px;
-}
-#google-container {
-  position: relative;
-  width: 100%;
-  height: 260px;
-}
-address{
-  padding-top: 20px;
-}
-#map1 {
-  height: 350px;
-}
 .bg-top-navbar{
   height: 65px;
   background-color: #222222;
@@ -313,7 +296,7 @@ address{
 }
 
 
-
+/*MAP*/
 .contact-information p{
   display: flex;
   align-items: center;
@@ -327,4 +310,37 @@ address{
 .contact-information i{
   color: #C0392B;
   margin: 10px 15px 10px 5px;
+}
+
+
+
+#google-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: #e7eaf0;
+}
+
+#cd-google-map {
+  position: relative;
+}
+
+#cd-zoom-in, #cd-zoom-out {
+  display: none;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  /*margin-left: 10px;*/
+  background-color: rgba(211, 104, 104, 0.9);
+  background-repeat: no-repeat;
+  background-size: 32px 64px;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-controller.svg");
+  margin-left: 11px;
+  margin-top: 10px;
+}
+.no-touch #cd-zoom-in:hover, .no-touch #cd-zoom-out:hover {
+  background-color: #d36868;
+}
+#cd-zoom-out {
+  background-position: 50% -32px;
 }

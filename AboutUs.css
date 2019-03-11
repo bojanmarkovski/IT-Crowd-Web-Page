@@ -318,6 +318,13 @@ h2{
 .slick-arrow{
  font-size: 0;
 }
+.slick-prev::before,
+.slick-next::before {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    }
 @media screen and (max-width: 767px) {
   .header ul li{
     padding: 0;
