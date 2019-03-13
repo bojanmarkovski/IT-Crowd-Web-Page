@@ -76,16 +76,16 @@ $(function(){
             // This is necessary so you never see what is "behind" the navbar.
             if (st > lastScrollTop && st > navbarHeight){
                 // Scroll Down
-                $('.header').removeClass('nav-down').addClass('nav-up');
+                $('.header').removeClass('nav-down').addClass('nav-up').css("top", "-316px");
                 $(".sticky-tablet").removeClass('second-nav-down').addClass("second-nav-up");
             } else {
                 // Scroll Up
                 if(st + $(window).height() < $(document).height()) {
-                    $('.header').removeClass('nav-up').addClass('nav-down');
+                    $('.header').removeClass('nav-up').addClass('nav-down').css("top", "0px");
                 	$(".sticky-tablet").removeClass('second-nav-up').addClass("second-nav-down");
                 }
             }
-            
+
             lastScrollTop = st;
         }
     }
@@ -99,4 +99,5 @@ $(function(){
     $(".our-services-box .col-md-4").fadeIn(1300);
     $(".footer").fadeIn(1300);
     $(".col-md-4.col-md-offset-4").fadeIn(1300);
+    $(".our-services-box").css("height", "auto");
 });

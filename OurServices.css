@@ -1,3 +1,6 @@
+body{
+  font-family: Helvetica;
+}
 .clear{
   clear: both;
 }
@@ -60,18 +63,18 @@ a{
 .nav-down {
     position: fixed;
     top: 0;
-    transition: top 0.2s ease-in-out;
+    transition: top 0.4s ease-in-out;
     width: 100%;
 }
 
 .nav-up {
   top: -65px;
   position: fixed;
-  transition: top 0.2s ease-in-out;
+  transition: top 0.4s ease-in-out;
 }
 
 .second-nav-down{
-  transition: top .2s ease-in-out;
+  transition: top .4s ease-in-out;
   width: 100%;
 }
 .second-nav-up {
@@ -156,7 +159,6 @@ a{
 }
 .footer ul li:hover{
   color: #C0392B;
-  font-size: 16px;
 }
 .footer ul a{
   text-decoration: none;
@@ -193,6 +195,11 @@ a{
   }
   .footer img{
     margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .copyright{
+    margin-top: 15px;
+    margin-bottom: 5px;
   }
 }
 
@@ -224,9 +231,8 @@ a{
 	padding: 15px 20px;
 }
 .our-services .our-services-box .image-box img{
-	width: 90%;
-	height: 200px;
-	border-radius: 50%;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
 }
 .our-services .our-services-box button{
 	background-color: #C0392B;
@@ -291,12 +297,26 @@ a.animated-button.thar-three:before {
   background-color: #222222;
   color: white;
   transition: 0.2s;
-  font-weight: bold;
   letter-spacing: 1px;
 }
 .our-services button:hover{
   background-color: #C0392B;
   color: white;
+}
+.btn:active{
+  background-image: none; 
+  outline: 0;
+  -webkit-box-shadow: none
+  box-shadow: none;
+  outline: none;
+}
+.btn:focus{
+  color: white;
+  text-decoration: none;
+  outline: none;
+}
+.btn:active:focus, .btn:focus {
+  outline: none;
 }
 
 
@@ -356,6 +376,10 @@ a.animated-button.thar-three:before {
   .clear{
     clear: none;
   }
+  .our-services-box{
+    height: 40vh;
+  }
+
 }
 
 @media screen and (max-width: 991px) {
@@ -416,3 +440,92 @@ hr{
 }
 
 
+
+
+/*MODAL FORM*/
+/*INPUTS*/
+.input-holder {
+  position: relative;
+}
+.input {
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: 1px solid lightgray;
+  width: 100%;
+  outline: none;
+}
+.input:not(:placeholder-shown).input:not(:focus) {
+  border: 1px solid lightgray;
+}
+.input:not(:placeholder-shown).input:not(:focus) + .placeholder {
+  transform: scale(0.75) translateY(-26px) translateX(-5px);
+  color: grey;
+}
+.input:not(:placeholder-shown).input:not(:focus).input:not(:valid) {
+  border: 1px solid lightgray;
+}
+.input:not(:placeholder-shown).input:not(:focus).input:not(:valid) + .placeholder {
+  transform: scale(0.75) translateY(-26px) translateX(-5px);
+  color: lightgray;
+}
+.input:not(:placeholder-shown).input:not(:focus).input:not(:valid) + .placeholder + .error {
+  visibility: visible;
+}
+.input:focus {
+  border-color: #C0392B;
+}
+.input:focus + .placeholder {
+  transform: scale(0.75) translateY(-26px) translateX(-5px);
+  color: #C0392B;
+}
+.placeholder {
+  position: absolute;
+  top: 14%;
+  left: 8px;
+  padding: 0 8px;
+  background-color: white;
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1), opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: grey;
+  font-size: 14px;
+  pointer-events: none;
+}
+.error {
+  visibility: hidden;
+  color: #C0392B;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.holder textarea{
+  resize: none;
+}
+.holder .placeholder-textarea{
+  top: 7%;
+}
+.dropdown.input-holder .placeholder{
+  display: none;
+}
+
+.dropdown.input-holder:focus .placeholder{
+  display: block !important;
+}
+button.close span{
+  padding: 3px 8px;
+  border-radius: 5px;
+  background: black;
+}
+button.close span:hover,
+button.close:focus{
+  background-color: black;
+  outline: none;
+}
+.bg-black:hover{
+  background-color: black !important;
+}

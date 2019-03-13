@@ -1,3 +1,6 @@
+body{
+  font-family: Helvetica;
+}
 .clear{
   clear: both;
 }
@@ -53,6 +56,7 @@ a{
 }
 .wrap-about-us{
   margin-top: 65px;
+  height: 100vh;
 }
 .shrink{
   padding: 0px;
@@ -137,7 +141,6 @@ a{
 }
 .footer ul li:hover{
   color: #C0392B;
-  font-size: 16px;
 }
 .footer ul a{
   text-decoration: none;
@@ -172,6 +175,7 @@ h2{
   }
   .footer img{
     margin: 0 auto;
+    margin-bottom: 10px;
   }
   .header .logo{
     height: auto;
@@ -184,6 +188,10 @@ h2{
   }
   h2{
     margin-top: 0;
+  }
+  .copyright{
+    margin-top: 15px;
+    margin-bottom: 5px;
   }
 }
 
@@ -243,7 +251,6 @@ h2{
 .slider-team .text-team span{
   font-size: 11px;
   text-transform: uppercase;
-  /* background: #ebebeb; */
   background: rgba(0, 0, 0, .07);
   padding: 8px 10px;
   display: inline-block;
@@ -267,7 +274,6 @@ h2{
   width: 75px;
   height: 75px;
   color: #41edbb;
-  background: lightgray;
   border-radius: 50%;
   overflow: hidden;
   line-height: 75px;
@@ -278,6 +284,7 @@ h2{
   right: 100px;
   bottom: 0px;
   color: #C0392B;
+  background-color: white;
 }
 .slider-team{
   display: none;
@@ -289,7 +296,6 @@ h2{
   vertical-align: middle;
   width: 75px;
   height: 75px;
-  background: lightgray;
   border-radius: 50%;
   overflow: hidden;
   line-height: 75px;
@@ -300,6 +306,7 @@ h2{
   right: 10px;
   bottom: 0px;
   color: #C0392B;
+  background-color: white;
 }
 .slick-arrow:hover{
   color: lightgray;

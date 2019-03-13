@@ -2,16 +2,17 @@ $(document).ready(function(){
 
 	if($( window ).width() > 991){
 
-		$(document).on("scroll", function(){
-		    if ($(document).scrollTop() > 15){
-				$(".logo").css({"padding-top" : "0px", "transition" : "0.4s"})
-				$(".header ul li").css({"padding" : "0", "transition" : "0.4s"});
+		 $(document).on("scroll", function(){
+          	if
+            	($(document).scrollTop() > 15){
+		            $(".logo").css({"padding-top" : "0px", "transition" : "0.4s"})
+		            $(".header ul li").css({"padding" : "0", "transition" : "0.4s"});
+	          	}
+	        else {
+	        	$(".logo").css({"padding-top" : "5px" ,"transition" : "0.4s"});
+	            $(".header ul li").css({"padding" : "5px 0px", "transition" : "0.4s"});
 			}
-			else {
-				$(".logo").css({"padding-top" : "5px" ,"transition" : "0.4s"});
-				$(".header ul li").css({"padding" : "5px 0px", "transition" : "0.4s"});
-			}
-		})
+        });
 
 
 		$(".career-left").on('click', '.row.pd-box', function() {
@@ -21,10 +22,8 @@ $(document).ready(function(){
 				boxShadow.removeClass("shadow-paragraph");
 				boxShadow.slideDown();
 				boxShadow.addClass('clicked-cart');
-				console.log("dada")
 			}
 			else {
-				console.log("dadadaad")
 				boxShadow.addClass("shadow-paragraph");
 					$($(".career-box")[i]).children("div").slideUp();
 				
@@ -59,47 +58,45 @@ $(document).ready(function(){
 		})
 	} 	
 	else{
+// Hide Header on on scroll down
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('.header').outerHeight();
 
-		// Hide Header on on scroll down
-		var didScroll;
-		var lastScrollTop = 0;
-		var delta = 5;
-		var navbarHeight = $('.header').outerHeight();
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
 
-		$(window).scroll(function(event){
-		    didScroll = true;
-		});
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
 
-		setInterval(function() {
-		    if (didScroll) {
-		        hasScrolled();
-		        didScroll = false;
-		    }
-		}, 250);
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            
+            // Make sure they scroll more than delta
+            if(Math.abs(lastScrollTop - st) <= delta)
+                return;
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight){
+                // Scroll Down
+                $('.header').removeClass('nav-down').addClass('nav-up').css("top", "-316px");
+                $(".sticky-tablet").removeClass('second-nav-down').addClass("second-nav-up");
+            } else {
+                // Scroll Up
+                if(st + $(window).height() < $(document).height()) {
+                    $('.header').removeClass('nav-up').addClass('nav-down').css("top", "0px");
+                	$(".sticky-tablet").removeClass('second-nav-up').addClass("second-nav-down");
+                }
+            }
 
-		function hasScrolled() {
-		    var st = $(this).scrollTop();
-		    
-		    // Make sure they scroll more than delta
-		    if(Math.abs(lastScrollTop - st) <= delta)
-		        return;
-		    
-		    // If they scrolled down and are past the navbar, add class .nav-up.
-		    // This is necessary so you never see what is "behind" the navbar.
-		    if (st > lastScrollTop && st > navbarHeight){
-		        // Scroll Down
-		        $('.header').removeClass('nav-down').addClass('nav-up');
-		        $(".sticky-tablet").removeClass('second-nav-down').addClass("second-nav-up")
-		    } else {
-		        // Scroll Up
-		        if(st + $(window).height() < $(document).height()) {
-		            $('.header').removeClass('nav-up').addClass('nav-down');
-		        	$(".sticky-tablet").removeClass('second-nav-up').addClass("second-nav-down")
-		        }
-		    }
-		    
-		    lastScrollTop = st;
-		}
+            lastScrollTop = st;
+        }
 
 		$(".career-left").on('click', '.row.pd-box', function() {
 			
@@ -123,7 +120,6 @@ $(document).ready(function(){
 						// $($(".career-box")[i]).children("div").slideUp("shadow-paragraph");
 						$(this).children("div").children("div").addClass("shadow-paragraph")
 					let inputJobApply = $($(this).find("h3")[0]).text();
-					console.log("Dada")
 					$(this).parents(".career-left").parent(".row.pd-70px").find(".career-right .select").val(inputJobApply);
 					}
 					
@@ -146,9 +142,6 @@ $(document).ready(function(){
 		}
 	});
 
-
-
-
 	// INPUT UPLOAD FILE
     $("form").on("change", ".file-upload-field", function(){ 
 	    $(this).parent(".file-upload-wrapper").attr("data-text",
@@ -160,3 +153,31 @@ $(document).ready(function(){
 	});
 	
 });
+
+    $('.dropdown').change( function(e) {
+        
+        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
+        $(this).removeClass("input-holder");
+ 		$(".first-option").css({"display" : "none"}).text("");
+ 		
+ 		if ($(".input.select").val() == ""){
+			$(".first-option").css({"display" : "block", "transition" : "0.7s"}).text("I am applying for *");
+ 		} else if ($(".input.select").val() !== "I am applying for *"){
+ 			$(this).removeClass("input-holder");
+ 		}
+    });
+
+    $('body').click( function() {
+		if (!$(".dropdown").hasClass("input-holder") && $(".first-option").css("display") == "none") {
+			$(".dropdown").addClass("input-holder");
+			$(".first-option").css({"display" : "block", "transition" : "0.7s"}).text("I am applying for *");
+		}
+
+		if ($(".input.select").val() !== "I am applying for *") {
+			$(".dropdown").removeClass("input-holder");
+ 			$(".first-option").css({"display" : "none", "transition" : "0.4s"}).text("");
+		}
+		else if ($(".input.select").val() == "I am applying for *") {
+			$(".dropdown").addClass("input-holder");
+		}
+    });

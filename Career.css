@@ -1,3 +1,6 @@
+body{
+  font-family: Helvetica;
+}
 .clear{
   clear: both;
 }
@@ -60,18 +63,18 @@ a{
 .nav-down {
     position: fixed;
     top: 0;
-    transition: top 0.2s ease-in-out;
+    transition: top 0.4s ease-in-out;
     width: 100%;
 }
 
 .nav-up {
   top: -65px;
   position: fixed;
-  transition: top 0.2s ease-in-out;
+  transition: top 0.4s ease-in-out;
 }
 
 .second-nav-down{
-  transition: top .2s ease-in-out;
+  transition: top .4s ease-in-out;
   width: 100%;
 }
 .second-nav-up {
@@ -157,7 +160,6 @@ a{
 }
 .footer ul li:hover{
   color: #C0392B;
-  font-size: 16px;
 }
 .footer ul a{
   text-decoration: none;
@@ -196,6 +198,7 @@ a{
 }
 .career .career-left .career-box{
   transition: 0.3s;
+  margin-bottom: 10px;
 }
 .career .career-left .career-box:hover{
   cursor: pointer;
@@ -332,6 +335,7 @@ a{
   }
   .footer img{
     margin: 0 auto;
+    margin-bottom: 10px;
   }
   .header .logo{
     height: auto;
@@ -369,6 +373,10 @@ a{
   }
   .shadow-paragraph{
     display: none;
+  }
+  .copyright{
+    margin-top: 15px;
+    margin-bottom: 5px;
   }
 }
 @media screen and (max-width: 767px){
@@ -448,6 +456,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 .dropdown.input-holder:focus .placeholder{
   display: block !important;
+}
+.input-holder:focus{
+  outline: none;
 }
 
 @media screen and (min-width: 768px) {

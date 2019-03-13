@@ -60,20 +60,19 @@
 
 		if($( window ).width() > 991){
 
-	        $(document).on("scroll", function(){
-	          if
-	            ($(document).scrollTop() > 15){
+        $(document).on("scroll", function(){
+          	if
+            	($(document).scrollTop() > 15){
 		            $(".logo").css({"padding-top" : "0px", "transition" : "0.4s"})
 		            $(".header ul li").css({"padding" : "0", "transition" : "0.4s"});
-	          }
-	          else
-	          {
-	            $(".logo").css({"padding-top" : "5px" ,"transition" : "0.4s"});
+	          	}
+	        else {
+	        	$(".logo").css({"padding-top" : "5px" ,"transition" : "0.4s"});
 	            $(".header ul li").css({"padding" : "5px 0px", "transition" : "0.4s"});
-			  }
-	        })
-	      }
-      else{
+			}
+        });
+    }
+    else{
         // Hide Header on on scroll down
         var didScroll;
         var lastScrollTop = 0;
@@ -97,24 +96,23 @@
             // Make sure they scroll more than delta
             if(Math.abs(lastScrollTop - st) <= delta)
                 return;
-            
             // If they scrolled down and are past the navbar, add class .nav-up.
             // This is necessary so you never see what is "behind" the navbar.
             if (st > lastScrollTop && st > navbarHeight){
                 // Scroll Down
-                $('.header').removeClass('nav-down').addClass('nav-up');
-                $(".sticky-tablet").removeClass('second-nav-down').addClass("second-nav-up")
+                $('.header').removeClass('nav-down').addClass('nav-up').css("top", "-316px");
+                $(".sticky-tablet").removeClass('second-nav-down').addClass("second-nav-up");
             } else {
                 // Scroll Up
                 if(st + $(window).height() < $(document).height()) {
-                    $('.header').removeClass('nav-up').addClass('nav-down');
-                	$(".sticky-tablet").removeClass('second-nav-up').addClass("second-nav-down")
+                    $('.header').removeClass('nav-up').addClass('nav-down').css("top", "0px");
+                	$(".sticky-tablet").removeClass('second-nav-up').addClass("second-nav-down");
                 }
             }
-            
+
             lastScrollTop = st;
         }
-      }
+    }
 
 
 
@@ -124,6 +122,7 @@
 		$longitude = 21.392550,
 		$map_zoom = 15;
 
+		
 	//google map custom marker icon - .png fallback for IE11
 	var is_internetExplorer11= navigator.userAgent.toLowerCase().indexOf('trident') > -1;
 	var $marker_url = 'images/pin.png';
@@ -352,3 +351,29 @@
 
 
   
+
+
+  
+
+	  var onloadCallback = function() {
+        grecaptcha.render('re-captcha', {
+          'sitekey' : '6LdZIpcUAAAAAI2bvnnVOLYrvDDS6Wu1pHefdfv6'
+        });
+      };
+
+      // var onloadCallback = function() {
+      //   // Renders the HTML element with id 'example1' as a reCAPTCHA widget.
+      //   // The id of the reCAPTCHA widget is assigned to 'widgetId1'.
+      //   // widgetId1 = grecaptcha.render('example1', {
+      //   //   '6LdZIpcUAAAAAI2bvnnVOLYrvDDS6Wu1pHefdfv6' : '6LdZIpcUAAAAAHd_wXnWpgQlMqTXfKtP8sxkG0iU',
+      //   //   'theme' : 'light'
+      //   // });
+      //   // widgetId2 = grecaptcha.render(document.getElementById('reCaptcha'), {
+      //   //   '6LdZIpcUAAAAAI2bvnnVOLYrvDDS6Wu1pHefdfv6' : '6LdZIpcUAAAAAHd_wXnWpgQlMqTXfKtP8sxkG0iU'
+      //   // });
+      //   // grecaptcha.render('example3', {
+      //   //   '6LdZIpcUAAAAAI2bvnnVOLYrvDDS6Wu1pHefdfv6' : '6LdZIpcUAAAAAHd_wXnWpgQlMqTXfKtP8sxkG0iU',
+      //   //   'callback' : verifyCallback,
+      //   //   'theme' : 'dark'
+      //   // });
+      // };

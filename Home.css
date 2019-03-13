@@ -1,3 +1,6 @@
+body{
+  font-family: Helvetica;
+}
 .clear{
   clear: both;
 }
@@ -13,7 +16,7 @@ hr{
 }
 h2{
   font-weight: 700;
-  padding-top: 30px;
+  /*padding-top: 30px;*/
 }
 .header{
   position: fixed;
@@ -148,7 +151,6 @@ h2{
 }
 .footer ul li:hover{
   color: #C0392B;
-  font-size: 16px;
 }
 .footer ul a{
   text-decoration: none;
@@ -182,6 +184,11 @@ address{
   }
   .footer img{
     margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .copyright{
+    margin-top: 15px;
+    margin-bottom: 5px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1535,9 +1542,12 @@ address{
 /*OUR TECHNOLOGIES*/
 .our-skills-process{
     /*background-image: linear-gradient(to right, #2B0C93 , #FFE49A);*/
-    height: 700px !important;
+    height: 600px !important;
     margin-bottom: 130px;
     background-color: #dbd2d2;
+}
+.row.our-skills-process h2{
+  padding-top: 15px;
 }
 .our-skills-process .bg-color{
     background-color: #dbd2d2;
@@ -1547,7 +1557,7 @@ address{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 700px;
+  height: 600px;
   padding: 50px;
 }
 .company-icons{
@@ -1610,7 +1620,7 @@ address{
     position: relative;
 }
 [data-page=index] section.testimonies .container {
-    height: 700px;
+    height: 600px;
 }
 [data-page=index] section.testimonies .container .carousel-quotes {
     display: inline-block;
@@ -1730,7 +1740,7 @@ address{
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
     height: 144px;
-    margin-left: 76px;
+    margin-left: 140px;
     margin-top: 25px;
     position: absolute;
     width: 144px;
@@ -1749,8 +1759,8 @@ address{
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
     height: 147px;
-    margin-left: 417px;
-    margin-top: 38px;
+    margin-left: 450px;
+    margin-top: 10px;
     position: absolute;
     -webkit-transition-delay: .1s;
     transition-delay: .1s;
@@ -1769,8 +1779,8 @@ address{
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
     height: 104px;
-    margin-left: 185px;
-    margin-top: 189px;
+    margin-left: 310px;
+    margin-top: 110px;
     position: absolute;
     -webkit-transition-delay: .2s;
     transition-delay: .2s;
@@ -1790,8 +1800,8 @@ address{
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
     height: 136px;
-    margin-left: 15px;
-    margin-top: 294px;
+    margin-left: 80px;
+    margin-top: 230px;
     position: absolute;
     -webkit-transition-delay: .3s;
     transition-delay: .3s;
@@ -1812,7 +1822,7 @@ address{
     background-size: 100px;
     height: 122px;
     margin-left: 524px;
-    margin-top: 308px;
+    margin-top: 250px;
     position: absolute;
     -webkit-transition-delay: .4s;
     transition-delay: .4s;
@@ -1847,7 +1857,7 @@ address{
     animation-duration: 4s;
     height: 122px;
     margin-left: 108px;
-    margin-top: 500px;
+    margin-top: 420px;
     position: absolute;
     -webkit-transition-delay: .6s;
     transition-delay: .6s;
@@ -1868,7 +1878,7 @@ address{
     animation-duration: 4s;
     height: 122px;
     margin-left: 505px;
-    margin-top: 538px;
+    margin-top: 450px;
     position: absolute;
     -webkit-transition-delay: .7s;
     transition-delay: .7s;
@@ -1999,7 +2009,7 @@ body {
 
 @media (max-width:1279px) {
     .page-content[data-page=index] section.testimonies .container .company-icons {
-        min-height: 650px;
+        min-height: 600px;
         margin-left: 0;
         margin-top: 50px;
         width: 100%}
@@ -2024,7 +2034,7 @@ body {
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-4 {
         width: 128px;
         height: 128px;
-        margin-left: 17.02%;
+        margin-left: 21.02%;
         margin-top: 180px;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-4 .company-icon {
@@ -2033,8 +2043,8 @@ body {
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-5 {
         width: 118px;
         height: 118px;
-        margin-left: 27%;
-        margin-top: 360px;
+        margin-left: 22%;
+        margin-top: 400px;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-5 .company-icon {
         width: 85%!important;
@@ -2043,25 +2053,25 @@ body {
         width: 136px;
         height: 136px;
         margin-left: 57.8%;
-        margin-top: 220px;
+        margin-top: 170px;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-7 {
         width: 114px;
         height: 114px;
         margin-left: 0;
-        margin-top: 425px;
+        margin-top: 300px;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-8 {
         width: 114px;
         height: 114px;
-        margin-left: 46%;
-        margin-top: 490px;
+        margin-left: 47%;
+        margin-top: 340px;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-9 {
         width: 142px;
         height: 142px;
         margin-left: calc(100% - 142px);
-        margin-top: 408px;
+        margin-top: 330px;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-9 .company-icon {
         width: 96px!important;
@@ -2074,7 +2084,7 @@ body {
         margin-right: 0;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons {
-        min-height: 700px;
+        min-height: 600px;
         margin-left: 0;
         margin-top: 40px;
         width: 100%}
@@ -2208,7 +2218,7 @@ body {
   font-size: 16px;
 }
 .iq-fancy-boxnew{ 
-  padding: 40px 15px 25px 15px; 
+  padding: 15px 15px 25px 15px; 
   overflow: hidden; 
   position: relative; 
   background: transparent;  
@@ -2331,7 +2341,7 @@ body {
   .our-skills-process .col-lg-5.col-md-5.col-sm-12.col-xs-12{
     display: inline-block;
     height: auto;
-    padding: 30px;
+    padding: 0 30px 0 30px;
   }
   .header ul li {
     padding: 0;
@@ -2339,9 +2349,24 @@ body {
   .header .logo {
     padding-top: 0px;
   }
+  .iq-fancy-boxnew{ 
+    padding: 15px 15px 15px 15px; 
+  }
+  .fancy-content{
+    padding-top: 10px;
+  }
+  .bg-color h2{
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  hr{
+    margin-bottom: 10px;
+  }
 }
+
 .company-icon-container{
-  height: 77.8px;
+  height: 66.7px;
 }
 
 
