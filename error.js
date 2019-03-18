@@ -1,5 +1,19 @@
-$(function(){
-		
+$(document).ready(function(){
+
+	// MOBILE NAVBAR
+	$('.smooth-scroll-mobile').click(function(e){
+	  	e.preventDefault();
+		var target = $($(this).attr('href'));
+		if(target.length){
+
+			var topOffset = 34;
+			if ($(".navbar-inverse").hasClass("nav-down")) {
+				topOffset = 92;
+			}
+		    var scrollTo = target.offset().top - topOffset;
+		    $('body, html').animate({scrollTop: scrollTo + 'px'}, 800);
+		}
+	});	
 
 	// CLOSE AN OPEN COLLAPSED NAVBAR WHEN CLICKING OUTSIDE
 	$(document).click(function (event) {
@@ -10,9 +24,8 @@ $(function(){
 			$navbar.collapse('hide');
 		}
 	});
-		            
 
-	if($( window ).width() > 991){
+  	if($( window ).width() > 991){
 
         $(document).on("scroll", function(){
           	if
@@ -68,14 +81,4 @@ $(function(){
         }
     }
 
-    if($( window ).width() < 991){
-   		$("hr").css("display" , "inline-block", "!important");
-    } else{
-    	$("hr").show(1100);
-    }
-    $(".our-services-box p").fadeIn(1300);
-    $(".our-services-box .col-md-4").fadeIn(1300);
-    $(".footer").fadeIn(1300);
-    $(".col-md-4.col-md-offset-4").fadeIn(1300);
-    $(".our-services-box").css("height", "auto");
 });

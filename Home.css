@@ -293,7 +293,7 @@ address{
     animation: move_wave 23s linear infinite;
 }
 .banner-objects{
-  background-color: rgba(192, 57, 43, 0.6)
+  background-color: rgba(192, 57, 43, 0.6);
 }
 
 #iq-home{
@@ -2289,7 +2289,7 @@ body {
     padding: 0;
   }
   .header img {
-    padding: 2px 20px 2px 0px;
+    padding: 2px 20px 0px 0px;
     height: 45px;
   }
   .header .logo{
@@ -2347,7 +2347,7 @@ body {
     padding: 0;
   }
   .header .logo {
-    padding-top: 0px;
+    padding-top: 2px;
   }
   .iq-fancy-boxnew{ 
     padding: 15px 15px 15px 15px; 

@@ -4,6 +4,8 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
 		<title>Career</title>
+		<link rel="shortcut icon" href="images/logo-title.png">
+		
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -326,9 +328,7 @@
 														<option>Middleware Intergration Developer</option>
 														<option>Mobile Developer</option>
 														<option>Software Engineer</option>
-														}
 														<option>Intership</option>
-														}
 													</select>
 													<div class="placeholder">I am applying for *</div>
 													<div class="error">Please enter a job</div>
@@ -338,13 +338,13 @@
 										<div class="form-group">
 											<label for="exampleInputFile">Attach your CV/Resume *</label>
 											<!-- <input type="file"  class="form-control-file custom-file-input" id="exampleInputFile" aria-describedby="fileHelp"> -->
-											<div class="file-upload-wrapper" data-text="No file chosen">
-												<input name="file-upload-field" type="file" class="file-upload-field" value="" accept=".docx,.ppt,.pptx,.txt,.pdf">
+											<div class="file-upload-wrapper" data-text="No file chosen" required>
+												<input name="file-upload-field" type="file" class="file-upload-field" value="" accept=".docx,.ppt,.pptx,.txt,.pdf" required>
 											</div>
 										</div>
 										<div class="form-check">
 											<label class="form-check-label">
-												<input type="checkbox" class="form-check-input">
+												<input type="checkbox" class="form-check-input" required>
 												I have read and accept ITCrowd'
 												<!-- <a data-toggle="modal" data-target="#myModal" class="text-danger">Privacy Policy - Terms & Conditions</a> -->
 												<a class="text-danger" data-toggle="modal" data-target="#exampleModal">
@@ -490,6 +490,7 @@
 				</div>
 			</div>
 		</div>
+		
 		<script src="Career.js"></script>
 	</body>
 </html>

@@ -188,6 +188,7 @@ a{
 
 .input-holder {
   position: relative;
+  margin-bottom: 15px;
 }
 .input {
   font-size: 14px;
@@ -223,7 +224,7 @@ a{
 }
 .placeholder {
   position: absolute;
-  top: 14%;
+  top: 23%;
   left: 8px;
   padding: 0 8px;
   background-color: white;
@@ -237,6 +238,10 @@ a{
   color: #C0392B;
   font-weight: 300;
   font-size: 12px;
+  position: absolute;
+  right: -150px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .holder .placeholder-textarea {
   top: 7%;
