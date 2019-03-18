@@ -464,19 +464,19 @@
 					<script>
 						$(document).ready(function() {
 							// if ($( window ).width() >= 715) {
-								$(".z-index .slideInUpMobile").css("z-index", "2").animate({top: '40%'},1200);
-								$(".z-index .slideInUpWatch").animate({top: '60%'},2000);
+								// $(".z-index .slideInUpMobile").css("z-index", "2").animate({top: '40%'},1200);
+								$(".z-index .slideInUpWatch").animate({top: '60%'},2100);
 
-								// $(".z-index .slideInDown")
-										// 	.animate({
-												// 		top: '0px'
-										// 	},1000)
-										// 	.animate({
-												// 		top: "-30px"
-										// 	})
-										// 	.animate({
-												// 		top: "10px"
-										// 	});
+								$(".z-index .slideInUpMobile")
+											.animate({
+														top: '35%'
+											},800)
+											.animate({
+														top: "55%"
+											},700)
+											.animate({
+														top: "40%"
+											},900);
 							
 							/* Every time the window is scrolled ... */
 							$(window).scroll( function(){

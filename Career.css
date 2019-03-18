@@ -546,7 +546,7 @@ body {
   font-weight: 300;
   font-size: 15px;
   border: 1px solid lightgray;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 .file-upload-wrapper:before {
   content: "Select a file";
