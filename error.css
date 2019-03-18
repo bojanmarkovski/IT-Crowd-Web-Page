@@ -338,5 +338,23 @@ a{
   #iq-home {
     height: auto;
   }
+  .banner-text img{
+    width: 100%;
+  }
 }
-
+@media screen and (max-width: 767px){
+  .iq-banner .banner-objects .banner-objects-02{
+    left: -20%;
+  }
+  .iq-banner .banner-objects .banner-objects-03{
+    right: -40%;
+  }
+}
+@media screen and (max-width: 425px){
+  .iq-banner .banner-objects .banner-objects-02{
+    left: -40%;
+  }
+  .iq-banner .banner-objects .banner-objects-03{
+    right: -70%;
+  }
+}
