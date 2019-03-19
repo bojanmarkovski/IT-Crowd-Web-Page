@@ -286,7 +286,7 @@ a{
   position: absolute; 
   bottom: 50%; 
   margin-bottom: -125px; 
-  left: -13%;
+  left: -5%;
    border: 15px solid rgba(255, 255, 255, 0.8); 
    border-radius: 900px; 
    height: 250px; 
@@ -295,7 +295,7 @@ a{
 .iq-banner .banner-objects .banner-objects-03 { 
   position: absolute; 
   top: 0%; 
-  right: -15%; 
+  right: -10%; 
   border: 30px solid rgba(255, 255, 255, 0.8); 
   border-radius: 900px; 
   height: 400px; 
@@ -340,6 +340,12 @@ a{
   }
   .banner-text img{
     width: 100%;
+  }
+  .iq-banner .banner-objects .banner-objects-02{
+    left: -13%;
+  }
+  .iq-banner .banner-objects .banner-objects-03{
+    right: -15%;
   }
 }
 @media screen and (max-width: 767px){

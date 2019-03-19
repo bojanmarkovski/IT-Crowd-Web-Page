@@ -235,6 +235,7 @@ h2{
 .inner-slider-team{
   margin: 10px;
   background-image: linear-gradient(lightgray, white);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 }
 .slider-team .img-team{
   background-image: url(images/girl-work.jpg);

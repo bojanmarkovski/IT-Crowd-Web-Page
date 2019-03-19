@@ -143,8 +143,8 @@ $(document).ready(function(){
 	});
 
 	// INPUT UPLOAD FILE
-    $("form").on("change", ".file-upload-field", function(){ 
-	    $(this).parent(".file-upload-wrapper").attr("data-text",
+    $("form").on("change", ".file-upload-field", function(){
+		$(this).parent(".file-upload-wrapper").attr("data-text",
 	    	$(this).val().replace(/.*(\/|\\)/, '') );
 	});
 
@@ -181,3 +181,9 @@ $(document).ready(function(){
 			$(".dropdown").addClass("input-holder");
 		}
     });
+
+
+    // CHECKBOX PRIVACY POLICY
+    $(".modal-dialog button").on('click', function() {
+    	$(".form-check-input").prop('checked', true);
+    })

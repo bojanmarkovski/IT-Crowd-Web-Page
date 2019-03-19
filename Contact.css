@@ -275,6 +275,9 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: #C0392B;
   color: white;
 }
+.btn.btn-block{
+  margin-top: 15px;
+}
 .bg-top-navbar{
   height: 65px;
   background-color: #222222;
@@ -295,6 +298,7 @@ input[type=number]::-webkit-outer-spin-button {
   color: #C0392B;
   margin: 10px 15px 10px 5px;
 }
+
 
 @media screen and (min-width: 768px) {
   .clear{
@@ -327,6 +331,25 @@ input[type=number]::-webkit-outer-spin-button {
   }
   .header .logo {
     padding-top: 0px;
+  }
+  .error {
+    visibility: hidden;
+    color: #C0392B;
+    font-weight: 300;
+    font-size: 12px;
+    position: relative;
+    right: 0;
+    top: 0;
+    transform: translateY(0);
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+  }
+  .placeholder{
+    top: 13%;
+  }
+  .input-holder{
+    margin-bottom: 0;
   }
 }
 

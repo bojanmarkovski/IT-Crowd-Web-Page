@@ -165,26 +165,6 @@ a{
   color: lightgray;
 }
 
-/*BUTTON TO TOP*/
-
-.top-button i{
-  color: white;
-  position: fixed;
-  right: 40px;
-  bottom: 40px;
-  background-color: #222222;
-  padding: 10px;
-  border-radius: 7px;
-  z-index: 999;
-}
-.top-button:hover i{
-  background-color: #C0392B;
-  cursor: pointer; #222222;
-}
-.hideme{
-  opacity: 0;
-}
-
 
 @media screen and (max-width: 991px) {
   .header ul li  a{
@@ -234,20 +214,10 @@ a{
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
 }
-.our-services .our-services-box button{
-	background-color: #C0392B;
-	padding: 10px 15px;
-	color: #E7E8EC;
-	transition: 0.3s;
-}
-
-.our-services .our-services-box button:hover{
-	color: white;
-}
 .our-services .our-services-box p{
-	/*line-height: 25px;*/
   padding-top: 10px;
 	letter-spacing: 1px;
+  text-align: justify;
 }
 .text-right{
 	text-align: right;
@@ -298,10 +268,12 @@ a.animated-button.thar-three:before {
   color: white;
   transition: 0.2s;
   letter-spacing: 1px;
+  border: 1px solid #222222;
 }
 .our-services button:hover{
   background-color: #C0392B;
   color: white;
+  border: 1px solid #C0392B;
 }
 .btn:active{
   background-image: none; 
@@ -444,6 +416,10 @@ hr{
 
 /*MODAL FORM*/
 /*INPUTS*/
+.modal.fade.in{
+  /*filter: blur(1px);*/
+  background-color: rgba(0,0,0,0.7)
+}
 .input-holder {
   position: relative;
 }
@@ -517,16 +493,61 @@ input[type=number]::-webkit-outer-spin-button {
 .dropdown.input-holder:focus .placeholder{
   display: block !important;
 }
+button.close.bg-black{
+  background-color: unset !important;
+  border: 0px solid transparent;
+}
+button.close.bg-black:hover{
+  background-color: unset !important;
+  border: 0px solid transparent;
+}
 button.close span{
   padding: 3px 8px;
   border-radius: 5px;
-  background: black;
+  background: white;
+  color: black;
+  letter-spacing: unset;
 }
 button.close span:hover,
 button.close:focus{
   background-color: black;
+  color: white;
   outline: none;
 }
 .bg-black:hover{
   background-color: black !important;
+}
+#btn-close{
+  background-color: white;
+  color: #222222;
+  border: 1px solid #222222;
+  font-weight: 600;
+}
+#btn-close:hover{
+  color:  #C0392B;;
+  border: 1px solid #C0392B;
+}
+
+/*MODAL BLUR*/
+.blur-modal {
+  -webkit-transform: scale(1);
+  -webkit-transition: all linear 0.5s 0;
+}
+
+.modal-open .blur-modal {
+  -webkit-filter: blur(2px);
+  -ms-filter: blur(2px);
+  -o-filter: blur(2px);
+  filter: blur(2px);
+}
+.modal-open button{
+  background-color: #222222;
+  color: white;
+  transition: 0.2s;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.modal-open button:hover{
+  background-color: #C0392B;
+  color: white;
 }

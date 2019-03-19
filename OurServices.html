@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"></head>
 		<body>
-			<div class="nav navbar-inverse header" id="home">
+			<div class="nav navbar-inverse header blur-modal" id="home">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
@@ -52,7 +52,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="container-fluid">
+			<div class="container-fluid blur-modal">
 				<div class="row our-services">
 					<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
 						<!-- OUR-SERVICES BOX 1-->
@@ -156,67 +156,11 @@
 								<img src="images/services2.jpeg" class="img-responsive" alt=""></div>
 							</div>
 						</div>
-						<div class="row">
+						<div class="row blur-modal">
 							<div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12">
 								<button type="button" class="btn btn-block" data-toggle="modal" data-target="#exampleModal">
 								HIRE US
 								</button>
-								<!-- Modal -->
-								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-									<div class="modal-dialog" role="document">
-										<div class="modal-content">
-											<div class="modal-header">
-												<button type="button" class="close bg-black" data-dismiss="modal" aria-label="Close">
-												 <span aria-hidden="">&times;</span>
-												</button>
-												<h5 class="modal-title" id="exampleModalLabel">Pop me a message</h5>
-											</div>
-											<div class="modal-body">
-												<form>
-													<div class="form-group">
-														<!-- NAME INPUT -->
-														<div class="holder">
-															<div class="input-holder">
-																<input class="input" type="text" placeholder=" " required>
-																<div class="placeholder">Your company *</div>
-																<div class="error">Please enter a valid Company name</div>
-															</div>
-														</div>
-														<!-- E-MAIL INPUT -->
-														<div class="holder">
-															<div class="input-holder">
-																<input class="input" type="email" placeholder=" " required>
-																<div class="placeholder">Your e-mail *</div>
-																<div class="error">Please enter a valid email</div>
-															</div>
-														</div>
-														<!-- NAME INPUT -->
-														<div class="holder">
-															<div class="input-holder">
-																<input class="input" type="text" placeholder=" " required>
-																<div class="placeholder">Subject *</div>
-																<div class="error">Please enter a subject</div>
-															</div>
-														</div>
-														<!-- TEXT AREA -->
-														<div class="holder">
-															<div class="input-holder">
-																<textarea class="input" placeholder=" " rows="4" required></textarea>
-																<div class="placeholder placeholder-textarea">Your Message</div>
-																<div class="error">Please enter a valid message</div>
-															</div>
-														</div>
-													</div>
-												</form>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-												<button type="button" class="btn btn-secondary">Send e-mail</button>
-											</div>
-										</div>
-									</div>
-								</div>
-								
 							</div>
 						</div>
 					</div>
@@ -277,6 +221,61 @@
 				</div>
 			</div>
 			
+			<!-- Modal -->
+								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close bg-black" data-dismiss="modal" aria-label="Close">
+												 <span aria-hidden="">&times;</span>
+												</button>
+												<h5 class="modal-title" id="exampleModalLabel">Pop me a message</h5>
+											</div>
+											<div class="modal-body">
+												<form>
+													<div class="form-group">
+														<!-- NAME INPUT -->
+														<div class="holder">
+															<div class="input-holder">
+																<input class="input" type="text" placeholder=" " required>
+																<div class="placeholder">Your company *</div>
+																<div class="error">Please enter a valid Company name</div>
+															</div>
+														</div>
+														<!-- E-MAIL INPUT -->
+														<div class="holder">
+															<div class="input-holder">
+																<input class="input" type="email" placeholder=" " required>
+																<div class="placeholder">Your e-mail *</div>
+																<div class="error">Please enter a valid email</div>
+															</div>
+														</div>
+														<!-- NAME INPUT -->
+														<div class="holder">
+															<div class="input-holder">
+																<input class="input" type="text" placeholder=" " required>
+																<div class="placeholder">Subject *</div>
+																<div class="error">Please enter a subject</div>
+															</div>
+														</div>
+														<!-- TEXT AREA -->
+														<div class="holder">
+															<div class="input-holder">
+																<textarea class="input" placeholder=" " rows="4" required></textarea>
+																<div class="placeholder placeholder-textarea">Your Message</div>
+																<div class="error">Please enter a valid message</div>
+															</div>
+														</div>
+													</div>
+												</form>
+											</div>
+											<div class="modal-footer">
+												<button id="btn-close" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-secondary">Send e-mail</button>
+											</div>
+										</div>
+									</div>
+								</div>
 			<script src="OurServices.js"></script>
 		</body>
 	</html>

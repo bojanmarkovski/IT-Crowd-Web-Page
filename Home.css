@@ -16,7 +16,6 @@ hr{
 }
 h2{
   font-weight: 700;
-  /*padding-top: 30px;*/
 }
 .header{
   position: fixed;
@@ -273,8 +272,7 @@ address{
     width: 100%;
     overflow: hidden;
     height: 94px;
-    background-image: transparent;
-    bottom: 29px;
+    bottom: 28px;
 }
 .wave {
     position: absolute;
@@ -1522,6 +1520,7 @@ address{
   .work-process-row-container{
     height: 405px;
     position: relative;
+    margin-bottom: 25px;
   }
   .work-process-row-container .col-lg-12.col-md-12.col-sm-12{
     padding: 0;
@@ -1542,23 +1541,31 @@ address{
 /*OUR TECHNOLOGIES*/
 .our-skills-process{
     /*background-image: linear-gradient(to right, #2B0C93 , #FFE49A);*/
-    height: 600px !important;
-    margin-bottom: 130px;
     background-color: #dbd2d2;
 }
-.row.our-skills-process h2{
+.container {
+  width: 750px;
+}
+.container-fluid h2{
   padding-top: 15px;
 }
 .our-skills-process .bg-color{
     background-color: #dbd2d2;
     padding: 0;
 }
+.our-skills-process .bg-color p{
+  font-size: 16px;
+}
+.our-skills-process .bg-color h3{
+  font-weight: 600;
+  font-size: 26px;
+}
 .our-skills-process .col-lg-5.col-md-5.col-sm-12.col-xs-12{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 600px;
-  padding: 50px;
+  padding-left: 50px;
 }
 .company-icons{
     visibility: hidden;
@@ -2044,7 +2051,7 @@ body {
         width: 118px;
         height: 118px;
         margin-left: 22%;
-        margin-top: 400px;
+        margin-top: 350px;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-5 .company-icon {
         width: 85%!important;
@@ -2153,6 +2160,7 @@ body {
         height: 700px !important;
     }
 }
+  
 @media (max-width:479px) {
     .page-content[data-page=index] section.testimonies .container .company-icons {
         min-height: 708px;
@@ -2185,7 +2193,11 @@ body {
       padding-right: 15px!important;
     }
 }
-
+@media (min-width: 1800px){
+  .our-skills-process .col-lg-5.col-md-5.col-sm-12.col-xs-12{
+    padding-left: 120px;
+  }
+}
 @keyframes one-animated {
     0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%
     box-shadow:15px 15px 50px rgba(0, 0, 0, 0.2); }
@@ -2211,6 +2223,9 @@ body {
     75% { border-radius: 18% 82% 10% 90% / 24% 68% 32% 76%; }
 }
 
+.development{
+  margin-bottom: 15px;
+}
 .development h4{
   font-weight: 600;
 }
@@ -2283,7 +2298,6 @@ body {
   display: none;
 }
 
-
 @media screen and (max-width: 767px) {
   .header ul li{
     padding: 0;
@@ -2355,9 +2369,9 @@ body {
   .fancy-content{
     padding-top: 10px;
   }
-  .bg-color h2{
+  .bg-color h3{
     text-align: center;
-    padding-top: 0;
+    padding-top: 15px;
     margin-top: 0;
   }
   hr{
@@ -2368,9 +2382,6 @@ body {
 .company-icon-container{
   height: 66.7px;
 }
-
-
-
 
 .chart-skills.second li:nth-child(1) span {
     top: 26px;
@@ -2397,3 +2408,5 @@ body {
     transform: rotate(-108.4deg);
     animation-delay: .8s;
 }
+
+
