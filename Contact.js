@@ -1,28 +1,3 @@
-// function mapInit() {
-  
-// 			var myLatLng = new google.maps.LatLng(42.006068, 21.392550);
-
-// 			var	$main_color = '#C0392B;',
-// 				$saturation= -20,
-// 				$brightness= 5;
-
-// 			var mapProps = {
-// 				zoom: 14,
-// 				center: myLatLng,
-// 				panControl: false,
-// 		      	zoomControl: true,
-// 		      	mapTypeControl: false,
-// 		      	streetViewControl: false,
-// 		      	mapTypeId: google.maps.MapTypeId.ROADMAP,
-// 		      	scrollwheel: true
-// 			}
-
-// 			var map1 = new google.maps.Map(document.getElementById("map1"), mapProps);
-// 		};
-
-// 		google.maps.event.addDomListener(window, 'load', mapInit);
-
-
 		// CLOSE AN OPEN COLLAPSED NAVBAR WHEN CLICKING OUTSIDE
 		$(document).click(function (event) {
 			var clickover = $(event.target);
@@ -91,7 +66,7 @@
 
 
 
-      jQuery(document).ready(function($){
+jQuery(document).ready(function($){
 	//set your google maps parameters
 	var $latitude = 42.006068,
 		$longitude = 21.392550,
@@ -325,30 +300,9 @@
 });
 
 
-  
 
-
-  
-
-	  var onloadCallback = function() {
-        grecaptcha.render('re-captcha', {
-          'sitekey' : '6LdZIpcUAAAAAI2bvnnVOLYrvDDS6Wu1pHefdfv6'
-        });
-      };
-
-      // var onloadCallback = function() {
-      //   // Renders the HTML element with id 'example1' as a reCAPTCHA widget.
-      //   // The id of the reCAPTCHA widget is assigned to 'widgetId1'.
-      //   // widgetId1 = grecaptcha.render('example1', {
-      //   //   '6LdZIpcUAAAAAI2bvnnVOLYrvDDS6Wu1pHefdfv6' : '6LdZIpcUAAAAAHd_wXnWpgQlMqTXfKtP8sxkG0iU',
-      //   //   'theme' : 'light'
-      //   // });
-      //   // widgetId2 = grecaptcha.render(document.getElementById('reCaptcha'), {
-      //   //   '6LdZIpcUAAAAAI2bvnnVOLYrvDDS6Wu1pHefdfv6' : '6LdZIpcUAAAAAHd_wXnWpgQlMqTXfKtP8sxkG0iU'
-      //   // });
-      //   // grecaptcha.render('example3', {
-      //   //   '6LdZIpcUAAAAAI2bvnnVOLYrvDDS6Wu1pHefdfv6' : '6LdZIpcUAAAAAHd_wXnWpgQlMqTXfKtP8sxkG0iU',
-      //   //   'callback' : verifyCallback,
-      //   //   'theme' : 'dark'
-      //   // });
-      // };
+	var onloadCallback = function() {
+		grecaptcha.render('re-captcha', {
+			'sitekey' : '6LdZIpcUAAAAAI2bvnnVOLYrvDDS6Wu1pHefdfv6'
+		});
+	};
