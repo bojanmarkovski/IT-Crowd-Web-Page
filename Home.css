@@ -128,15 +128,24 @@ h2{
 }
 .footer .copyright a{
   text-decoration: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #383838;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  margin-right: 3px;
+  margin-left: 3px;
+}
+.footer .copyright a:hover{
+  background: #C0392B;
 }
 .footer .copyright i{
-  font-size: 24px;
+  font-size: 18px;
   color: white;
   transition: 0.3s;
-}
-.footer .copyright i:hover{
-  color: #C0392B;
-  transform: scale(1.2);
 }
 .footer ul{
   list-style: none;
@@ -1555,6 +1564,7 @@ address{
 }
 .our-skills-process .bg-color p{
   font-size: 16px;
+  text-align: justify;
 }
 .our-skills-process .bg-color h3{
   font-weight: 600;
@@ -2231,6 +2241,7 @@ body {
 }
 .development .text-left{
   font-size: 16px;
+  text-align: justify;
 }
 .iq-fancy-boxnew{ 
   padding: 15px 15px 25px 15px; 

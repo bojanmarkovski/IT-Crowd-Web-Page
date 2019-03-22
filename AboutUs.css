@@ -97,6 +97,9 @@ a{
   padding-top: 15px;
   padding-bottom: 15px;
   color: lightgray;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 .footer img{
   width: 143px;
@@ -193,6 +196,10 @@ h2{
     margin-top: 15px;
     margin-bottom: 5px;
   }
+  .footer{
+    position: relative;
+    width: auto;
+  }
 }
 
 
@@ -233,7 +240,7 @@ h2{
   display: none;
 }
 .inner-slider-team{
-  margin: 10px;
+  /*margin: 10px;*/
   background-image: linear-gradient(lightgray, white);
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 }
@@ -243,12 +250,9 @@ h2{
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 200px;
+  height: 250px;
 }
 
-.slider-team .text-team{
-  padding: 20px 30px;
-}
 .slider-team .text-team span{
   font-size: 11px;
   text-transform: uppercase;
@@ -359,4 +363,122 @@ h2{
   .wrap-about-us{
     margin-top: 60px;
   }
+}
+
+
+
+/*CARS HOVER EFFECT*/
+a,a:hover,a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 9px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+    margin: 25px auto;
+    margin: 10px;
+}
+.card img {
+    width: 100%;
+}
+.card-name {
+    position: absolute;
+}
+.card-icons {
+    position: absolute;
+    color: white;
+}
+.card-10 img {
+    transition: all 0.25s ease-in-out;
+    z-index: 1;
+}
+.card-10::before {
+    content: "";
+    position: absolute;
+    background-color: #de2431;
+    opacity: 0.3;
+    left: -250px;
+    top: 0px;
+    width: 250px;
+    bottom: 0px;
+    z-index: 1;
+    transform: skew(0deg);
+    transition: all 0.25s ease-in-out;
+}
+.card-10::after {
+    content: "";
+    position: absolute;
+    height: 100px;
+    left: 0px;
+    right: 0px;
+    bottom: -100px;
+    z-index: 2;
+    background-color: #FFF;
+    transition: all 0.25s ease-in-out;
+}
+.card-10 .card-name {
+    color: #333;
+    bottom: 15px;
+    left: 20px;
+    z-index: 5;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.25s ease-in-out;
+    transition-delay: 0.2s;
+    transform: scale(1,0);
+}
+.card-10 .card-name span {
+    color: #de2431;
+}
+.card-10 .card-icons {
+    bottom: 80px;
+    right: -300px;
+    z-index: 5;
+    transition: all 0.25s ease-in-out;
+    transition-delay: 0.3s;
+}
+.card-10 .card-icons .fa {
+    margin: 0px 5px;
+    color: #FFF;
+}
+.card-10 .card-icons::before {
+    position: absolute;
+    content: "";
+    top: -25px;
+    left: -50px;
+    right: -100px;
+    bottom: -25px;
+    background-color: #de2431;
+    z-index: -1;
+    transform: skew(-40deg);
+}
+.card-10 .card-icons::after {
+    position: absolute;
+    content: "";
+    left: -100px;
+    top: 0px;
+    bottom: -25px;
+    background-color: #961728;
+    width: 100px;
+    transform: skew(40deg);
+    z-index: -2;
+    box-shadow: inset 0px 0px 30px rgba(0,0,0,0.2);
+}
+.card-10:hover img {
+    filter: brightness(70%);
+}
+.card-10:hover::before {
+    left: -250px;
+    transform: skew(-30deg);
+}
+.card-10:hover::after {
+    bottom: 0px;
+}
+.card-10:hover .card-name {
+    transform: scale(1,1);
+}
+.card-10:hover .card-icons {
+    right: 20px;
 }
