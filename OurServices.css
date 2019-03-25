@@ -1,5 +1,9 @@
+@font-face {
+  font-family: Roboto Condensed;
+  src: url("./fonts/Roboto-Regular.ttf");
+}
 body{
-  font-family: Helvetica;
+  font-family: Roboto Condensed;
 }
 .clear{
   clear: both;
@@ -224,9 +228,8 @@ a{
 }
 .our-services .our-services-box p{
   padding-top: 10px;
-	letter-spacing: 1px;
   text-align: justify;
-  font-size: 16px;
+  font-size: 15px;
 }
 .text-right{
 	text-align: right;
@@ -409,16 +412,16 @@ hr{
   display: none;
 }
 .our-services-box .custom{
-  width: 185px;
+  width: 172px;
 }
 .our-services-box .web{
-  width: 156px;
+  width: 144px;
 }
 .our-services-box .mobile{
-  width: 175px;
+  width: 163px;
 }
 .our-services-box .digital{
-  width: 145px;
+  width: 135px;
 }
 .col-md-4.col-md-offset-4{
   display: none;
@@ -453,6 +456,7 @@ hr{
 }
 .input:not(:placeholder-shown).input:not(:focus).input:not(:valid) {
   border: 1px solid lightgray;
+  color: #C0392B;
 }
 .input:not(:placeholder-shown).input:not(:focus).input:not(:valid) + .placeholder {
   transform: scale(0.75) translateY(-26px) translateX(-5px);
@@ -538,7 +542,6 @@ button.close:focus{
   border: 1px solid #222222;
   color: #222222;
   transition: 0.2s;
-  font-weight: bold;
   letter-spacing: 1px;
 }
 .btn.btn-secondary{
@@ -593,7 +596,6 @@ textarea::-webkit-scrollbar-track {
   background-color: #222222;
   color: white;
   transition: 0.2s;
-  font-weight: bold;
   letter-spacing: 1px;
   border: 1px solid #222222;
 }

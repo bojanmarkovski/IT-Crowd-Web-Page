@@ -1,5 +1,9 @@
+@font-face {
+  font-family: Roboto Condensed;
+  src: url("./fonts/Roboto-Regular.ttf");
+}
 body{
-  font-family: Helvetica;
+  font-family: Roboto Condensed;
 }
 .clear{
   clear: both;

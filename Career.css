@@ -1,5 +1,9 @@
+@font-face {
+  font-family: Roboto Condensed;
+  src: url("./fonts/Roboto-Regular.ttf");
+}
 body{
-  font-family: Helvetica;
+  font-family: Roboto Condensed;
 }
 .clear{
   clear: both;
@@ -416,6 +420,7 @@ a{
 }
 .input:not(:placeholder-shown).input:not(:focus).input:not(:valid) {
   border: 1px solid lightgray;
+  color: #C0392B;
 }
 .input:not(:placeholder-shown).input:not(:focus).input:not(:valid) + .placeholder {
   transform: scale(0.75) translateY(-26px) translateX(-5px);
@@ -443,12 +448,18 @@ a{
   pointer-events: none;
 }
 .error {
-  visibility: hidden;
-  color: #C0392B;
-  padding: 5px 0;
-  font-weight: 300;
-  font-size: 12px;
-}
+    visibility: hidden;
+    color: #C0392B;
+    font-weight: 300;
+    font-size: 12px;
+    position: relative;
+    right: 0;
+    top: 0;
+    transform: translateY(0);
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 

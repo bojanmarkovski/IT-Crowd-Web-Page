@@ -1,5 +1,9 @@
+@font-face {
+  font-family: Roboto Condensed;
+  src: url("./fonts/Roboto-Regular.ttf");
+}
 body{
-  font-family: Helvetica;
+  font-family: Roboto Condensed;
 }
 .clear{
   clear: both;
@@ -293,8 +297,8 @@ h2{
   border-radius: 50%;
   border-style: unset;
   vertical-align: middle;
-  width: 75px;
-  height: 75px;
+  width: 74px;
+  height: 74px;
   color: #41edbb;
   border-radius: 50%;
   overflow: hidden;
@@ -316,8 +320,8 @@ h2{
   border-radius: 50%;
   border-style: unset;
   vertical-align: middle;
-  width: 75px;
-  height: 75px;
+  width: 74px;
+  height: 74px;
   border-radius: 50%;
   overflow: hidden;
   line-height: 75px;
