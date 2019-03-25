@@ -97,6 +97,7 @@ a{
 }
 .footer img{
   width: 143px;
+  height: 51px;
   margin-bottom: 20px;
 }
 .footer i{
@@ -116,15 +117,24 @@ a{
 }
 .footer .copyright a{
   text-decoration: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #383838;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  margin-right: 3px;
+  margin-left: 3px;
+}
+.footer .copyright a:hover{
+  background: #C0392B;
 }
 .footer .copyright i{
-  font-size: 24px;
+  font-size: 18px;
   color: white;
   transition: 0.3s;
-}
-.footer .copyright i:hover{
-  color: #C0392B;
-  transform: scale(1.2);
 }
 .footer ul{
   list-style: none;

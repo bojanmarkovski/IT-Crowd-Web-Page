@@ -7,6 +7,9 @@ body{
 a{
   text-decoration: none !important;
 }
+.btn:active:focus, .btn:focus{
+  outline: none;
+}
 .header{
   position: fixed;
   top: 0;
@@ -110,16 +113,12 @@ a{
   background-color: #222222;
   padding-top: 15px;
   padding-bottom: 15px;
-  /*padding-bottom: 70px;*/
   color: lightgray;
 }
 .footer img{
   width: 143px;
   height: 51px;
   margin-bottom: 20px;
-}
-.footer p{
-  /*padding-top: 10px;*/
 }
 .footer i{
   color: #C0392B;
@@ -138,15 +137,24 @@ a{
 }
 .footer .copyright a{
   text-decoration: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #383838;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  margin-right: 3px;
+  margin-left: 3px;
+}
+.footer .copyright a:hover{
+  background: #C0392B;
 }
 .footer .copyright i{
-  font-size: 24px;
+  font-size: 18px;
   color: white;
   transition: 0.3s;
-}
-.footer .copyright i:hover{
-  color: #C0392B;
-  transform: scale(1.2);
 }
 .footer ul{
   list-style: none;
@@ -185,8 +193,7 @@ a{
   padding-top: 30px;
 }
 .paragraph-career{
-  /*line-height: 30px;*/
-  /*letter-spacing: 1px;*/
+  font-size: 16px;
 }
 /*CAREER LEFT*/
 
@@ -320,7 +327,9 @@ a{
 .career .career-right button:hover{
   background-color: #C0392B;
   color: white;
-  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 3px 7px 14px -3px rgba(0,0,0,0.33);
+  -moz-box-shadow: 3px 7px 14px -3px rgba(0,0,0,0.33);
+  box-shadow: 3px 7px 14px -3px rgba(0,0,0,0.33);
 }
 .btn.btn-block{
   margin-top: 15px;
@@ -472,6 +481,9 @@ input[type=number]::-webkit-outer-spin-button {
 .form-check-label a{
   cursor: pointer;
 }
+.text-danger{
+  font-weight: normal;
+}
 .modal-body h2{
   padding-top: 0;
 }
@@ -554,7 +566,9 @@ ul li{
   background-color: #C0392B;
   color: white;
   border: 1px solid #C0392B;
-  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 3px 7px 14px -3px rgba(0,0,0,0.33);
+  -moz-box-shadow: 3px 7px 14px -3px rgba(0,0,0,0.33);
+  box-shadow: 3px 7px 14px -3px rgba(0,0,0,0.33);
 }
 
 
@@ -654,7 +668,9 @@ textarea::-webkit-scrollbar-track {
   background-color: #C0392B;
   color: white;
   border: 1px solid #C0392B;
-  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 3px 7px 14px -3px rgba(0,0,0,0.33);
+  -moz-box-shadow: 3px 7px 14px -3px rgba(0,0,0,0.33);
+  box-shadow: 3px 7px 14px -3px rgba(0,0,0,0.33);
 }
 .file-upload-wrapper input {
   opacity: 0;

@@ -108,4 +108,4 @@ $(document).ready(function(){
 
 	});
 
-	$(".wrap-about-us").css("height", "auto")
+	// $(".wrap-about-us").css("height", "auto")

@@ -260,7 +260,7 @@ address{
 .iq-banner-03 .banner-img { width: 110%; }
 /* Banner 13*/
 .iq-banner .banner-text .banner-phone { position: absolute; right: -50px; top: 100%; width: 26%; }
-.iq-banner .banner-text .watch-img{position:absolute; width:20%; top:100%; right:85%}
+.iq-banner .banner-text .watch-img{position:absolute; width:20%; top:100%; right:82%}
 
 @keyframes move_wave {
     0% {
@@ -311,6 +311,9 @@ address{
 }
 .main-slider-holder{
   position: relative;
+}
+.main-slider-holder p{
+  font-size: 16px;
 }
 
 .iq-banner.overview-block-pt.iq-bg-over.iq-over-blue-90.iq-parallax{
@@ -1564,6 +1567,8 @@ address{
 }
 .our-skills-process .bg-color p{
   font-size: 16px;
+}
+.iq-pt-15{
   text-align: justify;
 }
 .our-skills-process .bg-color h3{
@@ -1695,7 +1700,9 @@ address{
     -webkit-transition: margin 1s cubic-bezier(.2, .6, .3, 1), opacity 2s ease;
     transition: margin 1s cubic-bezier(.2, .6, .3, 1), opacity 2s ease;
     border: 4px solid #C0392B;
-    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2)
+    -webkit-box-shadow: 3px 7px 14px -3px rgba(0,0,0,0.33);
+    -moz-box-shadow: 3px 7px 14px -3px rgba(0,0,0,0.33);
+    box-shadow: 3px 7px 14px -3px rgba(0,0,0,0.33);
 }
 [data-page=index] section.testimonies .container .company-icons .company-icon-container .company-icon-ring-4-logo {
     background-image: url(../images/company-icon-spritesheet.png);
@@ -2286,7 +2293,9 @@ body {
   background-color: #C0392B; 
   background-image: linear-gradient(-45deg, #C0392B 0%, #C0392B 100%); 
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; 
-  box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2); 
+  -webkit-box-shadow: 3px 7px 14px -3px rgba(0,0,0,0.33);
+  -moz-box-shadow: 3px 7px 14px -3px rgba(0,0,0,0.33);
+  box-shadow: 3px 7px 14px -3px rgba(0,0,0,0.33);
   animation: one-animated 10s infinite; 
   overflow: hidden; 
 }
