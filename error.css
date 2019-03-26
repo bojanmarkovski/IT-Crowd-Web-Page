@@ -58,7 +58,6 @@ a{
 }
 .wrap-about-us{
   margin-top: 65px;
-  height: 100vh;
 }
 .shrink{
   padding: 0px;
@@ -170,7 +169,6 @@ a{
   color: white;
 }
 
-
 @media screen and (max-width: 991px) {
   .header ul li  a{
     font-size: 13px;
@@ -194,16 +192,14 @@ a{
     position: relative;
     width: auto;
   }
- /* .error-wrapper img{
-    height: auto;
-  }*/
+
 }
 @media screen and (max-width: 767px) {
   .header ul li{
     padding: 0;
   }
   .header img {
-    padding: 2px 20px 2px 0px;
+    padding: 2px 20px 0px 0px;
     height: 45px;
   }
   .header .logo{
@@ -215,7 +211,11 @@ a{
   }
   
 }
-
+@media screen and (max-width: 991px) {
+  .header .logo{
+    padding-top: 2px;
+  }
+}
 
 /*==================================================*/
 /*MAIN SLIDER*/
@@ -293,7 +293,7 @@ a{
   top: 0; 
   display: inline-block; 
   width: 100%; 
-  /*height: calc(100vh - 202px);*/
+
   height: 100vh;
 }
 .iq-banner .banner-objects .banner-objects-02 { 
@@ -342,7 +342,12 @@ a{
 }
 @media screen and (max-width: 1252px) {
   #iq-home {
-    height: calc(100vh - 230px);
+    height: calc(100vh - 213px);
+  }
+}
+@media screen and (max-width: 1238px) {
+  #iq-home {
+    height: calc(100vh - 233px);
   }
 }
 @media screen and (max-width: 991px) {

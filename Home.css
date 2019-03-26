@@ -180,7 +180,7 @@ address{
 
 
 @media screen and (max-width: 991px) {
-  .header ul li  a{
+  .header ul li a{
     font-size: 13px;
   }
   .header {

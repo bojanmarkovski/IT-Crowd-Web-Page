@@ -67,7 +67,7 @@ hr{
   text-align: center !important;
 }
 .wrap-about-us{
-  margin-top: 80px;
+  margin-top: 65px;
 }
 .shrink{
   padding: 0px;
@@ -86,7 +86,7 @@ hr{
 }
 
 .second-nav-down{
-  transition: top .4s ease-in-out;
+  transition: top 0.4s ease-in-out;
   width: 100%;
 }
 .second-nav-up {
@@ -104,7 +104,7 @@ hr{
     padding: 0;
   }
   .header img {
-    padding: 2px 20px 2px 0px;
+    padding: 2px 20px 0px 0px;
     height: 45px;
   }
   .header .logo{
@@ -183,8 +183,13 @@ hr{
 }
 
 @media screen and (max-width: 991px) {
-  .header ul li  a{
+  .header ul li a{
     font-size: 13px;
+  }
+  .header {
+    padding: 0px;
+    transition: 0.3s;
+    background-color: transparent;
   }
   .footer .border-bottom{
     text-align: center;
@@ -379,7 +384,7 @@ textarea::-webkit-scrollbar-track {
     padding: 0;
   }
   .header .logo {
-    padding-top: 0px;
+    padding-top: 2px;
   }
   .error {
     visibility: hidden;
@@ -403,7 +408,7 @@ textarea::-webkit-scrollbar-track {
 }
 .mapa-img{
   background: url(images/map.png);
-  background-position: center;
+  background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 900px;
@@ -438,4 +443,12 @@ textarea::-webkit-scrollbar-track {
 .placeholder{
   background-color: #363636;
   border-radius: 9px;
+}
+
+.pin-template{
+  color: #C0392B;
+  position: absolute;
+  top: 180px;
+  right: 50%;
+  transform: translateX(50%);
 }

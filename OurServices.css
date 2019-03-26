@@ -96,7 +96,7 @@ a{
     padding: 0;
   }
   .header img {
-    padding: 2px 20px 2px 0px;
+    padding: 2px 20px 0px 0px;
     height: 45px;
   }
   .header .logo{
@@ -214,7 +214,7 @@ a{
 .right-side-services .image-box i{
 	position: absolute;
 	font-size: 25px;
-	left: 10%;
+  top: -10%;
 	border-radius: 50%;
 	background-color: #C0392B;
 	color: #E7E8EC;
@@ -391,10 +391,26 @@ a.animated-button.thar-three:before {
   hr{
     display: inline-block;
   }
+  .right-side-services .image-box i{
+    left: 10%;
+    top: 0%;
+  }
+  .left-side-services .image-box i{
+    top: 5%;
+  }
+  .header .logo {
+    padding-top: 2px;
+  }
 }
 @media screen and (max-width: 767px) {
   .our-services{
     padding: 60px 0px;
+  }
+  .right-side-services .image-box i{
+    top: -10%;
+  }
+  .left-side-services .image-box i{
+    top: 0%;
   }
 }
 
