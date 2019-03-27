@@ -398,6 +398,13 @@ a{
   .container-fluid.career{
     margin-top: 30px;
   }
+  .display-none-mobile{
+    display: none;
+  }
+  .copyright{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 /*INPUTS*/
 .input-holder {

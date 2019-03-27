@@ -199,9 +199,9 @@
 							</div>
 						</div>
 						<!-- TECHNOLOGY -->
+						<h2 class="text-uppercase text-center">What we use?</h2>
+						<hr>
 						<div class="row our-skills-process">
-							<h2 class="text-uppercase text-center">What we use?</h2>
-							<hr>
 							<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 bg-color">
 								<div>
 									<h3>TECHNOLOGY CONSULTING</h3>
@@ -406,7 +406,7 @@
 						<div class="row footer">
 							<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
 								<div class="row border-bottom">
-									<div class="col-lg-4 col-md-4 col-sm-12">
+									<div class="col-lg-4 col-md-4 col-sm-12 display-none-mobile">
 										<a href="home.html">
 										<img class="img-responsive" src="images/logo.png"></a>
 										<p>
@@ -418,7 +418,7 @@
 											<span>contact@itcrowd.me</span>
 										</p>
 									</div>
-									<div class="col-lg-4 col-md-4 col-sm-12 text-center">
+									<div class="col-lg-4 col-md-4 col-sm-12 text-center display-none-mobile">
 										<ul>
 											<a href="home.html">
 												<li>Home</li>
@@ -464,7 +464,7 @@
 						$(document).ready(function() {
 							if ($( window ).width() >= 992) {
 								// $(".z-index .slideInUpMobile").css("z-index", "2").animate({top: '40%'},1200);
-								$(".z-index .slideInUpWatch").animate({top: '60%'},2400);
+								$(".z-index .slideInUpWatch").animate({top: '45%'},2400);
 
 								$(".z-index .slideInUpMobile")
 									.animate({
@@ -483,19 +483,22 @@
 							
 								/* Check the location of each desired element */
 								$('.our-skills-process').each( function(i){
-								
-									var bottom_of_object = $(this).position().top - $(this).outerHeight();
-									var bottom_of_window = $(window).scrollTop() - ($(".our-skills-process").height() / 2);
-									if( bottom_of_window > bottom_of_object ){
+									var startingPositionOurSkills = $(this).position().top + ($(this).outerHeight() / 2) - 70;
+
+									var bottomOfWindow = $(window).scrollTop() + $(window).height() - 70;
+
+									if( bottomOfWindow > startingPositionOurSkills ){
 										$("section").addClass("testimonies");
 										$(".company-icons").css("visibility" , "visible");
 									}
 								});
 								$('.work-process-row-container').each( function(i){
 								
-									var bottom_of_object = $(this).position().top - $(this).outerHeight();
-									var bottom_of_window = $(window).scrollTop() + ($(".work-process-row-container").height() - 160);
-									if( bottom_of_window > bottom_of_object ){
+									var startingPositionOurSkills = $(this).position().top + ($(this).outerHeight() / 2) - 70;
+
+									var bottomOfWindow = $(window).scrollTop() + $(window).height() - 70;
+
+									if( bottomOfWindow > startingPositionOurSkills ){
 										$(".work-process").css("display" , "block").addClass("newClass");
 									}
 								});

@@ -162,7 +162,7 @@ a{
 .error-wrapper{
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: rgba(192, 57, 43, 0.6);
+  background-color: rgba(192, 57, 43, 0.6) !important;
   color: white;
 }
 .error-wrapper i{
@@ -331,9 +331,6 @@ a{
    top:100%; 
    right:85%
  }
-.banner-objects{
-  background-color: rgba(192, 57, 43, 0.6);
-}
 
 
 
@@ -366,6 +363,12 @@ a{
   .iq-banner .banner-objects .banner-objects-03{
     right: -15%;
   }
+  .iq-banner .banner-text{
+    margin-top: 25px;
+  }
+  #iq-home {
+    height: calc(100vh - 398px);
+  }
 }
 @media screen and (max-width: 767px){
   .iq-banner .banner-objects .banner-objects-02{
@@ -374,12 +377,43 @@ a{
   .iq-banner .banner-objects .banner-objects-03{
     right: -40%;
   }
+  .display-none-mobile{
+    display: none;
+  }
+  .copyright{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  #iq-home {
+    height: calc(100vh - 127px);
+  }
 }
 @media screen and (max-width: 425px){
   .iq-banner .banner-objects .banner-objects-02{
     left: -40%;
   }
   .iq-banner .banner-objects .banner-objects-03{
-    right: -70%;
+    right: -75%;
+    top: -40%;
   }
 }
+@media screen and (max-height: 1000px){
+  #iq-home {
+    height: 100%;
+  }
+  .error-wrapper{
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width:767px) and (max-height:1200px) and (min-height: 600px) {
+  #iq-home{
+    height: calc(100vh - 127px);
+  }
+}
+
+/*@media (max-width:767px) and (min-height:721px) {
+  #iq-home{
+    height: calc(100vh - 127px);
+  }
+}*/

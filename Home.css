@@ -215,8 +215,12 @@ address{
   .slide-content h2{
     margin: 0;
   }
-  .left-img-bg{
-    /*display: none;*/
+  .display-none-mobile{
+    display: none;
+  }
+  .copyright{
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -263,7 +267,7 @@ address{
 .iq-banner .banner-objects .banner-objects-03 { position: absolute; top: 0%; right: -15%; border: 30px solid rgba(255, 255, 255, 0.1); border-radius: 900px; height: 400px; width: 400px; }
 .iq-banner-03 .banner-img { width: 110%; }
 /* Banner 13*/
-.iq-banner .banner-text .banner-phone { position: absolute; right: -50px; top: 100%; width: 26%; }
+.iq-banner .banner-text .banner-phone { position: absolute; right: -25px; top: 100%; width: 26%; }
 .iq-banner .banner-text .watch-img{position:absolute; width:20%; top:100%; right:82%}
 
 @keyframes move_wave {
@@ -982,7 +986,7 @@ address{
   animation-timing-function: linear;
 }
 .fourth-title h3{
-  color: #EEF5DB;
+  color: #7c8486;
 }
 .fourth-title{
   animation: fade-in 5.5s linear forwards;
@@ -990,28 +994,28 @@ address{
 
 .chart-skills.fourth li:nth-child(1) {
   /*z-index: 4;*/
-  border-color: #EEF5DB;
+  border-color: #7c8486;
   animation-name: rotate-one-second;
   animation-delay: 4s;
 }
 
 .chart-skills.fourth li:nth-child(2) {
   /*z-index: 3;*/
-  border-color: #EEF5DB;
+  border-color: #7c8486;
   animation-name: rotate-two-second;
   animation-delay: 4.3s;
 }
 
 .chart-skills.fourth li:nth-child(3) {
   /*z-index: 2;*/
-  border-color: #EEF5DB;
+  border-color: #7c8486;
   animation-name: rotate-three-second;
   animation-delay: 4.6s;
 }
 
 .chart-skills.fourth li:nth-child(4) {
   /*z-index: 1;*/
-  border-color: #EEF5DB;
+  border-color: #7c8486;
   animation-name: rotate-four-second;
   animation-delay: 4.9s;
 }
@@ -1167,7 +1171,7 @@ address{
   animation-timing-function: linear;
 }
 .fifth-title h3{
-  color: #FE5F55;
+  color: #b5554d;
 }
 .fifth-title{
   animation: fade-in 6.8s linear forwards;
@@ -1175,28 +1179,28 @@ address{
 
 .chart-skills.fifth li:nth-child(1) {
   /*z-index: 4;*/
-  border-color: #FE5F55;
+  border-color: #b5554d;
   animation-name: rotate-one;
   animation-delay: 5.2s;
 }
 
 .chart-skills.fifth li:nth-child(2) {
   /*z-index: 3;*/
-  border-color: #FE5F55;
+  border-color: #b5554d;
   animation-name: rotate-two;
   animation-delay: 5.5s;
 }
 
 .chart-skills.fifth li:nth-child(3) {
   /*z-index: 2;*/
-  border-color: #FE5F55;
+  border-color: #b5554d;
   animation-name: rotate-three;
   animation-delay: 5.8s;
 }
 
 .chart-skills.fifth li:nth-child(4) {
   /*z-index: 1;*/
-  border-color: #FE5F55;
+  border-color: #b5554d;
   animation-name: rotate-four;
   animation-delay: 6.1s;
 }
@@ -1556,8 +1560,7 @@ address{
 
 /*OUR TECHNOLOGIES*/
 .our-skills-process{
-    /*background-image: linear-gradient(to right, #2B0C93 , #FFE49A);*/
-    background-color: #dbd2d2;
+    background-color: #b5554d;
 }
 .container {
   width: 750px;
@@ -1566,11 +1569,13 @@ address{
   padding-top: 15px;
 }
 .our-skills-process .bg-color{
-    background-color: #dbd2d2;
+    background-color: #b5554d;
     padding: 0;
+    color: white;
 }
 .our-skills-process .bg-color p{
   font-size: 16px;
+  text-align: justify;
 }
 .iq-pt-15{
   text-align: justify;
@@ -1583,7 +1588,7 @@ address{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  height: 440px;
   padding-left: 50px;
 }
 .company-icons{
@@ -1646,7 +1651,7 @@ address{
     position: relative;
 }
 [data-page=index] section.testimonies .container {
-    height: 600px;
+    height: 440px;
 }
 [data-page=index] section.testimonies .container .carousel-quotes {
     display: inline-block;
@@ -1687,11 +1692,9 @@ address{
     animation-play-state: running;
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
-    /*background-color: transparent;*/
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 50%;
-    /*box-shadow: 0 10px 40px 0 rgba(23, 28, 33, .13), 0 31px 13px 0 rgba(23, 28, 33, .05);*/
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1703,10 +1706,10 @@ address{
     opacity: 1;
     -webkit-transition: margin 1s cubic-bezier(.2, .6, .3, 1), opacity 2s ease;
     transition: margin 1s cubic-bezier(.2, .6, .3, 1), opacity 2s ease;
-    border: 4px solid #C0392B;
     -webkit-box-shadow: 3px 7px 14px -3px rgba(0,0,0,0.33);
     -moz-box-shadow: 3px 7px 14px -3px rgba(0,0,0,0.33);
     box-shadow: 3px 7px 14px -3px rgba(0,0,0,0.33);
+    background-color: white;
 }
 [data-page=index] section.testimonies .container .company-icons .company-icon-container .company-icon-ring-4-logo {
     background-image: url(../images/company-icon-spritesheet.png);
@@ -1786,13 +1789,13 @@ address{
     animation-delay: -1.8s;
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
-    height: 147px;
+    height: 100px;
     margin-left: 450px;
-    margin-top: 10px;
+    margin-top: 20px;
     position: absolute;
     -webkit-transition-delay: .1s;
     transition-delay: .1s;
-    width: 147px;
+    width: 100px;
 }
 [data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-2 .company-icon {
     background-image: url(../images/company-icon-spritesheet.png);
@@ -1807,8 +1810,8 @@ address{
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
     height: 104px;
-    margin-left: 310px;
-    margin-top: 110px;
+    margin-left: 0px;
+    margin-top: 130px;
     position: absolute;
     -webkit-transition-delay: .2s;
     transition-delay: .2s;
@@ -1828,8 +1831,8 @@ address{
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
     height: 136px;
-    margin-left: 80px;
-    margin-top: 230px;
+    margin-left: 300px;
+    margin-top: 110px;
     position: absolute;
     -webkit-transition-delay: .3s;
     transition-delay: .3s;
@@ -1849,8 +1852,8 @@ address{
     animation-duration: 4s;
     background-size: 100px;
     height: 122px;
-    margin-left: 524px;
-    margin-top: 250px;
+    margin-left: 440px;
+    margin-top: 270px;
     position: absolute;
     -webkit-transition-delay: .4s;
     transition-delay: .4s;
@@ -1862,13 +1865,13 @@ address{
     animation-delay: -.3s;
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
-    height: 144px;
-    margin-left: 320px;
-    margin-top: 250px;
+    height: 100px;
+    margin-left: 255px;
+    margin-top: 280px;
     position: absolute;
     -webkit-transition-delay: .5s;
     transition-delay: .5s;
-    width: 144px;
+    width: 100px;
     padding: 15px;
 }
 [data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-6 .company-icon {
@@ -1884,8 +1887,8 @@ address{
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
     height: 122px;
-    margin-left: 108px;
-    margin-top: 420px;
+    margin-left: 70px;
+    margin-top: 290px;
     position: absolute;
     -webkit-transition-delay: .6s;
     transition-delay: .6s;
@@ -1904,13 +1907,13 @@ address{
     animation-delay: -.9s;
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
-    height: 122px;
-    margin-left: 505px;
-    margin-top: 450px;
+    height: 105px;
+    margin-left: 605px;
+    margin-top: 250px;
     position: absolute;
     -webkit-transition-delay: .7s;
     transition-delay: .7s;
-    width: 122px;
+    width: 105px;
     padding: 15px;
 }
 [data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-8 .company-icon {
@@ -1926,8 +1929,8 @@ address{
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
     height: 136px;
-    margin-left: 300px;
-    margin-top: 450px;
+    margin-left: 570px;
+    margin-top: 70px;
     position: absolute;
     -webkit-transition-delay: .8s;
     transition-delay: .8s;
@@ -1988,10 +1991,11 @@ body {
     @viewport {
         width: 320px;
     }
-    }@media (max-width:319px) {
-        body {
-        min-width: 0;
-    }
+}
+@media (max-width:319px) {
+  body {
+    min-width: 0;
+  }
 }
 @media (max-width:1279px) {
     .container {
@@ -2037,74 +2041,109 @@ body {
 
 @media (max-width:1279px) {
     .page-content[data-page=index] section.testimonies .container .company-icons {
-        min-height: 600px;
+        min-height: 440px;
         margin-left: 0;
         margin-top: 50px;
         width: 100%}
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-1 {
-        width: 136px;
-        height: 136px;
-        margin-left: 0;
-        margin-top: 0;
+        height: 130px;
+        width: 130px;
+        margin-left: 8vw;
+        margin-top: 0px;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-2 {
-        width: 146px;
-        height: 146px;
-        margin-top: 20px;
-        margin-left: calc(100% - 146px);
+        height: 100px;
+        width: 100px;
+        margin-left: 28vw;
+        margin-top: 10px;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-3 {
-        width: 100px;
-        height: 100px;
-        margin-left: 41.79%;
-        margin-top: 44px;
+        height: 104px;
+        margin-left: 0px;
+        margin-top: 130px;
+        width: 104px;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-4 {
-        width: 128px;
-        height: 128px;
-        margin-left: 21.02%;
-        margin-top: 180px;
+        height: 125px;
+        margin-left: 18vw;
+        margin-top: 125px;
+        width: 125px;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-4 .company-icon {
         width: 69px !important;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-5 {
-        width: 118px;
-        height: 118px;
-        margin-left: 22%;
-        margin-top: 350px;
+        height: 110px;
+        margin-left: 42vw;
+        margin-top: 260px;
+        width: 110px;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-5 .company-icon {
         width: 85%!important;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-6 {
-        width: 136px;
-        height: 136px;
-        margin-left: 57.8%;
-        margin-top: 170px;
-    }
+        height: 100px;
+        margin-left: 26vw;
+        margin-top: 270px;
+        width: 100px;
+      }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-7 {
-        width: 114px;
-        height: 114px;
-        margin-left: 0;
-        margin-top: 300px;
+        height: 122px;
+        margin-left: 7vw;
+        margin-top: 240px;
+        width: 122px;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-8 {
-        width: 114px;
-        height: 114px;
-        margin-left: 47%;
-        margin-top: 340px;
+        height: 105px;
+        margin-left: 33vw;
+        margin-top: 150px;
+        width: 105px;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-9 {
-        width: 142px;
-        height: 142px;
-        margin-left: calc(100% - 142px);
-        margin-top: 330px;
+        animation-duration: 4s;
+        height: 110px;
+        margin-left: 43vw;
+        margin-top: 30px;
+        position: absolute;
+        -webkit-transition-delay: .8s;
+        transition-delay: .8s;
+        width: 110px;
+        padding: 22px;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-9 .company-icon {
         width: 96px!important;
         height: 64px!important;
     }
+}
+@media (max-width:991px) {
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-1 {
+        margin-left: 17vw;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-2 {
+        margin-left: 53vw;
+    }
+    /*.page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-3 {
+        margin-left: 53vw;
+    }*/
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-4 {
+        margin-left: 33vw;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-5 {
+        margin-left: 76vw;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-6 {
+        margin-left: 49vw;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-7 {
+        margin-left: 14vw;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-8 {
+        margin-left: 61vw;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-9 {
+        margin-left: 78vw;
+    }
+
 }
 @media (max-width:767px) {
     .page-content[data-page=index] section.testimonies .container {
@@ -2112,65 +2151,68 @@ body {
         margin-right: 0;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons {
-        min-height: 600px;
+        min-height: 440px;
         margin-left: 0;
         margin-top: 40px;
-        width: 100%}
+        width: 100%
+    }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-1 {
-        width: 110px;
-        height: 110px;
-        margin-left: 10px;
-        margin-top: 60px;
-        padding: 15px;
+        height: 121px;
+        width: 121px;
+        margin-left: 11vw;
+        margin-top: 0px;
+        padding: 20px;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-2 {
-        width: 110px;
-        height: 110px;
-        margin-top: 20px;
-        margin-left: calc(100% - 138px);
+        height: 80px;
+        width: 80px;
+        margin-left: 46vw;
+        margin-top: 10px;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-3 {
         width: 80px;
         height: 80px;
-        margin-left: calc(56% - 80px);
-        margin-top: 100px;
-        padding: 10px;
+        margin-left: 0px;
+        margin-top: 130px;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-4 {
-        width: 102px;
-        height: 102px;
-        margin-left: calc(38% - 102px);
-        margin-top: 220px;
+        height: 125px;
+        margin-left: 28vw;
+        margin-top: 125px;
+        width: 125px;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-5 .company-icon {
         width: 85%!important;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-5 {
-      margin-left: 45%;
+        height: 110px;
+        margin-left: 69vw;
+        margin-top: 260px;
+        width: 110px;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-6 {
-        width: 108px;
-        height: 108px;
-        margin-left: calc(80% - 60px);
-        margin-top: 218px;
+        height: 100px;
+        margin-left: 42vw;
+        margin-top: 270px;
+        width: 100px;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-7 {
-        width: 92px;
-        height: 92px;
-        margin-left: 0;
-        margin-top: 426px;
+        height: 122px;
+        margin-left: 7vw;
+        margin-top: 240px;
+        width: 122px;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-8 {
-        width: 92px;
-        height: 92px;
-        margin-left: calc(44% - 92px);
-        margin-top: 525px;
+        height: 90px;
+        margin-left: 58vw;
+        margin-top: 150px;
+        width: 90px;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-9 {
         width: 100px;
         height: 100px;
-        margin-left: calc(100% - 115px);
-        margin-top: 520px;
+        margin-left: 69vw;
+        margin-top: 30px;
         padding: 0;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-9 .company-icon {
@@ -2178,7 +2220,7 @@ body {
         height: 46px!important;
     }
     .testimonies{
-        height: 700px !important;
+        height: 440px !important;
     }
 }
   
@@ -2190,28 +2232,74 @@ body {
         width: 100%
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-1 {
-        margin-top: 0;
+        height: 102px;
+        width: 102px;
+        margin-left: 2vw;
+        margin-top: 15px;
+        padding: 20px;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-2 {
-        margin-top: 60px;
+        height: 80px;
+        width: 80px;
+        margin-left: 41vw;
+        margin-top: 0px;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-3 {
-        margin-top: 140px;
+        width: 80px;
+        height: 80px;
+        margin-left: 0px;
+        margin-top: 160px;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-4 {
-        width: 102px;
-        height: 102px;
-        margin-left: 14px;
-        margin-top: 258px;
+        height: 103px;
+        margin-left: 28vw;
+        margin-top: 98px;
+        width: 103px;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-5 {
+        height: 93px;
+        margin-left: 66vw;
+        margin-top: 290px;
+        width: 93px;
+        padding: 22px;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-6 {
+        height: 87px;
+        margin-left: 41vw;
+        margin-top: 222px;
+        width: 87px;
     }
     .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-7 {
-        margin-top: 400px;
+      margin-top: 255px;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-8 {
+        height: 77px;
+        margin-left: 66vw;
+        margin-top: 165px;
+        width: 77px;
+
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-9 {
+        width: 90px;
+        height: 90px;
+        margin-left: 66vw;
+        margin-top: 45px;
+        padding: 0;
     }
 }
 @media (max-width:374px) {
     .page-content[data-page=index] section.testimonies .container {
       padding-left: 15px!important;
       padding-right: 15px!important;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-5 {
+        margin-top: 294px;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-6 {
+        margin-top: 217px;
+    }
+    .page-content[data-page=index] section.testimonies .container .company-icons .company-icon-container.ring-7 {
+        margin-left: 2vw;
     }
 }
 @media (min-width: 1800px){
@@ -2408,7 +2496,7 @@ body {
 }
 
 .company-icon-container{
-  height: 66.7px;
+  height: 48.8px;
 }
 
 .chart-skills.second li:nth-child(1) span {

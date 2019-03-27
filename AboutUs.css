@@ -201,6 +201,7 @@ hr{
   background-color: #C0392B;
   margin-top: 0;
   margin-bottom: 30px;
+  border-top: none;
 }
 h2{
   font-weight: 700;
@@ -264,11 +265,20 @@ h2{
     padding-top: 2px;
   }
 }
-
+@media screen and (max-width: 768px) {
+  .display-none-mobile{
+    display: none;
+  }
+  .copyright{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 768px) {
   .clear{
     clear: none;
   }
+
 }
 
 
@@ -316,8 +326,8 @@ h2{
   border-radius: 50%;
   border-style: unset;
   vertical-align: middle;
-  width: 74px;
-  height: 74px;
+  width: 60px;
+  height: 60px;
   color: #41edbb;
   border-radius: 50%;
   overflow: hidden;
@@ -339,8 +349,8 @@ h2{
   border-radius: 50%;
   border-style: unset;
   vertical-align: middle;
-  width: 74px;
-  height: 74px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   overflow: hidden;
   line-height: 75px;
@@ -382,7 +392,7 @@ h2{
 .slick-next::before {
   position: absolute;
   right: 50%;
-  top: 50%;
+  top: 47%;
   transform: translate(50%, -50%);
 }
 

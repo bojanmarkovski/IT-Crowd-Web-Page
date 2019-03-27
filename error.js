@@ -99,7 +99,7 @@ $(document).ready(function(){
 
           } else {
             $(".header").removeClass("shrink");
-            $(".nav.navbar-inverse.header").css("background-color", "rgba(0,0,0,0.6)");
+            $(".nav.navbar-inverse.header").css({"background-color" : "rgba(0,0,0,0.6)", "transition" : "0.3s"});
           }
         }
 
