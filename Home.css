@@ -174,7 +174,7 @@ address{
 }
 @media screen and (max-width: 1140px) {
   .banner-text h1{
-    font-size: 52px !important;
+    font-size: 47px !important;
   }
 }
 
@@ -260,7 +260,7 @@ address{
 .iq-banner { position: relative; overflow: hidden; }
 .iq-banner .container-fluid { padding: 0 90px; }
 .iq-banner .banner-text { z-index: 9; position: relative; margin-top: 13%; }
-.iq-banner .banner-text h1 { font-size: 64px; line-height: normal; }
+.iq-banner .banner-text h1 { font-size: 55px; line-height: normal; }
 .iq-banner .banner-img { width: 100%; }
 .iq-banner .banner-objects { position: absolute; left: 0; top: 0; display: inline-block; width: 100%; height: 100%; }
 .iq-banner .banner-objects .banner-objects-02 { position: absolute; bottom: 50%; margin-bottom: -125px; left: -13%; border: 15px solid rgba(255, 255, 255, 0.1); border-radius: 900px; height: 250px; width: 250px; }
@@ -2415,12 +2415,13 @@ body {
     padding: 0;
   }
   .header img {
-    padding: 2px 20px 0px 0px;
+    padding: 2px 0px 0px 20px;
     height: 45px;
   }
   .header .logo{
     padding: 0;
     padding: 2.5px 7px;
+    float: right;
   }
   .header #mynavbar ul {
     display: inline-block;
@@ -2469,8 +2470,8 @@ body {
     height: auto;
     padding: 0 30px 0 30px;
   }
-  .header ul li {
-    padding: 0;
+  .our-skills-process .bg-color h3{
+    padding-top: 25px;
   }
   .header .logo {
     padding-top: 2px;
@@ -2483,7 +2484,7 @@ body {
   }
   .bg-color h3{
     text-align: center;
-    padding-top: 15px;
+    padding-top: 25px;
     margin-top: 0;
   }
   hr{
@@ -2492,6 +2493,9 @@ body {
   .slideInUpMobile,
   .slideInUpWatch{
     display: none !important;
+  }
+  .header ul li{
+    padding: 1px;
   }
 }
 

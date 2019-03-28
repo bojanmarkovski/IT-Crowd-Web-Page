@@ -104,12 +104,13 @@ hr{
     padding: 0;
   }
   .header img {
-    padding: 2px 20px 0px 0px;
+    padding: 2px 0px 0px 20px;
     height: 45px;
   }
   .header .logo{
     padding: 0;
     padding: 2.5px 7px;
+    float: right;
   }
   .header #mynavbar ul {
     display: inline-block;
@@ -359,9 +360,6 @@ textarea::-webkit-scrollbar-track {
     clear: none;
   }
 }
-.footer {
-  height: 233px;
-}
 
 .mapa-img{
   background: url(images/map.png);
@@ -402,7 +400,7 @@ textarea::-webkit-scrollbar-track {
     margin: 0 auto;
   }
   .header ul li {
-    padding: 0;
+    padding: 1px;
   }
   .header .logo {
     padding-top: 2px;

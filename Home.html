@@ -213,7 +213,7 @@
 								
 								<div id="wrapper">
 									<div class="marketing-page page-content" data-page="index">
-										<section >
+										<section class="wrapper-technologies" >
 											<div class="container">
 												
 												<div class="company-icons">
@@ -488,7 +488,7 @@
 									var bottomOfWindow = $(window).scrollTop() + $(window).height() - 70;
 
 									if( bottomOfWindow > startingPositionOurSkills ){
-										$("section").addClass("testimonies");
+										$(".wrapper-technologies").addClass("testimonies");
 										$(".company-icons").css("visibility" , "visible");
 									}
 								});
