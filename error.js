@@ -81,14 +81,11 @@ $(document).ready(function(){
       } 
       else {
         // Scroll Up
-        if(st < 2){
+        if(st <= 2 && st >= 1){
           $(".header button").on("click", function() {
             $(".nav.navbar-inverse.header").css("background", "#222222");
           });
           if($(".navbar-collapse.collapse").hasClass("in")){
-            $(".header button").on("click", function() {
-              $(".nav.navbar-inverse.header").css("background-color", "rgba(0,0,0,0.6)");
-            });
 
             $(".header button").on("click", function() {
               $(".nav.navbar-inverse.header").css("background", "#222222");
@@ -99,7 +96,7 @@ $(document).ready(function(){
 
           } else {
             $(".header").removeClass("shrink");
-            $(".nav.navbar-inverse.header").css({"background-color" : "rgba(0,0,0,0.6)", "transition" : "0.3s"});
+            $(".nav.navbar-inverse.header").css("background-color", "rgba(0,0,0,0.6)");
           }
         }
 
@@ -107,10 +104,30 @@ $(document).ready(function(){
           $('.header').removeClass('nav-up').addClass('nav-down').css("top", "0px");
           $(".sticky-tablet").removeClass('second-nav-up').addClass("second-nav-down").css("background-color", "#222222");
           $(".header").css("background", "#222222", "!important");
+          $(".nav.navbar-inverse.header").css("background", "#222222");
         }
       }
               
       lastScrollTop = st;
+
+      if($("body").position().top == st){
+        $(".header button").on("click", function() {
+          $(".nav.navbar-inverse.header").css("background", "#222222");
+        });
+        if($(".navbar-collapse.collapse").hasClass("in")){
+
+          $(".header button").on("click", function() {
+            $(".nav.navbar-inverse.header").css("background", "#222222");
+          });
+          
+          $(".header").removeClass("shrink");
+          $(".nav.navbar-inverse.header").css("background", "#222222");
+
+        } else {
+          $(".header").removeClass("shrink");
+          $(".nav.navbar-inverse.header").css("background-color", "rgba(0,0,0,0.6)");
+        }
+     }
     }
   }
 

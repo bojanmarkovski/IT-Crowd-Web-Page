@@ -58,9 +58,10 @@
 		</div>
 
 	<div class="container-fluid">
-		<div class="row mapa-img">
-			
-			<i class="fas fa-map-marker-alt fa-3x pin-template"></i>
+		<div class="row mapa-img" id="google-container">
+		</div>
+		<div class="dada">
+			<!-- <i class="fas fa-map-marker-alt fa-3x pin-template"></i> -->
 			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
 				<div class="row contact-card">
 					<h2 class="text-center">Contact us</h2>
@@ -91,9 +92,8 @@
 										<!-- TEXT AREA -->
 										<div class="holder">
 											<div class="input-holder">
-												<textarea class="input" placeholder=" " rows="4" required></textarea>
+												<textarea class="input" placeholder=" " rows="5" required></textarea>
 												<div class="placeholder placeholder-textarea">Your Message</div>
-												<div class="error">Please enter a valid message</div>
 											</div>
 										</div>
 
@@ -181,7 +181,8 @@
 	</div>
 
 
-	<!-- <script src="https://maps.googleapis.com/maps/api/js"></script> -->
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script> -->
 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
         async defer>
