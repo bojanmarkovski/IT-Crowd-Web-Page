@@ -290,11 +290,12 @@ input[type=number]::-webkit-outer-spin-button {
   /*padding-top: 13px;*/
 }
 .career-right button{
-  background-color: #222222;
+  background-color: #363636;
   color: white;
   transition: 0.2s;
   font-weight: bold;
   letter-spacing: 1px;
+  border: 1px solid #565454;
 }
 .career-right button:hover{
   background-color: #C0392B;
@@ -302,6 +303,7 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-box-shadow: 3px 7px 14px -3px rgba(0,0,0,0.33);
   -moz-box-shadow: 3px 7px 14px -3px rgba(0,0,0,0.33);
   box-shadow: 3px 7px 14px -3px rgba(0,0,0,0.33);
+  border: 1px solid #C0392B;
 }
 .btn.btn-block{
   margin-top: 15px;
@@ -318,6 +320,7 @@ input[type=number]::-webkit-outer-spin-button {
   justify-content: center;
   align-items: center;
   color: white;
+  display: none;
 }
 .contact-information p{
   display: flex;
@@ -363,13 +366,14 @@ textarea::-webkit-scrollbar-track {
 }
 
 .mapa-img{
-  /*background: url(images/map.png);*/
+  background: url(images/map.png);
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: calc(80vh - 193px);
+  height: 80vh;
+  padding-top: 70px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 .contact-card{
   background-color: rgba(0,0,0,0.6);
@@ -377,7 +381,6 @@ textarea::-webkit-scrollbar-track {
   -webkit-box-shadow: 10px 10px 9px -12px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 9px -12px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 9px -12px rgba(0,0,0,0.75);
-  margin-top: -250px;
   z-index: 9999;
 }
 .contact-card h2{
@@ -386,13 +389,12 @@ textarea::-webkit-scrollbar-track {
 .contact-card form{
   line-height: 0;
 }
-.gm-style .gm-fullscreen-control{
+/*.gm-style .gm-fullscreen-control{
   margin-top: 80px !important;
   position: fixed !important;
-}
-.contact-us-container{
-  background-color: white;
-  padding-bottom: 20px;
+}*/
+.display-none-pc{
+  display: none;
 }
 @media screen and (max-width: 991px) {
   .header{
@@ -443,16 +445,28 @@ textarea::-webkit-scrollbar-track {
     margin-top: 0;
     margin-bottom: 0;
   }
-  .mapa-img{
-    height: calc(100vh - 108px + 550px);
-  }
   .contact-card{
     /*margin-top: -633px;*/
+  }
+  .display-none-tablet{
+    display: none;
+  }
+  .display-none-pc{
+    display: block;
+  }
+  .contact-information{
+    display: block;
+  }
+  .mapa-img{
+    height: 50vh;
+  }
+  .contact-card{
+    background-color: rgba(0,0,0,0.9);
   }
 }
 .input{
   background-color: #363636;
-  border-color: #363636;
+  border-color: #565454;
 }
 .placeholder{
   background-color: #363636;
@@ -469,24 +483,19 @@ textarea::-webkit-scrollbar-track {
 
 @media screen and (max-width: 767px) {
   .contact-card{
-    margin-bottom: 0;
-  }
-  .contact-card{
+    margin-bottom: 0px;
     margin-top: 0px;
   }
-  .mapa-img{
-    height: 60vh;
-  }
-  .gm-style .gm-fullscreen-control {
+/*  .gm-style .gm-fullscreen-control {
     margin-top: 60px !important;
     position: absolute !important;
-  }
+  }*/
   .contact-us-container{
-    background-color: rgba(0,0,0,0.7)
+    /*background-color: rgba(0,0,0,0.7)*/
   }
 }
 
-@media (min-width: 768px) and (min-height: 950px) {
+/*@media (min-width: 768px) and (min-height: 950px) {
   .mapa-img{
     height: calc(100vh - 193px + 250px);
   }
@@ -500,7 +509,7 @@ textarea::-webkit-scrollbar-track {
   .mapa-img{
     height: calc(70vh - 109px + 835px);
   }
-}
+}*/
 
 
 
