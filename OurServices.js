@@ -54,7 +54,7 @@ $(function(){
             // This is necessary so you never see what is "behind" the navbar.
             if (st > lastScrollTop && st > navbarHeight){
                 // Scroll Down
-                $('.header').removeClass('nav-down').addClass('nav-up').css("top", "-316px");
+                $('.header').removeClass('nav-down').addClass('nav-up').css("top", "-330px");
                 $(".sticky-tablet").removeClass('second-nav-down').addClass("second-nav-up");
             } else {
                 // Scroll Up
@@ -78,4 +78,10 @@ $(function(){
     $(".footer").fadeIn(1300);
     $(".col-md-4.col-md-offset-4").fadeIn(1300);
     $(".our-services-box").css("height", "auto");
+});
+// HAMBURGER MENU
+$(document).ready(function(){
+	$('#nav-icon3').click(function(){
+		$(this).toggleClass('open');
+	});
 });

@@ -59,7 +59,7 @@
       // This is necessary so you never see what is "behind" the navbar.
       if (st > lastScrollTop && st > navbarHeight){
           // Scroll Down
-          $('.header').removeClass('nav-down').addClass('nav-up').css("top", "-316px");
+          $('.header').removeClass('nav-down').addClass('nav-up').css("top", "-330px");
           $(".sticky-tablet").removeClass('second-nav-down').addClass("second-nav-up");
       } 
       else {
@@ -304,17 +304,31 @@ jQuery(document).ready(function($){
 	];
 		// lat: , lng:
 	//set google map options
-	var map_options = {
-      	center: new google.maps.LatLng(42.001068, 21.392550),
-      	zoom: $map_zoom,
-      	panControl: false,
-      	zoomControl: true,
-      	mapTypeControl: false,
-      	streetViewControl: true,
-      	mapTypeId: google.maps.MapTypeId.ROADMAP,
-      	scrollwheel: true,
-      	styles: style,
-    }
+	if ($(window).width() >= 768) {
+		var map_options = {
+	      	center: new google.maps.LatLng(42.001068, 21.392550),
+	      	zoom: $map_zoom,
+	      	panControl: false,
+	      	zoomControl: true,
+	      	mapTypeControl: false,
+	      	streetViewControl: true,
+	      	mapTypeId: google.maps.MapTypeId.ROADMAP,
+	      	scrollwheel: true,
+	      	styles: style,
+	    }
+	} else {
+		var map_options = {
+	      	center: new google.maps.LatLng($latitude, $longitude),
+	      	zoom: $map_zoom,
+	      	panControl: false,
+	      	zoomControl: true,
+	      	mapTypeControl: false,
+	      	streetViewControl: true,
+	      	mapTypeId: google.maps.MapTypeId.ROADMAP,
+	      	scrollwheel: true,
+	      	styles: style,
+	    }
+	}
     //inizialize the map
 	var map = new google.maps.Map(document.getElementById('google-container'), map_options);
 	//add a custom marker to the map				
@@ -356,3 +370,10 @@ jQuery(document).ready(function($){
 			'sitekey' : '6LdZIpcUAAAAAI2bvnnVOLYrvDDS6Wu1pHefdfv6'
 		});
 	};
+
+// HAMBURGER MENU
+$(document).ready(function(){
+	$('#nav-icon3').click(function(){
+		$(this).toggleClass('open');
+	});
+});

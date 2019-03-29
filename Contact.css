@@ -4,7 +4,6 @@
 }
 body{
   font-family: Roboto Condensed;
-  line-height: 0px;
 }
 .clear{
   clear: both;
@@ -251,7 +250,7 @@ hr{
 }
 .placeholder {
   position: absolute;
-  top: 18%;
+  top: 16%;
   left: 8px;
   padding: 12px 8px;
   background-color: white;
@@ -327,7 +326,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .contact-information img{
   width: 60%;
-  /*margin-top: 20px;*/
   margin-bottom: 20px;
 }
 .contact-information i{
@@ -369,22 +367,33 @@ textarea::-webkit-scrollbar-track {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 770px;
+  height: calc(80vh - 193px);
   display: flex;
   align-items: flex-end;
 }
 .contact-card{
   background-color: rgba(0,0,0,0.6);
   padding-bottom: 10px;
-  margin-bottom: 30px;
   -webkit-box-shadow: 10px 10px 9px -12px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 9px -12px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 9px -12px rgba(0,0,0,0.75);
+  margin-top: -250px;
+  z-index: 9999;
 }
 .contact-card h2{
   color: white;
 }
-
+.contact-card form{
+  line-height: 0;
+}
+.gm-style .gm-fullscreen-control{
+  margin-top: 80px !important;
+  position: fixed !important;
+}
+.contact-us-container{
+  background-color: white;
+  padding-bottom: 20px;
+}
 @media screen and (max-width: 991px) {
   .header{
     padding: 0;
@@ -435,20 +444,12 @@ textarea::-webkit-scrollbar-track {
     margin-bottom: 0;
   }
   .mapa-img{
-    height: 1100px;
+    height: calc(100vh - 108px + 550px);
+  }
+  .contact-card{
+    /*margin-top: -633px;*/
   }
 }
-
-
-/*MAP*/
-/*#google-container {
-  position: relative;
-  width: 100%;
-  height: 450px;
-  background-color: #e7eaf0;
-}
-*/
-
 .input{
   background-color: #363636;
   border-color: #363636;
@@ -470,12 +471,105 @@ textarea::-webkit-scrollbar-track {
   .contact-card{
     margin-bottom: 0;
   }
+  .contact-card{
+    margin-top: 0px;
+  }
+  .mapa-img{
+    height: 60vh;
+  }
+  .gm-style .gm-fullscreen-control {
+    margin-top: 60px !important;
+    position: absolute !important;
+  }
+  .contact-us-container{
+    background-color: rgba(0,0,0,0.7)
+  }
 }
-.contact-card{
-  margin-top: -480px !important;
-  z-index: 9999;
+
+@media (min-width: 768px) and (min-height: 950px) {
+  .mapa-img{
+    height: calc(100vh - 193px + 250px);
+  }
 }
-.gm-style .gm-fullscreen-control{
-  margin-top: 80px !important;
-  position: fixed !important;
+@media (min-width: 991px) and (max-height: 950px) {
+  .mapa-img{
+    height: calc(100vh - 193px + 350px);
+  }
+}
+@media (max-width: 990px) and (max-height: 600px) {
+  .mapa-img{
+    height: calc(70vh - 109px + 835px);
+  }
+}
+
+
+
+/*HAMBURGER MENU*/
+#nav-icon3{
+  width: 60px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon3 span {
+  display: block;
+  /*background: #d3531a;*/
+  border-radius: 9px;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+.navbar-toggle.pull-left{
+  border: unset;
+}
+
+#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+  position: absolute;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  opacity: 0;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #C0392B;
+}
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background-color: #C0392B;
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+#nav-icon3.open span:nth-child(5) {
+  top: 18px;
+  left: 50%;
+  opacity: 0;
 }

@@ -132,3 +132,10 @@ $(document).ready(function(){
   }
 
 });
+
+// HAMBURGER MENU
+$(document).ready(function(){
+    $('#nav-icon3').click(function(){
+        $(this).toggleClass('open');
+    });
+});
