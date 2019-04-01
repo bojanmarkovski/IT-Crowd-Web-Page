@@ -127,8 +127,17 @@ h2{
 }
 .footer .copyright{
   display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
 }
 .footer .copyright a{
   text-decoration: none;
@@ -137,8 +146,17 @@ h2{
   border-radius: 50%;
   background: #383838;
   display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   transition: 0.4s;
   margin-right: 3px;
   margin-left: 3px;
@@ -1586,8 +1604,17 @@ address{
 }
 .our-skills-process .col-lg-5.col-md-5.col-sm-12.col-xs-12{
   display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   height: 440px;
   padding-left: 50px;
 }
@@ -1678,10 +1705,10 @@ address{
     vertical-align: top;
 }
 [data-page=index] section.testimonies .container .company-icons .company-icon-container {
+    align-items: center;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center;
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
     -webkit-animation-iteration-count: infinite;
@@ -1695,14 +1722,14 @@ address{
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 50%;
+    display: flex;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
+    justify-content: center;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
-    justify-content: center;
     opacity: 1;
     -webkit-transition: margin 1s cubic-bezier(.2, .6, .3, 1), opacity 2s ease;
     transition: margin 1s cubic-bezier(.2, .6, .3, 1), opacity 2s ease;
