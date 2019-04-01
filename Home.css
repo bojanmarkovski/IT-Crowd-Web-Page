@@ -46,6 +46,8 @@ h2{
 }
 .header ul li a{
   transition: 0.3s;
+  -webkit-transition: 0.3s;
+
   letter-spacing: 0.6px;
   font-weight: bold;
   font-size: 16px;
@@ -78,6 +80,7 @@ h2{
   position: fixed;
   top: 0;
   transition: top 0.4s ease-in-out;
+  -webkit-transition: top 0.4s ease-in-out;
   width: 100%;
 }
 
@@ -85,10 +88,12 @@ h2{
   top: -65px;
   position: fixed;
   transition: top 0.4s ease-in-out;
+  -webkit-transition: top 0.4s ease-in-out;
 }
 
 .second-nav-down{
   transition: top 0.4s ease-in-out;
+  -webkit-transition: top 0.4s ease-in-out;
   width: 100%;
 }
 .second-nav-up {
@@ -158,6 +163,7 @@ h2{
   -webkit-align-items: center;
   -ms-flex-align: center;
   transition: 0.4s;
+  -webkit-transition: 0.4s;
   margin-right: 3px;
   margin-left: 3px;
 }
@@ -168,6 +174,7 @@ h2{
   font-size: 18px;
   color: white;
   transition: 0.3s;
+   -webkit-transition: 0.3s;
 }
 .footer ul{
   list-style: none;
@@ -178,6 +185,7 @@ h2{
   height: 23px;
   cursor: pointer;
   transition: 0.3s;
+  -webkit-transition: 0.3s;
 }
 .footer ul li:hover{
   color: #C0392B;
@@ -204,6 +212,7 @@ address{
   .header {
     padding: 0px;
     transition: 0.3s;
+    -webkit-transition: 0.3s;
     background-color: transparent;
   }
    .iq-font-white{
@@ -249,7 +258,23 @@ address{
 /* Section title white */
 .heading-title.white .title { color: #fff; }
 .heading-title.white .title:before { background: #fff; }
-.iq-fadebounce { -webkit-animation-name: fadebounce; -moz-animation-name: fadebounce; -ms-animation-name: fadebounce; -o-animation-name: fadebounce; animation-name: fadebounce; -webkit-animation-duration: 3s; -moz-animation-duration: 3s; -ms-animation-duration: 3s; -o-animation-duration: 3s; animation-duration: 3s; -webkit-animation-iteration-count: infinite; -moz-animation-iteration-count: infinite; -ms-animation-iteration-count: infinite; -o-animation-iteration-count: infinite; animation-iteration-count: infinite; }
+.iq-fadebounce { 
+  -webkit-animation-name: fadebounce; 
+  -moz-animation-name: fadebounce; 
+  -ms-animation-name: fadebounce; 
+  -o-animation-name: fadebounce; 
+  animation-name: fadebounce; 
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -ms-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
 @-moz-keyframes fadebounce {
   0% { -moz-transform: translateY(0); transform: translateY(0); opacity: 1 }
   50% { -moz-transform: translateY(20px); transform: translateY(20px); opacity: 1 }
@@ -290,13 +315,25 @@ address{
 
 @keyframes move_wave {
     0% {
-        transform: translateX(0) translateZ(0) scaleY(1)
+        transform: translateX(0) translateZ(0) scaleY(1);
+        -webkit-transform: translateX(0) translateZ(0) scaleY(1);
+        -ms-transform: translateX(0) translateZ(0) scaleY(1);
+        -o-transform: translateX(0) translateZ(0) scaleY(1);
+        -moz-transform: translateX(0) translateZ(0) scaleY(1);
     }
     50% {
-        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+        transform: translateX(-25%) translateZ(0) scaleY(0.55);
+        -webkit-transform: translateX(-25%) translateZ(0) scaleY(0.55);
+        -ms-transform: translateX(-25%) translateZ(0) scaleY(0.55);
+        -o-transform: translateX(-25%) translateZ(0) scaleY(0.55);
+        -moz-transform: translateX(-25%) translateZ(0) scaleY(0.55);
     }
     100% {
-        transform: translateX(-50%) translateZ(0) scaleY(1)
+        transform: translateX(-50%) translateZ(0) scaleY(1);
+        -webkit-transform: translateX(-50%) translateZ(0) scaleY(1);
+        -ms-transform: translateX(-50%) translateZ(0) scaleY(1);
+        -o-transform: translateX(-50%) translateZ(0) scaleY(1);
+        -moz-transform: translateX(-50%) translateZ(0) scaleY(1);
     }
 }
 .waveWrapper {
@@ -320,10 +357,15 @@ address{
 }
 
 .waveBottom {
-    background-size: 50% 100px;
+  background-image: url('images/water1.png');
+  background-size: 50% 100px;
 }
 .waveAnimation .waveBottom {
-    animation: move_wave 23s linear infinite;
+  -webkit-animation-name: move_wave 23s linear infinite; 
+  -moz-animation-name: move_wave 23s linear infinite;
+  -ms-animation-name: move_wave 23s linear infinite;
+  -o-animation-name: move_wave 23s linear infinite;
+  animation: move_wave 23s linear infinite;
 }
 .banner-objects{
   background-color: rgba(192, 57, 43, 0.6);
@@ -2383,7 +2425,7 @@ body {
   line-height: 86px; 
   text-align: center; 
   color: #fff; 
-  background: #4ac4f3; 
+  background: #4ac4f3;
   -webkit-transition: all 0.5s ease-out 0s; 
   -moz-transition: all 0.5s ease-out 0s; 
   -ms-transition: all 0.5s ease-out 0s; 

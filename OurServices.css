@@ -335,9 +335,7 @@ a.animated-button.thar-three:before {
   outline: none;
 }
 
-
 /*TITLE IN BOX*/
-
 .title-text div{
   font-size: 18px;
   font-weight: 700;
@@ -346,8 +344,8 @@ a.animated-button.thar-three:before {
   display: inline-block;
   color: black;
   transform-origin: 50% 70%;
+  font-weight: normal;
 }
-
 .title-text span:nth-child(1){
   animation: flipper 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) both, fadeIn both;
 }
@@ -566,6 +564,7 @@ input[type=number]::-webkit-outer-spin-button {
 button.close.bg-black{
   background-color: unset !important;
   border: 0px solid transparent;
+  opacity: 0.8;
 }
 button.close.bg-black:hover{
   background-color: unset !important;
@@ -575,7 +574,7 @@ button.close span{
   padding: 3px 8px;
   border-radius: 5px;
   /*background: white;*/
-  color: black;
+  color: white;
   letter-spacing: unset;
 }
 button.close span:hover,

@@ -179,3 +179,9 @@
       $navbar.collapse('hide');
     }
   });
+
+
+  if(navigator.userAgent.indexOf('Safari') !=-1 && navigator.userAgent.indexOf('Chrome') == -1){
+    $(".waveWrapperInner").css("bottom", "0px");
+    $(".waveWrapper").removeClass("waveAnimation");
+  }
