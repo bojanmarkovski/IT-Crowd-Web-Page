@@ -11,29 +11,6 @@
     justify-content: center;
     align-items: center;
 }
-
-.loader > img {
-    width: 100px;
-}
-
-.loader.hidden {
-    animation: fadeOut 1s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes fadeOut {
-    100% {
-        opacity: 0;
-        visibility: hidden;
-    }
-}
-
-.thumb {
-    height: 100px;
-    border: 1px solid black;
-    margin: 10px;
-}
-
 .lds-dual-ring {
   display: inline-block;
   width: 64px;
@@ -58,6 +35,8 @@
     transform: rotate(360deg);
   }
 }
+
+
 @font-face {
   font-family: Roboto Condensed;
   src: url("./fonts/Roboto-Regular.ttf");
