@@ -1,3 +1,10 @@
+// LOADER
+window.addEventListener("load", function() {
+	const loader = document.querySelector(".loader");
+	loader.className += " hidden";
+});
+
+
 $(document).ready(function(){
 
 	if($( window ).width() > 991){

@@ -1,6 +1,11 @@
-$(function(){
-		
+// LOADER
+window.addEventListener("load", function() {
+	const loader = document.querySelector(".loader");
+	loader.className += " hidden";
+});
 
+
+$(function(){
 	// CLOSE AN OPEN COLLAPSED NAVBAR WHEN CLICKING OUTSIDE
 	$(document).click(function (event) {
 		var clickover = $(event.target);

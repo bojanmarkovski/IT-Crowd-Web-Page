@@ -1,3 +1,10 @@
+// LOADER
+window.addEventListener("load", function() {
+	const loader = document.querySelector(".loader");
+	loader.className += " hidden";
+});
+
+
 		// CLOSE AN OPEN COLLAPSED NAVBAR WHEN CLICKING OUTSIDE
 		$(document).click(function (event) {
 			var clickover = $(event.target);
